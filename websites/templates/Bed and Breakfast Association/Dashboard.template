@@ -1,0 +1,37 @@
+description:Page with the special fields for guest profile and booking management
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Guest Profile
+defaultTitle:Guest Profile
+defaultUrl:guest-dashboard
+
+** template start **
+
+<div id="topBar">
+		<a class="topbarLogo" href="index.html" title="Bed and Breakfast Association NEW ZEALAND">
+			<img src="images/logo-white-bnb.png">
+		</a>
+		%GROUP_GUEST_LOGIN%
+</div>
+
+<div class="row fixmargin">
+	<div id="pageContentTop" class="basicPage">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pagePad">
+		    %GROUP_GUEST_SUBMENU%
+				%PAGE_CUSTOM_CONTENT_1%
+				%GROUP_GUEST_DASHBOARD%
+		    %PAGE_CUSTOM_CONTENT_2%
+	  </div>
+	</div>
+</div>

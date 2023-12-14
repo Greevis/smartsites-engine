@@ -1,0 +1,36 @@
+description:Local Activities and Attractions
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Intro code
+customContent2:Displayed below the articles
+customContent3:
+customContent4:
+
+defaultName:Local Attractions
+defaultTitle:Activities and Attractions in %PROPERTY_CITY%, %PROPERTY_REGION%
+defaultUrl:attractions
+
+customConfig-name:eventCategoryId_attractions
+customConfig-label:Local Attractions
+customConfig-type:eventCategory
+
+** template start **
+
+<div class="content row">
+	<section id="pageOuter" class="pageContent">
+
+		<div class="pageIntro">
+			<h1 class="pageTitle font">%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		</div>			
+
+		<div class="pageArticles articlesAttractions">%EVENTS_BY_EVENTCATEGORY_FULL_REVERSE["eventCategoryId_attractions"]%</div>
+		<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+	
+	</section>
+</div>

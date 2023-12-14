@@ -1,0 +1,25 @@
+description:Details all the available accommodation options, with full room type descriptions.
+
+customContent1:Displayed above the room type descriptions.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Accommodation
+defaultTitle:Our Accommodation Options
+defaultUrl:accommodation
+
+** template start **
+
+
+		
+		%PAGE_CUSTOM_CONTENT_1%
+		
+		
+		%PAGE_CUSTOM_CONTENT_2%

@@ -1,0 +1,94 @@
+description:ASURE promotions / property specials
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Promotions
+defaultTitle:ASURE Accommodation %PROPERTY_CITY% Promotions and Specials
+defaultUrl:promos
+defaultDescription:ASURE Accommodation promotions and card holder discounts accepted throughout the ASURE New Zealand motel network.
+
+customConfig-name:dealCategoryId_promotions
+customConfig-label:Deals
+customConfig-type:dealCategory
+
+** template start **
+<section class="main-section bg-light">
+	<div class="container">
+		<div class="row">
+			<h1 class="w-100 mb-4 text-center title sr-scroll2">%PAGE_TITLE%</h1>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row py-3 px-0 border-bottom">
+		    <div class="col-md-9">
+		        <h4>ASURECARD</h4>
+		        <h5>10% off Use your ASURECARD</h5>   
+		        <p>ASURE has developed a 10% loyalty discount card which is available to all guests simply by completing this form to receive our ASURECARD.</p>
+		        <a class="btn btn-primary" target="_blank" href="https://www.asurestay.com/about-us/asure-card/">Apply Here</a>          
+		      </div>		        
+		      <div class="col-md-3">
+		       <img class="img-fluid rounded mb-3 mb-md-0" src="https://www.asurestay.com/assets/cards/397a7c661b/CardFront.png" alt="10% off Use your ASURECARD">
+		   </div>
+		</div>
+		
+		<div class="row py-3 px-0 border-bottom">
+		    <div class="col-md-9">
+		          <h4>ASURE Loyalty Programme</h4>
+		          <p>ASURE has developed its own Loyalty Programme to reward our guests - stay at three or more ASURE Accommodation Group properties and receive $100 off your 10th stay.</p>
+		          <ul><li>Must be used at 3 or more ASURE Accommodation Group properties</li>
+								<li>One stamp per booking per night</li>
+								<li>Card must be completed and redeemed within 2 years of first stay</li>
+								<li>Group Bookings and Long Stays are excluded</li>
+								<li>Cannot be used in conjunction with any other ASURE promotion</li>
+								<li>No property or ASURE Accommodation Group will be responsible for any payment if the 10th night loyalty programme ceases or changes</li>
+								<li>Not redeemable for cash.</li>
+								<li>Completed loyalty cards must be redeemed direct with the ASURE property and cannot be redeemed online.</li>
+								<li>Redeemed cards are fully reimbursed to all ASURE properties.</li>
+								</ul>
+								<p>ASURE Loyalty Programme is user-friendly and simple to use, obligation free and requires NO formal application or joining fees.<br>
+								Our ASURE Loyalty Programme is our way of saying thank you for choosing ASURE for your accommodation requirements.</p>
+		          
+		          <a class="btn btn-primary" target="_blank" href="https://www.asurestay.com/assets/cards/7c57955257/Asure-Loyalty-Card-2020.pdf">Download Loyalty Card</a>
+		          
+		        </div>        
+		      <div class="col-md-3">
+		       <img class="img-fluid rounded mb-3 mb-md-0" src="https://www.asurestay.com/assets/cards/4dfcacac32/asureloyalty.jpg" alt="10% off Use your ASURECARD">
+		  </div>
+		</div>
+		
+		<div class="row py-3 px-0 border-bottom">
+		    <div class="col-md-9">
+		        <h4>Farmlands Shareholders</h4>
+		        <p>ASURE Accommodation Group accepts Farmlands Card. Shareholders can use their Card at any ASURE Accommodation Group property. To use your Card, please contact the ASURE property direct.</p>
+		        <a class="btn btn-primary" target="_blank" href="https://www.farmlands.co.nz/FarmlandsCard/">Farmlands Cards</a>          
+		      </div>		        
+		      <div class="col-md-3">
+		       <img class="img-fluid rounded mb-3 mb-md-0" src="https://www.asurestay.com/assets/cards/f5ee9d72e9/farmlands.jpg" alt="10% off Use your ASURECARD">
+		   </div>
+		</div>
+		
+		<div class="row py-3 px-0 border-bottom">
+		    <div class="col-md-9">
+		        <h4>Ruralco Cardholders</h4>
+		        <p>ASURE Accommodation Group welcome all Ruralco cardholders to use their card at any ASURE Accommodation Group property. To use your card, please contact the ASURE property direct.</p>
+		        <a class="btn btn-primary" target="_blank" href="https://www.ruralco.co.nz/">Ruralco Cards</a>          
+		      </div>		        
+		      <div class="col-md-3">
+		       <img class="img-fluid rounded mb-3 mb-md-0" src="https://www.asurestay.com/assets/cards/3468a25a2a/ruralco.jpg" alt="10% off Use your ASURECARD">
+		   </div>
+		</div>
+		
+	</div>
+</section>

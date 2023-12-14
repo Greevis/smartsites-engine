@@ -1,0 +1,35 @@
+description:Page containing site map link list.
+
+customContent1:General summary content for this page.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:false
+
+defaultName:Site Map
+defaultTitle:Site Map
+defaultUrl:sitemap
+
+** template start **
+
+<div id="topBar">
+		<a class="topbarLogo" href="index.html" title="Bed and Breakfast Association NEW ZEALAND">
+			<img src="images/logo-white-bnb.png">
+		</a>
+		%GROUP_GUEST_LOGIN%
+</div>
+
+<div class="row fixmargin">
+	<div id="pageContentTop" class="basicPage">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+	    %PAGE_CUSTOM_CONTENT_1%
+	    %SITEMAP%
+	</div>
+</div>
+
+%PROPERTIES_MAP_IN_THIRDPARTY%

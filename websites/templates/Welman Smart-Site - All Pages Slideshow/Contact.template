@@ -1,0 +1,55 @@
+description:Contact
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Displayed above the contact info and map.
+customContent2:Displayed below the contact info and map.
+customContent3:
+customContent4:
+
+defaultName:Contact
+defaultTitle:Contact %PROPERTY_NAME%
+defaultUrl:contact
+
+** template start **
+<div class="row">
+	<div class="pageContainer">
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>	
+			
+			<div class="fLeft">
+				<div class="contactCard">
+						<h2 class="contactName">Contact %PROPERTY_NAME%</h2>
+						<div class="contactAdress">
+							<div class="propertyStreetaddress">%PROPERTY_STREETADDRESS%,</div>
+							<div class="propertyCity">%PROPERTY_CITY% %PROPERTY_POSTCODE%,</div>
+							<div class="propertyRegion">%PROPERTY_REGION%,</div>
+							<div class="propertyCountry">%PROPERTY_COUNTRY%</div>
+						</div>
+							<div class="propertyHosts">%PROPERTY_HOSTS_LABEL%</div>
+							<div class="propertyFreephone">%PROPERTY_FREEPHONE_LABEL%</div>
+							<div class="propertyTollphone">%PROPERTY_TOLLPHONE_LABEL%</div>
+							<div class="propertyFax">%PROPERTY_FAX_LABEL%</div>
+							<div class="propertyEmail">%RESERVATIONS_EMAIL_LINK_LABEL%</div>
+						<div class="socialIcons">%FACEBOOK_PAGELINK% %TWITTER_PAGELINK% %GOOGLEPLUS_PAGELINK%</div>
+				</div>
+			</div>
+			<div class="fRight">
+				<div class="contactCard">
+						<h2 class="contactName">Make an Online Enquiry</h2>
+						%PROPERTY_CONTACTFORM["Your Name:","Your Email:","Message:","Send Enquiry",0]%
+				</div>
+			</div>
+
+			<h1 class="pageTitle">%PROPERTY_NAME% - %PROPERTY_STREETADDRESS%, %PROPERTY_CITY%</h1>
+			<div class="mapDiv">
+				%PROPERTY_MAP%
+			</div>
+			
+			<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>	
+	</div>
+</div>

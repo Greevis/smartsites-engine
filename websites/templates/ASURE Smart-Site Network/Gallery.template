@@ -1,0 +1,36 @@
+description:Gallery
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Gallery
+defaultTitle:ASURE %PROPERTY_CITY% Accommodation Photo Gallery
+defaultUrl:gallery
+defaultDescription:Photo gallery for ASURE Accommodation %PROPERTY_CITY% New Zealand.
+
+** template start **
+
+<div id="headerBook">
+	<div class="row">	
+		<div class="bookingBox">
+			%JQUERY_DATE_PICKER%
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="pageContainer">
+			<h2 class="title">%PAGE_TITLE%</h2>
+			<div class="photoGallery">
+					%MAIN_GALLERY_LIGHTBOX%
+			</div>
+	</div>
+</div>

@@ -1,0 +1,132 @@
+description:Home Page
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:ASURE %PROPERTY_CITY% - Motel Accommodation %PROPERTY_CITY%, New Zealand
+defaultUrl:index
+defaultDescription:ASURE %PROPERTY_CITY%, members of the ASURE Accommodation Group welcome you to their quality, self-contained, motel accommodation in %PROPERTY_CITY% New Zealand.
+defaultCustomCss:%INCLUDE_FILE["css/template-home-css.inc"]%
+
+** template start **
+
+<!-- Header -->
+ <header class="masthead bg-primary text-white text-center main-section">
+ 	<div class="main-banner">
+ 	  <div class="overlay"></div>
+ 	  %MAIN_GALLERY_SLIDESHOW%
+ 	</div>
+  <div class="container">
+    <h1 class="mb-0 h1">ASURE %PROPERTY_CITY% Accommodation</h1>
+    <h4>New Zealand Accommodation Group</h4>
+    <div class="col-md-10 mx-auto">
+    %JQUERY_DATE_PICKER%
+    </div>
+  </div>
+  <div class="ratingBadge">
+		%RATINGS_BADGE%
+	</div>
+ </header>
+
+<section>
+	<div class="container">
+		<div class="row align-items-center">
+		
+			<div class="col-md-7 sr-scroll2">
+			  <h1 class="title">ASURE %PROPERTY_CITY%</h1>
+			  <h5>%PAGE_TITLE%</h5>
+				<div class="intro sr-scroll2">
+					%PROPERTY_DESCRIPTION%
+				</div>
+			</div>
+			
+			<div class="col-md-5 p-0 sr-scroll2">
+			 <div class="intro-img">
+			 	%MAIN_GALLERY_SLIDESHOW%
+			 </div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+<section class="pt-0">
+	<div class="container bg-grey">
+		<div class="row">
+		   <div class="full-gallery">
+		   	%MAIN_GALLERY_SLIDESHOW%
+		   </div>
+		</div>
+	</div>
+</section>
+
+
+<section class="bg-primary p-0">
+	<div class="container-fluid">
+			<div class="row">
+				<div class="home-article">
+					%ROOMTYPE_DESCRIPTIONS_CATEGORIES[False,False]%
+				</div>
+		 </div>
+	</div>
+</section>
+
+
+<section class="page-section portfolio" id="portfolio">
+ <div class="container">
+	 <div class="row">
+	 
+	     <div class="col-md-6 col-lg-4 sr-scroll1">
+	     <a href="/accommodation.html"> 
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fa fa-plus fa-2x"></i>
+                <p class="mb-0">View Room Types<br>& Book Online</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/img-1.jpg" alt="">
+          </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 sr-scroll1">
+        <a href="/promos.html">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fa fa-plus fa-2x"></i>
+                <p class="mb-0">ASURE Accommodation Promotions</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/img-2.jpg" alt="">
+          </div>
+          </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 sr-scroll1">
+        <a href="https://www.asurestay.com/about-us/promotions/">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fa fa-plus fa-2x"></i>
+                <p class="mb-0">ASURE Loyalty<br>Programme</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="images/img-3.jpg" alt="">
+          </div>
+          </a>
+        </div>
+	 
+	 </div>
+ </div>
+</section>

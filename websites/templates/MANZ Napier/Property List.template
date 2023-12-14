@@ -1,0 +1,61 @@
+description:Sub-region overview with full property listings.
+
+customContent1:General summary content about this sub-region.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Sub Region
+defaultTitle:Find and book accommodation options in Sub-region
+defaultUrl:sub-region
+
+customConfig-name:thirdPartySubCategoryId
+customConfig-label:Sub-category of properties to display
+customConfig-type:thirdPartySubCategory
+
+customConfig-name:eventCategoryId
+customConfig-label:Event category for activity listings
+customConfig-type:eventCategory
+
+customConfig-name:includeInDatePickerPageChooser
+customConfig-label:Include this page in date picker options
+customConfig-type:yesNo
+
+
+** template start **
+
+<div class="pageBanner" id="propList">
+	<div id="headerBook">
+	<h3 class="bookTitle">%SITE_CUSTOM_CONTENT_2%</h3>		
+		%JQUERY_DATE_PICKER_PAGECHOOSER%
+	</div>
+</div>
+		
+		
+<div class="row">
+	<div id="pageContentTop">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+	    %PAGE_CUSTOM_CONTENT_1%
+	</div>
+</div>
+
+		
+<div class="row">
+	<div id="regionListings">	
+		%PROPERTIES_IN_SUBCATEGORY%
+	</div>
+</div>
+
+<div class="row">	
+	<div id="attractionListings">	
+		%EVENTS_IN_EVENTCATEGORY_TEASERS%
+	</div>
+</div>
+
+%PROPERTIES_MAP_IN_SUBCATEGORY%

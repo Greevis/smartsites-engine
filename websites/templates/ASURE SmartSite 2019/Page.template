@@ -1,0 +1,33 @@
+description:Page
+
+customContent1:Enter your page HTML.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Page
+defaultTitle:Page
+defaultUrl:page
+
+** template start **
+<section class="main-section bg-light">
+	<div class="container">
+		<div class="row">
+			<h1 class="w-100 mb-4 text-center title sr-scroll2">%PAGE_TITLE%</h1>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+		  <div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		</div>
+	</div>
+</section>

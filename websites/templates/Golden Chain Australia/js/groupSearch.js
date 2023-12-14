@@ -1,0 +1,78 @@
+// use in conjunction with https://secure.web-rooms.co.nz/js/groupSearch_core.js
+
+var datePickerDateFormat = 	'[<div class="dp-dateouter">]'+
+															'[<div class="dp-dayname">]dddd[</div>]'+
+															'[<div class="dp-date">]D[</div>]'+
+															'[<div class="dp-monthyear">]'+
+																'[<div class="dp-month">]MMM[</div>]'+
+																'[<div class="dp-year">]YYYY[</div>]'+
+															'[</div>]'+
+														'[</div>]';
+
+var ajaxBaseUrl = 'https://secure.web-rooms.co.nz';
+if(window.location.href.indexOf('webrooms.dev') > 0)
+{
+	writeLog('debug URL');
+	ajaxBaseUrl = 'https://webrooms.dev64.welman.co.nz'; // debug
+}
+var dashboardUrl = 'guest-dashboard.html';
+
+var datePickerSeparator = '<div class="dp-separator">to</div>';
+
+var numDigitsAfterDecimal = 2;
+var currencySymbol = '$';
+
+var thirdPartyGroupType = 90;
+var tpgthash = '389fa29def385cceeff38423d26b0d03';
+var googleSearchLimit = {lat: -35.31579803516561, lng: 158.24054550000017, rad:6000000, exclude:0, categories:0, excludeProperties:1};
+
+var searchPageAddress = 'search.html';
+var searchLocationDefaults = {locationType:'zoom_3', page:searchPageAddress, lat: -20.686359955976815, lng: 158.93552312065208}
+
+var pinMarker;
+var greenMarker;
+var greyMarker;
+var blueMarker;
+
+var clusterStyles = [
+  {
+    fontWeight:'900',
+    textColor: 'white',
+    textSize:20,
+    url: 'images/gc-cluster-trans2.png',
+    height: 50,
+    width: 50
+  }
+];
+var markerClustererOptions = {
+	    gridSize: 30,
+	    averageCenter: true,
+	    styles: clusterStyles,
+	    maxZoom: 15
+		};
+$( document ).ready(function() {
+
+	pinMarker = {
+								url: '/templates/admin/images/NeedleLeftYellow2.png',			
+								anchor: new google.maps.Point(18, 29) // pinpoint
+							};
+								
+	greenMarker = {
+								url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png',			
+								anchor: null 
+							};							
+							
+	greyMarker = {
+								url: 'https://maps.google.com/mapfiles/ms/micons/grey.png',			
+								anchor: null 
+							};
+							
+	blueMarker = {
+								url: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png',			
+								anchor: null 
+							};
+	
+});
+
+/* common below */
+

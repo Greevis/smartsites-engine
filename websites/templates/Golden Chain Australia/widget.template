@@ -1,0 +1,106 @@
+description:Embeddable Booking Widget
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Booking Widget
+defaultTitle:Booking Widget
+defaultUrl:widget
+
+** template start **
+
+<style>
+
+
+	#bookingWidget {width:100%;background:#fff; background:#1f4284;height:230px;}
+	#bookingWidget-inner { padding:7px;border:1px solid #ffd400; padding:10px; border:none;}
+	
+	.widget-control-outer {margin:3px 0;}
+	.widget-label {font-size:10px; color:#ffd400;}
+	#searchDropDown { width:100%; border:none; padding:2px 0; height:21px; cursor:pointer; }
+	.hasDatepicker { width:100%; border:none; padding:2px 0; height:17px; text-indent:2px; cursor:pointer; }
+	
+	div.ui-datepicker{
+	 font-size:10px;
+	}
+	
+	.search-button {font-size:14px;width:100%;line-height:25px;height:25px; background:#65b319;line-height:20px;}
+	
+	.head-outer {text-align:center;font-size:12px;}
+	
+	.tagline {color:#1e4283; color:#ffd400;line-height:100%;}
+	.sub-tagline {color:#000; color:#fff;line-height:100%;}
+	
+</style>
+
+<script>
+	
+	var dpDate = new Date();
+	dpDate.setDate(dpDate.getDate());
+	
+	$( document ).ready(function() {
+   
+   $('#dp').datepicker({ 'dateFormat': 'd MM yy'	,
+												'minDate': 0,
+												'maxDate': 365} );																					
+		
+   $('#dp').datepicker( 'setDate', dpDate);
+   
+	});	
+
+	
+	function doASUREsearch()
+	{
+	
+		var targetUrl = 'http://www.ASUREstay.com'+$('#searchDropDown option:selected').val();
+		
+		var myDate = $('#dp').datepicker('getDate');
+		var dToday = new Date();
+		var dateDiff = Math.ceil((new Date(myDate-dToday))/1000/60/60/24);	
+		
+		targetUrl += '?d='+dateDiff
+		window.open(targetUrl);	
+	
+	}
+	
+	
+</script>
+
+<div id="bookingWidget">
+	<div id="bookingWidget-inner">
+		
+		<div class="head-outer">
+			<img src="images/logo_asure_widget.png"/>
+			<div class="tagline">Your Comfort is ASUREd</div>
+			<div class="sub-tagline">NZ Accommodation Group</div>
+		</div>
+		
+		<div class="widget-control-outer">
+			<div class="widget-label location">
+				Select Location
+			</div>
+			<select id="searchDropDown">
+				<option value="/">--- Select ---</option>
+				<optgroup label="North Island"><option value="/accommodation-nz/north-island-motels/auckland.html">Auckland</option><option value="/accommodation-nz/north-island-motels/gisborne.html">Gisborne</option><option value="/accommodation-nz/north-island-motels/hamilton.html">Hamilton</option><option value="/accommodation-nz/north-island-motels/hawera.html">Hawera</option><option value="/accommodation-nz/north-island-motels/kaitaia.html">Kaitaia</option><option value="/accommodation-nz/north-island-motels/kapiti-coast.html">Kapiti Coast</option><option value="/accommodation-nz/north-island-motels/katikati.html">Katikati</option><option value="/accommodation-nz/north-island-motels/masterton.html">Masterton</option><option value="/accommodation-nz/north-island-motels/napier.html">Napier</option><option value="/accommodation-nz/north-island-motels/new-plymouth.html">New Plymouth</option><option value="/accommodation-nz/north-island-motels/palmerston-north.html">Palmerston North</option><option value="/accommodation-nz/north-island-motels/rotorua.html">Rotorua</option><option value="/accommodation-nz/north-island-motels/stratford.html">Stratford</option><option value="/accommodation-nz/north-island-motels/taupo.html">Taupo</option><option value="/accommodation-nz/north-island-motels/tauranga.html">Tauranga</option><option value="/accommodation-nz/north-island-motels/te-awamutu.html">Te Awamutu</option><option value="/accommodation-nz/north-island-motels/turangi.html">Turangi</option><option value="/accommodation-nz/north-island-motels/Whanganui.html">Wanganui</option><option value="/accommodation-nz/north-island-motels/wellington.html">Wellington</option><option value="/accommodation-nz/north-island-motels/whakatane.html">Whakatane</option><option value="/accommodation-nz/north-island-motels/whangarei.html">Whangarei</option></optgroup><optgroup label="South Island"><option value="/accommodation-nz/south-island-motels/alexandra.html">Alexandra</option><option value="/accommodation-nz/south-island-motels/ashburton.html">Ashburton</option><option value="/accommodation-nz/south-island-motels/blenheim.html">Blenheim</option><option value="/accommodation-nz/south-island-motels/christchurch.html">Christchurch</option><option value="/accommodation-nz/south-island-motels/cromwell.html">Cromwell</option><option value="/accommodation-nz/south-island-motels/dunedin.html">Dunedin</option><option value="/accommodation-nz/south-island-motels/geraldine.html">Geraldine</option><option value="/accommodation-nz/south-island-motels/gore.html">Gore</option><option value="/accommodation-nz/south-island-motels/greymouth.html">Greymouth</option><option value="/accommodation-nz/south-island-motels/haast.html">Haast</option><option value="/accommodation-nz/south-island-motels/hanmer-springs.html">Hanmer Springs</option><option value="/accommodation-nz/south-island-motels/invercargill.html">Invercargill</option><option value="/accommodation-nz/south-island-motels/milton.html">Milton</option><option value="/accommodation-nz/south-island-motels/nelson.html">Nelson</option><option value="/accommodation-nz/south-island-motels/oamaru.html">Oamaru</option><option value="/accommodation-nz/south-island-motels/omarama.html">Omarama</option><option value="/accommodation-nz/south-island-motels/picton.html">Picton</option><option value="/accommodation-nz/south-island-motels/queenstown.html">Queenstown</option><option value="/accommodation-nz/south-island-motels/te-anau.html">Te Anau</option><option value="/accommodation-nz/south-island-motels/timaru.html">Timaru</option><option value="/accommodation-nz/south-island-motels/wanaka.html">Wanaka</option><option value="/accommodation-nz/south-island-motels/westport.html">Westport</option></optgroup>			
+			<select>		
+		</div>
+		
+		<div class="widget-control-outer">
+			<div class="widget-label check-in">
+				Check-In Date
+			</div>		
+			<input id="dp" readonly="readonly"/>
+		</div>
+									
+		<button type="button" class="search-button" onclick="doASUREsearch();">Search ASURE</button>
+	</div		   		
+</div>
+

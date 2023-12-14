@@ -1,0 +1,51 @@
+description: Email Form Page
+
+customContent1:Displayed above the Form
+customContent2:Displayed below the Form
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Accommodation Request Form
+defaultTitle:Accommodation Request Form
+defaultUrl:form
+
+customConfig-name:emailform_email
+customConfig-label:Contact Form email recipient
+customConfig-type:email
+
+customConfig-name:emailform_htmlcode
+customConfig-label:Contact Form HTML code
+customConfig-type:blocktext
+
+customConfig-name:emailform_validationcode
+customConfig-label:Contact Form Javascript validation code
+customConfig-type:blocktext
+
+customConfig-name:emailform_thanksMessage
+customConfig-label:Contact form thanks message
+customConfig-type:simpletext
+
+customConfig-name:emailform_thanksPage
+customConfig-label:Contact form thanks page
+customConfig-type:websitepage
+
+** template start **
+<div class="row">
+	<div class="pageContainer">
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+	    <div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		  <div class="padBox">			 
+		         <div class="contactForm">
+							<!-- contact form -->
+							%CUSTOM_MAILFORM["emailform_email","emailform_htmlcode","emailform_validationcode","emailform_thankyouMessage","emailform_thanksPage","Send"]%
+						</div>	
+			</div>	
+			<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>		
+		</div>
+	</div>

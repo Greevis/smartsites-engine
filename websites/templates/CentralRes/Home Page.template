@@ -1,0 +1,72 @@
+description:BnbLive Home
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome to %PROPERTY_NAME%
+defaultUrl:index
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+** template start **
+
+<!-- header.inc is included here -->
+
+<header class="masthead bg-primary text-white text-center template-banner">
+    <div class="main-slideshow" style="background: url('images/banner-bg.jpg') top center no-repeat; background-attachment:fixed;">
+      </div>
+      <div class="container">
+        <h5 class="d-none d-lg-block mb-3 font-weight-normal focus-in-expand-fwd">New Zealand Accommodation</h5>
+        <h1 class="mb-3 text-uppercase focus-in-expand-fwd">Central Reservations</h1>
+        <a class="search-panel btn" href="/properties">Search</a>
+      </div>
+</header>
+<section>
+<div class="container">
+<h1>Central Reservations - New Zealand Accommodation</h1>
+</div>
+</section>
+
+
+
+<!--
+%PROPERTIES_IN_THIRDPARTY%
+-->
+
+<!-- footer.inc is included here -->
+
+<script type="text/javascript">
+	$(document).ready( function() {
+    function slideHeight(){
+        $('.cycle-slideshow').css({
+            height: $(window).height()
+        });
+    }
+    slideHeight();
+ 			$(window).resize(function() {
+       	slideHeight();         
+    	});
+	});
+</script>
+
+<!-- ellipsis for properties descritption -->
+<script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
+<script type="text/javascript"> 
+		$(document).ready(function() {
+			$(".property-details .property-description").dotdotdot({
+				ellipsis	: '... ',
+			});
+		});
+</script>
+<!-- end -->

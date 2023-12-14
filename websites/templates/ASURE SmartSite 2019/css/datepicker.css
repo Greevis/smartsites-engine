@@ -1,0 +1,29 @@
+/* datepicker */
+.webrooms-datepicker { position:relative; display:inline-block; font-size:1.2rem; box-shadow:0 1px 5px rgba(0,0,0,0.4); width:100%; }
+.datepicker-label { width:auto; width:25%; padding-right:0 !important; background:#fff; position:relative; text-align:right; text-indent:30px; }
+.datepicker-label:before { font-family: "FontAwesome"; content: "\f073"; margin-right: 5px; } 
+/*.datepicker-input:after { font-family: "FontAwesome"; content: "\f0d7"; margin-left: 5px; } */
+.datepicker-input { background:#fff;  width:35%; padding-left:0; color:#999;  border:none; border-radius:0; margin:0; cursor:pointer;  }
+.datepicker-input:hover { color:#333; }
+.datepicker-label,
+.datepicker-input,
+.datepicker-button { display:inline-block; box-sizing:border-box; font-size:inherit; font-family:inherit; white-space:nowrap; overflow:hidden; 
+	text-overflow:ellipsis; vertical-align:top; padding:1rem; color:#333; height:60px; }
+.datepicker-button { width:40%; border:none; color:#fff; text-decoration:none; text-align:center; padding:1rem;
+	background:#46a06e; transition:background 150ms ease-in-out; }
+.datepicker-button:hover { opacity:0.9; cursor:pointer; }
+#ui-datepicker-div { z-index:9999 !important; font-size:100%; } /* force datepicker above navbar */
+
+/* mobile */
+@media only screen and (max-width:992px)
+{
+.webrooms-datepicker { display:block; box-shadow:none; }
+.datepicker-label:before,
+.datepicker-label { display:none; }
+.datepicker-input, 
+.datepicker-button { line-height:30px; height:30px; font-size:100%; display:block; width:100%; margin:0; }
+.datepicker-input { font-size:90%; position:static; text-indent:30px; background:url(../images/icon-calendar.png) 8px center no-repeat #fff; background-size:16px 16px; }
+.datepicker-button { font-size:90%; margin-top:5px; white-space:initial; overflow:initial; text-overflow:initial; height:auto; line-height:100%; padding:10px; }
+}
+
+#webroomsBookingEngine {background: url(../images/ajax-loader.gif) no-repeat center 100px #fff;}

@@ -1,0 +1,41 @@
+description:About region, with mini-sitemap of visible pages and descriptions
+
+customContent1:General summary content.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:About
+defaultTitle:About Region
+defaultUrl:about
+
+** template start **
+
+<div class="pageBanner" id="propList">
+	<div id="headerBook">
+	<h3 class="bookTitle">%SITE_CUSTOM_CONTENT_2%</h3>		
+		%JQUERY_DATE_PICKER_PAGECHOOSER%
+	</div>
+</div>
+		
+		
+<div class="row">
+	<div id="pageContentTop">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+	    %PAGE_CUSTOM_CONTENT_1%
+	</div>
+</div>
+
+<div class="row">	
+	<div id="attractionListings">	
+		%SITEMAP_VISIBLE%
+	</div>
+</div>
+
+%PROPERTIES_MAP_IN_THIRDPARTY%

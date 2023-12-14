@@ -1,0 +1,105 @@
+description:Vouchers
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Vouchers
+defaultTitle:ASURE Accommodation Gift Vouchers
+defaultUrl:vouchers
+
+
+customConfig-name:emailform_email
+customConfig-label:Voucher Form email recipient
+customConfig-type:email
+
+customConfig-name:emailform_htmlcode
+customConfig-label:Voucher Form HTML code
+customConfig-type:blocktext
+
+customConfig-name:emailform_validationcode
+customConfig-label:Voucher Form Javascript validation code
+customConfig-type:blocktext
+
+customConfig-name:emailform_thanksMessage
+customConfig-label:Voucher form thanks message
+customConfig-type:simpletext
+
+customConfig-name:emailform_thanksPage
+customConfig-label:Voucher form thanks page
+customConfig-type:websitepage
+
+** template start **
+
+<div class="ASUREbg ASUREpageBg">
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="ASUREstay.com - ASURE Accommodation Group New Zealand">
+				<img src="images/logo_asure.png" alt="ASURE" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<h2>ASURE Accommodation</h2>
+			<h3>Your Comfort is ASUREd</h3>
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+			<div class="loyalty">
+				<span class="yellow">Loyalty Program:</span> 
+				Stay at three or more ASURE Accommodation Group properties and receive $100 credit off your 10th stay.
+				The rates on ASURESTAY.com include instant membership to our exclusive ASURE loyalty programme.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+	ASURE Accommodation Group
+</div>
+
+<div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pageContainer">
+			<div class="pageIntro">
+				<!--	<img src="images/voucher.jpg" class="voucherImg" alt="Buy Accommodation Vouchers" />-->
+				<img src="images/voucher-save.jpg" class="voucherImg" alt="Buy Accommodation Vouchers" /> 
+		    
+		   	 
+		    <h2>Buy ASURE gift vouchers here</h2>
+		    
+		    <ul class="full-list">
+		    	<li>Cannot be redeemed for cash</li>
+		    	<li>Vouchers can be only be redeemed by the following:</li>
+		    		<ul class="half-list">
+		    		<li>booking on ASURESTAY.com</li>
+		    		<li>ringing ASURE Central Reservations <a href="tel:0800278739">0800 278 739</a></li>
+		    		<li>booking on the ASURE property’s own official website</li>
+		    		<li>ringing the ASURE property direct</li>
+		    		</ul>
+		    	<li>Vouchers are valid for 12 months from the date of purchase</li>
+		    </ul>
+		    
+		    
+		    <h2>ASURE Christmas Promotion</h2>
+		    <ul>
+		    	<li>By buying <span style="font-weight:600;">up to $500</span> worth of gift vouchers - <span style="font-weight:600;">receive 15% discount</span></li>
+		    	<li>By buying <span style="font-weight:600;">more than $500</span> worth of gift vouchers - <span style="font-weight:600;">receive 20% discount</span></li>
+		    	<li>Offer available for purchasing up to and including 14th December 2018</li>
+		    </ul>
+		   	
+			</div>
+			<div class="contactForm voucherForm">
+				 %CUSTOM_MAILFORM["emailform_email","emailform_htmlcode","emailform_validationcode","emailform_thanksMessage","emailform_thanksPage","Go to payment page"]%
+		    
+			</div>
+		</div>
+	</div>
+</div>

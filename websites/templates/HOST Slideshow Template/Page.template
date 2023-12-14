@@ -1,0 +1,25 @@
+description:Page
+
+customContent1:Enter your page HTML.
+customContent2:Raw code area.
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Page
+defaultTitle:Page
+defaultUrl:page
+
+** template start **
+<div class="row">
+	<div class="twelve columns pageContainer">
+			<h1>%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+			<div class="rawCode">%PAGE_CUSTOM_CONTENT_2%</div>
+	</div>
+</div>

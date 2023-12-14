@@ -1,0 +1,35 @@
+description:Gallery
+
+customContent1:Intro code
+customContent2:Displayed below the gallery
+customContent3:Raw code area
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Gallery
+defaultTitle:%PROPERTY_NAME% Gallery
+defaultUrl:gallery
+
+** template start **
+
+<div class="content row">
+	<section id="pageOuter" class="pageContent">
+
+		<div class="pageIntro">
+			<h1 class="pageTitle font">%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		</div>			
+
+		<div class="photoGallery">
+				%MAIN_GALLERY_LIGHTBOX%
+		</div>
+		<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+		<div class="pageCustom3">%PAGE_CUSTOM_CONTENT_3%</div>
+	
+	</section>
+</div>

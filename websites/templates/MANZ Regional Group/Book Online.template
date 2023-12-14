@@ -1,0 +1,26 @@
+description:The booking page, with Webrooms on it.
+
+customContent1:Displayed above the booking engine.
+customContent2:Displayed below the booking engine.
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Book Online
+defaultTitle:Make a Reservation
+defaultUrl:bookings
+
+** template start **
+
+		
+		
+		%PAGE_CUSTOM_CONTENT_1%
+		
+		%BOOKING_ENGINE%
+		
+		%PAGE_CUSTOM_CONTENT_2%

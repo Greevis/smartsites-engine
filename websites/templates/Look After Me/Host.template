@@ -1,0 +1,135 @@
+description:Host login page
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Page
+defaultTitle:Page
+defaultUrl:page
+
+** template start **
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+<div class="pageContainer">
+	<div class="row host-row">
+		<h1 class="pageTitle title-h1">HOSTING</h1>
+			<div class="pagePad">
+					<h1>I’ve got all this spare space, what am I going to do with it? </h1>
+					<p>Do you love people? <br>
+					Look After Me is an easy way to turn your home into a B&B and provide <a class="text-white" href="index.html">Dunedin accommodation</a> to a range of interesting visitors.<br>
+			    We’ve got 100’s of singles, couples and families<br>
+			    wanting accommodation in Dunedin
+					</p>
+					<div class="hosting-buttons">
+					<a href="https://secure.web-rooms.co.nz/AddProperty.asp?tpgt=91&h=1251b98d580244316d98c3506c4cdfdd" target="_blank" title="Sign up with Look After Me">Sign up</a>
+					<span>or</span>
+					<a href="faq-page.html" title="Learn more about Look After me">Learn more</a>
+					</div>
+      </div>
+      
+    <!-- host login area -->
+		<div class="host-login-panel">
+		<form action="https://secure.web-rooms.co.nz/proc/Login_proc.asp" method="post" enctype="application/x-www-form-urlencoded" id="webroomsLoginForm">
+		<h3>Host Log In</h3>
+    <input type="hidden" name="thirdPartyGroupType" value="91"/>
+    <input type="hidden" name="tpghash" value="1251b98d580244316d98c3506c4cdfdd"/>
+    <input type="hidden" name="availabilitySearch" value="0"/>
+    <span>Email:</span>
+    <input type="text" value="" name="username" required="required" aria-required="true" class="text"/>
+    
+    <span>Password:</span>
+    <input type="password" value="" name="password" required="required" aria-required="true" class="text password"/> 
+    
+    <input class="btn" type="submit" name="submit" value="Log in"/>    
+    </form>
+		</div>
+      
+      <div class="section">
+	      <h1 class="clearfix">IF  YOU  LOVE</h1>
+		      <div class="col-sm-12 col-md-4">
+		      <img src="images/food.jpg" alt="Look After Me - New Zealand" title="Sharing what you have" />
+		      <h2>Sharing what you have</h2>
+		      </div>
+		      <div class="col-sm-12 col-md-4">
+		      <img src="images/lunchphoto.jpg" alt="New Zealand's Homestay Network" title="Looking after people" />
+		      <h2>'Looking after' people</h2>
+		      </div>
+		      <div class="col-sm-12 col-md-4">
+		      <img src="images/cup-tea.jpg" alt="Best Accommodation" title="Meeting people from overseas and locally" />
+		      <h2>Meeting people from overseas and locally</h2>
+		      </div>
+		     </div>
+		     <div class="section-2">
+		     <h1>YOU WILL LOVE <br>
+		     <img src="images/host-logo.png" alt="Look After Me - New Zealand's Accommodation"/></h1>
+		     <h1 class="title-h1">WHAT PEOPLE SAY</h1>
+				      <div class="col-sm-12 col-md-4 card">
+				      <p>We're staying here for Easter next year but have rented out our guest room to a lovely couple from Wellington. They're totally stoked! <br><br> <span>- Phil and Jules, Maia, Dunedin</span></p>
+				      </div>
+				      <div class="col-sm-12 col-md-4 card">
+				      <p>We love the idea that our guests will get to see the REAL Dunedin. <br><br><span>- Beth and Tom, Roslyn, Dunedin</span></p>
+				      </div>
+				      <div class="col-sm-12 col-md-4 card">
+				      <p>We've got a 5 bedroom house and it's amazing so many people are travelling to Dunedin for Ed Sheeran - it makes sense to help out <br><br><span>- Tracey and family, Fairfield, Dunedin</span></p>
+				      </div>
+		     </div>
+		     <div class="section-3">
+		     <h1>HOW IT WORKS</h1>
+		           <div class="col-sm-12 col-md-4">
+				       <p>At Look After Me, bookings are mostly made by people who might be travelling with their spouse/partner, mother, daughter, sister or friend. Some of our guests are businesswomen coming for work, conferences or sales visits. They are looking for alternatives to hotel rooms which can get a bit lonely.</p>
+				       <p>Guests browse accommodation in our reception area. Guests book the selected rooms and pay in full through our secure payment gateway. We release the funds to our hosts (less our 10% commission).</p>
+				       </div>
+				       <div class="col-sm-12 col-md-4">
+				       <img src="images/lam-j.jpg" alt="Dunedin - Motels" />
+				       </div>
+				       <div class="col-sm-12 col-md-4">
+				       <p>Every new host becomes a valued member of our Hosting Team. Wondering how to turn your home into a guest house? We guide you through our simple step-by-step Host Care Programme to ensure you feel confident to Host for us. We also give you our top tips to make your rooms look fantastic.</p>
+				       <p>All new hosts are invited to enjoy our customised printing service. We can help you create personalised compendium covers, letter box signs and business cards.</p>
+				       </div>
+		     </div>
+		     <div class="section-4">
+		     <h1>TAKE  THE  FIRST STEP</h1>
+				     <div class="hosting-buttons2">
+							<a href="https://secure.web-rooms.co.nz/AddProperty.asp?tpgt=91&h=1251b98d580244316d98c3506c4cdfdd" target="_blank" title="Sign up with Look After Me">Sign up</a>
+							<a href="faq-page.html" title="Learn more about Look After me">Learn more</a>
+							<a href="host-enquiry.html" title="">No obligation enquiry</a>
+							
+							</div>
+							<p>or call the founder, Julia Charity, directly at <a href="tel:0800526123" title="Free Phone">0800 526 123</a></p>
+		     </div>
+	  </div>
+</div>

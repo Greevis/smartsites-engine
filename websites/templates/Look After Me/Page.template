@@ -1,0 +1,55 @@
+description:Blank page
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Page
+defaultTitle:Page
+defaultUrl:page
+
+** template start **
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+<div class="pageContainer">
+	<div class="row page-row">
+		<h1 class="pageTitle title-h1">%PAGE_TITLE%</h1>  
+		<div class="pagePad">
+		    %PAGE_CUSTOM_CONTENT_1%
+		    %PAGE_CUSTOM_CONTENT_2%
+		</div>
+	</div>
+</div>

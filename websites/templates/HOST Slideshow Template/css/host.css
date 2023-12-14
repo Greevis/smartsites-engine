@@ -1,0 +1,97 @@
+/* ++++++ CSS for both banners */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+/* ++++++ CSS for top banner */
+.posRel { position:relative; }
+.hostTop{position: relative; background: #638db5; width:100%; height: 70px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 400; color: #2D5479; font-size: 16px;}
+.hostTop .hostLeft{float: left; }
+.hostTop .hostLeft{height: 70px; width: 132px; background:url(../images/host_banner-top_left-161123.png) no-repeat;}
+.hostTop .hostLink{position: absolute;	right: 160px;	height: 15px;	border-right: 1px solid #fff;	margin: 15px 0;	padding: 13px 20px;}
+.hostTop .hostLink span.info-icon{display: block;	float: left; width: 22px;	height: 23px;	background:url(../images/host_banner-info_icon-161123.png) no-repeat;}
+.hostTop .hostRight{position: absolute;	right:0; top: 0; height: 99px;	width: 126px;	background:url(../images/host_banner-top_right-161123.png) right top no-repeat; background-size: auto 95px;}
+.hostTop .hostLink a{color: #fff;	font-weight: normal; text-decoration: none;}
+.hostTop .hostLink a:hover{	text-decoration: underline;}
+.hostTop .hostLink a{text-transform: uppercase;}
+.hostTop .hostLink a span{	margin: -2px 8px 0 0;}
+@media (max-width: 440px) {
+	.hostTop .hostRight{display: none;}
+	.hostTop .hostLink{border-right: none; right: 20px;}
+}
+
+/* ++++++ CSS for bottom banner */
+.hostBottom{ background: #638db5; width:100%; height: 85px; font-family: 'PT Sans Narrow', sans-serif; font-weight: 400; color: #2D5479; font-size: 16px; position:relative; }
+.hostBottom .hostLeft, .hostBottom .hostText{float: left;}
+.hostBottom .hostLeft{height: 85px; width: 162px; background:url(../images/host_banner-bottom_left-161123.png) no-repeat;}
+.hostBottom .hostText{position: absolute; left: 162px; width: calc(100% - 500px);}
+.hostBottom .hostText p{margin: 0;	padding: 15px 30px 0;}
+.hostBottom .hostLink{position: absolute;	right: 185px;	height: 15px;	border-left: 1px solid #fff;	border-right: 1px solid #fff;	margin: 15px 0;	padding: 20px;}
+.hostBottom .hostLink span.info-icon{	display: block;	float: left;	width: 22px;	height: 23px;	background:url(../images/host_banner-info_icon-161123.png) no-repeat;}
+.hostBottom .hostRight{position: absolute; right:0;	top: -19px;	height: 95px;	width: 135px;	background:url(../images/host_banner-bottom_right-161123.png) right top no-repeat;	background-size: auto 95px; }
+.hostBottom .hostLink a, .hostBottom .hostText a{color: #fff; font-weight: normal; text-decoration: none;}
+.hostBottom .hostLink a:hover, .hostBottom .hostText a:hover{text-decoration: underline;}
+.hostBottom .hostLink a{text-transform: uppercase;}
+.hostBottom .hostLink a span{margin: -2px 8px 0 0;}
+@media (max-width: 950px) {
+	.hostBottom .hostText p{padding: 5px 10px 0; }
+		.hostTop { display:none;}
+}
+@media (max-width: 800px) {
+	.hostBottom .hostText{display: none;}
+	.hostBottom .hostLink{border-left: none;}
+}
+@media (max-width: 480px) {
+	.hostBottom .hostRight{display: none;}
+	.hostBottom .hostLink{border-right: none; right: 20px;}
+}
+
+
+/*==================================================*/
+/*==================== HOST CSS ====================*/
+/*==================================================*/
+
+.hostLogoF { float:right; margin-left:20px; width:260px; height:120px; background:url(../images/host_logo.png) left top no-repeat; }
+
+/* header*/
+#hostStrip { background:#ffcf23; height:96px; position:absolute; top:0; left:0; width:100%; }
+.hostStrip { width:100%; height:96px; background:url(../images/host_banner-left-150414.jpg) left top no-repeat; background-size:auto 96px; }
+.hostLinks { float:right; height:96px; background:url(../images/host_banner-right-150414.jpg) right top no-repeat; background-size:auto 96px; padding-right:140px; width:470px; }
+.hostLinks ul { float:right; list-style:none; margin:25px 0 0 0; padding:0; }
+.hostLinks li { display:inline-block; margin-bottom:0; padding:0 10px 0 0; text-transform:uppercase; }
+.hostLinks li a { color:#3F3A40; display:block; font-size:14px; line-height:19px; margin-bottom:0; font-weight:400; padding:1px 1px 1px 0; text-decoration:none; font-style:italic; }
+.hostLinks li a:hover { text-decoration:underline }
+.hostLogo { height:120px; background:url(../images/host_logo.png) center center no-repeat #ffcf23; padding:20px; }
+#headerBlock { margin-top:96px; margin-top:0; }
+
+/* footer */
+#footerHost { background:#ffcf23; }
+#footerBlock .hostRewards { font-size:16px; color:#333; font-weight:300; padding:30px 0; width:630px; float:right; }
+#footerBlock .hostRewards h4 { color:#333; font-weight:700; padding:0; margin:0; margin-top:15px; }
+#footerBlock .hostRewards p { padding:0; margin:0; font-style:italic; }
+#footerBlock .hostRewards a { color:#333; }
+#footerBlock .hostRewards .hostCard { float:right; margin-left:20px; width:190px; height:130px; background:url(../images/host_loyaltycard-150414.png) top center no-repeat; }
+#footerBlock .hostStrip { background:url(../images/host_logo.png) no-repeat left center #ffcf23; height:200px; }
+#footerBlock ul.topLinks { margin:20px 0 0 0px; }
+
+		
+
+/*====================================================*/
+/*==================== MOBILE CSS ====================*/
+/*====================================================*/
+
+
+			@media only screen and (max-width: 960px) 
+				{
+					#headerBlock { margin-top:50px; }
+					#headerNav { background:url(../images/host_logo.png) 10px center no-repeat #ffcf23 !important; background-size:70px !important; }
+					#footerBlock .hostStrip { background:#ffcf23; height:auto; }
+					#footerHost { padding:2em; }
+					#footerBlock .hostRewards { padding:0; width:auto; float:none; }
+					#footerBlock .hostRewards h4,		
+					#footerBlock .hostRewards p { text-align:center; font-size:80%; }	
+					#footerBlock .hostRewards .hostCard { float:none; margin:auto; width:190px; height:130px; background:url(../images/host_loyaltycard-150414.png) center center no-repeat; }
+				}
+				
+			@media only screen and (max-width: 305px) 
+				{
+					#headerLogo h3 { display:none; }
+				}

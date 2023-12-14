@@ -1,0 +1,45 @@
+description:Apartment property listings.
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Displayed above the contact info.
+customContent2:Displayed below the contact info.
+customContent3:
+customContent4:
+
+defaultName:Accommodation
+defaultTitle:Apartment Accommodation
+defaultUrl:accommodation
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+** template start **
+
+<div class="row footerPad">
+
+	<div class="columns three">
+	%INCLUDE_FILE["template-nav.inc"]%
+	</div>
+	
+	<div class="columns nine">
+		<div class="pageContainer">
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+			<div class="pageContent">
+	
+				<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>	
+				<div id="regionListings">	
+					%PROPERTIES_IN_THIRDPARTY_AVAILABILITY_INTERNAL%
+				</div>	
+				<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>	
+		
+			</div>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,52 @@
+description:Home Page
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome to %PROPERTY_NAME% Accommodation
+defaultUrl:index
+defaultCustomCss:%INCLUDE_FILE["css/css-include-home.inc"]%
+
+customConfig-name:eventCategoryId
+customConfig-label:Local Events slideshow
+customConfig-type:eventCategory
+
+customConfig-name:eventCategoryId_attractions
+customConfig-label:Local Attractions slideshow
+customConfig-type:eventCategory
+
+** template start **
+
+<div class="row">
+	<div class="twelve columns pageContainer">
+			<h1>%PAGE_TITLE%</h1>
+			<div class="pad propDescription">
+				%PROPERTY_DESCRIPTION%
+			</div>
+			<div class="homeArticles">
+				<div class="slideControls">
+					<h2 class="pageTitle"><a href=""><span>Room Types</span></a></h2>
+					<button class="propPrev propPrev-roomtypes">&lt;</button>
+					<button class="propNext propNext-roomtypes">&gt;</button>
+				</div>
+				<div class="slide0">
+					%ROOMTYPE_DESCRIPTIONS_CATEGORIES[False,False]%
+				</div>
+			</div>
+			<div class="homeArticles slide2">
+				%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_attractions","Attractions.template","eventCategoryId_attractions"]%
+			</div>			
+			<div class="homeArticles slide1">
+				%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId","Events.template","eventCategoryId_events"]%
+			</div>
+	</div>
+</div>

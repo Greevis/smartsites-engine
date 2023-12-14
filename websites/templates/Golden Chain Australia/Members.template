@@ -1,0 +1,34 @@
+description:Members list page
+
+customContent1:Enter your content
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:false
+allowEditStatus:true
+
+defaultName:Members
+defaultTitle:Members
+defaultUrl:members
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+** template start **
+
+<div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pageContainer">
+	    %PAGE_CUSTOM_CONTENT_1%
+	    <div class="membersPage">
+				%PROPERTIES_IN_THIRDPARTY%
+			</div>
+		</div>
+	</div>
+</div>

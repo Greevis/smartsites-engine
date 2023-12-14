@@ -1,0 +1,6 @@
+#Alternate default index page
+DirectoryIndex search.html
+RewriteEngine On
+RewriteCond %{HTTP} On
+RewriteCond %{HTTP_X_FORWARDED_PROTO} https
+RewriteRule .well-known/*    https://{HTTP_HOST}{REQUEST_URI}

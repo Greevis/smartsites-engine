@@ -1,0 +1,35 @@
+description:Facilities and full Webrooms room type descriptions
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Accommodation
+defaultTitle:ASURE %PROPERTY_CITY% Motel Accommodation Room Types
+defaultUrl:accommodation
+defaultDescription:ASURE %PROPERTY_CITY% accommodation - view our motel facilities, room types and book online.
+
+** template start **
+
+<div id="headerBook">
+	<div class="row">	
+		<div class="bookingBox">
+			%JQUERY_DATE_PICKER%
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="pageContainer">
+			<h2 class="title">%PAGE_TITLE%</h2>
+			<div class="pageFacilities">%PROPERTY_FACILITIES%</div>
+			<div class="pageRTDP">%ROOMTYPE_DESCRIPTIONS_ALL%</div>
+	</div>
+</div>

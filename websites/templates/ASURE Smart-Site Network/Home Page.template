@@ -1,0 +1,51 @@
+description:Home Page
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:ASURE %PROPERTY_CITY% - Motel Accommodation %PROPERTY_CITY%, New Zealand
+defaultUrl:index
+defaultDescription:ASURE %PROPERTY_CITY%, members of the ASURE Accommodation Group welcome you to their quality, self-contained, motel accommodation in %PROPERTY_CITY% New Zealand.
+defaultCustomCss:%INCLUDE_FILE["css/template-home-css.inc"]%
+
+** template start **
+
+<div class="row">
+	
+	<div id="headerSlide">
+		<div class="bookingBox">
+			<h4>Check Our Live Availability, Rates and Book Online</h4>
+			%JQUERY_DATE_PICKER%
+		</div>
+		<div id="slideshow">
+			<div class="slideshowGallery">
+				%MAIN_GALLERY_SLIDESHOW%
+			</div>
+		</div>
+	</div>
+	
+	<div class="pageContainer homeContainer">
+		<h2 class="title">%PAGE_TITLE%</h2>
+		<div class="pad">
+			%PROPERTY_DESCRIPTION%
+		</div>
+	</div>	
+	
+	<div class="homeArticles">
+		<button class="propPrev propPrev-roomtypes">&lt;</button>
+		<button class="propNext propNext-roomtypes">&gt;</button>
+		<div class="slide0">
+			%ROOMTYPE_DESCRIPTIONS_CATEGORIES[False,False]%
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,525 @@
+description:About Us
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Displayed above the articles feed.
+customContent2:Displayed below the articles feed.
+customContent3:Raw code area.
+customContent4:
+
+defaultName:About Us
+defaultTitle:About Us
+defaultUrl:about
+
+customConfig-name:eventCategoryId_about
+customConfig-label:About Us
+customConfig-type:eventCategory
+
+** template start **
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+<div class="articlesContainer">
+	<div class="row about-row">
+		<h1 class="pageTitle title-h1">ABOUT US</h1>  
+		<div class="content">
+		<h1 class="h2 text-left">Look After Me offers the perfect alternative to hotel accommodation in Dunedin including bed and breakfast and homestays</h1>
+		<h2>At Look After Me we love looking after our guests</h2>
+		<p>When you travel, we believe you’ll have peace of mind if you eat and sleep well, when you travel. </p>
+		<p>As our guest we want you to feel safe and welcome…and make sure you get great value for money.</p>
+		<p>That’s why we’re dedicated to creating a network of ‘real’ people, ‘real’ places with ‘real’ prices for you and your family.</p>
+		
+		<div class="about-left">
+			<ul class="about-ul">
+			<li class="tablinks" onclick="openTab(event, 'id-1')" id="defaultOpen" >Your ‘Digital’ Hotel</li>
+			<li class="tablinks" onclick="openTab(event, 'id-2')" >How does it work?</li>
+			<li class="tablinks" onclick="openTab(event, 'id-3')" >It’s all about you</li>
+			<li class="tablinks" onclick="openTab(event, 'id-4')" >What people say</li>
+			<li class="tablinks" onclick="openTab(event, 'id-5')" >Why New Zealand?</li>
+			<li class="tablinks" onclick="openTab(event, 'id-6')" >About the Company</li>
+			<li class="tablinks" onclick="openTab(event, 'id-7')" >Awards</li>
+			<li><a href="hosting.html" title="Find out more about hosting">Hosting</a></li>
+			</ul>
+		</div>
+		
+		<div class="aboutRight" id="id-1">
+		    <p>Look After Me is New Zealand’s first ‘digital’ hotel. But our rooms aren’t cemented into a single building or even in a single location in New Zealand.</p>
+		    <h2>So what is a digital hotel?</h2>
+		    <p>We specialise in providing bed and breakfast and homestay accommodation for couples, singles and small groups of 3 or 4. Like you, every room and each host who looks after you, is unique.</p>
+		    <p>You can enjoy choosing accommodation that best suits your style – be it classic, quirky, charming, country or chic.</p>
+		    <p>Like you, every room and every one of our hosts who looks after you, is unique. That’s the fun part - choosing accommodation that best suits your style – be it classic, quirky, charming, country or chic.</p>
+		    <p>We specialise in providing accommodation for couples, singles and small groups of 3 or 4.</p>
+		    <p>Check out our <a href="search.html" title="Check Our Rooms">rooms.</a></p>
+		    <div style="text-align:center;"><img src="images/about-rooms.png" alt="Look After Me - Rooms" title="Look After Me - New Zealand’s first digital hotel"/></div>
+				<h2>Our hosts</h2>
+				<img class="float-right" src="images/Woman-in-Wheelchair.jpg" alt="New Zealand's Accommodation" title="" />
+				<h3>New Zealand's Accommodation</h3>
+				<p>Our guest rooms are mostly provided by homeowners who offer one, two or three rooms – either within their own home, or as self-contained units on their property.</p>
+				<p>Our hosts have been vetted to make sure they meet certain standards, are well set up and prices are fair. We love helping them showcase pleasant, clean rooms and encourage them to add homely touches to celebrate their unique hosting personality.</p>
+				<p>Interested in becoming a host? Find out how to <a href="hosting.thml">turn your home into a B&B</a></p>
+				<h2>Breakfast and meals</h2>
+				<p>We like to set you up for a great day, so a continental breakfast (cereal, fruit, toast, tea & coffee) is usually provided and included in the price.</p>
+				<img class="float-right" src="images/breakfast.jpg" alt="Dunedin Motels" />
+				<h3>Dunedin Motels</h3>
+				<p>Some of our hosts offer other meals by arrangement or have facilities for you to share with respect and prepare your own meals. </p>
+				<p>If you’d rather eat out, they’ve all got great local knowledge and will personalise information to suit your requirements and budget.</p>
+				<p>At Look After Me, you’re not just a credit card checking in – you’re a real person who deserves to be looked after when you’re away from home.</p>
+				<h2>What else do we offer you?</h2>
+				<p>Ever get overwhelmed with the brochure rack at reception?</p>
+				<img title="" alt="Helping people" class="float-right" src="images/helping.jpg" />
+				<h3>Helping people</h3>
+				<p>Our hosts will offer personalised visitor information on things you like doing, how much you want to spend and how much time you have.</p>
+				<p>It’s easier, better, faster and more reliable than a brochure display, a google search or a trip to the i-site.</p>
+				<h2>Standards for your comfort and safety</h2>
+				<p>Like any reputable hotel - there are some things we won't compromise on.</p>
+				<img class="float-right" src="images/homestay-room.jpg" alt="New Zealand - Homestay Rooms" title="Look After Me - Homestay" />
+				<h3>New Zealand - Homestay Rooms</h3>
+				<p>We've standardised things that are important for your safety and comfort.</p>
+				<p>We guarantee every room and every person who services that room, upholds our ‘Look After You’ brand promise, meets our high standards and commits to providing good old-fashioned kiwi hospitality and personalised local knowledge.</p>
+				<p>Browse and book holiday <a href="index.html">accommodation in Dunedin</a> at our ‘digital reception or find out <a href="index.html">how to turn your home into a guest house</a>.</p>
+				<span>“We just love looking after people.” </span><br>
+		    <span>Founder and Digital Hotel Manager, </span><br>
+		    <span>Julia Charity</span>
+		</div>
+		
+		
+		<div class="aboutRight" id="id-2">
+				<p>Want to book accommodation? Just follow these easy steps:</p>
+				<img class="float-right" src="images/browse.jpg" alt="New Zealand Accommodation - Book Online" />
+				<h2>(1)	Browse</h2>	
+				<p>On the Home or Search page start by typing a city, town or region you would like to stay in. Optionally enter a keyword, such as an interest, an event or an affiliation that matches your travel needs and interests.</p>
+				
+				<img class="float-right" src="images/select.jpg" alt="Homstay Network - Search an Accommodation Online" />
+				<h2>(2)	Select</h2>
+				<p>Search results can be displayed in a list or on a map. Scroll through the accommodation options - homestays, B&Bs and self-contained units. Click on the photo or profile to see property details.</p>
+				
+				<img class="float-right book-enquire" src="images/book-enquire.jpg" alt="New Zealand - Contact Accommodation Online"/>				
+				<h2>(3)	Book or enquire</h2>
+				<p>Click the Book Now button to secure your booking. You will be asked to pay a 10% deposit to secure your booking.</p>
+				
+				<img class="float-right" src="images/pay-balance.jpg" alt="Look After Me - Book Accommodation Online and Pay Online" />
+				<h2>(4)	Pay the balance</h2>
+				<p>Once confirmed, pay your host either before your arrival into their bank account, or upon arrival.</p>
+				
+				<p>See all our details about pricing <a href="faq-page.html" title="Read more about our pricing.">here</a> or view our <a href="terms.html" title="Read our terms.">terms.</a></p>
+				<p>Head over to our ‘digital’ <a href="index.html" title="Look After Me - Reception">reception</a> where you can browse and book accommodation.</p>
+		</div>
+		
+		<div class="aboutRight" id="id-3">
+				<h2>It's all about you</h2>
+				<p>Have you noticed how many websites are built for millennials? You know those hip young things who crave cheap and instant?</p>
+				<p>Who’s building websites for emotionally intelligent, discerning women? You know those decent honest people who prefer quality, credibility but expect value for money? </p>
+				<p>We thought - hang on a minute - what about us? </p>
+		    <p>Why don’t we build something that makes us feel safe, valued and appreciated for who and what we are?</p>
+		    <img class="float-right" src="images/cup-tea.jpg" alt="Look After Me - New Zealand's Accommodation" />
+		    <p>We say ‘us’ and ‘we’ because Look After Me was started by a kiwi girl – a mum, daughter, partner, sister and friend. </p>
+		    <p>A woman, probably a bit like you – someone who travels from time to time, who was bored of regular hotels and looking for something different. </p>
+		    <p>Our Founder, Julia Charity realised that when women are at home, we do most of the ‘looking after.’ Not always, not exclusively, but mostly. </p>
+		    <p>She wanted to create a network of places so when women are away from home, it’s us who gets ‘looked after’.</p>
+		    <p>She wanted guests and hosts to feel appreciated for who we are - as women - and as people. </p>
+		    <h2>Why we’re fussy about safety</h2>
+		    <p>New Zealand women regularly travel with their spouse, partner, friend, sister, mother, daughter, colleague and/or their child(ren).</p>
+		    <p>But did you know that more and more women are travelling by themselves? </p>
+		    <p>They’re the biggest growing travel market in the world. Increasing by 7% every year. And those aged 50 – 65 are those travelling the most.</p>
+		    <p>Isn’t that inspiring?</p>
+		    <img class="float-right" src="images/book-reading.jpg" alt="New Zealand's Accommodation - Look After Me" />
+		    <p>But travel is not without risk – especially if you are a woman.</p>
+		    <p>As key players in New Zealand’s tourism industry, we get worried when we hear about guests who turn up to false addresses, or find that the sheets are still a bit damp or the ‘room’ is really a lounge that has been converted into a dormitory.</p>
+		    <p>Even more concerning are tourists who’ve been murdered or raped by hosts, or stories of guests trashing rooms and other ‘unsavoury’ and disrespectful activities. </p>
+		    <p>Quite frankly, it keeps us awake at night.</p>
+		    <p>We don’t accept that these horrible things should happen to anyone just because they chose to travel! And we certainly don’t want those awful things to happen to you in New Zealand. </p>
+		    <p>So we did our research on who has the safest houses, the nicest rooms and are the friendliest people. For this reason, about 98% of our hosts are Baby Boomer couples and women who own their own home and have one, two or three quality rooms, especially for guests.</p>
+		    <p>The hosts sign up because they like hosting people, are social and warm-hearted and like sharing what they have. They’re not necessarily in it for the money, but we insist on having minimum pricing because we value their time and effort in preparing fresh, clean rooms for our guests. </p>
+		    <div><img src="images/lunchphoto-2.jpg" alt="Homestay Network - Look After Me"></div>
+		    <h2>What’s important to you when you travel?</h2>
+		    <p>We surveyed the marketplace (including our own guests) to find out what you loved about travelling. </p>
+		    <p>How can we inspire you to travel and fulfil your dreams? </p>
+		    <p>What can we do so you and your loved ones will not worry (as much) when you’re away from home?</p>
+		    <p>Here’s a few of the things you said you loved about travelling:</p>
+		    <span>“Snuggling down into fresh, clean sheets.”</span><br>
+		    <span>“Meeting people and finding out how they live.”</span><br>
+		    <span>“My own privacy.”</span><br>
+		    <span>“Something a bit different.”</span><br>
+		    <span>“Decent food. And good wine.”</span><br>
+		    <span>“I want to feel like I’m at home, but it’s got to be better than home because I don’t want to do all the work.”  </span><br>
+		    <span>“I want to relax and feel comfortable.”</span><br>
+		    <span>“It’s got to be the right price, except when work is paying!”</span><br>
+		    <span>“I want to know that it’s clean.”</span><br>
+		    <span>“I like pretty things – fabrics, furnishings, art, a nice view.”</span><br><br>
+		    <p>Travelling can also bring challenges. Here’s what you told us you disliked about travel:</p>
+		    <span>“Having to carry my bags too far from the car.”</span><br>
+		    <span>“Feeling like a credit-card checking in.”</span><br>
+		    <span>“Instant coffee.”</span><br>
+		    <span>“Wasting twenty bucks on cereal and toast.”</span><br>
+		    <span>“A noisy lift right outside my room.”</span><br>
+		    <span>“Teeny, tiny bathrooms.”</span><br>
+		    <span>“I get confused when all the hotel doors look the same because I’m dyslexic.”</span><br>
+		    <span>“There’s too many choices of stuff to do, I don’t know where to start.”</span><br>
+		    <span>“Paying extra for internet. Or washing.”</span><br>
+		    <span>“I hate the smell of some of those hotel rooms – there’s no ventilation.”</span><br>
+		    <span>“Having to get dressed up to go to breakfast.”</span><br>
+		    <span>“Fourteen dollars for a tiny bottle of wine cheap wine.”</span><br>
+		    <span>“Being too scared to go out at night for dinner.” </span><br>
+		    <span>“Sharing a room with my kid and having to go to bed at 8.”</span><br>
+		    <p>With all that in mind, we set about creating a network with all the things you love about travelling, but with none of the downside.</p>
+		    <p>Find out <a href="#id-4" class="tablinks" onclick="openTab(event, 'id-4')">what people say</a> about Look After Me.</p>
+		</div>
+		
+		<div class="aboutRight" id="id-4">
+				<h2>What do our guests say?</h2>
+				<p>Don’t take our word for it – <a href="https://www.youtube.com/watch?v=B_3WoTsrP08" target="_blank" title="Watch this video to hear what our guests says">hear from some of our Look After Me guests</a> and find out what they thought.</p>
+				<img src="images/guest-caro.jpg" alt="Look After Me - Guest Caroline" title="Look After Me - Guest Caroline" />
+				<p>Or browse our Guest Book to read what our guests say about their Look After Me stay:</p>
+				<img class="float-none" src="images/guest-book.jpg" alt="What do our guests say?" title="Look After Me - Guest Book" />
+					<div class="reviews">
+					   <p>"I was really happy to find out about Look After Me!"</p> 
+				     <span>Heather Hapeta, Wellington
+				     <br>
+				     <p>Travel Writer, <a href="http://www.kiwitravelwriter.com/home.html" target="_blank" title="Kiwi Travel Writer">www.kiwitravelwriter.com</a></p>
+				     </span>
+				     
+				     <p>“Luckily, we came across the 'Look After Me' website and immediately related to the philosophy. Sue and Graham were fabulous hosts and quickly became friends. Their home was comfortable and warm; the meals they provided were delicious. The entire experience far exceeded our expectations. Sue and Graham were truly ambassadors for the warm and welcoming people of New Zealand!”</p>
+				     <span>Martel and Bob, U.S.A.</span>
+				     
+				     <p>“The accommodation that Look After Me provides is of an extremely high standard, and probably the best value I’ve ever had.  I will definitely stay there again.”</p> 
+				     <span>Lindsay Evans, Auckland</span>
+				     <p>Regional Sales Manager, Pandora Jewellery</p>
+				     
+				     <p>“I'm never staying in a hotel ever again!”</p> 
+				     <span> Helen & Jason, Rotorua</span>
+				     
+				     <p>“We were thrilled to be able to find such affordable accommodation at short notice. We even shared an evening meal with them. They have a 3-hole golf course on their property, as well as a tennis court. Their property is absolutely beautiful. We’ve already re-booked for later in the year.”</p>
+				     <span>Kirsty and Family, Auckland</span>
+				     
+				     <p>“I thoroughly enjoyed my time with Annie. When she greeted me at the door she had this beautiful smile, that put me at ease straight away. I would rate my Look After Me experience as 10/10. Annie was an excellent hostess, and so welcoming. The apartment was immaculate, and she even offered me dinner which was lovely. The Look After Me products were a nice surprise and excellent touch of flair. I would definitely stay with her again.”</p> 
+				     <span>Tania, Picton</span>
+				     
+				     <p>“I was pleasantly surprised. It was very modern and private. It was right by the lake so the setting was idyllic. We even had our all-day business meeting there. It was definitely a bonus not having to pay extra for email, parking or a decent coffee!”</p> 
+				     <span>Irene Kereama-Royal, Hamilton</span>
+				     
+				     <p>"It was so different but definitely what I needed. A sort of 'Mum and Dad' experience. The room was stunning! So clean, so welcoming.</p>
+				     <span>Caroline, guest in Papamoa</span>
+				     
+				     <br><a class="video" href="https://www.youtube.com/watch?v=_eL_pLs6aio" title="Watch this video to hear what else Caroline says" target="_blank">WATCH THIS VIDEO TO HEAR WHAT ELSE CAROLINE SAYS</a>
+				     
+				     <p>"This is not a job, this is not a money-making scheme - they just love hosting people. When you leave, you feel like they’re your new best friend. It was gorgeous."</p>
+				     <span>Chris, Rotorua.</span>
+				     
+				     <br><a class="video" href="http://www.youtube.com/watch?v=_eL_pLs6aio" target="_blank" title="Watch this video to hear what else Chris says">WATCH THIS VIDEO TO HEAR WHAT ELSE CHRIS SAYS</a>
+				     
+				     <p>"We get to know this beautiful country through the eyes of who lives here. It’s the best!</p> 
+				     <span>Veronica, Spain</span>
+				     
+				     <br><a class="video" href="http://www.youtube.com/watch?v=_eL_pLs6aio" title="Watch this video to hear what else Veronica says" target="_blank">WATCH THIS VIDEO TO HEAR WHAT ELSE VERONICA SAYS</a>
+				     
+				     <p>"I just carried on playing golf – while they got the accommodation for me."</p>
+				     <span>John, Auckland</span>
+				     
+				     <br><a class="video" href="http://www.youtube.com/watch?v=_eL_pLs6aio" title="Watch this video to hear what else John says" target="_blank">WATCH THIS VIDEO TO HEAR WHAT ELSE JOHN SAYS</a>
+				     
+				     <p>"I really enjoyed it, it was quite homely. It was just lovely. This is definitely the way forward, if we are going to go travelling." </p> 
+				     <span>Lyn, Rotorua</span>
+				     
+				     <br><a class="video" href="http://www.youtube.com/watch?v=_eL_pLs6aio" title="Watch this video to hear what else Lyn says" target="_blank">WATCH THIS VIDEO TO HEAR WHAT ELSE LYN SAYS</a>
+						
+						<p>“Herzlichen Dank fuer Ihre Gastfreundschaft. Der Anfang unserer Reise durch Neuseeland haette nicht besser sein koennen. Ein schoenes und gemuetliches Haus und sehr freundliche Menschen."
+              <br><strong>Translation:</strong> Warm thanks for your lovely hospitality. We couldn't have had a better start to our New Zealand trip. We felt privacy and luxury and would next time stay again in your marvellous Bed and Breakfast. A nice and cosy place surrounded by warm and beautiful people.
+            </p>
+				     <span>Thomas & Antke Trapp, Germany</span>
+				     
+				     <p>“I feel really at home here.”</p>
+				     <span>Luca Raum, Germany</span>
+				     
+				     <p>“I have a good time and save money. Which is good.”</p>
+				     <span>Julia Gottenberg, Germany</span>
+				     
+				     <p>“Sue and Bill are very friendly people and willing to share their experience and knowledge with guests. They have a beautiful house with good view over Lake Taupo. Sue is very talented: singing, painting, cooking and love kids so much! Bill even  let us visit his secret air-model house. My baby had a good time there and was too excited to sleep. We played the game "Chicken Feet" together. We enjoyed the stay in the house!</p>
+				     <span>Jane, Forest and Zhiying, Shenzhen, China</span>
+				     
+				     <p>“I wanted something that didn’t cost an arm and a leg. Janette’s place was pretty close to Christchurch city and a fantastic shopping mall. Janette was a great host. I really like the concept, I’ll check out other places around the country.”</p> 
+				     <span>Margorie, Wellington</span>
+				     
+				     <p>“We stayed at various places, but Look After Me is the best!”</p> 
+				     <span>Shelley and Tashiro Chuarsa, China</span>
+				     
+				     <p>“My husband and I enjoyed the hospitality and beautiful ambience of Grandview B & B recently. This B & B is both spotless, peaceful and provides all the comforts of home. The views from the main bedroom are simply gorgeous. Bruce and Sandra make you feel very welcome.”</p> 
+				     <span>Taryn, Christchurch</span>
+				     
+				     <p>“It’s really nice here – sometimes you’re lucky and sometimes you are not so lucky. Today I am lucky.”</p>
+				     <span>Lise, France</span>
+				     
+				     <p>“My experience staying with Lynn was absolutely second to none. She was amazing! Lynn couldn’t possibly have made us feel more at home and she was helpful & accommodating every step of the way. I would certainly stay there again. Thanks a mill.” </p> 
+				     <span>Michelle, Tauranga </span>
+				     
+				     <p>“I was desperate for accommodation and I just googled for someone to 'look after me' and there you were! And you did! Brilliant, thanks very much.</p> 
+				     <span>Maria, Wellington </span>
+				     
+				     <p>“You guys are such great ambassadors for your country. It's that lovely balance between feeling safe and feeling homely."</p> 
+				     <span>Maria & family, UK </span>
+				     
+				     <p>“I give Look After Me 11/10 for listening to my needs and then matching me with the best accomodation. Thank you!" </p> 
+				     <span>Gary, Scott's Landing</span>
+				     
+				     <p>Ready to try it out? Pop into our ‘digital’ <a href="index.html" title="Look After Me - Digital Reception">reception</a> where you can browse and book accommodation.</p>
+				     
+				     <h2>What do people say about the idea? </h2>
+				     
+				     <p>"You're already better than AirBnB." </p>
+				     <span>Kevin Bowler, Former CEO Tourism New Zealand</span>
+				     
+				     <p>“NZ used to suffer from Tall Poppy Syndrome. Now I reckon we just suffer from lethargy. That was until I met Julia Charity. Look at her – she’s a pocket rocket with as much passion and power as I’ve ever seen. She’ll go places that one.” </p>
+				     <span>Te Radar</span>
+				     
+				     <p>“There’s no doubt New Zealand entrepreneurs who develop something the rest of the world wants. They’ll insist on living in here and attract business to them. Look After Me is exactly that. Dr Charity is one of few souls brave enough to take the risk and get out there and do it. That take's a whole lot of courage. Watch this space.”</p>
+				     <span>Sir Paul Callaghan. Kiwibank New Zealander of the Year</span>
+				     
+				     <p>“Look After Me is a fantastic concept. The idea of being able to stay in high quality homes with local people. They'll give you invaluable knowledge to the area and the culture. This is more attractive proposition, than a personality-less hotel where the only people you meet are other tourists. From the hosts’ point of view - what a wonderful way to be an ambassador for your region while generating additional revenue. Women helping women – you’ve just got to love it.” </p>
+				     <span>Angela Beer, Hello Dolly and Pets ‘n Pats</span>
+				     
+				     <p>"This is a good idea." </p>
+				     <span>Rt Hon John Key, Former Prime Minister of New Zealand </span>
+				     
+				     <p>"Bubbles rise to the top. This is the best little Homestay Network in the World." </p>
+				     <span>Debbie Flynn, Co-Founder, Homestay.com </span>
+				     
+				     <p>“What’s good for New Zealand, gotta be good for Gisborne.”</p>
+				     <span>Ming Foon, Mayor of Gisborne</span>
+				     
+				     <p>“Congratulations on your business concept. It has real merit! I love the innovative approach you are taking to creating Work Experience positions for locals. Well done!"</p>
+				     <span>Linley Parry, McDonalds Rotorua – Golden Arch Award 2010; Rotorua Business of the Year, 2010.</span>
+				     
+				     <p>“Look After Me has a global market with a useful test market in New Zealand and revenue from day one. It's rapidly scalable, can be bootstrapped and is based on a simple online concept that can be built out to meet customer needs as we discover them.  Most importantly, we really like Julia Charity – she has an excellent track record as a scientist, domain experience in hospitality, strong networks and the vision, passion, methodical approach and stamina to see her through the hurly-burly of running a startup.”</p>
+				     <span>Dave Moskovitz, Managing Director, Webfund Ltd, Wellington</span>
+				     
+				     <p>“This is a network of homes we can stay at all around the country. It's where we can feel safe and have some ‘real’ conversation. After all, life’s for living!  This is a wonderful initiative for New Zealand.”</p>
+				     <span>Merepeka Raukawa-Tait, Rotorua</span>
+				     
+				     <p>“Hey this is cool.” What a great idea!</p>
+				     <span>Tamati Coffey</span>
+				     
+				     <p>“Your concept could really help re-build Christchurch, one bed at a time. We’ve got to get the tourists back to Christchurch and make them feel safe. ….This could be very good for Christchurch”. </p>
+				     <span>Julian Carver, Christchurch Earthquake Recovery Authority</span>
+				     
+				     <p>“Thank you for your help accommodating guests for the Ellerslie Flower Show.”</p>
+				     <span>Brian Galloway, Director, Ellerslie Flower Show</span>
+				     
+				     <p>"I love this. This is going to be bigger than Ben Hur."</p>
+				     <span>Lois Connelly, Investor, Shareholder, Administrator and Founder’s mother </span>
+				     
+				     <p>"There isn't any reason why New Zealand shouldn't aspire to be the Homestay Capital of the World."</p>
+				     <span>Kerry Prendagast, Chair, Tourism New Zealand </span>
+				     
+				     <h2>What our hosts say</h2>
+				     <p>This is an amazing experience not only for guests but for hosts too! Find out why our hosts look after our guests. Meet people from all around the world and earn money! What could be better?</p>
+				     
+				     <p>“I was keen to become a Look After Me host because  I like meeting people. We see it as a way of passing on a little bit of old-fashioned hospitality and local knowledge. It extends our international family."</p>
+				     <span>Alison, Rotorua</span>
+				     
+				     <p>“The hardest bit was accepting money from people. It’s not in my nature. But I offer good value for money and better service than what’s already on offer, so guests are happy to pay for it.”</p>
+				     <span>Susan, Taupo</span>
+				     
+				     <p>“I was worried about safety but all our guests have been women or couples over forty. They’ve got more to lose than we have. They turn up on our doorstep with passports, money, their whole world in their back pocket. Of course it’s a matter of trust.”</p>
+				     <span>Carol, New Plymouth</span>
+				     
+				     <p>“It’s nice to be appreciated for something we’re doing anyway… we love this home and we're thrilled to be able to share it.”</p>
+				     <span>Rosie & Craig, Auckland</span>
+				     
+				     <p>“I’ve had a B&B before but this is easier. No pressure of advertising. I block out my calendar when I’ve got my family here. I get to do the ‘nice’ bits of hosting, without the fuss of running a business.”</p>
+				     <span>Angela and Roger, Methven</span>
+				     
+				     <p>“It's a way of offering something we love. We hope our guests feel the same way.”</p>
+				     <span>Amanda and John, Rotorua</span>
+				     
+				     <p>“I like the own toiletry range - it makes me feel professional."</p>
+				     <span>Janette, Christchurch</span>
+				     
+				     <p>“I’m hosting people anyway… and I usually do it for free. It’s good to earn a bit of money.”</p>
+				     <span>Jennifer, Wellington</span>
+				     
+				     <p>“We’ve been hosting guests for nine years and love opening our home. We know you will enjoy your stay with us. New Zealand leads the World in Agriculture and what better way to share a passion, than staying on a working Dairy farm minutes from Hamilton City, in centre of prime Waikato Dairy country.”</p>
+				     <span>Desley and Steve, Waikato</span>
+				     
+				     <p>For me, the advantage of Look After Me over AirBnb is the option to donate to charity. It has been my dream to  contribute to the Neurological Foundation of New Zealand, to honour my mother who had Parkinsonism.</p>
+				     <span>Ria, Napier CBD  </span>
+
+					</div>
+					<br>
+				<p>Sound like you? Read more about <a href="hosting.html" title="Look After Me - Hosting">Hosting</a> for Look After Me. </p>
+		</div>
+		
+		<div class="aboutRight" id="id-5">
+				<h2>What’s at stake for New Zealand?</h2>
+				<p>We want to solve a big problem in New Zealand’s tourism industry.</p>
+				<p>Some of our cities do not have enough hotels or motels. We’re not building them fast enough to cope with insatiable demand from locals and international visitors for exploring our country. </p>
+				<p>This is especially true during summer and for concerts, music festivals and regular and large events like university graduations.</p>
+				<p>That’s why we ‘built’ a ‘digital’ hotel. We help home owners to create ‘pop up’ guest rooms (of a certain standard) wherever and whenever they’re needed the most.</p>
+				<h2>Keeping more money in New Zealand</h2>
+				<p>When kiwis book, stay and pay with other kiwis, we like the idea that every single cent stays in New Zealand.</p>
+				<p>We don’t charge you to book with us. So, you’ll save a US$15 booking fee (about NZ$22) and you won’t be funding folks in America, to access New Zealand’s hospitality.</p>
+				<p>That’s got to be better for the growth of our economy, right? </p>
+				<p>Ready to save money and keep more of it in New Zealand? Go to our ‘digital’ <a href="index.html" title="Look After Me - Digital Reception">reception</a> where you can browse and book accommodation.</p>
+				<h2>What’s the difference between AirBnB and Look After Me?</h2>
+				<p>What’s the difference between AirBnB and Look After Me?</p>
+				<p>AirBnB is great because they “let anyone, list anything.” A house, a room, a couch, air mattress or even a sleeping bag. They’re large, inclusive and head-quartered in America. They have rooms for as little as $15.</p>
+				<p>By comparison, Look After Me is boutique, exclusive and based in New Zealand.  We only offer real beds with real sheets, in real bedrooms that are exclusively for the guests who book them. Our rooms are in the middle of the market from about $75 - $145.</p>
+				<p>We also reckon because New Zealand is ranked number one in the world for how we treat tourists - we should have our own network. One that reflects who we are as kiwis – robust, individual and refreshingly honest. A network that allows us to feel proud and committed to owning and upholding our world-class hospitality.</p>
+				<p>That’s why we got stuck in and created it.</p>
+				<p><a href="https://www.youtube.com/watch?v=3E7kr_JgNyU" title="Hear from Look After Me Founder" target="_blank">Hear Founder</a>, Julia Charity talk about why she started Look After Me and what makes us different to AirBnB.</p>
+				<iframe width="auto" height="315" src="https://www.youtube.com/embed/3E7kr_JgNyU" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+				<!-- <a href="https://www.youtube.com/watch?v=3E7kr_JgNyU" target="_blank" title="Julia Charity - Look After Me Founder"><img class="float-none" src="images/Julia-youtube.png" title="Julia Charity - Founder of Look After Me" alt="Julia Charity - Founder Look After Me - New Zealand's Accommodation" /></a> -->
+		</div>
+		
+		<div class="aboutRight" id="id-6">
+				<h2>What do we believe in?</h2>
+				<p>We’ve built our reputation on a solid foundation of believing in ‘trust’ - it’s at the heart of everything we do.</p>
+				<p><strong class="greenH">We trust our hosts</strong> to look after you and be hospitable. In fact, we train them to make sure they’re ready. We also make sure their rooms are of a certain standard and prices are fair.</p>
+				<p><strong class="greenH">We trust our guests</strong> to make genuine accommodation enquiries and provide accurate information about their stay. Details like the number of guests, arrival time and meal requirements, or if they’re bringing children or pets etc. We also trust that they’ll pay in full and on time and respect our hosts and their facilities. </p>
+				<p><strong class="greenH">We trust our staff</strong> will make sure you feel 'looked after' when you do business with us.</p>
+				<p><strong class="greenH">We trust our systems</strong> will find you accommodation that best suits your needs and our technology will help you book and pay seamlessly.</p>
+				<span>“Our trust in each other will reinforce why New Zealanders are ranked number one in the world for their hospitality.”</span>
+				<br>
+				<h2>Our story</h2>
+				<p>Look After Me was first imagined by Founder Julia Charity in 2009. Her vision was to create a homestay network where women felt safe and looked after every time they travelled. </p>
+				<p>Julia’s dream came true when Look After Me was launched in 2011, in Rotorua. Launching ahead of the Rugby World Cup, the network gave visitors to New Zealand some respite from the unfortunate hotel price spikes of the time.</p>
+				<p>Relive some of the fun of the Rugby World Cup and watch our <a href="https://www.youtube.com/watch?v=la2NZezT72c" target="_blank" title="Look After Me New Zealand's Accommodation - launch video">launch video.</a></p>
+				<p>Since then we’ve helped with other big events like Womad in New Plymouth, Wearable Arts in Wellington and ArtDeco in Napier.</p>
+				<p>We’ve now looked after over 9000 guests and helped nearly 600 hosts become the best hosts they can be.</p>
+				<p>In 2017, we moved our headquarters to Dunedin and are establishing a network of quality homes for summer events like Ed Sheeran, Robbie Williams, Roger Waters and the Masters Games. </p>
+				<p>Check out what we’ve been doing in New Zealand.</p>
+				<img class="float-none" src="images/key.jpg" alt="New Zealand's Accommodation" />
+				<h2>Our People</h2>
+				<h3>Julia Charity</h3>
+				<strong>Founder and Managing Director</strong>
+				<p>As Founder and Managing Director, Julia guide’s the organisation's vision and business growth. She is strongly values-based and believes in doing good for the community and her country. </p>
+				<p>Her personal philosophy is: "work hard, have fun, live graciously, love well, write beautifully, be the best Mum I can be but most of all...make the world just that little bit better. She is mother to 11 year old Alice and a Performing Poet. She lives in Dunedin with Phil and their two cats.</p>
+				<h3>Mike Johnson</h3>
+				<strong>Director</strong>
+				<p>With over 55 years experience in New Zealand’s tourism industry, Mike brings a wealth of experience to Look After Me, including twenty-five years owning an international tourism marketing company and involvement with national tourism bodies.  Together with his wife Heather, Mike manages Nicara Lakeside Lodge in Rotorua, which is a Qualmark 5 Star ‘Boutique & Lodge’ property.</p>
+				<h3>Mike Wells</h3>
+				<strong>Web Developer</strong>
+				<p>Mike is a co-founder and director of Welman. Mike looks after the day to day operations and drives the user experience of our systems. Mike has 2 young daughters and divides his time between Wellington HQ and Ashburton.</p>
+				<h3>Graham Mann</h3>
+				<strong>Web Developer</strong>
+				<p>Graham is mostly responsible for Group Projects and the back end database development for the Webrooms Platform. He is a husband and father, and plays cricket, football and is a qualified ski patroller.</p>
+				<h3>Lois Connelly</h3>
+				<strong>Customer Service and marketing</strong>
+				<p>Lois is a valued and trusted team member and has a key role as a very competent administrative professional. She is enthusiastic about the idea and manages the Look After Me Facebook page.</p>
+				<h3>Susie Compton</h3>
+				<strong>Sales and Customer Service</strong>
+				<p>Susie is warm and engaging, with an instinct for knowing when to listen and when to contribute. Susie has a key role in assisting our Homestay hosts prepare for receiving guests. She is a great writer and has a unique ability to customize her approach bringing ‘life’ to our different host personalities.</p>
+				<h3>Sam McNamara</h3>
+				<strong>Digital Marketing</strong>
+				<p>Sam has been working in Digital Marketing for the past 15 years. She helps ‘Look After Me’ customise, manage and optimise our on-line marketing campaigns to increase guest bookings. Sam also reviews performance using Google Analytics.</p>
+				<h4>Advisors</h4>
+				<h3>James Kemp</h3>
+				<strong>Digital Marketing</strong>
+				<div class="aboutRight-img"><img class="rounded-circle" src="images/kemp.png" alt="Look After Me - Team" title="James Kemp"/> </div>
+				<p>As former Marketing Director for GrabOne, James has been assisting Look After Me with their Digital Marketing Strategy. GrabOne has grown to become New Zealand’s third largest online retailer, with sales over $100 million. Through this experience is well qualified to develop a framework to ensure Look After Me achieves growth and scale.</p>
+				<h3>Ross Engert</h3>
+				<strong>Financial Accountant</strong>
+				<p>Ross provides ‘Look After Me’ with tax, accounting and business advice to ensure our financial systems are robust, efficient and transparent. Ross is a key partner for Simmonds, Ball, Engert Ltd.</p>
+				<h3>Peter Cato</h3>
+				<strong>Legal Advisor</strong>
+				<div class="aboutRight-img"><img class="rounded-circle" src="images/cato.png" alt="Look After Me - Team" title="Peter Cato" /> </div>
+				<p>As an Associate of Hughes & Associates Law, Peter provides legal counsel to ‘Look After Me’ particularly with regard to Shareholders and any general legal advice.</p>
+				
+		</div>
+		<div class="aboutRight" id="id-7">
+				<img class="float-right" src="images/awards.jpg" alt="New Zealand's best accommodation network" title="Look After Me - Awards" />
+				<h2>Awards</h2>
+				<p>Founded in 2011, ahead of the Rugby World Cup, Look After Me has won or been a finalist in highly sought after business and industry awards, often beating bigger competitors. These awards reflect our commitment to you, our guests and our hosts. Through these Awards we celebrate the passion our team has for upholding the very best of hospitality in New Zealand. </p>
+				
+				<h3>2015: New Zealand 'David' Business Awards - Triumph over Adversity, Winner</h3>
+				<div class="aboutRight-img"><img src="images/Low-res-David-Awards-Adversitywinner-2015.jpg" alt="David Awards Adversity winner 2015 Award" /> </div>
+				<p>Look After Me won the Most Outstanding Triumph over Adversity in recognition for Founder, Julia Charity  who has succeeded in spite of challenges beyond the usual.  For Julia these include a series of significant setbacks, including having to start her business all over again after being ripped off, restoring her health after sustaining a brain injury and working through a considerable financial crisis.</p>
+				<a href="https://www.thedavidawards.co.nz/info/2015-winners" title="Read More" target="_blank">Read more</a>
+				
+				<h3>2015: New Zealand 'David' Business Awards - Solo Meo, Finalist</h3>
+				<div class="aboutRight-img"><img src="images/Low-res-David-Awards-Solo-Meo-Finalist-2015.jpg" alt="David Awards Solo Meo Finalist 2015 Award" /> </div>
+				<p>Look After Me was a finalist for the Solo Meo Award which recognizes a solo business owner who runs their business single-handedly. It recognises Julia’s all-round business excellence, from concept through to execution. </p>
+				<a href="http://www.lookafterme.co.nz/article/small-business-heroes-show-courage-and-ingenuity" title="Read more" target="_blank">Read more</a>
+				
+				<h3>2015: Rotorua X Start-up Pitch Night - Best Commercial Pitch, Winner</h3>
+				<div class="aboutRight-img"><img src="images/Rotorua-Night-2015-Winner.png" alt="Rotorua Night 2015 Winner Award" /> </div>
+				<p>Look After Me Accommodation Network won the 'Best Commercial Pitch' and took home a share of the $8000 prize pool. Judges were impressed with the quality of the pitch and the vision for the business. This was the second year in a row Look After Me had secured one of the major prizes.</p>
+				<a href="http://www.lookafterme.co.nz/article/impressive-pitch-wins-entrepreneur-award-at-rotorua-x-start-up-night" title="Read more" target="_blank">Read more</a>
+				
+				<h3>2015: New Zealand Innovation Awards - Marketing and Communications Category, Finalist </h3>
+				<div class="aboutRight-img"><img src="images/Innovation-Finalist-2015.png" alt="Innovation Finalist 2015 Award" /> </div>
+				<p>This is the most prestigious award of it is kind in NZ for innovation. It is awarded to outstanding New Zealanders for their contribution to innovation. The marketing and communications category is highly competitive and Look After Me was ranked alongside much larger, well-established and better funded businesses. It was awarded for our contribution in bringing Korean and Chinese TV Shows 'Daady, where are we Going? to New Zealand - which featured celebrities staying with real kiwis. The shows were were involved in, were watched globally by 1.4 billion and secured a new global social media of 20 billion mentions on Weibo (Chiense Facebook). </p>
+				<a href="http://www.lookafterme.co.nz/article/seven-local-entries-make-final-cut-in-innovation-awards" title="Read more" target="_blank">Read more</a>
+				
+				<h3>2014: Rotorua X Start-up Pitch Night - People's Choice, Winner</h3>
+				<p>Look After Me Accommodation Network won the 'People's Choice' Award, chosen by the audience at the Inagural Rotorua X Start-Up Pitch night. </p>
+				<a href="http://www.lookafterme.co.nz/article/new-zealands-homestay-network-takes-peoples-choice-and-runner-up-at-rotoruas-entrepreneurial-event" title="Read more" target="_blank">Read more</a>
+				
+				<h3>2014: Rotorua X Start-up Pitch Night - Commercial Pitch, Runner up</h3>
+				<div class="aboutRight-img"><img src="images/Rotorua-Night-2015-Winner.png" alt="Rotorua Night 2015 Winner Award" /> </div>
+				<p>The Judge's chose Look After Me Accommodation Network, as the Runner-Up for the Best commercial pitch at the Inaugural Start-Up Pitch Night....</p>
+				<a href="http://www.lookafterme.co.nz/article/new-zealands-homestay-network-takes-peoples-choice-and-runner-up-at-rotoruas-entrepreneurial-event" title="Read more" target="_blank">Read more</a>
+				
+				<h3>2013: Westpac Rotorua Business Excellence Awards -  Best Emerging Business, Finalist</h3>
+				<div class="aboutRight-img"><img src="images/Westpac-Finalist.png" alt="Westpac Finalist Award"/> </div>
+				<p>Look After Me Ltd was a Finalist in the Rotorua Chamber of Commerce Business Excellence Awards. Founder and director Julia Charity was proud to named in this prestigious award and reflected years of hard work to take Look After Me from an idea on a page to New Zealand's largest and fastest growing on-line accommodation market place. </p>
+		</div>
+		
+		
+	</div>	
+  <div class="pageCustom1"><div class="pageIntro">%PAGE_CUSTOM_CONTENT_1%</div></div>
+		<div class="pageArticles articlesAbout">%EVENTS_BY_EVENTCATEGORY_FULL["eventCategoryId_about"]%</div>
+		<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+		<div class="rawCode">%PAGE_CUSTOM_CONTENT_3%</div>
+	</div>
+</div>
+
+
+
+
+<!--- function for About Us tabs --->
+<script>
+  function openTab(evt, idName) {
+    var i, aboutRight, tablinks;
+    aboutRight = document.getElementsByClassName("aboutRight");
+    for (i = 0; i < aboutRight.length; i++) {
+        aboutRight[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(idName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>

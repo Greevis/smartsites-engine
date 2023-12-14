@@ -1,0 +1,54 @@
+description:Members list page
+
+customContent1:Enter your content
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:false
+
+defaultName:Members
+defaultTitle:Members
+defaultUrl:members
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+** template start **
+<section class="bg-primary mt-6">
+	<div class="container">
+		<div id="propPage">
+			<div class="row">
+				<div class="headerLogo">
+					
+				</div>
+				<div class="headerBookPos mx-auto">
+					<div class="headerBook">
+						%GROUP_LOCATION_SEARCH_CONTROLS%
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div id="propContent">
+			<div class="row">
+				<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+				<div class="pagePad">
+			    %PAGE_CUSTOM_CONTENT_1%
+			    <div class="membersPage">
+						%PROPERTIES_IN_THIRDPARTY%
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

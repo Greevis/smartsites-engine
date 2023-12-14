@@ -1,0 +1,130 @@
+description:Individual Property Detail
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:[Property Template]
+defaultTitle:Accommodation Information
+defaultUrl:property
+
+** template start **
+
+<body class="bodyStyle propertyContent">
+
+<!-- property datepicker header -->
+<header id="headerBlock">
+	<div class="row">		
+			<a class="headerLogo" href="index.html" title="Queenstown Accommodation">
+				<span class="queenstown">Queenstown</span>
+				<span class="accommodation">Accommodation</span>
+			</a>
+			<div class="webrooms-datepicker">
+			    %JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In:","Search All Properties","index.html"]%
+			</div>
+	</div>
+</header>
+<div id="banner"></div>
+<!-- end -->
+
+<div class="content">
+	<section id="pageOuter">
+			
+		<div class="pageIntroOuter">
+			<div class="row">
+				<div class="pageIntroInner">
+					<h1 class="pageTitle font">%PROPERTY_SERVICE_NAME%</h1>
+					<div class="propertyPicker">
+						<div class="webrooms-datepicker">
+						    <a title="Check In:" href="%BOOKING_PAGE_URL%">Check Availability / Book Online</a>
+						</div>
+					</div>	
+					<div class="centerContact">
+						<div class="boxContact">
+						  <div class="contactDiv">
+								<span class="fa-stack fa-lg">
+								  <i class="fa fa-circle fa-stack-2x"></i>
+								  <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+								</span>
+									<div class="propertyAddress">%PROPERTY_STREETADDRESS%, </div>
+									<div class="propertyCity">%PROPERTY_CITY%, </div>
+									<div class="propertyCountry">%PROPERTY_COUNTRY%</div>
+						  </div>
+						  <div class="contactDiv">
+								<span class="fa-stack fa-lg">
+								  <i class="fa fa-circle fa-stack-2x"></i>
+								  <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+								</span>
+									<div class="propertyFreephone">%PROPERTY_FREEPHONE_LABEL%</div>
+									<div class="dash">-</div> 
+									<div class="contactPhone">%PROPERTY_TOLLPHONE_LABEL%</div>
+					    </div>
+						  <div class="contactDiv">
+								<span class="fa-stack fa-lg">
+								  <i class="fa fa-circle fa-stack-2x"></i>
+								  <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+								</span>
+					    		<div class="propertyEmail"><a href="mailto:%RESERVATIONS_EMAIL%">%RESERVATIONS_EMAIL%</a></div>
+					    </div>
+						  <div class="contactDiv">
+								<span class="fa-stack fa-lg">
+								  <i class="fa fa-circle fa-stack-2x"></i>
+								  <i class="fa fa-mouse-pointer fa-stack-1x fa-inverse"></i>
+								</span>
+					    		<div class="propertyUrl"><a href="%PROPERTY_HOMEPAGEURL%">%PROPERTY_HOMEPAGEURL%</a></div>
+					    </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="booking-engine-exclude">
+			<div class="row">
+				<div class="propIntro">
+					%PROPERTY_DESCRIPTION%
+				</div>
+				<div id="roomTypeListings">	
+					%ROOMTYPE_DESCRIPTIONS_ALL%
+				</div>			
+				<div class="propertyMap">
+					%PROPERTY_MAP%
+				</div>								
+			</div>
+		</div>
+
+		<div class="booking-engine-outer hide">
+		<div id="scrollTo"></div>				
+			<div class="row">
+				<a class="booking-back" href="#" onclick="window.location.href=window.location.pathname+'?time='+getQuerystring('time')+'&do=detail#detail';">&lt; Back to Property Details</a>
+				<div class="bookingBox">
+					%BOOKING_ENGINE%
+				</div>
+			</div>
+		</div>
+	
+	</section>
+</div>
+
+<script>
+$('title').text('%PROPERTY_SERVICE_NAME% - %SITE_NAME%');
+</script>
+
+<script type="text/javascript">
+	$(document).ready( function() {
+		
+			if(getQuerystring('time') != '')
+			{
+			$('html, body').animate({
+			        scrollTop: $("#scrollTo").offset().top
+			    }, 1000);
+			}
+	});
+</script>

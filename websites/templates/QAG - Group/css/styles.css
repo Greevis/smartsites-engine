@@ -1,0 +1,183 @@
+/* default font and row size */
+html, body {
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:400;
+	color:#444;
+}
+.row { max-width:1000px; } /* set max width of row */
+
+#banner { height:250px; background:url('../images/header01.jpg') top center no-repeat; background-size:cover; }
+
+/* header */
+.bodyStyle { padding-top:128px; }
+#headerBlock { padding:30px; position:fixed; top:0; left:0; right:0; height:68px; background:#fff; box-shadow:0 1px 10px rgba(0,0,0,0.2); z-index:999; }
+a.headerLogo { text-transform:uppercase; text-align:center; display:inline-block; margin-left:30px; color:#333; }
+a.headerLogo .queenstown { font-family:'Quattrocento', serif; font-size:40px; display:block; }
+a.headerLogo .accommodation { font-size:18px; letter-spacing:2px; opacity:0.5; }
+
+/* book */
+#headerBlock .webrooms-datepicker { display:inline-block; float:right; width:60%; margin:10px 30px 0 0; }
+#headerBlock .webrooms-datepicker-custom .datepicker-checkin,
+#headerBlock .webrooms-datepicker-custom .datepicker-label,
+#headerBlock .webrooms-datepicker-custom .datepicker-input,
+#headerBlock .webrooms-datepicker-custom .datepicker-button { height:44px; line-height:44px; }
+#headerBlock .webrooms-datepicker-custom .datepicker-button { font-family:'Quattrocento', serif; font-weight:400; text-transform:uppercase; border-radius:2px; }
+#headerBlock .webrooms-datepicker-custom .datepicker-label:before { background:url('../images/icon_calendar.png') center center no-repeat; top:6px; opacity:0.5; }
+
+/* footer */
+.footerCopy { background:#f7f7f7; padding:2% 4%; text-align:center; color:#ccc; font-size:85%; margin-top:60px; }
+.footerCopy a { color:inherit; }
+
+/* home boxes */
+#homeListings	.property-outer { position:relative; margin:0 0 30px 0; box-shadow:0 1px 5px rgba(0,0,0,0.2); }
+#homeListings	.property-details { width:60%; box-sizing:border-box; padding:4%; }
+#homeListings .property-image { width:40%; position:absolute; right:0; top:0; bottom:0; height:100%; background-color:#ddd; background-position:center center; background-size:cover; background-repeat:no-repeat; }
+#homeListings .property-name a { text-decoration:none; color:#333; }
+#homeListings .property-name a:hover { opacity:0.5; }
+#homeListings .property-address,
+#homeListings .property-phone { font-family:'Quattrocento', serif; opacity:0.5; }
+#homeListings .readmore { display:none !important; }
+#homeListings .property-description { margin:10px 0; height:60px; overflow:hidden; }
+#homeListings a.view-property { background:#111; font-family:'Quattrocento', serif; font-size:100%; font-weight:400; text-transform:uppercase; border-radius:2px;
+	position:absolute; right:40px; bottom:40px; color:#fff; padding:15px 60px; border-bottom:2px solid rgba(0,0,0,0.1); box-shadow:0 1px 5px rgba(0,0,0,0.3); }
+#homeListings a.view-property:hover { background:#333; opacity:1; }
+
+/* home articles */
+#pageOuter .homeArticles .event-list-outer { width:60%; display:inline-block; }
+#pageOuter .homeArticles .event-name { left:4%; bottom:6%; right:initial; width:auto; padding:10px 20px; font-size:85%; text-indent:0; }
+.homeArticles .articlesDesc { background:#333; color:#fff; box-sizing:border-box; width:40%; display:inline-block; padding:4%; float:right; height:290px; }
+.homeArticles .articlesDesc h2 { color:#fff; font-family:'Quattrocento', serif; font-size:175%; font-weight:400; }
+.homeArticles .articlesDesc .btn { background:#111; font-family:'Quattrocento', serif; text-transform:uppercase; }
+
+/* intro */
+.pageIntroOuter { background:#f7f7f7; margin-bottom:60px; }
+.pageIntroInner { padding:6% 4%; }
+.content h1.pageTitle { font-family:'Quattrocento', serif; font-size:250%; font-weight:400; color:#333; }
+
+/* common */
+#pageOuter .property-name a,
+#pageOuter .event-name,
+#pageOuter .rwrRoomtype h2 { font-family:'Quattrocento', serif; font-size:175%; font-weight:400; }
+#pageOuter .event-venue,
+#pageOuter .fromCap { color:inherit; font-family:'Quattrocento', serif; opacity:0.5; padding:5px 0; }
+#pageOuter .contactDiv div { display:inline; }
+#pageOuter .contactDiv a { color:inherit; }
+#pageOuter .contactDiv .fa-stack-1x { color:#fff; }
+#pageOuter .contactDiv .fa-stack { font-size:90%; }
+#pageOuter .contactDiv .fa-mobile { font-size:120%; }
+
+/* page articles */
+#pageOuter .event-complete li.event-inner { border:none; border-bottom:1px solid #e6e6e6; padding:0 0 30px; margin:0 0 30px 0; }
+
+/* property page */
+.propertyPicker { text-align:center; margin:20px; }
+.propertyPicker .webrooms-datepicker { display:inline-block; }
+.pageIntroOuter .propertyPicker .datepicker-label,
+.pageIntroOuter .propertyPicker .datepicker-input,
+.pageIntroOuter .propertyPicker .datepicker-button { height:44px; line-height:44px; }
+.pageIntroOuter .propertyPicker .datepicker-button { font-family:'Quattrocento', serif; font-weight:400; text-transform:uppercase; }
+.pageIntroOuter .propertyPicker .datepicker-label { border:1px solid #eee; }
+.pageIntroOuter .propertyPicker .datepicker-label:before { background:url('../images/icon_calendar.png') center center no-repeat; top:6px; opacity:0.5; }
+.centerContact { text-align:center; }
+.boxContact { font-size:115%; display:inline-block; text-align:left; }
+.propIntro { padding:4%; padding-top:2%; font-family:'Quattrocento', serif; font-weight:400; font-size:135%; line-height:140%; }
+#roomTypeListings h2.roomtype-category { font-family:'Quattrocento', serif; font-weight:400; font-size:225%; text-transform:uppercase; color:#333; padding:2% 4%; }
+#roomTypeListings .rwrRoomtype { padding:4%; bordeR:none; margin-bottom:30px; box-shadow:0 1px 5px rgba(0,0,0,0.2); }
+#roomTypeListings .rwrRoomtype .desc-images { right:4%; width:36%; }
+#roomTypeListings .rwrRoomtype .desc-cap { color:inherit; }
+.propertyMap { box-shadow:0 1px 5px rgba(0,0,0,0.2); }
+
+/* book */
+.bookingBox { box-shadow:0 1px 5px rgba(0,0,0,0.2); padding:4%; margin-top:20px; }
+
+/* navigation for desktop */
+@media all and (min-width:960px) {
+
+}
+
+
+
+
+/*==================== MOBILE STARTS ====================*/
+
+
+@media only screen and (max-width: 960px) 
+{
+/* template */
+.bodyStyle { padding-top:0; }
+#headerBlock { height:auto; position:static; padding:1.5em; }
+a.headerLogo { display:block; margin:0 auto; }
+#headerBlock .webrooms-datepicker { display:block; width:75%; margin:10px auto 0; float:none; }
+#headerBlock .webrooms-datepicker-custom .datepicker-checkin, 
+#headerBlock .webrooms-datepicker-custom .datepicker-label, 
+#headerBlock .webrooms-datepicker-custom .datepicker-input, 
+#headerBlock .webrooms-datepicker-custom .datepicker-button { height:32px; line-height:32px; }
+#headerBlock .webrooms-datepicker-custom .datepicker-label { display:none; }
+#headerBlock .webrooms-datepicker-custom .datepicker-formstyle { width:100%; }
+#headerBlock .webrooms-datepicker-custom .datepicker-input { width:100%; margin:0; padding:0 5px; box-sizing:border-box; }
+.propertyContent #headerBlock .webrooms-datepicker { display:none; }
+.content h1.pageTitle { font-size:200%; }
+#pageOuter .property-name a, #pageOuter .event-name, #pageOuter .rwrRoomtype h2 { font-size:150%; }
+.pageIntroOuter { margin:0; }
+.pageIntroInner { padding:2em; }
+.homepageOuter { padding:1.5em; }
+.footerCopy { margin:0 }
+#banner { height:150px; }
+#eventListings { padding:1.5em; }
+.bookingBox { padding:0; margin:0; }
+.booking-back { display:block; text-align:center; padding:1em; }
+.sitemapContent .box { margin:1.5em; }
+.sitemapContent .sitemap-list .sitemap-caption { width:100%; }
+.sitemapContent .sitemap-list { padding:0; }
+
+/* property */
+.propertyPicker { margin:1em auto; width:90%; }
+.propertyPicker .webrooms-datepicker { display:block; }
+.pageIntroOuter .propertyPicker .datepicker-label { display:none; }
+.pageIntroOuter .propertyPicker .datepicker-input { width:50%; position:static; padding:0 5px; display:inline-block; background:#fff; border:1px solid #eee; box-sizing:border-box; }
+.pageIntroOuter .propertyPicker .datepicker-button { width:50%; box-sizing:border-box; margin:0; }
+.pageIntroOuter .propertyPicker .datepicker-input,
+.pageIntroOuter .propertyPicker .datepicker-button { height:32px; line-height:32px; }
+.centerContact { font-size:85%; }
+.propIntro { padding:2em; font-size:120%; }
+#roomTypeListings h2.roomtype-category { text-align:center; font-size:200%; }
+#roomTypeListings .rwrRoomtype { padding:1.5em; margin:0 1em 1.5em; }
+#roomTypeListings .rwrRoomtype .desc-images { margin:auto; width:auto; max-width:500px; }
+#pageOuter .rwrRoomtype h2, .rwrRoomtype .fromCap { text-align:center; }
+
+/* home */
+#homeListings a.view-property { padding:1em 1.5em; }
+#pageOuter .homeArticles .event-list-outer,
+.homeArticles .articlesDesc { width:100%; float:none; height:auto; padding:0; display:block; }
+.homeArticles .articlesDesc { padding:1.5em; font-size:95%; }
+
+}
+
+@media only screen and (max-width: 450px) 
+{
+	
+/* template */
+a.headerLogo .queenstown { font-size:36px; }
+#headerBlock .webrooms-datepicker { width:100%; }
+#headerBlock .webrooms-datepicker-custom .datepicker-checkin,
+#headerBlock .webrooms-datepicker-custom .datepicker-button { width:100%; display:block; }
+#banner { height:100px; }
+.homeContent #banner { height:250px; }
+
+/* property */
+.propertyPicker { margin:1em 0; }
+.pageIntroOuter .propertyPicker .datepicker-input,
+.pageIntroOuter .propertyPicker .datepicker-button { width:100%; display:block; }
+#roomTypeListings .rwrRoomtype .desc-images { width:100%; }
+
+/* home */				
+#homeListings	.all-properties-grouped-outer { margin-top:1em; }
+#homeListings .property-image { position:static; width:100%; height:160px; }
+#homeListings	.property-details { width:auto; padding:1em; text-align:center; }
+#homeListings .property-description { font-size:95%; margin:1em 0; text-align:left; }
+#homeListings a.view-property { position:static; display:block; text-align:center; padding:1em; }	
+
+}

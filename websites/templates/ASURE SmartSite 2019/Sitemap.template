@@ -1,0 +1,35 @@
+description:Page containing site map link list.
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Site Map
+defaultTitle:ASURE %PROPERTY_CITY% Website Site Map
+defaultUrl:sitemap
+defaultDescription:ASURE %PROPERTY_CITY% website sitemap.
+
+** template start **
+
+<section class="main-section bg-light">
+	<div class="container">
+		<div class="row">
+			<h1 class="w-100 mb-4 text-center title sr-scroll2">%PAGE_TITLE%</h1>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="box">%SITEMAP%</div>
+		</div>
+	</div>
+</section>

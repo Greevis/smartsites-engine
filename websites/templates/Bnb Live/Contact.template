@@ -1,0 +1,93 @@
+description:Contact
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Contact
+defaultTitle:Contact Bnb live
+defaultUrl:contact
+
+customConfig-name:emailform_email
+customConfig-label:Contact Form email recipient
+customConfig-type:email
+
+customConfig-name:emailform_htmlcode
+customConfig-label:Contact Form HTML code
+customConfig-type:blocktext
+
+customConfig-name:emailform_validationcode
+customConfig-label:Contact Form Javascript validation code
+customConfig-type:blocktext
+
+customConfig-name:emailform_thanksMessage
+customConfig-label:Contact form thanks message
+customConfig-type:simpletext
+
+customConfig-name:emailform_thanksPage
+customConfig-label:Contact form thanks page
+customConfig-type:websitepage
+
+customConfig-name:eventCategoryId_events
+customConfig-label:Footer News
+customConfig-type:eventCategory
+
+** template start **
+
+
+<!-- header.inc is included here -->
+
+<section class="detailssearch" id="proppageSearch">
+	<div class="container">
+		%GROUP_LOCATION_SEARCH_CONTROLS%
+	</div>
+</section>
+
+<section class="popular_part">
+   <div class="container">
+      <div class="cms">     
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+			<div>
+		<div class="row pageContainer">
+			<div class="columns contact-form">
+				<div class="contactMain">
+					<div class="padBox">
+							<div class="contactForm">
+								 <!-- contact form -->
+								 %CUSTOM_MAILFORM["emailform_email","emailform_htmlcode","emailform_validationcode","emailform_thanksMessage","emailform_thanksPage","Send"]%
+							</div>	
+					</div>				
+				</div>
+			</div>
+			<div class="columns contact-info">
+				<div class="box">
+					<h3>Bnblive Limited</h3>
+					<span class="footericondiv"><i aria-hidden="true" class="fa fa-map-marker"></i></span>
+					<p class="addprt"><b>Business Address:</b><br>
+					69 Stanley Avenue<br>
+          Te Aroha<br>
+          Waikato 3320<br>
+          New Zealand
+					</p>
+					
+					<span class="footericondiv"><i aria-hidden="true" class="fa fa-phone"></i></span>
+					<p class="addprt"><b>Get in Touch:</b><br>
+					NZ: + 0800 400 900<br>
+					AUS: +1800 215 711<br>
+					<a href="mailto:admin@bnblive.com">admin@bnblive.com</a></p>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	</section>
+	<section>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.377195825476!2d175.69443501578147!3d-37.54617607980178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d98ba45d5bc4d%3A0x7c17a3b2d6f5df8c!2s69+Stanley+Ave%2C+Te+Aroha+3320!5e0!3m2!1sen!2snz!4v1525047959632" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+	</section>

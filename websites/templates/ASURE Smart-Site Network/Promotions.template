@@ -1,0 +1,38 @@
+description:ASURE promotions / property specials
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Promotions
+defaultTitle:ASURE Accommodation %PROPERTY_CITY% Promotions and Specials
+defaultUrl:promos
+defaultDescription:ASURE Accommodation promotions and card holder discounts accepted throughout the ASURE New Zealand motel network.
+
+customConfig-name:dealCategoryId_promotions
+customConfig-label:Deals
+customConfig-type:dealCategory
+
+** template start **
+
+<div id="headerBook">
+	<div class="row">	
+		<div class="bookingBox">
+			%JQUERY_DATE_PICKER%
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="pageContainer">
+			<h2 class="title">%PAGE_TITLE%</h2>
+			%DEALS_BY_DEALCATEGORY["dealCategoryId_promotions"]%
+	</div>
+</div>

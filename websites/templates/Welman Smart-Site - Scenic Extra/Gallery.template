@@ -1,0 +1,28 @@
+description:Gallery
+
+customContent1:Displayed above the gallery.
+customContent2:Displayed below the gallery.
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Gallery
+defaultTitle:%PROPERTY_NAME% Gallery
+defaultUrl:gallery
+
+** template start **
+<div class="row">
+	<div class="pageContainer">
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+			<div class="photoGallery">
+					%MAIN_GALLERY_LIGHTBOX%
+			</div>
+			<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+	</div>
+</div>

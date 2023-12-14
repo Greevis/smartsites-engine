@@ -1,0 +1,59 @@
+/* custom */
+.font { font-family:'Lobster', sans-serif; }
+
+/* header*/
+#headerCustom2 { background:#ffcf23; box-shadow:0 1px 5px rgba(0,0,0,0.3); height:60px; position:absolute; top:0; left:0; width:100%; }
+.hostStrip { width:100%; height:60px; background:url(../images/hostLogo.jpg) left top no-repeat; background-size:auto 60px; }
+ul.topLinks { float:right; list-style:none; margin:10px 0 0 0px; padding:0; }
+ul.topLinks li { display:inline-block; margin-bottom:0; padding:0 10px 0 0; text-transform:uppercase; }
+ul.topLinks li a { color:#3F3A40; display:block; font-size:11px; line-height:19px; margin-bottom:0; font-weight:bold; padding:1px 1px 1px 0; text-decoration:none; font-style:italic; }
+ul.topLinks li a:hover { text-decoration:underline }
+#headerContainer { margin-top:60px; background:url(../images/background_taupo01.jpg) top center no-repeat #222; }
+#headerTop { margin-top:60px; margin-bottom:60px; }
+#headerLogo h2 { font-size:20px; font-weight:300; color:#76c9db; line-height:100%; }
+#headerLogo h3 { font-size:64px; font-weight:400; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.2); line-height:100%; }
+.propertyBadges { float:right; margin-top:-40px; }
+#headerMiddle { margin-bottom:40px; }
+
+/* booking */
+#headerContact { color:#111; }
+.datepicker-label { color:#111; }
+.datepicker-button { background:url(../images/background_booking.png) no-repeat 265px 13px #222; border:1px solid #000; box-shadow:inset 1px 1px 0 #444; }
+.datepicker-button:hover { background:url(../images/background_booking.png) no-repeat 265px 13px #111; border:1px solid #000; box-shadow:inset 1px 1px 0 #333; }
+
+/* footer */
+#footerContainer h4.font { font-size:30px; line-height:120%; }
+#footerCustom1 { font-size:13px; color:#999; font-weight:300; line-height:15px; padding:0 0 0 20px; }
+#footerCustom1 h4 { color:#ffcf23; font-style:italic; font-weight:700; line-height:15px; padding:0; margin:0; margin-top:15px; }
+#footerCustom1 p { padding:0; margin:0; }
+#footerCustom1 .hostCard { float:right; margin-left:10px; margin-top:-25px; }
+#footerCustom2 { background:#ffcf23; }
+#footerCustom2 .hostStrip { height:110px; background:url(../images/hostLogo.jpg) left center no-repeat; background-size:auto 96px; }
+#footerCustom2 ul.topLinks { margin:20px 0 0 0px; }
+
+
+/*==================== MOBILE STARTS ====================*/
+
+
+
+			@media (max-width: 940px)
+				{
+					#footerContainer { padding:2em 1em; }
+					#headerCustom2 { display:none; }
+					#headerContainer { background:#222; margin-top:0; }
+					#headerLogo h2 { display:none; }
+					#headerLogo h3 { font-size:200%; margin:1em 0 5px 0; }
+					#headerMiddle { background:none; padding:0; margin-top:0; }
+					#headerContact { color:#fff; }
+					.datepicker-button { font-size:14px; padding:0.5em 0; width:100%; background:#111; position:static; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+					.datepicker-button:hover { background:#000; }
+					#footerContainer h4.font { font-size:150%; }
+					#footerCustom1 { display:none; }
+					#footerCopy { margin-top:0.5em; padding:0; }
+					#footerCustom2 { padding:10px; }
+					#footerCustom2 .hostStrip { width:100%; height:60px; background:url(../images/hostLogo.jpg) left top no-repeat; background-size:auto 60px; }
+					#footerCustom2 ul.topLinks { margin:10px 0 0 0; }
+					#footerContact { padding:0; }
+					#footerContainer .propertyBadges { display:block; max-width:180px; margin-bottom:0.5em; float:none; }
+					
+				}

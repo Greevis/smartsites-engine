@@ -1,0 +1,58 @@
+description:Grandiose home page template.
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Grandiose Apartments
+defaultUrl:index
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+** template start **
+
+<div id="homeSlideshow">
+	<div class="row">
+		<div class="columns three" id="homeNav">
+		%INCLUDE_FILE["template-nav.inc"]%
+		</div>
+		<div class="columns nine"></div>
+	</div>
+  	<div class="cycle-slideshow"
+  		data-cycle-fx="fadeout" 
+  		data-cycle-timeout="7000" 
+  		data-cycle-speed="1000" 
+		  data-cycle-slides="> div"
+		>
+      <div style="background-image:url(images/header04.jpg);"></div>
+			<div style="background-image:url(images/header05.jpg);"></div>
+		</div>
+</div>
+
+<div id="homeBody" class="pageBody footerPad">
+	<div id="homeListings" class="row">
+			<h1 class="pageTitle homeTitle">Top Apartments</h1> 
+			<div class="all-properties-grouped-outer">
+	     <button class="homePropPrev">&lt;</button>
+	     <button class="homePropNext">&gt;</button>
+				%PROPERTIES_IN_THIRDPARTY_AVAILABILITY_INTERNAL%
+			</div>
+			<a href="accommodation.html" title="Apartment Accommodation" class="homeLink">
+				More Accommodation
+			</a>
+	</div>
+</div>
+
+<!--
+%PROPERTIES_IN_THIRDPARTY%
+-->

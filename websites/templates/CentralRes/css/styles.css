@@ -1,0 +1,314 @@
+﻿/* inherited */
+
+body { font-size:1.5rem !important; font-family: 'Roboto', sans-serif !important; }
+.bodyStyle { font-size:1.5rem !important; font-family: 'Roboto', sans-serif !important; }
+.bodyStyle .outerheader { position:fixed; top:0; left:0; right:0; z-index:991; height:52px; background:#fff; box-shadow:0 0 5px rgba(0,0,0,0.3); }
+.resultsFilters h2 { padding:0; line-height:inherit; }
+.resultsFilters p { padding:0; }
+.bnblive .resultsMap,
+.bnblive .resultsProperties { top:52px; }
+.footerBlock .newscont { width:calc(100% - 50px); }
+.newsletter a.btn {background:#46a06e; border:none; color:#fff; font-size:16px; font-weight:700; padding:10px 17px; margin-top:15px; text-shadow:none; transition: all 0.5s ease 0s;}
+.newsletter a.btn:hover{background:#cb3e05; color:#fff; }
+.newsletter h3 { padding:0; }
+
+/* map search */
+.resultsFilters,
+.non-results { background:#f5f5f5; }
+.non-results  {padding:0;}
+.resultsFilters h2,
+h2.results-head { color:#0072b9; }
+.result-outer h3 { color:#444; }
+.filterRight .search-button,
+.filterExpand .adv-search-toggle,
+.result-outer a.more-detail,
+.non-button-hide, 
+.non-button-show,
+.homeBook .search-button,
+#proppageSearch .search-button,
+.contactDatepicker .datepicker-button,
+.outerRoomtypes .rwrRoomtype a.book-roomtype { background:#46a06e; font-weight:700; border-radius:5px; text-shadow:none; border:none; color:#fff; }
+.filterRight .search-button,
+.contactDatepicker .datepicker-button { background:#46a06e; }
+.result-outer a.more-detail,
+.button-outer > input,
+.outerRoomtypes .rwrRoomtype a.book-roomtype { background:#46a06e; }
+.filterRight .search-button:hover,
+.filterExpand .adv-search-toggle:hover,
+.result-outer a.more-detail:hover { opacity:0.9; }
+#searchBox { background-image:url(../images/icon_search.png); }
+#adv-search-outer input[type=radio],
+#adv-search-outer input[type=checkbox] { margin:3px 3px 0px 5px; }
+#adv-search-outer .as-category-showhide { padding:1px 6px; }
+#adv-search-outer .asSearchFeatureCheckButton { border:1px solid #ccc; background:#fff; margin:3px 3px 0px 5px;  }
+.result-outer .result-phone { display:none !important; }
+.result-outer .result-address { color:#333; }
+.result-outer .result-image { height:180px !important; width:30% !important; }
+.result-outer .result-contact { width:66% !important; left:32% !important; }
+.result-outer .availability-status { width:46% !important; left:32% !important; }
+.result-outer .result-description { display:block !important; overflow:hidden !important; height:80px !important; max-height:80px !important; margin-top:25px !important; 
+	width:66% !important; font-size:14px !important; }
+.result-outer .availability-status { height:40px; line-height:40px;  }
+.result-outer a.more-detail { height:40px; line-height:43px; }
+
+/* home */
+#homeBanner { position:relative; background:#fff; }
+#homeBanner .slider { background-size:cover; background-position:center center; position:absolute; top:0; left:0; right:0; bottom:0; height:100%; width:100%; }
+#homeBanner .searchpart { z-index:990; }
+#homeBanner .homeBook { max-width:960px; margin:auto; }
+#homeBanner .homeBook #check-in-out { margin:0; width:35%; border-radius:5px 0 0 5px; }
+#homeBanner .homeBook #q-guests { margin:0; width:20%; border-left:1px solid #ddd; border-right:1px solid #ddd; }
+#homeBanner .homeBook .searchBox-outer { margin:0; width:25%; }
+#homeBanner .homeBook .search-button { margin:0; width:20%; border-radius:0 5px 5px 0; font-size:16px; }
+#homeBanner .homeBook .searchBox-outer, 
+#homeBanner .homeBook #searchBox, 
+#homeBanner .homeBook #check-in-out, 
+#homeBanner .homeBook #q-guests, 
+#homeBanner .homeBook .search-button, 
+#homeBanner .homeBook .dp-date { line-height:50px; height:50px; }
+.howitwork h2 { margin-bottom:30px; }
+
+/* member nav */
+.topheader nav { margin-right:150px; }
+#group-login-box { position:fixed; top:0; right:0; z-index:999; padding:10px 15px; background:#46a06e; color:#fff; box-sizing:border-box; min-height:52px; }
+#group-login-box a { color:inherit; }
+#login-trigger { background:url(../images/icon-profile-y.png) left center no-repeat; background-size:auto 17px; padding-left:20px; display:inline-block;
+	color:#fff; height:25px; line-height:28px; cursor:pointer; }
+#login-trigger:hover { cursor:pointer; color:#fff; }
+#login-trigger > span { float:right; margin-left:5px; }
+#group-login-box .login-outer { min-width:250px; padding:30px; }
+.email-outer input,
+.password-outer input { border:none; background:#fff; border-radius:2px; margin:1px 0; width:100%;
+	color:#666; font-size:14px; font-family:'Open Sans', sans-serif; line-height:30px; height:30px; outline:none; text-indent:8px; }
+.button-outer > input { display:block; border:none; text-align:center; padding:8px 0; border-bottom:2px solid rgba(0,0,0,0.2); font-family:'Open Sans', sans-serif; font-weight:400; color:#fff;
+	width:100%; cursor:pointer; margin-top:1px; margin-bottom:5px; font-weight:600; text-transform:uppercase; border-radius:5px; }
+.button-outer > input:hover { opacity:0.9; }
+ul.login-tools { margin-bottom:0; }
+.login-tools li { font-size:12px; line-height:20px; }
+.login-tools label { font-size:12px; vertical-align:middle; display:block; cursor:pointer; margin:0; margin-right:4px; }
+.login-tools .keepsignedin input[type="checkbox"] { margin:0 4px 0 0; }
+.login-tools .forgotpassword a { background:url(../images/icon_lock.png) left center no-repeat; background-size:auto; padding-left:17px; }
+.login-tools .signup a { background:url(../images/icon_plus.png) left center no-repeat; background-size:auto; padding-left:17px; }
+#logoutbutton { font-size:12px; color:#999; float:right; display:inline-block; margin-left:10px; }
+#logoutbutton:hover { cursor:pointer; color:#fff; }
+#login-content { display:none; }
+.login-welcome, #logoutbutton { line-height:25px; }
+
+/* property page - search */
+#proppageSearch { padding:10px; z-index:990; }
+#proppageSearch #check-in-out { margin:0; width:35%; border-radius:5px 0 0 5px; }
+#proppageSearch #q-guests { margin:0; width:20%; }
+#proppageSearch .searchBox-outer { margin:0; width:25%; }
+#proppageSearch .search-button { margin:0; width:20%; border-radius:0 5px 5px 0; font-size:16px; }
+#proppageSearch .searchBox-outer, 
+#proppageSearch #searchBox, 
+#proppageSearch #check-in-out, 
+#proppageSearch #q-guests, 
+#proppageSearch .search-button, 
+#proppageSearch .dp-date { line-height:40px; height:40px; }
+
+/* property page - contact */
+#propContent { margin:6rem auto; }
+#propContent h1.pageTitle { text-align:center; font-size:3rem; }
+.outerContact { padding:0; margin:30px 0;  position:relative; overflow:hidden; height:400px; }
+.outerContact h2 { font-family:'Open Sans', sans-serif; font-size:125%; font-weight:600; padding:0; }
+.outerContact .property-contact-box { width:40%; }
+.outerContact .property-contact-details { padding:40px; overflow:hidden; }
+.outerContact .property-contact-details a { text-decoration:none; }
+.outerContact span { font-weight:600; display:inline-block; clear:left; }
+.outerContact a { color:inherit; text-decoration:none; }
+.outerContact a:hover { color:inherit; }
+.outerContact .contact-address { margin:10px 0;  background-image:url("../images/icon-map.png"); background-repeat:no-repeat; background-position:left top; background-size:auto 17px; padding-left:20px; line-height:20px; }
+.outerContact .contact-address a { font-size:16px; }
+.outerContact .property-image { /* float:right; position:absolute; top:0; right:0; width:60%; */ box-shadow:0 1px 5px rgba(0,0,0,0.1); border:1px solid #ddd; height:100%; background:#ddd; background-size:cover; background-position:center top; }
+.outerContact .contact-row { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.contactDatepicker { padding:10px; margin-top:10px; border-radius:5px; font-size:90%; background:#f0f0f0; }
+.contactDatepicker .datepicker-label, 
+.contactDatepicker .datepicker-button { display:block; margin:0; width:100%; }
+.contactDatepicker .datepicker-button { text-transform:uppercase; }
+.contactDatepicker .datepicker-input { width:200px; }
+.contactDatepicker .datepicker-label:before { background:url(../images/icon_calendar.png) center center no-repeat; }
+
+/* property page - slideshow */
+.outerContact .cycle-slideshow,
+.outerContact .cycle-slideshow li { width:100%; height:100%; margin:0; padding:0; }
+.outerContact .cycle-slide .gallery-image { width:100%; height:100%; background-repeat:no-repeat; background-size:cover; background-position:center center; }
+.outerContact .cycle-slide .gallery-caption { display:none; }
+.outerContact .property-image .propPrev,
+.outerContact .property-image .propNext { position:absolute; z-index:1000; line-height:100%; top:24px; border:none; background:none; padding:0; font-size:18px; font-weight:400; font-family:'Open Sans', sans-serif; color:#fff; opacity:0.7; outline:none; }
+.outerContact .property-image .propPrev { right:40px; }
+.outerContact .property-image .propNext { right:25px; }
+.outerContact .property-image .propPrev:hover,
+.outerContact .property-image .propNext:hover { opacity:1; cursor:pointer; }
+
+/* property page - other boxes */
+.outerAbout { font-size:125%; padding:25px 0; }
+.outerFacilities { margin:60px 0 30px 0; padding:40px; border:1px solid #ddd; box-shadow:0 1px 5px rgba(0,0,0,0.1); }
+.outerFacilities h2 { color:#333; margin-bottom:5px; }
+.outerFacilities ul.property-facilities { list-style-type:disc; }
+.outerFacilities ul.property-facilities li.left,
+.outerFacilities ul.property-facilities li.right { float:none; margin-left:20px; }
+.outerMap { background:#eee; box-shadow:0 1px 5px rgba(0,0,0,0.1); }
+
+/* property page - roomtypes */
+.outerRoomtypes h2.roomtype-category { margin:50px 0 -50px; padding:20px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); 
+	background:#f0f0f0; color:#46a06e; border-top:3px solid #46a06e; }
+.outerRoomtypes .rwrRoomtype { padding:50px 0 0; margin:50px 0 0; }
+.outerRoomtypes .rwrRoomtype .desc-images { top:50px; }
+.outerRoomtypes .rwrRoomtype h2 { padding:0; color:#444; font-size:24px; }
+.outerRoomtypes .rwrRoomtype .desc-cap { font-size:125%; padding-top:5px; }
+.outerRoomtypes .rwrRoomtype .desc-description-outer { font-size:110%; }
+.outerRoomtypes .rwrRoomtype ul.desc-features-outer { display:none; }
+.outerRoomtypes .rwrRoomtype .book-title { text-transform:uppercase; font-size:110%; }
+.outerRoomtypes .rwrRoomtype a.book-roomtype { padding:10px; border-radius:3px; border-bottom:2px solid rgba(0,0,0,0.2); }
+.outerRoomtypes .rwrRoomtype .book-sub { opacity:0.5; }
+.outerRoomtypes .rwrRoomtype .popup-desc:after { clear:both; content:''; display:block; }
+.outerRoomtypes .rwrRoomtype .desc-avail table th { text-align:center; }
+.outerRoomtypes .rwrRoomtype.no-images-outer h2, 
+.outerRoomtypes .rwrRoomtype.no-images-outer .fromCap,
+.outerRoomtypes .rwrRoomtype.no-images-outer .popup-desc { max-width:none; }
+
+
+.cms h3 {
+	margin: 20px 0 10px 0 !important;
+	}
+
+/* properties-map-outer */
+.properties-map-outer {
+	  width: 100%;
+    height: 350px;
+    background: #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/*=======================================================*/	
+/*=================== MOBILE STYLING ====================*/
+/*=======================================================*/
+
+@media only screen and (max-width:1250px) 
+{
+#proppageSearch .container { width:auto; margin:0 115px; }
+}
+
+@media only screen and (max-width:992px) 
+{
+	
+/* template */
+#propContent { margin:1.5em 0; }
+#propContent h1.pageTitle { font-size:25px; }
+h2 { line-height:initial; }
+.outerheader.innerpage { width:55px; z-index:9998; }	
+.topheader { height:52px; width:55px; }	
+.topheader .logopic { left:0; width:55px; }
+.topheader .logopic img { height:52px; width:55px; }
+.logocap, .navi { display:none; }
+#proppageSearch .container { margin:0; padding:0; }
+
+/* guest login */
+#group-login-box { left:0; z-index:9997; text-align:right; box-shadow: 0 0 5px rgba(0,0,0,0.3); }
+#group-login-box ul.login-tools { text-align:left; }
+#group-guest-dashboard .guest-booking-list-outer { padding:0; margin-top:1em; }
+#group-guest-dashboard .guest-profile-outer { margin-top:0; }
+#group-guest-dashboard .guest-profile-outer,
+ul.guest-booking-list { padding:1.5em; }
+.guest-booking-listitem { padding:1em 0; }
+.status-Confirmed { float:none; }
+
+/* results */
+.resultsFilters { padding-bottom:1em; }
+.result-outer .result-address { display:block; margin-bottom:7px;}
+.result-outer .result-image,
+.result-outer h3,
+.result-outer .result-contact,
+.result-outer .result-description,
+.result-outer .availability-status,
+.result-outer a.more-detail { width:100% !important; margin:0 auto; float:none; position:static; display:block; }
+.result-outer h3,
+.result-outer .availability-status,
+.result-outer a.more-detail { margin-top:1em; }
+.result-outer .yes-availability .book-now { margin-left:0; }
+.result-outer .yes-availability a { text-indent:0; position:static; width:auto; }
+
+/* property page */
+.outerContact { height:auto; margin:1.5em 0; }
+.outerContact .property-image { float:none; position:static; width:100%; height:250px; }
+.outerContact .property-contact-box { width:100%; }
+.outerContact .property-contact-details { padding:1.5em; }
+.outerAbout { padding:1em 0; font-size:110%; }
+.outerRoomtypes h2.roomtype-category { margin:1em 0; padding:1em; font-size:200%; }
+.outerRoomtypes .rwrRoomtype { margin:1.5em 0 0; padding:1.5em 0 0; }
+.outerRoomtypes .rwrRoomtype .desc-images a.first { height:200px; }
+.outerFacilities { margin:1.5em 0; padding:1.5em; }
+  
+}
+
+/* sitemap */
+.sitemap-caption,
+.sitemap-title { display:none; }
+.sitemap-xml-link { margin:20px; display:block; }
+
+/* profile */
+#group-guest-dashboard .guest-profile-outer { background:#f5f5f5; margin-top:20px; padding:30px; }
+#group-guest-dashboard .guest-booking-list-outer { padding:30px 0 0 30px; }
+#group-guest-dashboard .guest-booking-list-outer h2 { margin-bottom:10px; }
+.booking-tabs > a { background:#eee; box-sizing:border-box; text-align:center; display:inline-block; border:1px solid #ddd; padding:5px 0; cursor:pointer; color:#999; width:50%; } 
+.booking-tabs a.tab-booking-selected { background:#fff; border-bottom:none; } 
+.booking-tabs > a:hover { color:#666; background:#f5f5f5; }
+.rtd-tab-selected { background:#fff; border-bottom:none; }
+.rtd-tab-selected:hover { background:#fff; color:#999; }
+
+.guest-profile-outer .profile-row {}	
+.guest-profile-outer .profile-row .profile-label { font-weight:600; display:block; margin-top:5px; }
+.guest-profile-outer .profile-row .profile-value { display:block; background:#fff; padding:0 5px; line-height:30px; min-height:30px; box-sizing:border-box; border-bottom:1px solid #ddd; }
+.guest-profile-outer .btn { display:block; margin-top:10px; width:100%; cursor:pointer; }
+#group-guest-dashboard .login-outer { background:#0072b9; padding:30px; margin-top:10px; color:#fff; }	
+#group-guest-dashboard .login-outer a { color:#999; }
+#group-guest-dashboard .login-outer .button-outer > input { background:#46a06e; }
+#profileform { padding:30px; border:1px solid #eee; margin-top:10px; }
+.profile-label { color:#999; font-weight:600; margin-top:10px; }
+.profile-value textarea,
+.profile-value input,
+.profile-value select { border:1px solid #ccc; padding:5px; display:inline-block; margin:5px 5px 0 0; font-family:inherit; vertical-align:top; }
+.save-row .btn { padding:8px 25px; font-weight:600; text-transform:uppercase; margin-top:10px; cursor:pointer; }
+
+ul.guest-booking-list { border:1px solid #ddd; border-top:none; padding:30px; margin:-1px 0 0 0; }
+.guest-booking-listitem { list-style:none; margin:0; border-bottom:1px solid #ddd; padding:10px 15px; }
+.guest-booking-listitem:hover { background:#f5f5f5; }
+.booking-label { font-weight:700; color:#1f4284; }
+.booking-check-in-date { font-weight:600; }
+.booking-value { font-weight:600; display:inline-block; }
+.booking-details-link { display:inline-block; margin:0 5px; }
+.booking-status { display:inline-block; font-weight:600; }
+.status-Confirmed { color:#46b751; float:right; }
+
+.booking-details-outer .item-row { padding:10px; background:#f5f5f5; border-bottom:1px solid #fff; }
+.bkg-titlebar { font-weight:600; font-size:16px; padding:10px 0; }
+.bkg-titlebar,
+.booking-details-outer .item-row > div { display:inline-block; width:auto; margin-right:0.5em; }
+.item-label { color:#999; }
+.item-value { color:#111; }
+.booking-details-outer,
+.booking-details-outer .terms { padding:30px; margin-top:20px; border:1px solid #eee; }
+.cardreceipts { padding:30px; margin-top:20px; font-family:"Courier New", Courier, monospace; background:#eee; color:#111; }
+.booking-details-outer .totals { background:#FFFFE5; padding:20px 10px; text-align:right; }
+.booking-details-outer .totals .item-row { border:none; padding:0; background:none; }
+.booking-details-outer .item-label-normal { display:inline-block; width:auto; margin-right:0.5em; color:#000; font-weight:normal; text-align:right; }
+.booking-details-outer .infobox.conversion { font-size:10px; font-style:italic; color:#999; }
+.booking-details-outer .totals .item-label { color:#000; font-weight:bold; text-align:right; }
+.item-totalcol { float:right; text-align:right;	color:#4CC552; font-weight:700; }
+
+.guest-profile-outer #profileform { margin:0; background:none; border:none; padding:0; }
+.guest-profile-outer #profileform input, 
+.guest-profile-outer #profileform textarea,
+.guest-profile-outer #profileform select { width:100%; box-sizing:border-box; margin:5px 0; }
+
+
+@media only screen and (max-width:480px) 
+{
+#proppageSearch { display:none; }
+#proppageSearch #check-in-out,
+#proppageSearch #q-guests,
+#proppageSearch .searchBox-outer,
+#proppageSearch .search-button { width:100%; border:none; border-radius:0; margin:0; }
+
+}

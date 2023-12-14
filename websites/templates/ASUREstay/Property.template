@@ -1,0 +1,138 @@
+description:Individual Property detail
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+defaultName:[Property Template]
+defaultTitle:Accommodation Information
+defaultUrl:property
+
+** template start **
+
+%WEBROOMS_JS_INCLUDE%
+
+<div class="ASUREbg">
+
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="ASUREstay.com - ASURE Accommodation Group New Zealand">
+				<img src="images/logo_asure.png" alt="ASURE" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<h2>ASURE Accommodation</h2>
+			<h3>Your Comfort is ASUREd</h3>
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+			<div class="loyalty">
+				<span class="yellow">Loyalty Program:</span> 
+				Stay at three or more ASURE Accommodation Group properties and receive $100 credit off your 10th stay.
+				The rates on ASURESTAY.com include instant membership to our exclusive ASURE loyalty programme.
+			</div>
+		</div>
+	</div>
+
+	<div class="booking-engine-exclude" id="propContent">
+		<div class="row">
+			<div class="property-contact ASURE">	
+				<div class="property-image">%MAIN_GALLERY_SLIDESHOW%</div>
+				<div class="property-contact-box">
+					<div class="property-contact-details">
+						<h2>%PROPERTY_SERVICE_NAME%</h2>
+						<div class="contact-address">
+							<a href="#map">%PROPERTY_STREETADDRESS% %PROPERTY_SUBURB% %PROPERTY_CITY%</a>
+						</div>
+						%PROPERTY_HOSTS_LABEL%
+						<span>Bookings:</span><a href="tel:0800278739"> 0800 278 739</a> or <a href="tel:+6493205913">+64 9 320 5913</a>
+						%PROPERTY_FREEPHONE_LABEL%
+						%PROPERTY_TOLLPHONE_LABEL%
+						%RESERVATIONS_REPLYTOEMAIL_LINK_LABEL%
+						%PROPERTY_BOOKONLINEPAGEURL_LINK_LABEL%
+						<a class="search-button" title="Book Online" href="?#book">Book Online</a>
+						<p>Or, call central reservations on <a href="tel:0800278739" title="Free Phone">0800 278 739</a> (within New Zealand) or <a href="tel:+6493205913" title="International reservations">+64 9 320 5913</a> (international)</p>
+						%RATINGS_BADGE%
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="headerBar">
+			ASURE Accommodation Group
+		</div>
+			
+		<div class="row">
+			<h1 class="pageTitle">Welcome to %PROPERTY_SERVICE_NAME%</h1>
+			<div class="proppageDesc">%PROPERTY_DESCRIPTION%</div>
+			<div id="roomTypeListings">	
+				%ROOMTYPE_DESCRIPTIONS_ALL%
+			</div>
+			<div class="facilitiesTable">
+				<div class="property-facilities-div">
+					<h2>Motel Facilities</h2>
+					%PROPERTY_FACILITIES%
+				</div>
+				<div class="property-features-div">
+					<h2>Property Features</h2>
+					<div class="asfield">						
+						%PROPERTY_ASFIELDS%
+					</div>
+				</div>
+			</div>
+		</div>
+		<a name="map"></a>
+		<div class="property-map">
+			%PROPERTY_MAP%
+		</div>	
+	</div>	
+
+	<div class="booking-engine-outer hide">
+		<div class="row">
+		  <p>Book instantly online below, or call our 24 hour ASURE Central Reservations line on <a href="tel:0800278739" title="Free Phone">0800 278 739</a> (free within New Zealand) or <a href="tel:+6493205913" title="International Reservations">+64 9 320 5913</a> (international).</p>
+			<a class="booking-back" href="#" onclick="window.location.href=window.location.pathname+'?time='+getQuerystring('time')+'&do=detail#detail';">&lt; Back to Property Details</a>
+			<script>
+			function setBookingDates()
+			{	// passes querystring args to rwr iframe						
+						
+				var bookingFrame = document.getElementById('rwrBookingFrame');
+				var dateQuery = window.location.search;
+				
+				var frameSrc;
+				
+				var myGuestQs;
+				try{
+					myGuestQs = '&gid='+$.cookie('guestId')+'&gh='+$.cookie('guestHash'); // for passthru of group smartsite creds
+				}catch(err){
+					
+				}
+				
+				if(dateQuery.length > 0)
+				{		
+					frameSrc = bookingEngineBaseUrl+'Home.html'+dateQuery+'&sid='+rwrSubId+myGuestQs;
+				}else{
+					frameSrc = bookingEngineBaseUrl+'Home.html?sid='+rwrSubId+myGuestQs;
+				}
+					
+				trackBookingFrame(frameSrc);
+						
+				return true;
+			}
+			</script>
+			
+			%BOOKING_ENGINE%
+		</div>
+	</div>
+
+</div>
+
+<script>
+$('title').text('%SAFEJS_PROPERTY_SERVICE_NAME% - %SAFEJS_SITE_NAME%');
+</script>

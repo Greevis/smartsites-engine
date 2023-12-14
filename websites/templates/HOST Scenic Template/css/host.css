@@ -1,0 +1,67 @@
+
+/*==================================================*/
+/*==================== HOST CSS ====================*/
+/*==================================================*/
+
+.hostLogoF { float:right; margin-left:20px; width:260px; height:120px; background:url(../images/host_logo.png) left top no-repeat; }
+
+/* header*/
+#hostStrip { background:#ffcf23; height:96px; position:absolute; top:0; left:0; width:100%; }
+.hostStrip { width:100%; height:96px; background:url(../images/host_banner-left-150414.jpg) left top no-repeat; background-size:auto 96px; }
+.hostLinks { float:right; height:96px; background:url(../images/host_banner-right-150414.jpg) right top no-repeat; background-size:auto 96px; padding-right:140px; width:470px; }
+.hostLinks ul { float:right; list-style:none; margin:25px 0 0 0; padding:0; }
+.hostLinks li { display:inline-block; margin-bottom:0; padding:0 10px 0 0; text-transform:uppercase; }
+.hostLinks li a { color:#3F3A40; display:block; font-size:14px; line-height:19px; margin-bottom:0; font-weight:400; padding:1px 1px 1px 0; text-decoration:none; font-style:italic; }
+.hostLinks li a:hover { text-decoration:underline }
+.hostLogo { height:120px; background:url(../images/host_logo.png) center center no-repeat #ffcf23; padding:20px; }
+#headerContainer { margin-top:96px; }
+
+.hostLogo { width:260px; height:120px; background:url(../images/host_logo.png) center center no-repeat; }
+
+/* footer */
+#footerContainer h4.font { font-size:30px; line-height:120%; }
+#footerCustom1 .hostRewards { font-size:13px; color:#999; font-weight:300; line-height:15px; padding:0 0 0 20px; text-align:right; }
+#footerCustom1 .hostRewards h4 { color:#ffcf23; font-style:italic; font-weight:700; line-height:15px; padding:0; margin:0; margin-top:15px; }
+#footerCustom1 .hostRewards p { padding:0; margin:0; }
+#footerCustom1 .hostRewards .hostCard { float:right; margin-left:20px; margin-top:-15px; width:190px; height:130px; background:url(../images/host_loyaltycard-150414.png) left center no-repeat; }
+#footerCustom2 { background:#ffcf23; }
+#footerCustom2 .hostStrip { height:110px; background:url(../images/host_banner-left-150414.jpg) left center no-repeat; background-size:auto 96px; }
+#footerCustom2 .hostLinks { height:110px; background:url(../images/host_banner-right-150414.jpg) right top no-repeat; background-size:auto 96px; padding-right:140px; }
+#footerCustom2 .hostLinks li a { font-size:14px; }
+		
+/* buttons */
+.datepicker-button { background:url(../images/background_booking.png) no-repeat 265px 13px #222; border:1px solid #000; box-shadow:inset 1px 1px 0 #444; }
+.datepicker-button:hover { background:url(../images/background_booking.png) no-repeat 265px 13px #111; border:1px solid #000; box-shadow:inset 1px 1px 0 #333; }
+.pageRTDP .book-roomtype { background:url(../images/background_booking.png) no-repeat 15px center #222; border:1px solid #000; box-shadow:inset 1px 1px 0 #444; }
+.pageRTDP .book-roomtype:hover { background:url(../images/background_booking.png) no-repeat 15px center #111; border:1px solid #000; box-shadow:inset 1px 1px 0 #333; }
+
+		
+
+/*====================================================*/
+/*==================== MOBILE CSS ====================*/
+/*====================================================*/
+
+
+			@media only screen and (max-width: 960px) 
+				{
+					#headerLogo h3 { text-align:center; left:90px; font-size:90% !important; text-shadow:none; }
+					#headerLogo h3 a { color:#333; }
+					#headerNav { background:url(../images/host_logo.png) 10px center no-repeat #ffcf23 !important; background-size:70px !important; }
+					.hostLogoF { float:none; margin:0.5em auto; margin-top:0; }
+						#hostStrip { display:none; }
+					#headerContainer { margin-top:50px; }
+					#footerCustom1 .hostRewards { padding:0 2em 1em 2em; }
+					#footerCustom1 .hostRewards h4,		
+					#footerCustom1 .hostRewards p { text-align:center; }	
+					#footerCustom1 .hostRewards .hostCard { float:none; margin:auto; width:190px; height:130px; background:url(../images/host_loyaltycard-150414.png) center center no-repeat; }
+					/* book online button */
+					#headerMiddle { padding:0; }
+					.datepicker-input, .datepicker-label { display:none; }
+					.datepicker-button  { background:/*url(../images/background_booking.png) no-repeat 10px center */#222; border:none; box-shadow:none; border-radius:0; width:100%; padding:1em 2em; font-weight:400; }
+					.datepicker-button:hover { background:/*url(../images/background_booking.png) no-repeat 10px center */#111; border:none; box-shadow:none; border-radius:0; width:100%; padding:1em 2em; }
+				}
+				
+			@media only screen and (max-width: 305px) 
+				{
+					#headerLogo h3 { display:none; }
+				}

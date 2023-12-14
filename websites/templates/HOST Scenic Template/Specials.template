@@ -1,0 +1,30 @@
+description:Property specials
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Displayed above the specials.
+customContent2:Displayed below the specials.
+customContent3:
+customContent4:
+
+defaultName:Specials
+defaultTitle:%PROPERTY_NAME% Promotions, Specials and Accommodation Deals
+defaultUrl:specials
+
+customConfig-name:dealCategoryId_specials
+customConfig-label:Specials
+customConfig-type:dealCategory
+
+** template start **
+<div class="row">
+	<div class="twelve columns pageContainer">
+			<h1>%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+			%DEALS_BY_DEALCATEGORY["dealCategoryId_specials"]%
+			<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+	</div>
+</div>

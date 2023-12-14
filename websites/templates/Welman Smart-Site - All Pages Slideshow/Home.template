@@ -1,0 +1,84 @@
+description:Home
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:Top of page content.
+customContent2:Bottom of page content.
+customContent3:Raw code area
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome to %PROPERTY_NAME% Accommodation
+defaultUrl:index
+defaultCustomCss:%INCLUDE_FILE["css/template-home-css.inc"]%
+
+customConfig-name:eventCategoryId
+customConfig-label:Local Events slideshow
+customConfig-type:eventCategory
+
+customConfig-name:eventCategoryId_attractions
+customConfig-label:Local Attractions slideshow
+customConfig-type:eventCategory
+
+customConfig-name:eventCategoryId_reviews
+customConfig-label:Reviews slideshow
+customConfig-type:eventCategory
+
+
+** template start **
+
+
+<div class="row">
+	<div class="homeContainer">
+  	<h1 class="pageTitle">%PAGE_TITLE%</h1>
+		<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		<div class="pad propDescription">
+			%PROPERTY_DESCRIPTION%
+		</div>
+
+		<div class="row" id="specialsStrip">
+				%DEALS_BY_DEALCATEGORY["dealCategoryId_specials"]%
+				<button class="dealPrev">&lt;</button>
+				<button class="dealNext">&gt;</button>
+	  </div>
+	  
+	  
+	  <div class="room-types">
+	  <div class="pageCustom2 clear">%PAGE_CUSTOM_CONTENT_2%</div>
+	  </div>
+	  
+
+		<div class="homeArticles roomtypes-slideshow">
+			<div class="slideControls">
+				<h2 class="pageTitle">
+					<a href="">
+						<span>%PROPERTY_CITY% Accommodation</span>
+					</a>
+				</h2>
+				<button class="propPrev propPrev-roomtypes">&lt;</button>
+				<button class="propNext propNext-roomtypes">&gt;</button>
+			</div>
+			<div class="slide0">
+				%ROOMTYPE_DESCRIPTIONS_CATEGORIES[False,False]%
+			</div>
+		</div>
+		
+		
+		<div class="homeArticles slide1">
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_attractions","Attractions.template","eventCategoryId_attractions"]%
+		</div>			
+		<div class="homeArticles slide2">
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId","Events.template","eventCategoryId_events"]%
+		</div>
+		
+		<div class="homeArticles slide3" id="propertyReviews">
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_reviews","Reviews.template","eventCategoryId_reviews"]%
+		</div>
+		
+		<div class="rawCode">%PAGE_CUSTOM_CONTENT_3%</div>
+		
+	</div>

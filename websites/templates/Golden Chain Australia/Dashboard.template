@@ -1,0 +1,30 @@
+description:Page with the special fields for guest profile and booking management
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Page
+defaultTitle:Page
+defaultUrl:page
+
+** template start **
+
+<div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pagePad">
+		    %GROUP_GUEST_SUBMENU%
+			  %PAGE_CUSTOM_CONTENT_1%
+			  %GROUP_GUEST_DASHBOARD%
+		    %PAGE_CUSTOM_CONTENT_2%
+		</div>
+	</div>
+</div>

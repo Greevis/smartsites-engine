@@ -1,0 +1,24 @@
+		
+		
+		
+		#navBar .nav ul li { display:inline; }
+		#footerNav .nav1L ul li { display:inline; }
+		#pageBorder { background:#ddd; }
+		#bookingBar .rwr_button { width:320px; border:none; }
+		.rwr_table td { vertical-align:middle; }
+		#pageContent .cmsGallery li { display:inline; }
+		.email-outer { height:auto; }
+		.rwrRoomtype .desc-photos-thumbs UL.desc-photos-outer LI { display:inline; }
+		#bookingBar .rwr_button { background:#000000 !important; filter:none; }
+		.newsImage { width:340px; height:200px; }
+		
+		
+		
+			.datepicker-label,
+			.datepicker-input,
+			.datepicker-button,
+			.datepicker-checkin,
+			.datepicker-formstyle { vertical-align:middle; display:inline; }
+			
+			.datepicker-button { background:#fff; padding:0; }
+			.book-roomtype { background:#000; }

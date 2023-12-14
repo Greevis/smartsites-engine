@@ -1,0 +1,89 @@
+description:ASURE Card
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:ASURECard
+defaultTitle:ASURE 10% OFF! Card
+defaultUrl:asurecard
+
+
+customConfig-name:emailform_email
+customConfig-label:Form email recipient
+customConfig-type:email
+
+customConfig-name:emailform_htmlcode
+customConfig-label:Form HTML code
+customConfig-type:blocktext
+
+customConfig-name:emailform_validationcode
+customConfig-label:Form Javascript validation code
+customConfig-type:blocktext
+
+customConfig-name:emailform_thanksMessage
+customConfig-label:Form thanks message
+customConfig-type:simpletext
+
+customConfig-name:emailform_thanksPage
+customConfig-label:Form thanks page
+customConfig-type:websitepage
+
+** template start **
+
+<div class="ASUREbg ASUREpageBg">
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="ASUREstay.com - ASURE Accommodation Group New Zealand">
+				<img src="images/logo_asure.png" alt="ASURE" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<h2>ASURE Accommodation</h2>
+			<h3>Your Comfort is ASUREd</h3>
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+			<div class="loyalty">
+				<span class="yellow">Loyalty Program:</span> 
+				Stay at three or more ASURE Accommodation Group properties and receive $100 credit off your 10th stay.
+				The rates on ASURESTAY.com include instant membership to our exclusive ASURE loyalty programme.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+	ASURE Accommodation Group
+</div>
+
+<div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pageContainer">
+			<div class="pageIntro">
+				<div class="row card-banner card-div">
+				  <div class="card-info">
+					  <h2>ASURECARD</h2>
+					  <p>Apply Here for your FREE 10% ASURE discount card. ASURE has developed a 10% loyalty discount card which is available to all guests simply by completing a form to receive our ASURECARD.</p>
+				  </div>
+				  <div class="card-img">
+				  	<img src="images/CardFront.png" alt="Get 10% OFF with ASURE card">
+				  </div>
+				</div>
+		   	
+			</div>
+			<div class="contactForm ASURECARD-Form">
+				 %CUSTOM_MAILFORM["emailform_email","emailform_htmlcode","emailform_validationcode","emailform_thanksMessage","emailform_thanksPage","Send"]%
+		    
+			</div>
+		</div>
+	</div>
+</div>

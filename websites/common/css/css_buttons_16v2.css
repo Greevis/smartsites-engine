@@ -1,0 +1,39 @@
+
+/************** SMARTSITES *************/
+/* flat buttons with 2px bottom border */
+/***************************************/
+
+.content .buttonSend,
+.content .datepicker-button,
+.content .book-roomtype,
+.content a.event-link,
+.content a.btn, .content .btn
+	{ 	
+		border: none;
+		border-radius: 2px;
+		border-bottom: 2px solid rgba(0,0,0,0.25); 
+		box-shadow: 1px 1px 3px rgba(0,0,0,0.25); 
+		color: #fff;	
+		cursor: pointer;			
+		display: inline-block;
+		font-size: inherit;
+		font-weight: normal;
+		font-family: inherit;
+		line-height: 30px;		
+		padding: 0 16px;		
+		text-align: center;
+		text-decoration: none;
+		width: auto;
+	}
+	
+.book-roomtype { background-color:#65b319; }
+
+.buttonSend:hover,
+.datepicker-button:hover,
+.book-roomtype:hover,
+a.event-link:hover,
+a.btn:hover, .btn:hover
+	{ 
+		color: #fff;
+		opacity: 0.9;
+	}

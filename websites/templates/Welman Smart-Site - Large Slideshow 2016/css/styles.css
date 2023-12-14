@@ -1,0 +1,147 @@
+
+html, body { margin:0; padding:0; }
+
+.bodyStyle {
+font-family: 'Open Sans', sans-serif;
+font-size:14px;
+font-weight:400;
+color:#444;
+background:#fff;
+}
+
+div#preload { display:none; }
+body a { color:#15c; }
+body a:hover { color:#118AD7;}
+body b { font-weight:bold; }
+.mobile { display:none; }
+.hide { display:none; }
+.clear { clear:both; }
+h1.pageTitle { color:#1c94c6; }
+
+/* header bar */
+#topBar { background:#1c94c6; height:40px; color:#fff; line-height:40px; font-size:13px; }
+#topBar .topName { float:left; opacity:0.4; }
+#topBar .contactInfo { float:right; }
+#topBar .icoMap,
+#topBar .icoPhone,
+#topBar .icoEmail { display:inline-block; margin-left:10px; vertical-align:top; }
+.contactInfo .icoMap div,
+.contactInfo .icoPhone div,
+.footerContact div { display:inline }
+#topBar .icoMap .propertySuburb,
+#topBar .icoMap .propertyRegion,
+.footerContact .propertySuburb,
+.footerContact .propertyRegion,
+#topBar .icoPhone span { display:none; }
+#topBar .social { display:inline-block; margin-left:10px; }
+#topBar .social div { vertical-align:top; margin-top:8px; }
+#topBar .icoMap .fa,
+#topBar .icoPhone .fa { vertical-align:middle; margin-right:3px; opacity:0.5; }
+#topBar .icoPhone .fa { font-size:18px; }
+
+/* social */
+.social .facebook-link,
+.social .twitter-link,
+.social .googleplus-link,
+.social .tripadvisor-link { width:24px; height:24px; display:inline-block; }
+.social .facebook-link a,
+.social .twitter-link a,
+.social .googleplus-link a,
+.social .tripadvisor-link a  { width:24px; height:24px; background-size:cover !important; text-decoration:none; display:block; text-indent:-999px; overflow:hidden; }
+.social .facebook-link a { background:url("../images/icon_facebook.png") no-repeat left top; }
+.social .twitter-link a { background:url("../images/icon_twitter.png") no-repeat left top; }
+.social .googleplus-link a { background:url("../images/icon_googleplus.png") no-repeat left top; }
+.social .tripadvisor-link a { background:url("../images/icon_tripadvisor.png") no-repeat left top; }
+
+/* header Block */
+#headerBlock { background:#fff; box-shadow:0 0 15px rgba(0,0,0,0.25); z-index:1000; }
+#headerBlock .row { position:relative; }
+.logoLeft { display:inline-block; margin:5px 0; float:left; }
+.propertyLogo { height:110px; }
+.bookingBox { float:right; margin-top:20px; }
+.datepicker-button { text-transform:uppercase; }
+#headerBlock .headerNavbar { position:absolute; bottom:0; right:0; }
+#headerBlock .headerNavbar ul.nav li { padding:0; }
+#headerBlock .headerNavbar ul.nav li a { color:#555; border-right:1px solid rgba(0,0,0,0.05); padding:20px 15px; }
+#headerBlock .headerNavbar ul.nav li a:hover { color:#fff; background:#1c94c6; }
+#headerBlock ul.nav li a:hover { opacity:1; }
+
+/* facilities */
+.pageContainer .pageFacilities ul { margin:30px; text-align:center; }
+.pageContainer .pageFacilities li { background:url("../images/background_booking.png") no-repeat left 3px; background-size:14px; list-style:none; padding-left:20px; margin-bottom:5px; width:45%; display:inline-block; text-align:left; }
+.property-facilities .left,
+.property-facilities .right { float:none; }
+
+/* footer */
+#footerBlock { background:#1c94c6; box-shadow:inset 0 10px 10px rgba(0,0,0,0.1); padding:60px 0 40px; }
+#footerBlock a { color:inherit; }
+#footerBlock a:hover { opacity:0.9; }
+#footerBlock .propertyLogo { display:inline-block; margin-right:10px; }
+#footerContent { color:#fff; }
+#footerContent > div { vertical-align:top; }
+#footerContent .contactInfo { display:inline-block; }
+#footerContent .contactInfo h3 { font-size:16px; font-weight:700; text-transform:uppercase; margin-top:15px; }
+#footerContent .footerBadges { float:right; display:inline-block; margin-top:15px; }
+#footerContent .footerBadges img { max-height:80px; margin-left:10px; display:inline-block; }
+#footerCopy { border-top:1px solid rgba(255,255,255,0.25); margin-top:50px; padding-top:25px; color:#fff; }
+#footerCopy .social { display:inline-block; }
+#footerCopy .copyright { float:right; font-size:12px; text-align:right; opacity:0.3; line-height:24px; }
+
+/* changes */
+.pageArticles .event-complete .event-name { font-weight:400; font-size:18px; }
+.pageContainer .rwrRoomtype,
+.pageContainer .contactCard, 
+.pageContainer .email-outer,
+.pageContainer .event-complete li.event-inner,
+.descBlock { border:none; box-shadow:0 1px 5px rgba(0,0,0,0.2); background:#fff; padding:30px; overflow:auto; }
+.pageContainer .rwrRoomtype .desc-images { right:30px; }
+.descImg { float:right; margin-left:20px; }
+
+/* webrooms default colours */
+
+
+
+/*==================== MOBILE STARTS ====================*/
+
+
+@media only screen and (max-width: 960px) 
+{
+
+#topBar,
+.logoLeft { display:none; }		
+#headerBlock { text-align:center; position:relative; height:50px; }
+#headerBlock .icoLocation,
+#headerBlock .icoPhone { background:none; font-size:100%; padding:0; display:inline; }
+.bookingBox { float:none; padding:0 !important; border:none; border-radius:0; width:100%; position:static; height:auto; display:none; }
+
+.bookText,
+.headerIcons { display:none; }
+#headerBlock .propertyInfo { display:block; position:static; padding:0 1em; width:auto; font-size:100%; }
+#headerBlock .propertyInfo h3.font { overflow:visible; white-space:normal; text-overflow:clip; font-size:200%; margin:0; }
+
+.pageContainer { padding:1em; font-size:90%; margin:0; }
+.pageContainer h1 { font-size:130%; margin-bottom:1em; margin-top:0; }
+.pageContainer .pageFacilities li { width:auto !important; display:block; }
+.pageContainer .pageFacilities ul { margin:1.5em; }
+.descImg { float:none; margin:0 auto 1em auto; }
+
+.pageContainer .rwrRoomtype, 
+.pageContainer .event-complete li.event-inner,
+.descBlock { box-shadow:none; padding:2em 0 0; border-top:1px solid #ddd; overflow:visible; }
+.pageContainer .contactCard, 
+.pageContainer .email-outer,
+.pageContainer .articlesReviews li.event-inner { box-shadow:none; padding:0 0 2em 0; border:none; border-bottom:1px solid #ddd; }
+
+#footerBlock { margin-top:2em; padding:1.5em; }
+#footerBlock .propertyLogo { margin:auto; }
+#footerContent { font-size:100%; line-height:110%; text-align:center; margin-bottom:1em; }
+#footerContent .contactInfo h3 { font-size:100%; margin:0 0 5px 0; }
+.footerContact div { display:inline; }
+#footerContent .footerBadges { display:block; float:none; text-align:center; margin:1em auto 0; position:static; }
+#footerContent .footerBadges img { height:50px; }  
+#footerCopy { font-size:80%; padding:1em 0; margin:0; text-align:center; }
+#footerCopy .copyright { float:none; line-height:initial; text-align:center; }
+
+#headerBlock .headerNavbar ul.nav li a { padding:0.75em 0; color:#fff; border-right:none; }
+
+}

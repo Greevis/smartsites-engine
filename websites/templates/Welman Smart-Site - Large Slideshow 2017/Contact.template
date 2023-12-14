@@ -1,0 +1,64 @@
+description:Contact
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Intro code
+customContent2:Free code area below contact info and map
+customContent3:
+customContent4:
+
+defaultName:Contact
+defaultTitle:Contact %PROPERTY_NAME%
+defaultUrl:contact
+
+** template start **
+
+<div class="content row">
+	<section id="pageOuter" class="pageContent">
+		
+		<div class="pageIntro">
+			<h1 class="pageTitle font">%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		</div>
+
+		<div class="cLeft">
+			<div class="contactCard box">
+					<h2 class="contactName">Contact %PROPERTY_NAME%</h2>
+				  	<div class="contactDiv">
+					    <h3><i class="fa fa-map-marker" aria-hidden="true"></i>
+								<span class="propertyStreetaddress">%PROPERTY_STREETADDRESS%,</span>
+								<span class="propertyCity">%PROPERTY_CITY% %PROPERTY_POSTCODE%,</span>
+								<span class="propertyRegion">%PROPERTY_REGION%,</span>
+								<span class="propertyCountry">%PROPERTY_COUNTRY%</span>
+							</h3>
+						</div>
+					<div class="propertyHosts">%PROPERTY_HOSTS_LABEL%</div>
+					<div class="propertyFreephone">%PROPERTY_FREEPHONE_LABEL%</div>
+					<div class="propertyTollphone">%PROPERTY_TOLLPHONE_LABEL%</div>
+					<div class="propertyFax">%PROPERTY_FAX_LABEL%</div>
+					<div class="propertyEmail">%RESERVATIONS_EMAIL_LINK_LABEL%</div>
+					<div class="socialIcons">%FACEBOOK_PAGELINK% %TRIPADVISOR_PAGELINK% %TWITTER_PAGELINK% %GOOGLEPLUS_PAGELINK%</div>
+			</div>
+		</div>
+		
+		<div class="cRight">
+			<div class="contactCard box">
+					<h2 class="contactName">Make an Online Enquiry</h2>
+					%PROPERTY_CONTACTFORM["Your Name:","Your Email:","Message:","Send Enquiry",0]%
+			</div>
+		</div>
+
+		<div class="clear">
+			<div class="mapDiv autoMap">
+				%PROPERTY_MAP%
+			</div>
+		</div>
+		
+		<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+			
+	</section>
+</div>

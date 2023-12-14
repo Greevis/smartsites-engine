@@ -1,0 +1,38 @@
+description:Page containing site map link list.
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+defaultName:Site Map
+defaultTitle:Site Map
+defaultUrl:sitemap
+
+** template start **
+
+<div class="row footerPad">
+
+	<div class="columns three">
+	%INCLUDE_FILE["template-nav.inc"]%
+	</div>
+	
+	<div class="columns nine">
+		<div class="pageContainer">
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+			
+				<div class="pageContent">
+					%SITEMAP%
+			  	<div class="gold hLine"></div>
+			  </div>
+	  
+		</div>
+	</div>
+
+</div>

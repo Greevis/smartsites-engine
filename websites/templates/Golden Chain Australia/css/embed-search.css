@@ -1,0 +1,74 @@
+
+
+/* Common */
+#utility-div { display:none; }
+.searchBox-outer, #searchBox, #check-in-out, #q-guests, .search-button {  height:auto; font-size:14px; font-family:'Open Sans', sans-serif; text-align:left; width:auto; line-height:40px; height:40px;
+	background:#fff; border:none; margin:0; color:#999; cursor:pointer; vertical-align:top; outline:none; overflow:hidden !important; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.hide {display:none;}
+
+/* Search */
+#resultsBox { display:none; position:absolute; z-index:10; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.3); line-height:initial; color:#333; max-height:480px; overflow-y:scroll; text-indent:0; }
+#searchBox { cursor:text !important; background-image:url(../images/icon_map.png); background-position:7px center; background-repeat:no-repeat; background-color:#fff; color:#333; border:none; width:100%; text-indent:35px; }
+.searchBox-outer { background:none; margin-right:1%;margin-top:3px; }
+ul.location-results { margin:0; text-indent:0; }
+ul.location-results li.search-result { padding:8px; border-bottom:1px solid #eee; font-size:13px; list-style:none; margin:0; }
+.key-selected, .mouse-selected { background-color:lightyellow; cursor:hover; }	
+.result-icon { width:20px; overflow:hidden; font-size:9px; display:inline-block; margin-right:5px; color:#fff; height:20px; line-height:20px; vertical-align:top; text-indent:-999px; 
+	background-size:contain; background-position:center center;	background-repeat:no-repeat; }
+.result-icon { background-image:url(../images/icon_map.png); opacity:0.2; }
+.webrooms-entity { background-image:url(../images/icon_book.png); opacity:1; }
+.result-text { display:inline-block; vertical-align:top; }
+.result-text div { display:inline-block; }
+.primary-term, .secondary-term { line-height:20px; margin-left:4px; }
+.result-text .last-term { display:none; }
+.primary-term { font-weight:700; }
+
+
+
+
+/* Datepicker */
+.date-picker-wrapper { z-index:9999 !important; }
+#check-in-out { background-image:url(../images/icon_calendar.png); background-position:10px center; background-size:auto 20px; background-repeat:no-repeat; background-color:#fff; padding:0; 
+	background-size:16px; 19px; background-position:10px center; padding:0; text-indent:35px; }
+.dp-date { line-height:40px; }
+
+/* Guests */
+#q-guests { background-image:url(../images/icon_guests.png); background-position:10px center; background-repeat:no-repeat; padding:0; color:#333; text-indent:35px; margin-top:3px;}
+
+/* Button */
+
+.search-button { font-family: 'HelveticaNeue'; background:#000000; color:#fff; border:none; outline:none; cursor:pointer; text-align:center; height:40px; line-height:40px; width:100%; font-size:14px; font-weight:bold; text-transform:uppercase; margin:10px 0 0 0; }
+.search-button:hover { background:#dba628; }
+
+.headerBook .search-button { font-size:14px; line-height:40px; height:42px; }
+
+/* Widths */}
+.homeBook #check-in-out { width:100%; }
+.homeBook #q-guests { width:100%; }
+.homeBook .search-button { width:100%; }
+.homeBook .searchBox-outer, 
+.homeBook #searchBox { width:100%; }
+
+/* Home */
+.homeBook .searchBox-outer, 
+.homeBook #searchBox, 
+.homeBook #check-in-out, 
+.homeBook #q-guests, 
+.homeBook .search-button,
+.homeBook .dp-date { line-height:50px; height:50px; }
+.homeBook #check-in-out { text-indent:40px; background-position:15px center; }
+.homeBook #q-guests { text-indent:40px; background-position:15px center; }
+@-moz-document url-prefix() { 
+	#q-guests,
+  .homeBook #q-guests {
+     text-indent:20px;
+  }
+}
+
+
+/* date picker */
+.drp_top-bar { height:60px; }
+.dp-dateouter,.dp-dayname,.dp-date,.dp-monthyear,.dp-month,.dp-year,.separator-day,.dp-separator { display:inline-block; line-height:12px; font-size:14px; color:#333; text-indent:0; }
+.dp-date { margin:0 2px; font-size:30px; line-height:40px; }
+.dp-month,.dp-year { display:block; text-transform:uppercase; font-size:10px; }
+.dp-separator { margin:0 3px; color:#aaa; }

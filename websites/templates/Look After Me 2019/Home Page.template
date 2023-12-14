@@ -1,0 +1,34 @@
+description:Look after me reception home page
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+customConfig-name:regionWebsitePageId
+customConfig-label:Base page for Regional Listings
+customConfig-type:websitePage
+
+** template start **
+
+<div>
+
+
+<!-- %SUBCATEGORY_PAGES_FOR_THIRDPARTYGROUPTYPE[True,True]% --> <!-- params are bRenderPages, bShowSubcategories-->
+<!-- %PROPERTIES_IN_THIRDPARTYGROUPTYPE% -->
+</div>

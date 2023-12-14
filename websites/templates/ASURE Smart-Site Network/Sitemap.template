@@ -1,0 +1,34 @@
+description:Page containing site map link list.
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+defaultName:Site Map
+defaultTitle:ASURE %PROPERTY_CITY% Website Site Map
+defaultUrl:sitemap
+defaultDescription:ASURE %PROPERTY_CITY% website sitemap.
+
+** template start **
+
+<div id="headerBook">
+	<div class="row">	
+		<div class="bookingBox">
+			%JQUERY_DATE_PICKER%
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="pageContainer">
+			<h2 class="title">%PAGE_TITLE%</h2>
+			<div class="box">%SITEMAP%</div>
+	</div>
+</div>

@@ -1,0 +1,87 @@
+description:Vouchers
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Vouchers
+defaultTitle:Gift Vouchers
+defaultUrl:vouchers
+
+
+customConfig-name:emailform_email
+customConfig-label:Voucher Form email recipient
+customConfig-type:email
+
+customConfig-name:emailform_htmlcode
+customConfig-label:Voucher Form HTML code
+customConfig-type:blocktext
+
+customConfig-name:emailform_validationcode
+customConfig-label:Voucher Form Javascript validation code
+customConfig-type:blocktext
+
+customConfig-name:emailform_thanksMessage
+customConfig-label:Voucher form thanks message
+customConfig-type:simpletext
+
+customConfig-name:emailform_thanksPage
+customConfig-label:Voucher form thanks page
+customConfig-type:websitepage
+
+** template start **
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me - New Zealand's Accommodation" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+<div class="pageContainer">
+	<div class="row vouchers-row">
+		<h1 class="pageTitle title-h1">%PAGE_TITLE%</h1>  
+		<div class="pageContainer">
+			<div class="pageIntro">
+				<img src="images/voucher.png" class="voucherImg" alt="Buy Look After Me - Accommodation Vouchers" title="Buy Look After Me gift vouchers" />
+		    <h2>Buy Look After Me gift vouchers here</h2>
+		    
+		    <ul>
+		    	<li>Cannot be redeemed for cash</li>
+		    	<li>Vouchers to be redeemed directly at any Look After Me property</li>
+		    	<li>Vouchers are valid for 12 months from the date of purchase</li>
+		    </ul>
+			</div>
+			
+			<div class="contactForm voucherForm">
+				 %CUSTOM_MAILFORM["emailform_email","emailform_htmlcode","emailform_validationcode","emailform_thanksMessage","emailform_thanksPage","Go to payment page"]%
+			</div>
+	</div>
+</div>

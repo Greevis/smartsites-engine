@@ -1,0 +1,177 @@
+description:Individual Property detail
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+defaultName:[Property Template]
+defaultTitle:Accommodation Information
+defaultUrl:property
+
+** template start **
+
+%WEBROOMS_JS_INCLUDE%
+
+<div class="ASUREbg">
+
+	<header class="masthead text-center text-white d-flex template-header w-100">
+   </header>
+    
+   <!-- old datepicker 
+   <section class="text-white text-center" id="Datepicker-2">
+      <div class="container">
+        <div class="row">
+        
+          <div class="col-lg-12 mx-auto text-center">
+            <img class="mb-3 logo-2" src="images/logo_asure.png" alt="Discover New Zealand" /><br>
+            <h2 class="font-italic mb-3 d-none d-md-block">Your Comfort is ASUREd</h2>
+            <a class="search-panel btn btn-primary" href="https://book.asurestay.com">Search</a>
+            <div class="mx-auto mt-3 float-left w-100">
+            
+            <a class="btn btn-green btn-lg my-lg-3 my-1 js-scroll-trigger" href="%SITE_CUSTOM_CONTENT_1%#North">Browse North Island</a>
+            <a class="btn btn-green btn-lg my-lg-3 my-1 js-scroll-trigger" href="%SITE_CUSTOM_CONTENT_1%#South">Browse South Island</a>
+            
+            <h4 class="booking-info">Find and book your accommodation online</h4>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    -->
+
+		<div class="headerBar">
+		</div>
+
+	<section>
+	 <div class="container">
+			<div class="row">
+
+				<div class="booking-engine-exclude" id="propContent">
+					<div class="row">
+					
+						<div class="property-contact ASURE">	
+						
+							<div class="property-image">%MAIN_GALLERY_SLIDESHOW%</div>
+							
+							<div class="property-contact-box">
+							
+								<div class="property-contact-details pid-%PROPERTY_ID%">
+									<h2>%PROPERTY_SERVICE_NAME%</h2>
+									<div class="contact-address">
+										<a href="#map">%PROPERTY_STREETADDRESS% %PROPERTY_SUBURB% %PROPERTY_CITY%</a>
+									</div>
+
+										<h4>Property Details</h4>
+										
+									%PROPERTY_HOSTS_LABEL%
+									%PROPERTY_FREEPHONE_LABEL%
+									%PROPERTY_TOLLPHONE_LABEL%
+									%RESERVATIONS_REPLYTOEMAIL_LINK_LABEL%
+									%PROPERTY_BOOKONLINEPAGEURL_LINK_LABEL%
+									
+									<a class="search-button" title="Book Online" href="?#book">Book Online</a>
+									
+									%RATINGS_BADGE%
+									
+									%PROPERTY_FEATUREBADGES%
+									
+								</div>
+								
+							</div>
+							
+						</div>
+						
+					</div>
+				
+				 <div class="row"> 
+							<h1 class="pageTitle">Welcome to %PROPERTY_SERVICE_NAME%</h1>
+							<div class="proppageDesc">%PROPERTY_DESCRIPTION%</div>			
+							<div id="roomTypeListings">	
+								%ROOMTYPE_DESCRIPTIONS_ALL%
+							</div>
+							<div class="facilitiesTable">			
+								<div class="property-facilities-div">
+									<h2>Motel Facilities</h2>
+									%PROPERTY_FACILITIES%
+								</div>
+								<div class="property-features-div">
+									<h2>Property Features</h2>
+									<div class="asfield">						
+										%PROPERTY_ASFIELDS%
+							    </div>
+							  </div>				
+						</div>	
+						
+						<a name="map"></a>
+						<div class="property-map">
+							%PROPERTY_MAP%
+						</div>
+				</div>	
+      </div>
+				<div class="booking-engine-outer hide">
+					<div class="row">
+					  <p>Book instantly online below. </p>
+						<a class="booking-back" href="#" onclick="window.location.href=window.location.pathname+'?time='+getQuerystring('time')+'&do=detail#detail';">&lt; Back to Property Details</a>
+												
+						<div class="deals-holder">
+							<div class="booking-deals">
+							<a class="deal-img" href="?code=ASURECARD#book"><img src="images/asure-deal.jpg" title="Book Direct">
+				        <h5>Click Here - 10% Discount: ASUREcard Holders</h5></a>						  
+							</div>
+							<div class="booking-deals">  
+							<a class="deal-img" href="?code=GOLDEN#book"><img src="images/golden-deal.jpg" title="Book Direct">
+							  <h5>Click Here - 10% Discount: Gold Link Members</h5></a>				        
+							</div>						
+						</div>
+						
+						<script>
+						function setBookingDates()
+						{	// passes querystring args to rwr iframe						
+									
+							var bookingFrame = document.getElementById('rwrBookingFrame');
+							var dateQuery = window.location.search;
+							
+							var frameSrc;
+							
+							var myGuestQs;
+							try{
+								myGuestQs = '&gid='+$.cookie('guestId')+'&gh='+$.cookie('guestHash'); // for passthru of group smartsite creds
+							}catch(err){
+								
+							}
+							
+							if(dateQuery.length > 0)
+							{		
+								frameSrc = bookingEngineBaseUrl+'Home.html'+dateQuery+'&sid='+rwrSubId+myGuestQs;
+							}else{
+								frameSrc = bookingEngineBaseUrl+'Home.html?sid='+rwrSubId+myGuestQs;
+							}
+								
+							trackBookingFrame(frameSrc);
+									
+							return true;
+						}
+						</script>
+								
+						%BOOKING_ENGINE%
+					</div>
+				</div>
+
+	      </div>
+	    </div>
+	  </div>
+	</section>
+</div>
+
+
+<script>
+$('title').text('%SAFEJS_PROPERTY_SERVICE_NAME% - %SAFEJS_SITE_NAME%');
+</script>

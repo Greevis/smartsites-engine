@@ -1,0 +1,68 @@
+description:Contact
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Contact
+defaultTitle:Contact
+defaultUrl:contact
+
+customConfig-name:emailform_email
+customConfig-label:Contact Form email recipient
+customConfig-type:email
+
+customConfig-name:emailform_htmlcode
+customConfig-label:Contact Form HTML code
+customConfig-type:blocktext
+
+customConfig-name:emailform_validationcode
+customConfig-label:Contact Form Javascript validation code
+customConfig-type:blocktext
+
+customConfig-name:emailform_thanksMessage
+customConfig-label:Contact form thanks message
+customConfig-type:simpletext
+
+customConfig-name:emailform_thanksPage
+customConfig-label:Contact form thanks page
+customConfig-type:websitepage
+
+** template start **
+
+<div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="row pageContainer">
+			<div class="columns eight">
+				<div class="contactMain">
+					<div class="padBox">
+						<h2>Make an online enquiry, request or cancellation:</h2>
+							<div class="contactForm">
+								 <!-- contact form -->
+								 %CUSTOM_MAILFORM["emailform_email","emailform_htmlcode","emailform_validationcode","emailform_thanksMessage","emailform_thanksPage","Send"]%
+							</div>	
+					</div>				
+				</div>
+			</div>
+			<div class="columns four">
+				<div class="box">
+					
+				</div>
+				<div class="box">
+					
+				</div>
+				<div class="box">
+						
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

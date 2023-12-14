@@ -1,0 +1,91 @@
+description:Contact Look After Me
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Contact
+defaultTitle:Contact LAM
+defaultUrl:contact
+
+customConfig-name:emailform_email
+customConfig-label:Contact Form email recipient
+customConfig-type:email
+
+customConfig-name:emailform_htmlcode
+customConfig-label:Contact Form HTML code
+customConfig-type:blocktext
+
+customConfig-name:emailform_validationcode
+customConfig-label:Contact Form Javascript validation code
+customConfig-type:blocktext
+
+customConfig-name:emailform_thanksMessage
+customConfig-label:Contact form thanks message
+customConfig-type:simpletext
+
+customConfig-name:emailform_thanksPage
+customConfig-label:Contact form thanks page
+customConfig-type:websitepage
+
+** template start **
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+
+<div class="pageContainer">
+	<div class="row contact-row">
+		<h1 class="pageTitle title-h1">CONTACT US</h1>
+		<div class="row pageContainer">
+			<div class="contact col-md-12">
+			  <h1 class="h2 text-left" class="text-left">For the best places to stay in Dunedin, contact us today</h1>
+				<h3>Julia Charity</h3>
+				<span>Free Phone: <a title="Free Phone" href="tel:0800526123">0800 526 123</a> (within New Zealand)</span><br>
+        <span>Direct Mobile: <a title="Direct Mobile" href="tel:021511606">021 511 606</a> </span><br>
+        <span>International: <a title="International Phone" href="tel:+6421511606">+64 21 511 606</a> </span><br>
+        <span>Email: <a title="Contact Look After Me" href="mailto:info@lookafterme.co.nz">info@lookafterme.co.nz</a> </span><br>
+        <span>Postal Address: 125 Manapouri Street, Dunedin 9022, New Zealand</span>
+		</div>
+		
+		<div class="padBox">
+						<h3>Make an online enquiry:</h3>				 
+		         <div class="contactForm">
+							<!-- contact form -->
+							%CUSTOM_MAILFORM["emailform_email","emailform_htmlcode","emailform_validationcode","emailform_thankyouMessage","emailform_thanksPage","Send"]%
+						</div>	
+			</div>		
+		</div>
+	</div>
+</div>

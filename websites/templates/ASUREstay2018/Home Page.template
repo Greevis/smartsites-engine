@@ -1,0 +1,50 @@
+description:Talk about what the home page has on it and why it is fabulous.
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+** template start **
+  
+ 	<div id="homeSlideshow">
+    <button class="homeSlideshowPrev">&lt;</button>
+    <button class="homeSlideshowNext">&gt;</button>	
+		<div class="cycle-slideshow" 
+		    		data-cycle-prev=".homeSlideshowPrev" 
+		    		data-cycle-next=".homeSlideshowNext" 
+		    		data-cycle-fx="fadeout" 
+		    		data-cycle-timeout="6000" 
+		    		data-cycle-speed="1000" 
+		    		data-cycle-slides="> div">
+			<div class="slide" style="background-image:url(images/header02.jpg);">
+	  		<div class="slideCaption"><a href="asure-aspiring-court-motel-haast.html" title="Stay at ASURE Aspiring Court Motel Haast">Lake Matheson, near the Fox Glacier in South Westland</a></div>
+			</div>
+			<div class="slide" style="background-image:url(images/header03.jpg);">
+	  		<div class="slideCaption"><a href="asure-gateway-apartments-queenstown.html" title="Stay at ASURE Gateway Apartments Queenstown">Queenstown's iconic vintage steamship TSS Earnslaw - Real Journeys</a></div>
+			</div>
+			<div class="slide" style="background-image:url(images/header06.jpg);">
+	  		<div class="slideCaption"><a href="asure-avenue-motel-alexandra.html" title="Stay at ASURE Avenue Motel Alexandra">Autumn Central Otago, South Island New Zealand</a></div>
+			</div>	
+			<div class="slide" style="background-image:url(images/header01.jpg);">
+	  		<div class="slideCaption"><a href="asure-avenue-motel-alexandra.html" title="Stay at ASURE Avenue Motel Alexandra">Scenic Central Otago landscape at Galloway, just outside of Alexandra</a></div>
+			</div>	
+		</div>
+  </div>
+  
+	<div class="headerBar">
+	</div>

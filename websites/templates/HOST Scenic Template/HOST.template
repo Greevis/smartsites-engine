@@ -1,0 +1,45 @@
+description:HOST information page.
+
+customContent1:Above default HOST content.
+customContent2:Below default HOST content.
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:HOST
+defaultTitle:HOST Accommodation Group New Zealand Motels
+defaultUrl:host
+
+** template start **
+<div class="row">
+	<div class="twelve columns pageContainer">
+		
+		
+			<h1>%PAGE_TITLE%</h1>
+			
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>	
+					
+			<div class="hostLogoF"></div>		
+						
+			<p>
+			%PROPERTY_NAME% is proud to be a member of the Host Accommodation Group. 
+			Host Accommodation offers a network of Hotels, Motor Lodges, Motels and Apartments conveniently located throughout New Zealand.
+			We also offer <a href="http://hostrewards.co.nz/" target="_blank">Host Rewards</a> - our premium customer loyalty programme that lets you earn points while you sleep and redeem them the next time you stay with us.
+			With over 80 properties throughout the country choose a Host property for your next stay and earn Host Reward points.
+			</p>
+			
+			<br />
+			
+			<div class="box">
+			 <iframe width="100%" height="470" style="border:none;" src="http://www.hostaccommodation.co.nz/about/embed"></iframe>
+			</div>
+			
+			<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>	
+			
+	</div>
+</div>

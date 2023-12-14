@@ -1,0 +1,137 @@
+description:Napier Home
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+customConfig-name:thirdPartySubCategoryId
+customConfig-label:Sub-category of properties to display
+customConfig-type:thirdPartySubCategory
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+customConfig-name:eventCategoryId
+customConfig-label:Event category to use
+customConfig-type:eventCategory
+
+** template start **
+
+<!-- header.inc is included here -->
+		
+<div id="pageHeader" class="homeHeader home-header"></div>
+
+<div class="full-container"><!-- white background for homepage -->
+<div id="homeSlideshow">
+    <button class="homeSlideshowPrev">&lt;</button>
+    <button class="homeSlideshowNext">&gt;</button>	
+
+		<div class="row posRelative">
+			<div class="stayLogo">
+				<h1>Napier Motels</h1>
+			</div>
+			<div id="headerBook" class="homeBook">
+	   <!--  <h1 class="homeTitle">%PAGE_TITLE%</h1> -->
+       %JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Check Availability","index.html"]%
+       </div>
+		</div>
+		
+		<div class="cycle-slideshow" 
+		    		data-cycle-prev=".homeSlideshowPrev" 
+		    		data-cycle-next=".homeSlideshowNext" 
+		    		data-cycle-fx="fadeout" 
+		    		data-cycle-timeout="6000" 
+		    		data-cycle-speed="1000" 
+		    		data-cycle-slides="> div">
+			<div class="slide" style="background-image:url(images/slide-1.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="search.html" title="Napier Accommodation">Napier Accommodation</a></h3>
+	    		<p>Napier is a great place to come and stay with the whole family. We have Napier’s largest selection of motels amongst all the attractions.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/slide-2.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="search.html" title="Napier Accommodation">Napier Accommodation</a></h3>
+	    		<p>Napier is a great place to come and stay with the whole family. We have Napier’s largest selection of motels amongst all the attractions.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/slide-3.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="search.html" title="Napier Accommodation">Napier Accommodation</a></h3>
+	    		<p>Napier is a great place to come and stay with the whole family. We have Napier’s largest selection of motels amongst all the attractions.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/slide-0.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="search.html" title="Napier Accommodation">Napier Accommodation</a></h3>
+	    		<p>Napier is a great place to come and stay with the whole family. We have Napier’s largest selection of motels amongst all the attractions.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/slide-4.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="search.html" title="Napier Accommodation">Napier Accommodation</a></h3>
+	    		<p>Napier is a great place to come and stay with the whole family. We have Napier’s largest selection of motels amongst all the attractions.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/slide-6.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="search.html" title="Napier Accommodation">Napier Accommodation</a></h3>
+	    		<p>Napier is a great place to come and stay with the whole family. We have Napier’s largest selection of motels amongst all the attractions.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/slide-7.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="search.html" title="Napier Accommodation">Napier Accommodation</a></h3>
+	    		<p>Napier is a great place to come and stay with the whole family. We have Napier’s largest selection of motels amongst all the attractions.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/slide-8.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="search.html" title="Napier Accommodation">Napier Accommodation</a></h3>
+	    		<p>Napier is a great place to come and stay with the whole family. We have Napier’s largest selection of motels amongst all the attractions.</p>
+	  		</div>
+			</div>
+		</div>
+
+  </div>
+
+<section id="pageOuter" class="homeGrid">	
+	<div class="tabHeader">
+		<a class="tabLink girdTab" href="index.html" title="Napier Motel Availability Search">
+			<i class="fa fa-th" aria-hidden="true"></i>
+			Availability <span>Grid</span> Search
+		</a>
+		<a class="tabLink mapLink" href="search.html" title="Napier Motel Accommodation Map Search">
+			<i class="fa fa-map-marker" aria-hidden="true"></i>
+			Availability <span>Map</span> Search
+		</a>
+		<div class="clear"></div>
+	</div>
+  <div id="homeListings">
+			<div class="all-properties-grouped-outer">
+				%PROPERTIES_IN_SUBCATEGORY%
+			</div>
+			<div class="homeEvents">
+				%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId","Attractions.template","eventCategoryId"]%
+			</div>			
+	</div>
+</section>
+</div><!-- full container end here -->
+<div class="footer-logo"></div><!-- home page footer -->
+<!--
+%PROPERTIES_IN_THIRDPARTY_BY_SUBCATEGORY%
+-->
+
+<!-- footer.inc is included here -->

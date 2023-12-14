@@ -1,0 +1,267 @@
+description:Page containing site map link list.
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:[Region Template]
+defaultTitle:Property Information
+defaultUrl:region
+
+** template start **
+
+	<header class="masthead text-center text-white d-flex template-header w-100">
+   </header>
+    
+     <!-- old datepicker 
+   <section class="text-white text-center" id="Datepicker-2">
+      <div class="container">
+        <div class="row">
+        
+          <div class="col-lg-12 mx-auto text-center">
+            <img class="mb-3 logo-2" src="images/logo_asure.png" alt="Discover New Zealand" /><br>
+            <h2 class="font-italic mb-3 d-none d-md-block">Your Comfort is ASUREd</h2>
+            <a class="search-panel btn btn-primary" href="https://book.asurestay.com">Search</a>
+            <div class="mx-auto mt-3 float-left w-100">
+            
+            <a class="btn btn-green btn-lg my-lg-3 my-1 js-scroll-trigger" href="%SITE_CUSTOM_CONTENT_1%#North">Browse North Island</a>
+            <a class="btn btn-green btn-lg my-lg-3 my-1 js-scroll-trigger" href="%SITE_CUSTOM_CONTENT_1%#South">Browse South Island</a>
+            
+            <h4 class="booking-info">Find and book your accommodation online</h4>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    -->
+    
+    <div class="headerBar">
+		</div>
+
+<section>
+ <div class="container">
+  <div class="row">
+		<div class="pageContainer">
+			<div class="row">
+				
+			    %PAGE_CUSTOM_CONTENT_1%
+			    <div class="basicPage">
+					    <div class="regionalPage">%PROPERTIES_IN_CURRENT_CATEGORY_BY_SUBCATEGORY%</div>
+					</div>
+				
+			</div>
+		</div>
+
+  </div>
+  <div class="row">
+  
+  
+   <div class="row mb-5 north-island" id="North">
+			<h2 class="w-100">North Island</h2>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/northland.html"><h3 class="text-white">Northland</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/northland.html#kaitaia">Kaitaia</a>,
+						<a href="https://book.asurestay.com/northland.html#whangarei">Whangarei</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/north-island.jpg">
+				</div>
+			</div>
+		       <div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/auckland.html"><h3 class="text-white">Auckland</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/auckland.html#auckland">Auckland</a>,
+						<a href="https://book.asurestay.com/auckland.html#papatoetoe">Papatoetoe</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/auckland.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/waikato.html"><h3 class="text-white">Waikato</h3></a>
+					<span>
+						<!--<a href="https://book.asurestay.com/waikato.html#hamilton">Hamilton</a>,-->
+						<a href="https://book.asurestay.com/waikato.html#taupo">Taupo</a>,
+						<!--<a href="https://book.asurestay.com/waikato.html#turangi">Turangi</a>,-->
+						<a href="https://book.asurestay.com/waikato.html#te-awamutu">Te Awamutu</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/waitomo.jpg">
+				</div>
+			</div>
+		<!--
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/coromandel.html"><h3 class="text-white">Coromandel</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/coromandel.html#coromandel">Coromandel</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/Coromandel.jpg">
+				</div>
+			</div>
+		-->
+			<div class="col-lg-12 col-md-12 col-xs-12 p-1">
+				<div style="background: #dbdbdb; height: 100%; align-items: center; display: flex;">
+					<img style="width:100%; height:auto;" src="https://www.asurestay.com/assets/Uploads/02eaef0c5d/online-check-in-v2.png">
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/bay-of-plenty.html"><h3 class="text-white">Bay of Plenty</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/bay-of-plenty.html#katikati">Katikati</a>,
+						<a href="https://book.asurestay.com/bay-of-plenty.html#rotorua">Rotorua</a>,
+						<a href="https://book.asurestay.com/bay-of-plenty.html#tauranga">Tauranga</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/bay-of-plenty.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/gisborne.html"><h3 class="text-white">Gisborne</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/gisborne.html#gisborne">Gisborne</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/Gisborne.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/taranaki.html"><h3 class="text-white">Taranaki</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/taranaki.html#new-plymouth">New Plymouth</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/taranaki.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/manawatu-whanganui.html"><h3 class="text-white">Manawatu-Whanganui</h3></a>
+					<span>						
+						<a href="https://book.asurestay.com/manawatu-whanganui.html#palmerston-north">Palmerston North</a>,
+						<a href="https://book.asurestay.com/manawatu-whanganui.html#whanganui">Whanganui</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/m-w.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/hawkes-bay.html"><h3 class="text-white">Hawkes Bay</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/hawkes-bay.html#napier">Napier</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/HawkesBay.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/wellington.html"><h3 class="text-white">Wellington</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/wellington.html#paraparaumu-beach">Paraparaumu Beach</a>,
+						<a href="https://book.asurestay.com/wellington.html#lower-hutt">Lower Hutt</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/north-island/wellington.jpg">
+				</div>
+			</div>
+		</div>
+
+		<!--- South Island -->
+		<div class="row mb-5 south-island" id="South">
+			<h2 class="w-100">South Island</h2>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/nelson.html"><h3 class="text-white">Nelson</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/nelson.html#nelson">Nelson</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/south-island/nelson.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/marlborough.html"><h3 class="text-white">Marlborough</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/marlborough.html#blenheim">Blenheim</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/south-island/blenheim.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/west-coast.html"><h3 class="text-white">West Coast</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/west-coast.html#westport">Westport</a>,
+						<a href="https://book.asurestay.com/west-coast.html#haast">Haast</a>,
+						<a href="https://book.asurestay.com/west-coast.html#greymouth">Greymouth</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/south-island/west-coast.jpg">
+				</div>
+			</div>
+
+			<div class="col-lg-8 col-md-6 col-xs-12 p-1">
+				<div style="background: #dbdbdb; height: 100%; align-items: center; display: flex;">
+					<img style="width:100%; height:auto;" src="https://www.asurestay.com/assets/Uploads/02eaef0c5d/online-check-in-v2.png">
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/canterbury.html"><h3 class="text-white">Canterbury</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/canterbury.html#ashburton">Ashburton</a>,
+						<a href="https://book.asurestay.com/canterbury.html#geraldine">Geraldine</a>,
+						<a href="https://book.asurestay.com/canterbury.html#christchurch">Christchurch</a>,
+						<a href="https://book.asurestay.com/canterbury.html#timaru">Timaru</a>,
+						<a href="https://book.asurestay.com/canterbury.html#hanmer-springs">Hanmer Springs</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/south-island/canterbury.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/otago.html"><h3 class="text-white">Otago</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/otago.html#oamaru">Oamaru</a>,
+						<a href="https://book.asurestay.com/otago.html#milton">Milton</a>,
+						<a href="https://book.asurestay.com/otago.html#dunedin">Dunedin</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/south-island/otago.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/central-otago.html"><h3 class="text-white">Central Otago</h3></a>
+					<span>
+						<!--<a href="https://book.asurestay.com/central-otago.html#queenstown">Queenstown</a>,-->
+						<a href="https://book.asurestay.com/central-otago.html#cromwell">Cromwell</a>,						
+						<a href="https://book.asurestay.com/central-otago.html#wanaka">Wanaka</a>
+						<!--<a href="https://book.asurestay.com/central-otago.html#alexandra">Alexandra</a>-->
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/south-island/central-otago.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-xs-12 p-1">
+				<div class="hovereffect2">
+					<a href="https://book.asurestay.com/southland.html"><h3 class="text-white">Southland</h3></a>
+					<span>
+						<a href="https://book.asurestay.com/southland.html#gore">Gore</a>,
+						<a href="https://book.asurestay.com/southland.html#te-anau">Te Anau</a>,
+						<a href="https://book.asurestay.com/southland.html#invercargill">Invercargill</a>
+					</span>
+					<img src="https://www.asurestay.com/resources/themes/asurestay/img/south-island/southland.jpg">
+				</div>
+			</div>
+		</div>
+  </div>
+ </div>
+</section>

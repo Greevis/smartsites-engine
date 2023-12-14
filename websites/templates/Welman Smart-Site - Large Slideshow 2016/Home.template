@@ -1,0 +1,86 @@
+description:Home
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:Top of page content.
+customContent2:Replacement area for first box
+customContent3:Replacement area for second box
+customContent4:Replacement area for third box
+
+defaultName:Home
+defaultTitle:Welcome to %PROPERTY_NAME% Accommodation
+defaultUrl:index
+
+customConfig-name:eventCategoryId_attractions
+customConfig-label:Local Attractions slideshow
+customConfig-type:eventCategory
+
+customConfig-name:eventCategoryId
+customConfig-label:Other Articles slideshow
+customConfig-type:eventCategory
+
+customConfig-name:eventCategoryId_reviews
+customConfig-label:Reviews slideshow
+customConfig-type:eventCategory
+
+
+** template start **
+
+<div id="slideshow">
+	<div class="slideshowGallery">
+		%MAIN_GALLERY_SLIDESHOW%
+	</div>
+	<div class="row">
+		<div class="bookBox">
+			<h3>Book Direct - Best Rates Guaranteed</h3>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="pageContainer homeContainer">
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+		<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		
+		<!-- webrooms room types -->
+		<div class="homeArticles"> 
+			<div class="slideControls">
+				<h2 class="pageTitle"><a href="accommodation.html"><span>%PROPERTY_CITY% Motel Accommodation</span></a></h2>
+				<button class="propPrev propPrev-roomtypes">&lt;</button>
+				<button class="propNext propNext-roomtypes">&gt;</button>
+			</div>
+			<div class="slide0">
+				%ROOMTYPE_DESCRIPTIONS_CATEGORIES[False,False]%
+			</div>
+			<div class="customContent">
+				<div class="pad">%PAGE_CUSTOM_CONTENT_2%</div>
+			</div>	
+		</div>
+		
+		<!-- articles attractions -->
+		<div class="homeArticles slide1"> 
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_attractions","Attractions.template","eventCategoryId_attractions"]%
+			<div class="customContent">
+				<div class="pad">%PAGE_CUSTOM_CONTENT_3%</div>
+			</div>
+		</div>		
+			
+		<!-- articles other -->	
+		<div class="homeArticles slide2"> 
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId","Events.template","eventCategoryId_events"]%
+			<div class="customContent">
+				<div class="pad">%PAGE_CUSTOM_CONTENT_4%</div>
+			</div>
+		</div>
+		
+		<!-- articles reviews -->
+		<div class="homeArticles slide3" id="propertyReviews">
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_reviews","Reviews.template","eventCategoryId_reviews"]%
+		</div>
+		
+	</div>
+</div>

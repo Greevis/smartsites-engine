@@ -1,0 +1,91 @@
+description:Individual Property detail
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:[Property Template]
+defaultTitle:Welcome to %PROPERTY_NAME% Accommodation
+defaultUrl:property
+
+
+** template start **
+
+    <header class="masthead bg-primary text-white text-center template-banner">
+    <div class="main-slideshow" style="background: url('images/banner-bg.jpg') top center no-repeat; background-attachment:fixed;">
+      </div>
+      <div class="container" style="text-align:center;background-color:rgb(255,255,255,0.4);padding:15px;">
+        
+        You'll need a KiwiCash profile to use our services. To make bookings, ensure you are <a style="color:#fff;text-decoration:underline;" href="https://kiwicash.web-rooms.com">logged in</a>.
+        <p>
+        <div onclick="window.location.href='https://kiwicash.web-rooms.com'" class="mb-3 text-uppercase focus-in-expand-fwd" style="cursor:pointer;margin:0 auto;background: url(https://www.kiwicamp.nz/resources/themes/kiwicamp/img/btn-yellow-bg.png) center left no-repeat #fed237; padding:7px 20px;color:#000;border-width:10px;border-color:#fed237;border-style:solid;width:300px;">KiwiCash Dashboard</div>
+       </p>
+      </div>
+    </header>
+
+<div class="container" id="propContent">
+
+<div class="booking-engine-exclude">
+
+	<h1 class="pageTitle">Welcome to %PROPERTY_SERVICE_NAME%</h1>
+	
+	<section class="p-0">
+		<div class="contanier">
+			<div class="row">
+			<div class="col-md-7 outerContact">
+			  <div class="property-image">%MAIN_GALLERY_SLIDESHOW%</div>
+			</div>
+			<div class="col-md-5 my-5">
+			  <div class="col-md-12 pl-0">
+					  <h3>%PROPERTY_SERVICE_NAME%</h3>
+					  <p class="my-3">Address:<br> <a href="#map">%PROPERTY_STREETADDRESS% %PROPERTY_SUBURB% %PROPERTY_CITY% %PROPERTY_COUNTRY%</a></p>
+					  <div class="outerAbout">
+							%PROPERTY_DESCRIPTION%
+						</div>
+			  </div>
+			  <a class="col-md-12 search-button" title="Book Online" href="?#book">Check Availability / Book Online</a>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="outerFacilities">
+		<h2>Facilities</h2>
+			%PROPERTY_FACILITIES%
+	</div>
+	
+	<div style="clear:both;height:60px;"></div>
+	
+	<div class="outerRoomtypes" id="roomTypeListings">	
+		%ROOMTYPE_DESCRIPTIONS_ALL%
+	</div>
+	
+<div style="clear:both;height:60px;"></div>
+	
+	<div class="outerMap property-map" id="map">
+		%PROPERTY_MAP%
+	</div>
+
+</div>	
+		
+<div class="booking-engine-outer hide">
+	<div class="row">
+		<a class="booking-back btn btn-primary ml-5" href="#" onclick="window.location.href=window.location.pathname+'?time='+getQuerystring('time')+'&do=detail#detail';">&lt; Back to Details</a>
+		%BOOKING_ENGINE%
+	</div>
+</div>
+
+</div>
+			
+<script>
+$('title').text('%PROPERTY_SERVICE_NAME% - %SITE_NAME%');
+</script>
+
+<!-- footer.inc is included here -->

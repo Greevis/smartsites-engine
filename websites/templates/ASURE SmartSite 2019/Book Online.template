@@ -1,0 +1,39 @@
+description:Webrooms booking engine
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Book Online
+defaultTitle:Check Our Rates and Live Availability - Book Direct and Save!
+defaultUrl:reservations
+defaultDescription:Check our rates, live availability and book your ASURE %PROPERTY_CITY% accommodation online.
+
+** template start **
+
+<section class="main-section bg-light">
+	<div class="container">
+		<div class="row">
+			<h1 class="w-100 mb-4 text-center title sr-scroll2">%PAGE_TITLE%</h1>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+		  <div class="col-12">		    		  
+				%BOOKING_ENGINE%
+			</div>
+		</div>
+	</div>
+</section>
+
+	

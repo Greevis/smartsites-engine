@@ -1,0 +1,36 @@
+description:Local Events
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Intro code
+customContent2:Displayed below the articles
+customContent3:
+customContent4:
+
+defaultName:Events
+defaultTitle:Local Events and What's On in %PROPERTY_CITY%, %PROPERTY_REGION%
+defaultUrl:events
+
+customConfig-name:eventCategoryId_events
+customConfig-label:Local Events
+customConfig-type:eventCategory
+
+** template start **
+
+<div class="content row">
+	<section id="pageOuter" class="pageContent">
+
+		<div class="pageIntro">
+			<h1 class="pageTitle font">%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		</div>			
+
+		<div class="pageArticles articlesEvents">%EVENTS_BY_EVENTCATEGORY_FULL_REVERSE["eventCategoryId_events"]%</div>
+		<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+	
+	</section>
+</div>

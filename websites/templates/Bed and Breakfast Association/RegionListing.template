@@ -1,0 +1,40 @@
+description:Page containing site map link list.
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+defaultName:[Region Template]
+defaultTitle:Property Information
+defaultUrl:region
+
+** template start **
+
+<div id="topBar">
+		<a class="topbarLogo" href="index.html" title="Bed and Breakfast Association NEW ZEALAND">
+			<img src="images/logo-white-bnb.png">
+		</a>
+		%GROUP_GUEST_LOGIN%
+</div>
+
+<div class="pageBook fixmargin">
+	<div class="row">
+		<div class="webrooms-datepicker">
+		    %GROUP_LOCATION_SEARCH_CONTROLS%
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="basicPage">   
+	    <div class="regionalPage">%PROPERTIES_IN_CURRENT_CATEGORY_BY_SUBCATEGORY%</div>
+	</div>
+</div>
+

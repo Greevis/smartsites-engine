@@ -1,0 +1,201 @@
+/* home map */
+.preloadMap { height:1px; width:1px; overflow:hidden; }
+.homeMap { position:relative; height:410px; }
+.mapLinksNI { position:absolute; height:520px; width:960px; top:0; right:0; }
+.mapLinksSI { position:absolute; height:520px; width:700px; top:0; right:0; }
+.homeMap h3 { font-weight:700; font-size:17px; margin-bottom:5px; }
+.homeMap a.maptext { color:#666; font-size:17px; display:block; width:220px; }
+.homeMap a.maptext:hover { color:#118AD7; background:#fff; }
+.homeMap .maplinkNZ { color:#118AD7 !important; }
+
+.homeMapBG { position:absolute; top:-100px; right:0; background:url(../images/nzmap.png) right top no-repeat; 
+height:520px; width:368px; z-index:1; }
+.homeMapHover { position:absolute; top:-100px; right:0; height:520px; width:368px; z-index:2; opacity:0; }
+.homeMapHoverSI { position:absolute; top:-100px; right:0; height:520px; width:368px; z-index:2; opacity:0; }
+
+a.maparea { cursor:pointer; display:block; text-indent:-999px; overflow:hidden; z-index:3; }
+a.highlight { color:#118AD7 !important; background:#fff; }
+.homeMapHover:before,
+.homeMapHoverSI:before { content:''; width:200px; height:200px; position:absolute; top:40px; right:160px; opacity:0; border-radius:200px; background-size:cover; background-position:center center; }
+
+.mapArea01 { height:76px; width:68px; position:absolute; top:-100px; right:120px; background:lime; opacity:0.3; background:none; opacity:0; }
+.mapArea01:hover ~ .homeMapHover,
+.maplink01:hover ~ .homeMapHover { background:url(../images/nzmap_01.png) right top no-repeat; opacity:1; }
+.mapArea01:hover ~ .homeMapHover:before,
+.maplink01:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover01.jpg); }
+
+.mapArea02 { height:43px; width:39px; position:absolute; top:-23px; right:103px; background:pink; opacity:0.3; background:none; opacity:0; }
+.mapArea02:hover ~ .homeMapHover,
+.maplink02:hover ~ .homeMapHover { background:url(../images/nzmap_02.png) right top no-repeat; opacity:1; }
+.mapArea02:hover ~ .homeMapHover:before,
+.maplink02:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover02.jpg); }
+
+.mapArea03 { height:43px; width:39px; position:absolute; top:-24px; right:63px; background:cyan; opacity:0.3; background:none; opacity:0; }
+.mapArea03:hover ~ .homeMapHover,
+.maplink03:hover ~ .homeMapHover { background:url(../images/nzmap_03.png) right top no-repeat; opacity:1; }
+.mapArea03:hover ~ .homeMapHover:before,
+.maplink03:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover03.jpg); }
+
+.mapArea04 { height:43px; width:39px; position:absolute; top:21px; right:96px; background:orange; opacity:0.3; background:none; opacity:0; }
+.mapArea04:hover ~ .homeMapHover,
+.maplink04:hover ~ .homeMapHover { background:url(../images/nzmap_04.png) right top no-repeat; opacity:1; }
+.mapArea04:hover ~ .homeMapHover:before,
+.maplink04:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover04.jpg); }
+
+.mapArea05 { height:22px; width:20px; position:absolute; top:20px; right:70px; background:lime; opacity:0.3; background:none; opacity:0; }
+.mapArea05:hover ~ .homeMapHover,
+.maplink05:hover ~ .homeMapHover { background:url(../images/nzmap_05.png) right top no-repeat; opacity:1; }
+.mapArea05:hover ~ .homeMapHover:before,
+.maplink05:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover05.jpg); }
+
+.mapArea06 { height:22px; width:20px; position:absolute; top:29px; right:45px; background:yellow; opacity:0.3; background:none; opacity:0; }
+.mapArea06:hover ~ .homeMapHover,
+.maplink06:hover ~ .homeMapHover { background:url(../images/nzmap_06.png) right top no-repeat; opacity:1; }
+.mapArea06:hover ~ .homeMapHover:before,
+.maplink06:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover06.jpg); }
+
+.mapArea07 { height:22px; width:20px; position:absolute; top:43px; right:67px; background:blue; opacity:0.3; background:none; opacity:0; }
+.mapArea07:hover ~ .homeMapHover,
+.maplink07:hover ~ .homeMapHover { background:url(../images/nzmap_07.png) right top no-repeat; opacity:1; }
+.mapArea07:hover ~ .homeMapHover:before,
+.maplink07:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover07.jpg); }
+
+.mapArea08 { height:43px; width:39px; position:absolute; top:66px; right:76px; background:red; opacity:0.3; background:none; opacity:0; }
+.mapArea08:hover ~ .homeMapHover,
+.maplink08:hover ~ .homeMapHover { background:url(../images/nzmap_08.png) right top no-repeat; opacity:1; }
+.mapArea08:hover ~ .homeMapHover:before,
+.maplink08:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover08.jpg); }
+
+.mapArea09 { height:43px; width:39px; position:absolute; top:75px; right:119px; background:purple; opacity:0.3; background:none; opacity:0; }
+.mapArea09:hover ~ .homeMapHover,
+.maplink09:hover ~ .homeMapHover { background:url(../images/nzmap_09.png) right top no-repeat; opacity:1; }
+.mapArea09:hover ~ .homeMapHover:before,
+.maplink09:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover09.jpg); }
+
+.mapArea10 { height:43px; width:39px; position:absolute; top:94px; right:36px; background:cyan; opacity:0.3; background:none; opacity:0; }
+.mapArea10:hover ~ .homeMapHover,
+.maplink10:hover ~ .homeMapHover { background:url(../images/nzmap_10.png) right top no-repeat; opacity:1; }
+.mapArea10:hover ~ .homeMapHover:before,
+.maplink10:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover10.jpg); }
+
+.mapArea11 { height:43px; width:39px; position:absolute; top:110px; right:77px; background:lime; opacity:0.3; background:none; opacity:0; }
+.mapArea11:hover ~ .homeMapHover,
+.maplink11:hover ~ .homeMapHover { background:url(../images/nzmap_11.png) right top no-repeat; opacity:1; }
+.mapArea11:hover ~ .homeMapHover:before,
+.maplink11:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover11.jpg); }
+
+.mapArea12 { height:22px; width:20px; position:absolute; top:147px; right:109px; background:orange; opacity:0.3; background:none; opacity:0; }
+.mapArea12:hover ~ .homeMapHover,
+.maplink12:hover ~ .homeMapHover { background:url(../images/nzmap_12.png) right top no-repeat; opacity:1; }
+.mapArea12:hover ~ .homeMapHover:before,
+.maplink12:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover12.jpg); }
+
+.mapArea13 { height:43px; width:39px; position:absolute; top:154px; right:69px; background:blue; opacity:0.3; background:none; opacity:0; }
+.mapArea13:hover ~ .homeMapHover,
+.maplink13:hover ~ .homeMapHover { background:url(../images/nzmap_13.png) right top no-repeat; opacity:1; }
+.mapArea13:hover ~ .homeMapHover:before,
+.maplink13:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover13.jpg); }
+
+.mapArea14 { height:22px; width:20px; position:absolute; top:170px; right:110px; background:yellow; opacity:0.3; background:none; opacity:0; }
+.mapArea14:hover ~ .homeMapHover,
+.maplink14:hover ~ .homeMapHover { background:url(../images/nzmap_14.png) right top no-repeat; opacity:1; }
+.mapArea14:hover ~ .homeMapHover:before,
+.maplink14:hover ~ .homeMapHover:before { opacity:1; background-image:url(../images/hover14.jpg); }
+
+.mapArea15 { height:43px; width:39px; position:absolute; bottom:336px; right:169px; background:lime; opacity:0.3; background:none; opacity:0; }
+.mapArea15:hover ~ .homeMapHoverSI,
+.maplink15:hover ~ .homeMapHoverSI { background:url(../images/nzmap_15.png) right top no-repeat; opacity:1; }
+.mapArea15:hover ~ .homeMapHoverSI:before,
+.maplink15:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover15.jpg); }
+
+.mapArea16 { height:43px; width:39px; position:absolute; bottom:328px; right:129px; background:purple; opacity:0.3; background:none; opacity:0; }
+.mapArea16:hover ~ .homeMapHoverSI,
+.maplink16:hover ~ .homeMapHoverSI { background:url(../images/nzmap_16.png) right top no-repeat; opacity:1; }
+.mapArea16:hover ~ .homeMapHoverSI:before,
+.maplink16:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover16.jpg); }
+
+.mapArea17 { height:43px; width:39px; position:absolute; bottom:284px; right:129px; background:cyan; opacity:0.3; background:none; opacity:0; }
+.mapArea17:hover ~ .homeMapHoverSI,
+.maplink17:hover ~ .homeMapHoverSI { background:url(../images/nzmap_17.png) right top no-repeat; opacity:1; }
+.mapArea17:hover ~ .homeMapHoverSI:before,
+.maplink17:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover17.jpg); }
+
+.mapArea18 { height:76px; width:68px; position:absolute; bottom:258px; right:210px; background:blue; opacity:0.3; background:none; opacity:0; }
+.mapArea18:hover ~ .homeMapHoverSI,
+.maplink18:hover ~ .homeMapHoverSI { background:url(../images/nzmap_18.png) right top no-repeat; opacity:1; }
+.mapArea18:hover ~ .homeMapHoverSI:before,
+.maplink18:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover18.jpg); }
+
+.mapArea19 { height:43px; width:39px; position:absolute; bottom:265px; right:169px; background:orange; opacity:0.3; background:none; opacity:0; }
+.mapArea19:hover ~ .homeMapHoverSI,
+.maplink19:hover ~ .homeMapHoverSI { background:url(../images/nzmap_19.png) right top no-repeat; opacity:1; }
+.mapArea19:hover ~ .homeMapHoverSI:before,
+.maplink19:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover19.jpg); }
+
+.mapArea20 { height:43px; width:39px; position:absolute; bottom:221px; right:161px; background:red; opacity:0.3; background:none; opacity:0; }
+.mapArea20:hover ~ .homeMapHoverSI,
+.maplink20:hover ~ .homeMapHoverSI { background:url(../images/nzmap_20.png) right top no-repeat; opacity:1; }
+.mapArea20:hover ~ .homeMapHoverSI:before,
+.maplink20:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover20.jpg); }
+
+.mapArea21 { height:20px; width:39px; position:absolute; bottom:203px; right:215px; background:yellow; opacity:0.3; background:none; opacity:0; }
+.mapArea21:hover ~ .homeMapHoverSI,
+.maplink21:hover ~ .homeMapHoverSI { background:url(../images/nzmap_21.png) right top no-repeat; opacity:1; }
+.mapArea21:hover ~ .homeMapHoverSI:before,
+.maplink21:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover21.jpg); }
+
+.mapArea22 { height:43px; width:39px; position:absolute; bottom:185px; right:271px; background:pink; opacity:0.3; background:none; opacity:0; }
+.mapArea22:hover ~ .homeMapHoverSI,
+.maplink22:hover ~ .homeMapHoverSI { background:url(../images/nzmap_22.png) right top no-repeat; opacity:1; }
+.mapArea22:hover ~ .homeMapHoverSI:before,
+.maplink22:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover22.jpg); }
+
+.mapArea23 { height:20px; width:39px; position:absolute; bottom:178px; right:215px; background:cyan; opacity:0.3; background:none; opacity:0; }
+.mapArea23:hover ~ .homeMapHoverSI,
+.maplink23:hover ~ .homeMapHoverSI { background:url(../images/nzmap_23.png) right top no-repeat; opacity:1; }
+.mapArea23:hover ~ .homeMapHoverSI:before,
+.maplink23:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover23.jpg); }
+
+.mapArea24 { height:43px; width:39px; position:absolute; bottom:146px; right:318px; background:lime; opacity:0.3; background:none; opacity:0; }
+.mapArea24:hover ~ .homeMapHoverSI,
+.maplink24:hover ~ .homeMapHoverSI { background:url(../images/nzmap_24.png) right top no-repeat; opacity:1; }
+.mapArea24:hover ~ .homeMapHoverSI:before,
+.maplink24:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover24.jpg); }
+
+.mapArea25 { height:34px; width:39px; position:absolute; bottom:140px; right:234px; background:lime; opacity:0.3; background:none; opacity:0; }
+.mapArea25:hover ~ .homeMapHoverSI,
+.maplink25:hover ~ .homeMapHoverSI { background:url(../images/nzmap_25.png) right top no-repeat; opacity:1; }
+.mapArea25:hover ~ .homeMapHoverSI:before,
+.maplink25:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover25.jpg); }
+
+.mapArea26 { height:43px; width:39px; position:absolute; bottom:115px; right:276px; background:lime; opacity:0.3; background:none; opacity:0; }
+.mapArea26:hover ~ .homeMapHoverSI,
+.maplink26:hover ~ .homeMapHoverSI { background:url(../images/nzmap_26.png) right top no-repeat; opacity:1; }
+.mapArea26:hover ~ .homeMapHoverSI:before,
+.maplink26:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover26.jpg); }
+
+.mapArea27 { height:20px; width:39px; position:absolute; bottom:230px; right:201px; background:yellow; opacity:0.3; background:none; opacity:0; }
+.mapArea27:hover ~ .homeMapHoverSI,
+.maplink27:hover ~ .homeMapHoverSI { background:url(../images/nzmap_27.png) right top no-repeat; opacity:1; }
+.mapArea27:hover ~ .homeMapHoverSI:before,
+.maplink27:hover ~ .homeMapHoverSI:before { opacity:1; background-image:url(../images/hover27.jpg); }
+
+
+
+@media only screen and (max-width:1000px) 
+{
+	.homeMap { height:auto; }
+	.mapLinksNI,
+	.mapLinksSI { display:inline-block; position:static; width:auto; height:auto; vertical-align:top; text-align:left; }
+}
+	
+@media only screen and (max-width:800px) 
+{	
+	.homeMap { text-align:center; }
+	.homeMapHover,
+	.homeMapBG,
+	.homeMap .maparea,
+	.homeMapHoverSI { display:none;}
+	.mapLinksNI { margin-bottom:1em; }
+	.qualityImg { display:block; margin:auto; float:none; }
+}

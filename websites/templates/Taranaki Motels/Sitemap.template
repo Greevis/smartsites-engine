@@ -1,0 +1,45 @@
+description:Page containing site map link list.
+
+customContent1:General summary content for this page.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+defaultName:Site Map
+defaultTitle:Site Map
+defaultUrl:sitemap
+
+** template start **
+
+<div id="headerContainer">
+	<div class="row">
+			<div class="ppgContact">
+					<a href="index.html" title="Taranaki Motels New Plymouth"><h2>Taranaki Motels</h2></a>
+					<p>New Plymouth Accommodation New Zealand</p>
+			</div>
+			<div class="webrooms-datepicker">
+			    %JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Check Availability","index.html"]%
+			</div>
+	</div>
+</div>
+
+<div class="headerSpace"></div>
+		
+<h1 class="pageTitle">%PAGE_TITLE%</h1> 		
+		
+<div class="row">
+	<div id="pageContentTop" class="basicPage">
+	    <div class="customContent2">%PAGE_CUSTOM_CONTENT_1%</div>
+	    <div class="box">
+	    	%SITEMAP%
+	    </div>
+	</div>
+</div>
+
+%PROPERTIES_MAP_IN_THIRDPARTY%

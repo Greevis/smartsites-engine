@@ -1,0 +1,44 @@
+		
+		#headerNav { height:65px; }
+		#headerNav .nav-collapse { overflow:visible !important; position:static; }
+		#headerNav .row UL.nav LI { display:inline; }
+		#footerNav .nav li { display:inline; }
+
+		.rwr_table td { vertical-align:middle; }
+		#pageContent .cmsGallery li { display:inline; }
+		.email-outer { height:auto; }
+		.rwrRoomtype .desc-photos-thumbs UL.desc-photos-outer li { display:inline; }
+.row UL.nav LI A { font-size:100%; }
+.bookText { display:none; }
+
+
+		.nav1L { display:none; }
+		#pageContainer .hbL .newsTicker .newsLinks,
+		#pageContainer .hbLwr .rwrRoomtype H2  { background:#000; }
+		.datepicker-button { }
+		.cmsGallery li { display:inline; }
+		.email-outer { height:auto; }
+		#pageContainer .desc-photos-thumbs li.photo { display:none; }
+		#pageContainer .desc-photos-thumbs li.first { display:block; margin:0; }
+		#pageContainer .rwrRoomtype ul { list-style:disc; }
+		#pageContainer .desc-photos-thumbs ul { list-style:none; }
+		#pageContainer .rwrRoomtype ul.desc-features-outer { overflow:visible; }
+		#pageContainer .rwrRoomtype ul.desc-features-outer li { float:none; width:auto; }
+		#pageContainer .rwrRoomtype .fromCap,
+		#pageContainer .rwrRoomtype .desc-from,
+		#pageContainer .rwrRoomtype .desc-from .from,
+		#pageContainer .rwrRoomtype .desc-cap { display:inline; }
+		#bookingBox H4 { font-size:24px; }
+		#ui-datepicker-div .ui-datepicker-calendar { background:url(/~images/template/iconBook.png) no-repeat 15px center #0e0e0e; }
+		
+
+#headerBlock .propertyInfo { display:initial; }
+.datepicker-label { display:inline; }
+.datepicker-input { display:inline; }
+.datepicker-button { display:inline; padding:3px 15px; width:400px; }
+
+.homeArticles .propPrev-events, .homeArticles .propNext-events, .homeArticles .propPrev-roomtypes, .homeArticles .propNext-roomtypes { display:none; }
+	
+		
+	.pageContainer .pageFacilities LI { background:none; width:100%; }	
+		

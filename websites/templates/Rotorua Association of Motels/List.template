@@ -1,0 +1,44 @@
+description:Property List page
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:List
+defaultTitle:List
+defaultUrl:list
+
+** template start **
+
+<div class="pageBanner" id="propPage">
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="Stay Rotorua - Rotorua Accommodation Directory">
+				<img src="images/logo_stayrotorua2.png" alt="Rotorua Motels" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="propContent">
+	<div class="row">
+		<div id="pageContentTop">
+				<h1 class="pageTitle">Stay Rotorua - Motel Accommodation in Rotorua NZ</h1>
+		</div>	
+	</div>	
+	<div class="row">
+		%GROUP_LOCATION_RESULTS%
+	</div>
+</div>

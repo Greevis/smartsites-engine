@@ -1,0 +1,43 @@
+description:Blank page
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Page
+defaultTitle:Page
+defaultUrl:page
+
+** template start **
+
+<div class="pageBanner" id="propPage">
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="Stay Rotorua - Rotorua Accommodation Directory">
+				<img src="images/logo_stayrotorua2.png" alt="Rotorua Motels" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="propContent">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pagePad">
+		    %PAGE_CUSTOM_CONTENT_1%
+		    %PAGE_CUSTOM_CONTENT_2%
+		</div>
+	</div>
+</div>

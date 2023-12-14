@@ -1,0 +1,26 @@
+/* contact forms */
+.contactForm { box-sizing:border-box; margin:20px 0; }
+.formRow { width:100%; line-height:30px; }
+.formRow:hover { background:#f7f7f7; }
+.formLabel { width:30%; display:inline-block; vertical-align:top; }
+.formLabel p.subtext { line-height:100%; color:#666; font-weight:400; margin:0 0 10px 0; }
+.formField { width:70%; display:inline-block; float:right; vertical-align:top;; }
+.formRow:after { content:''; display:block; height:0; clear:both; }
+.formRow input, .formRow select, .formRow textarea { box-sizing:border-box; border:1px solid #ddd; border-radius:0; padding:4px; width:100%; font-family:inherit; margin-bottom:2px; }
+.radiocheckField { margin:5px 0; }
+.radiocheckField input { width:auto; padding:0; margin-right:5px; }
+.radiocheckField label { display:block; line-height:25px; vertical-align:top; cursor:pointer; }
+.noTxt { display:none; }
+.contactForm .btn { padding:10px 50px; cursor:pointer; margin-top:10px; }
+.contactForm .btn:hover { color:#fff; background:#333; }
+.formLabel, .formField { width:100%; float:none; }
+
+@media only screen and (max-width: 600px) 
+{
+
+.contactForm { padding:0; margin:0; }
+.formLabel, .formField { width:100%; float:none; }
+.recaptcha-outer { overflow:scroll; }
+.contactForm .btn { padding:10px 0; display:block; width:100%; }
+
+}

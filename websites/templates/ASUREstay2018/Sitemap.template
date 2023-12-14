@@ -1,0 +1,54 @@
+description:Page containing site map link list.
+
+customContent1:General summary content for this page.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:false
+
+defaultName:Site Map
+defaultTitle:Site Map
+defaultUrl:sitemap
+
+** template start **
+
+<div class="ASUREbg ASUREpageBg">
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="ASUREstay.com - ASURE Accommodation Group New Zealand">
+				<img src="images/logo_asure.png" alt="ASURE" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<h2>ASURE Accommodation</h2>
+			<h3>Your Comfort is ASUREd</h3>
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+			<div class="loyalty">
+				<span class="yellow">Loyalty Program:</span> 
+				Stay at three or more ASURE Accommodation Group properties and receive $100 credit off your 10th stay.
+				The rates on ASURESTAY.com include instant membership to our exclusive ASURE loyalty programme.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+	ASURE Accommodation Group
+</div>
+
+<div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pagePad">
+	    %PAGE_CUSTOM_CONTENT_1%
+	    %SITEMAP%
+	  </div>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+description:Page
+
+customContent1:Enter your page HTML.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Page
+defaultTitle:Page
+defaultUrl:page
+
+** template start **
+<div class="row">
+	<div class="pageContainer">
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+	</div>
+</div>

@@ -1,0 +1,49 @@
+description:Talk about what the home page has on it and why it is fabulous.
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+
+** template start **
+  
+ 	<div id="homeSlideshow">
+		<div class="row posRelative">
+			<div class="homeBook">
+			  <h1>How can we help you?</h1>
+				 %GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+		</div>	
+		<div class="cycle-slideshow" 
+		    		data-cycle-prev=".homeSlideshowPrev" 
+		    		data-cycle-next=".homeSlideshowNext" 
+		    		data-cycle-fx="fadeout" 
+		    		data-cycle-timeout="3000" 
+		    		data-cycle-speed="1000" 
+		    		data-cycle-slides="div">
+			<div class="slide" style="background-image:url(images/banner.jpg);">
+			<div class="slide" style="background-image:url(images/banner_1.jpg);">
+			</div>
+		</div>
+  </div>
+ <div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1>
+		
+		<div class="pagePad">
+		    %PAGE_CUSTOM_CONTENT_1%
+		    %PAGE_CUSTOM_CONTENT_2%
+		</div>
+	</div>
+</div>

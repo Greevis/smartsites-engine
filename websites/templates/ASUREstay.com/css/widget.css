@@ -1,0 +1,34 @@
+
+	.widget-label { font-size:10px; color:#ffd400; }
+	div.ui-datepicker { font-size:10px; }
+	.search-button { font-size:14px; width:100%; background:#65b319; line-height:20px; }
+	.head-outer { text-align:center; font-size:12px; margin-top:5px; }
+	.tagline { color:#ffd400; line-height:100%; }
+	.sub-tagline { color:#fff; line-height:100%; }
+
+#bookingWidget { position:relative; background:#1f4284; height:230px; width:100%; }
+#bookingWidget #bookingWidget-inner { height:210px; padding:10px; }
+#bookingWidget .widget-control-outer { margin:5px 0; }
+#bookingWidget .searchBox-outer { height:auto; margin:0; display:block; }
+#bookingWidget #searchBox { margin:5px 0 0; display:block; height:30px; line-height:30px; box-sizing:border-box; font-size:12px; text-indent:8px; background:#fff; }
+#bookingWidget .search-button { height:30px; line-height:30px; margin:0 0 10px; border:none; font-weight:700; }
+
+#bookingWidget #resultsBox { overflow:hidden; width:auto; left:10px; right:10px; text-indent:0; max-height:145px; }
+#bookingWidget ul.location-results li.search-result { box-sizing:border-box; font-size:11px; padding:4px; }
+#bookingWidget .result-text { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+#bookingWidget .result-icon { display:none; }
+
+.widget-control-outer { position:relative; }
+
+.checkin-label,
+#groupcategoryselector { display:block; background-position:10px center; background-repeat:no-repeat; background-size:12px; background-color:#fff; text-indent:30px; margin-bottom:2px;
+	width:100%; border:none; outline:none; cursor:pointer; }
+
+.checkin-label { background-image:url(../images/icon_calendar.png); }
+#groupcategoryselector { background-image: url(../images/icon_map.png); text-indent:20px; }
+
+#dp { position:absolute; top:0; right:0; left:0; text-indent:80px; background:none; width:100%; border:none; cursor:pointer; }
+
+.checkin-label,	#dp,
+#groupcategoryselector { height:30px; line-height:30px; box-sizing:border-box; padding:0; font-size:11px; font-family:'Open Sans', sans-serif; color:#666; }
+

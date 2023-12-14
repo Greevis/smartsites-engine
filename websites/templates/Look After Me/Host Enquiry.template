@@ -1,0 +1,81 @@
+description:Host Enquiry Form
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Host Enquiry
+defaultTitle:Host Enquiry
+defaultUrl:host-enquiry
+
+customConfig-name:emailform_email
+customConfig-label:Contact Form email recipient
+customConfig-type:email
+
+customConfig-name:emailform_htmlcode
+customConfig-label:Contact Form HTML code
+customConfig-type:blocktext
+
+customConfig-name:emailform_validationcode
+customConfig-label:Contact Form Javascript validation code
+customConfig-type:blocktext
+
+customConfig-name:emailform_thanksMessage
+customConfig-label:Contact form thanks message
+customConfig-type:simpletext
+
+customConfig-name:emailform_thanksPage
+customConfig-label:Contact form thanks page
+customConfig-type:websitepage
+
+** template start **
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+
+<div class="pageContainer">
+	<div class="row contact-row">
+		<h1 class="pageTitle title-h1">%PAGE_TITLE%</h1>
+		<div class="row pageContainer">
+		<div class="padBox">
+						<h2>Make an online enquiry about our hosting:</h2>			 
+		         <div class="contactForm">
+							<!-- enquiry form -->
+							%CUSTOM_MAILFORM["emailform_email","emailform_htmlcode","emailform_validationcode","emailform_thankyouMessage","emailform_thanksPage","Send"]%
+						</div>	
+			</div>		
+		</div>
+	</div>
+</div>

@@ -1,0 +1,61 @@
+description:Home
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:Top of page content.
+customContent2:Review title above datepicker.
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome to %PROPERTY_NAME% Accommodation
+defaultUrl:index
+defaultCustomCss:%INCLUDE_FILE["css/styles_home-css.inc"]%
+
+customConfig-name:eventCategoryId_attractions
+customConfig-label:Local Attractions slideshow
+customConfig-type:eventCategory
+
+
+** template start **
+
+<div class="headerBackground">
+	<div class="row">
+		<div class="reviewTitle">
+			<a href="reviews.html" title="Read or Write Guest Reviews">%PAGE_CUSTOM_CONTENT_2%</a>
+		</div>
+		<div class="bookBox">%JQUERY_DATE_PICKER%</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="pageContainer">
+		
+		<h1 class="pageTitle">%PAGE_TITLE%</h1>
+		<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		
+		<div id="homeBoxes">
+			<div class="columns six">
+				<div class="slideControls">
+					<h2 class="pageTitle"><a href="accommodation.html"><span>Queenstown Accommodation</span></a></h2>
+					<button class="propPrev propPrev-roomtypes">&lt;</button>
+					<button class="propNext propNext-roomtypes">&gt;</button>
+				</div>
+				<div class="slide0">
+					%ROOMTYPE_DESCRIPTIONS_CATEGORIES[False,False]%
+				</div>
+				<div class="homeboxLink"><a href="accommodation.html" title="Queenstown Accommodation">View Room Options</a></div>
+			</div>
+			<div class="columns six">
+				%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_attractions","Attractions.template","eventCategoryId_attractions"]%
+				<div class="homeboxLink"><a href="queenstown.html" title="Queenstown Activities and Attractions">View Attractions</a></div>
+			</div>
+		</div>
+		
+		<div class="clear"></div>		
+	</div>
+</div>

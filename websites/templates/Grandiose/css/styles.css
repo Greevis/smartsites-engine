@@ -1,0 +1,288 @@
+﻿/*=======================================================*/	
+/*=======================================================*/	
+/*=================== WEBSITE STYLING ===================*/
+/*=======================================================*/
+/*=======================================================*/	
+
+html, body {
+	margin:0; padding:0; height:100%; color:#444;
+	font-family:'colaborate-regularregular', 'Open Sans', sans-serif; font-size:15px;
+	background:url(../images/background_blur.jpg) center top no-repeat fixed #9a9a9a;
+}
+
+h1, h2, h3, h4 { }
+div#preload { display: none; }
+a { color:#eee; }
+ul.nav { text-align:left; padding:0; margin:0; line-height:100%; }
+ul.nav li { padding:0; margin:0; display:inline-block; }
+ul.nav li a { text-decoration:none; display:block; }
+.mobile { display:none; }
+
+/* header */
+#headerBlock { background:url(../images/background_black75.png) repeat top left; background:rgba(0,0,0,0.65); width:100%; text-align:center; padding:40px 0; width:281px; position:fixed; z-index:150; }
+#headerBlock .propertyLogo { padding-bottom:20px; }
+#headerBlock .propertyLogo img { width:190px; }
+#headerBlock .hLine { width:80%; margin:20px auto; }
+#headerBlock ul.nav li { display:block; margin:20px 0; }
+#headerBlock ul.nav li a { /* gold */ text-align:center; font-size:18px; }
+#headerBlock .propertyBook { padding-top:20px; }
+#headerBlock .webrooms-datepicker-custom { padding:0 30px; }
+#headerBlock .datepicker-label { color:#ddd; }
+#headerBlock .datepicker-input,
+#headerBlock .datepicker-button { background:rgba(0,0,0,0.2); border:1px solid #b78c30; border-radius:6px; color:#eecf65; font-family:'colaborate-regularregular', 'Open Sans', sans-serif; font-size:14px; font-weight:300; display:block; width:100%;
+	padding:10px 0; margin:5px 0; text-align:center; }
+#headerBlock .datepicker-input:hover,
+#headerBlock .datepicker-button:hover { cursor:pointer; background:rgba(0,0,0,0.5); }
+
+/* page */
+#container { min-height:100%; position:relative; }
+#divHeight { min-height:620px; }
+.hLine { height:1px; }
+.pageContainer { margin:30px 0; }
+.pageBody { background:url(../images/background_body.jpg) center top repeat-y #f1f2f2; }
+.pageContent { background:url(../images/background_black75.png) repeat top left; background:rgba(0,0,0,0.65); padding:0 60px 70px 60px; color:#ddd; }
+.pageContent p { padding:10px 0; } 
+.pageContent b { font-weight:bold; }
+.pageContent ul { padding:10px 0; margin-left:20px; }
+.pageTitle { text-align:center; background:rgba(0,0,0,0.65); padding-bottom:20px; overflow:hidden; border:60px solid rgba(0,0,0,0.0); border-bottom:0; font-size:22px; }
+.pageTitle:before, 
+.pageTitle:after { content:''; width:100%; display:inline-block; vertical-align:middle; height:1px; }
+.pageTitle:before { margin-left:-100%; margin-right:1em; }
+.pageTitle:after { margin-right:-100%; margin-left:1em; }
+.pageContainer .hLine { margin-top:30px; }
+
+/* terms */
+.terms { font-family:Arial, Helvetica, sans-serif; font-size:12px; }
+.terms strong { font-weight:bold; }
+.terms em { font-style:italic; }
+.terms h2 { font-weight:bold; margin-top:20px; font-size:16px; color:#eecf65; }
+
+/* contact */
+.contactCards { text-align:center; }
+.contactBox { display:inline-block; margin:0 20px; vertical-align:top; }
+.contactBox .contactPic { border-radius:50px; width:100px; height:100px; background-size:cover; background-position:center; background-image:url(../images/background_home.jpg); 
+	margin:auto; margin-bottom:10px; }
+
+/* basic page gallery */
+.pageGallery { margin-top:-80px; margin-bottom:80px; }
+.pageGallery ul { width:100%; text-align:center; }
+.pageGallery ul, .pageGallery li { padding:0; margin:0; }
+.pageGallery li { display:inline-block; width:180px; height:120px; overflow:hidden; border:8px solid rgba(255,255,255,0.3); vertical-align:top; margin:10px; position:relative; }
+.pageGallery li a:hover { cursor: url(../images/magnify.cur), -moz-zoom-in; }
+.pageGallery li a img { min-width:inherit; position:absolute; left:50%; top:50%; width:auto; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+
+/* site map */
+.sitemap-list li { margin-bottom:5px; }
+.sitemap-list a { font-weight:600; }
+.sitemap-title { display:block; opacity:0.75; }
+.sitemap-caption { opacity:0.5; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+/* footer */
+#footerBlock { background:url(../images/background_footer.jpg) repeat-x center top #828282; padding:50px 0; position:absolute; bottom:0; left:0; height:184px; width:100%; }
+#footerNav { text-align:center; }
+#footerNav { clear:both; }
+#footerNav ul.nav { text-align:center; }
+#footerNav ul.nav li { padding:15px; }
+#footerNav ul.nav li a { /* gold */ font-size:18px; }
+.footerText { padding-top:120px; }
+.footerCopy { font-family:'colaborate-regularregular', 'Open Sans', sans-serif; font-size:11px; color:#fff; }
+.footerCopy a { color:#fff; text-decoration:none; }
+.footerCopy a:hover { color:#ddd; }
+.footerSpacer { padding:0 2px; color:#999; }
+.newsletterSub { text-align:right; }
+.footerPad { padding-bottom:284px; }
+
+/* accommodation */
+#regionListings .property-outer { margin:0 0 20px 0; padding:20px 0; border-bottom:1px solid #555; }
+#regionListings .property-image { width:100%; height:380px; background-image:url(../images/background_accommodation.jpg); background-color:#222; background-size:cover; background-position:center; }
+#regionListings .property-details {  margin-top:20px; padding:20px 20px 0 20px; border-top:1px solid #555; }
+#regionListings .property-name { font-weight:400; font-size:22px; font-family: 'texgyreadventorregular', 'Open Sans', sans-serif; color:#fff; }
+#regionListings .property-name a { text-decoration:none; }
+#regionListings .property-name a:hover { color:#b78c30; }
+#regionListings .property-address { display:none; }
+#regionListings .property-phone { display:none; }
+#regionListings .property-description { padding:10px 0 0 0; }
+#regionListings .ellipsis a { display:none; }
+#regionListings .view-property { display:inline-block; color:#b78c30; text-decoration:none; padding:0 0 0 20px; }
+#regionListings .view-property:after { display:inline-block; content:'Apartment Details'; margin-left:3px; }
+#regionListings .view-property:hover { color:#fff; }
+#regionListings .desc-avail-table { }
+
+/* avilability */
+.desc-avail-table { overflow:auto; font-family:Arial, Helvetica, sans-serif; padding:10px 0; text-align:center; width:100%; }
+.desc-avail-table table { margin:0 auto; font-size:10px; border-collapse:collapse; clear:both; width:100%; }
+.desc-avail-table table th { font-weight:normal !important; color:#999; background:#333; border:1px solid #111; padding:5px 0; }	
+.desc-avail-table table td { padding:8px 0; border:1px solid #111; }
+.desc-avail-table table .yes-avail { color:#000; background:#a9ea4d;}
+.desc-avail-table table .yes-avail:hover { cursor:pointer; background:#94e521; }
+.desc-avail-table table .no-avail { color:#000; background:#666; }
+
+/* property */
+#propNav { position:absolute; left:0; top:0; width:100%; text-align:center; }
+#propNav #headerBlock { width:100%; padding:10px 0; position:absolute; top:0; left:0; height:auto; }
+#propNav #headerBlock .propertyLogo { padding-bottom:0; }
+#propNav #headerBlock .propertyLogo img { width:auto; height:100px; }
+#propNav #headerBlock .hLine { margin:10px auto; }
+#propNav #headerBlock ul.nav { text-align:center; }
+#propNav #headerBlock ul.nav li { display:inline-block; margin:0 20px; }
+#propNav #headerBlock .propertyBook { display:none; }
+.propertyWide { position:relative; }
+.propertyWide .property-image { height:674px; background-size:cover; background-position:center; }
+.propertyWide .property-image button { display:none; }
+#propertyPage .property-gallery { width:100%; text-align:center; height:136px; overflow:hidden; margin-top:-80px; }
+#propertyPage .property-gallery a { display:inline-block; width:180px; height:120px; overflow:hidden; border:8px solid rgba(0,0,0,0.5); vertical-align:top; margin:0 10px; position:relative; }
+#propertyPage .property-gallery a.first { display:none; }
+#propertyPage .property-gallery a:hover { cursor: url(../images/magnify.cur), -moz-zoom-in; }
+#propertyPage .property-gallery a img { min-width:inherit; position:absolute; left:50%; top:50%; width:auto; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
+#propertyPage .property-title { background:none; }
+#propertyPage #property-info { padding:20px 60px; }
+#propertyPage .property-description {  }
+#propertyPage .property-facilities .left,
+#propertyPage .property-facilities .right { float:none; }
+#propertyPage .property-book { padding:30px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.4); margin:50px; }
+
+/* home */
+#homeNav #headerBlock { position:absolute; height:595px; overflow:hidden; }
+.cycle-slideshow { height:674px; width:100%; overflow:hidden; padding:0; position:relative; }
+.cycle-slideshow div { background-repeat:no-repeat; background-size:cover; background-position:center center; width:100%; height:674px; }
+.cycle-slideshow img { width:100%; padding:0; display:block; }
+.cycle-pager { text-align:center; width:100%; z-index:500; position:absolute; bottom:10px; overflow:hidden; }
+.cycle-pager span { font-family:arial; font-size:50px; width:16px; height:16px; display:inline-block; color:#ddd; cursor:pointer; }
+.cycle-pager span.cycle-pager-active { color:#b78c30; }
+.cycle-pager > * { cursor:pointer; }
+#homeListings .homeTitle { background:none; color:#b78c30; }
+#homeListings { text-align:center; margin-bottom:40px; }
+#homeListings .all-properties-grouped-outer { position:relative; }
+#homeListings .homePropNext,
+#homeListings .homePropPrev { background:none; border:none; font-size:60px; color:#999; font-weight:300; position:absolute; top:80px; font-family: 'Advent Pro', sans-serif; cursor:pointer; }
+#homeListings .homePropPrev { left:40px; }
+#homeListings .homePropNext { right:40px; }
+#homeListings .homePropNext:hover,
+#homeListings .homePropPrev:hover { color:#333; }
+#homeListings .property-list-outer { height:400px; overflow:hidden; margin:auto; }
+#homeListings .property-outer { width:240px; display:inline-block; vertical-align:top; margin:10px; }
+#homeListings .property-image { width:200px; height:200px; border-radius:100px; background-size:cover; background-position:center center; background-image:url(../images/background_home.jpg); background-color:#ddd; margin:auto; }
+#homeListings .property-name { font-size:16px; border-bottom:1px solid #ccc; margin:10px 0; padding:0 0 10px 0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+#homeListings .property-address,
+#homeListings .property-phone { display:none; }
+#homeListings .readmore { color:#111; }
+#homeListings .property-details { width:100%; }
+#homeListings .property-description { text-align:left; height:60px; overflow:hidden; line-height:20px; padding:0 10px; margin:0 0 10px 0; white-space:normal; overflow:hidden; }
+#homeListings .desc-avail-table { width:200px; overflow:hidden; margin:auto; }
+#homeListings .desc-avail-table table { width:1400px; }
+#homeListings .desc-avail-table table th { width:200px; border:none; background:#eee; color:#999; }
+#homeListings .desc-avail-table table td { width:200px; border:none; }
+#homeListings .homeLink { background:none; border:1px solid #b78c30; border-radius:6px; color:#b78c30; font-family:'Roboto Condensed', sans-serif; font-size:16px; font-weight:400; display:block; width:300px;
+	padding:10px 20px; margin:40px auto; text-align:center; text-decoration:none; transition-duration:0.5s; }
+#homeListings .homeLink:hover { background:#b78c30; border:1px solid #b78c30; color:#fff; }
+
+/* GOLD line */
+.gold,
+.pageTitle:before, 
+.pageTitle:after { background:url(../images/background_gold.png) left top repeat-y #c58f16; background-size:cover; }
+
+/* GOLD font light */
+.pageTitle, /* page titles */
+#headerBlock ul.nav li a, /* side/top nav */
+#footerNav ul.nav li a /* footer nav */
+{ color:#eecf65; font-weight:400; font-family: 'texgyreadventorregular', 'Open Sans', sans-serif; text-decoration:none; }
+#headerBlock ul.nav li a:hover,
+#footerNav ul.nav li a:hover { color:#edd078; }
+
+/* GOLD font dark */
+#homeListings .property-name a, /* homepage proplist titles */
+#propertyPage .property-title
+{ color:#b78c30; font-weight:400; font-family: 'texgyreadventorregular', 'Open Sans', sans-serif; text-decoration:none; }
+
+
+
+/*========================= 03 ==========================*/	
+/*=======================================================*/
+/*==================== MOBILE STARTS ====================*/
+/*=======================================================*/
+/*=======================================================*/	
+
+
+			@media only screen and (max-width: 1200px) 
+			{		
+#headerBlock { width:240px; transition-duration:0.5s; }
+			}
+
+			@media only screen and (max-width: 960px) 
+				{
+					body { text-align:center; font-size:100%; line-height:140%; }
+					.mobile { display:block; margin:auto; }
+					.remove { display:none !important; }
+					
+/* nav */
+#headerBlock,
+#propNav #headerBlock { width:100%; padding:0; position:fixed; top:0; left:0; background:none; height:84px; transition-duration:0s; }
+#headerBlock .propertyLogo { padding-bottom:0; background:#000; }
+#headerBlock .propertyLogo img { width:auto; height:60px !important; padding:10px 0; }
+#headerBlock .hLine,
+#propNav #headerBlock .hLine { margin:0; width:100%; position:absolute; bottom:0; left:0; }
+#headerBlock .propertyBook { display:none; }
+#headerNav { background:none !important; top:34px !important; }
+#headerBlock ul.nav li,
+#propNav #headerBlock ul.nav li { margin:0; }
+
+/* page */
+#divHeight { min-height:0; }
+.pageContainer { margin:0; margin-top:80px; background:url(../images/background_black75.png) repeat top left; background:rgba(0,0,0,0.65); }
+.pageContent { padding:1.5em; font-size:100%; background:none; }
+.pageContent p { padding:0.5em 0; }
+.pageTitle { border:none; padding:1.5em 0 0; margin:0 1em; background:none; font-size:120%; }
+.pageTitle:before, 
+.pageTitle:after { display:none; }
+.pageGallery { margin:1em 0; display:none; }
+.contactBox { margin:1em; }
+ul.sitemap-list { text-align:left; }
+.terms { text-align:left; }
+
+/* footer */
+#footerBlock { height:auto; padding:0; background:#000; position:static; }
+.footerText { padding:0; }
+.footerCopy { padding:2em; opacity:0.5; }
+.footerPad { padding:0; }
+#footerBlock .hLine { display:none; }
+		
+/* accommodation */
+#regionListings .property-outer { padding:0 0 1em 0; margin:0 0 2em 0; }
+#regionListings .property-image { height:200px; }
+#regionListings .property-name { font-size:120%; }
+#regionListings .property-details { padding:1em 0; margin-top:1em; }
+#regionListings .property-description { margin-top:1em; padding:0; }
+#regionListings .desc-avail-table { padding:1em 0 0 0; }
+#regionListings .view-property { padding:0; }
+
+/* property */
+.propertyWide .property-image { height:400px; }
+#propertyPage { padding:1.5em; }
+#propertyPage #property-info { padding:0; }
+#propertyPage .property-description { margin:1em 0; }
+#propertyPage .property-facilities { text-align:left; width:70%; display:inline-block; }
+#propertyPage .property-book { margin:0 -1em; padding:0; box-shadow:none; }
+
+/* home */
+.cycle-slideshow { display:none; }
+#homeBody { margin-top:184px; padding:1.5em; }
+#homeListings { padding:0; margin:0; }
+#homeListings .all-properties-grouped-outer { margin-top:1em; }
+#homeListings .property-list-outer { width:240px !important; }
+#homeListings .property-outer { margin:0; }
+#homeListings .homePropNext { right:0; }
+#homeListings .homePropPrev { left:0; }
+#homeListings .homeLink { width:auto; margin:1em 0; }
+#homeNav #headerBlock { position:fixed; height:auto; background:#000; }
+#homeNav #headerBlock .propertyBook { display:block; padding:0; height:130px; }
+
+	
+				}
+				
+
+				
+				
+			@media only screen and (max-width: 300px) 
+				{
+					#regionListings .desc-avail-table { display:none; }
+				}

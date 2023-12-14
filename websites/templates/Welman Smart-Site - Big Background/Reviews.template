@@ -1,0 +1,32 @@
+description:Reviews
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:content area displayed above the articles.
+customContent2:enter TripAvisor widget code, etc.
+customContent3:code area displayed above articles.
+customContent4:code area displayed below articles
+
+defaultName:Reviews
+defaultTitle:Read or Write Guest Reviews for %PROPERTY_NAME%
+defaultUrl:reviews
+
+customConfig-name:eventCategoryId_reviews
+customConfig-label:Guest Reviews
+customConfig-type:eventCategory
+
+** template start **
+<div id="pageContent">
+	<h1>%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+			<div class="pageCustom3">%PAGE_CUSTOM_CONTENT_3%</div>
+			<div class="revDiv">
+				<div class="pageArticles articlesReviews">%EVENTS_BY_EVENTCATEGORY_FULL_REVERSE["eventCategoryId_reviews"]%</div>
+			</div>
+			<div class="widget">%PAGE_CUSTOM_CONTENT_2%</div>
+			<div class="pageCustom4 clear">%PAGE_CUSTOM_CONTENT_4%</div>
+</div>

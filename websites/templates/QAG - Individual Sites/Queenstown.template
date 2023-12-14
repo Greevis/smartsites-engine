@@ -1,0 +1,30 @@
+description:Local Activities and Attractions
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Displayed above the articles feed.
+customContent2:Displayed below the articles feed.
+customContent3:
+customContent4:
+
+defaultName:Queenstown
+defaultTitle:Activities and Attractions in %PROPERTY_CITY%, %PROPERTY_REGION%
+defaultUrl:queenstown
+
+customConfig-name:eventCategoryId_attractions
+customConfig-label:Local Attractions
+customConfig-type:eventCategory
+
+** template start **
+<div class="row topMargin">
+	<div class="pageContainer">
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+			<div class="articlesAttractions">%EVENTS_BY_EVENTCATEGORY_FULL["eventCategoryId_attractions"]%</div>
+			<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+	</div>
+</div>

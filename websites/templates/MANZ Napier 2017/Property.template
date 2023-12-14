@@ -1,0 +1,82 @@
+description:Individual Property detail
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:[Property Template]
+defaultTitle:Accommodation Information
+defaultUrl:property
+
+** template start **
+
+<!-- header.inc is included here -->
+
+<div id="pageHeader"></div>
+	
+<section id="pageOuter" class="bodyPage">
+
+<div class="booking-engine-exclude" id="propContent">
+
+	<h1 class="pageTitle">Stay at %PROPERTY_SERVICE_NAME%</h1>
+		
+	<div class="outerContact">	
+		<div class="property-image">%MAIN_GALLERY_SLIDESHOW%</div>
+		<div class="property-contact-box">
+			<div class="property-contact-details">
+				<h2>%PROPERTY_SERVICE_NAME%</h2>
+				<div class="contact-address">
+					<a href="#map">%PROPERTY_STREETADDRESS% %PROPERTY_SUBURB% %PROPERTY_CITY% %PROPERTY_COUNTRY%</a>
+				</div>
+				%PROPERTY_HOSTS_LABEL%
+				%PROPERTY_FREEPHONE_LABEL%
+				%PROPERTY_TOLLPHONE_LABEL%
+				%RESERVATIONS_REPLYTOEMAIL_LINK_LABEL%
+				%PROPERTY_HOMEPAGEURL_LINK_LABEL%
+				<div class="contactDatepicker">
+					<div class="webrooms-datepicker"><a title="Check In:" href="%BOOKING_PAGE_URL%">Check Availability</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="outerAbout">
+		%PROPERTY_DESCRIPTION%
+	</div>
+
+	<div class="outerRoomtypes" id="roomTypeListings">	
+		%ROOMTYPE_DESCRIPTIONS_ALL%
+	</div>
+
+	<div class="outerFacilities">
+		<h2>Motel Facilities</h2>
+			%PROPERTY_FACILITIES%
+	</div>
+	
+	<div class="outerMap property-map" id="map">
+		%PROPERTY_MAP%
+	</div>
+
+</div>	
+		
+<div class="booking-engine-outer hide">
+	<div class="row">
+		<a class="booking-back" href="#" onclick="window.location.href=window.location.pathname+'?time='+getQuerystring('time')+'&do=detail#detail';">&lt; Back to Property Details</a>
+		%BOOKING_ENGINE%
+	</div>
+</div>
+
+</section>
+			
+<script>
+$('title').text('%PROPERTY_SERVICE_NAME% - %SITE_NAME%');
+</script>
+
+<!-- footer.inc is included here -->

@@ -1,0 +1,42 @@
+description:What's on?
+
+customContent1:General summary content for this page.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customConfig-name:eventCategoryId
+customConfig-label:Event category to use
+customConfig-type:eventCategory
+
+
+** template start **
+
+<div class="pageBanner" id="propList">
+	<div id="headerBook">
+	<h3 class="bookTitle">%SITE_CUSTOM_CONTENT_2%</h3>		
+		%JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Check Availability","index.html"]%
+	</div>
+</div>
+		
+		
+<div class="row">
+	<div id="pageContentTop">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+	    %PAGE_CUSTOM_CONTENT_1%
+	</div>
+</div>
+
+<div class="row">	
+	<div id="eventListings">	
+		%EVENTS_IN_EVENTCATEGORY_FULL%
+	</div>
+</div>
+
+%PROPERTIES_MAP_IN_THIRDPARTY%

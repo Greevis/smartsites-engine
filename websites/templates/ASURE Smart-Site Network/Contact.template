@@ -1,0 +1,69 @@
+description:Contact information, enquiry form and map
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Contact
+defaultTitle:Contact ASURE %PROPERTY_CITY% Accommodation
+defaultUrl:contact
+defaultDescription:Contact the property ASURE %PROPERTY_CITY% for further information.
+
+** template start **
+
+<div id="headerBook">
+	<div class="row">	
+		<div class="bookingBox">
+			%JQUERY_DATE_PICKER%
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="pageContainer">
+		
+			<h2 class="title">%PAGE_TITLE%</h2>
+			<script>
+			var google_conversion_label_thanks = 'rOz-CNjix1wQrfKRxgM'; // asure adwords tracking, required for contact form
+			var google_conversion_label_contact = 'none'; 
+			</script>
+			
+			<div class="fLeft">
+				<div class="contactCard">
+						<h2 class="contactName">Contact ASURE %PROPERTY_CITY% Motel</h2>
+						<div class="contactAdress">
+							<div class="propertyStreetaddress">%PROPERTY_STREETADDRESS%</div>
+							<div class="propertyCity">%PROPERTY_CITY% %PROPERTY_POSTCODE%</div>
+							<div class="propertyRegion">%PROPERTY_REGION%</div>
+							<div class="propertyCountry">%PROPERTY_COUNTRY%</div>
+						</div>
+							<div class="propertyHosts">%PROPERTY_HOSTS_LABEL%</div>
+							<div class="propertyFreephone">%PROPERTY_FREEPHONE_LABEL%</div>
+							<div class="propertyTollphone">%PROPERTY_TOLLPHONE_LABEL%</div>
+							<div class="propertyFax">%PROPERTY_FAX_LABEL%</div>
+							<div class="propertyEmail">%RESERVATIONS_REPLYTOEMAIL_LINK_LABEL%</div>
+						<div class="socialIcons">%FACEBOOK_PAGELINK% %TWITTER_PAGELINK% %GOOGLEPLUS_PAGELINK%</div>
+				</div>
+			</div>
+			
+			<div class="fRight">
+				<div class="contactCard">
+						<h2 class="contactName">Make an Online Enquiry</h2>
+						%PROPERTY_CONTACTFORM["Your Name:","Your Email:","Message:","Send Enquiry",0]%
+				</div>
+			</div>
+
+			<h2 class="title">%PROPERTY_STREETADDRESS%, %PROPERTY_CITY%, New Zealand</h2>
+			<div class="mapDiv">
+				%PROPERTY_MAP%
+			</div>
+	
+	</div>
+</div>

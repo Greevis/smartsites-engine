@@ -1,0 +1,165 @@
+description:Paystation payment gateway
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Payments
+defaultTitle:Payments
+defaultUrl:payments
+
+customConfig-name:paymentform_code
+customConfig-label:Javascript code to initiate payment window
+customConfig-type:blocktext
+
+** template start **
+
+<div class="ASUREbg ASUREpageBg">
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="ASUREstay.com - ASURE Accommodation Group New Zealand">
+				<img src="images/logo_asure.png" alt="ASURE" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<h2>ASURE Accommodation</h2>
+			<h3>Your Comfort is ASUREd</h3>
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+			<div class="loyalty">
+				<span class="yellow">Loyalty Program:</span> 
+				Stay at three or more ASURE Accommodation Group properties and receive $100 credit off your 10th stay.
+				The rates on ASURESTAY.com include instant membership to our exclusive ASURE loyalty programme.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+	ASURE Accommodation Group
+</div>
+
+<div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pageContainer">
+			<div class="pageIntro">
+				 <h2>Pay ASURE online</h2>    
+			</div>
+			<div class="contactForm voucherForm">
+				 
+		    <div id="paymentRedirect" class="hide">
+		    	Please wait while we direct you to our payment gateway. If you are not redirected, please contact us for assistance.
+		    </div>
+		    
+			    <div id="paymentSpecify" class="hide">
+			    	
+			    	<p>Please use this form to pay us online using your credit card.</p>
+			    	
+				    <form onsubmit="submitGatewayForm();return false;">
+					    <div class="email-row">
+								<div class="email-label">
+									Amount to pay:
+								</div>
+								<div class="email-field">
+									<input type="number" step="any" min="1" id="payAmount" value=""/>
+								</div>
+							</div>
+							 <div class="email-row">
+								<div class="email-label">
+									Payment reference:
+								</div>
+								<div class="email-field">
+									<input type="text" id="payRef" value=""/>
+								</div>
+							</div>
+							
+							<button type="submit" class="btn">Pay online</button>
+		   			
+						</form>
+			    </div>
+			  
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+
+$( document ).ready(function() 
+{
+	
+	var myAmount = parseFloat(getQuerystring('val'));
+	var myRef = getQuerystring('ref');
+	
+	$('#payRef').val(myRef);
+	$('#payAmount').val(myAmount);
+	
+	if(!submitGatewayForm())
+	{
+		$('#paymentSpecify').show();
+		$('#paymentRedirect').hide();
+	}else{
+		$('#paymentSpecify').hide();
+		$('#paymentRedirect').show();
+	}		
+	
+});
+
+function submitGatewayForm()
+{
+	var bSuccess = true;
+	
+	myAmount = parseFloat($('#payAmount').val());
+	myRef = $('#payRef').val();
+	
+	if(isNaN(myAmount))
+	{
+		$('#payAmount').effect('highlight');
+		bSuccess = false;
+	}else{
+		if(myAmount < 1)
+		{
+			$('#payAmount').effect('highlight');
+			bSuccess = false;
+		}
+	}
+	
+	if(myRef == '')
+	{
+		$('#payRef').effect('highlight');
+		bSuccess = false;
+	}
+	
+	if(bSuccess)
+	{		
+		getPaystationGatewayLink(myAmount,myRef);		
+	}
+	
+	return bSuccess;
+}
+
+function getPaystationGatewayLink(dAmount,sRef)
+{
+	
+	var myAmountInCents = dAmount * 100;		
+	
+	$.post('https://secure.web-rooms.co.nz/ajax/getPaystationGatewayLink.asp', 
+									{ IdOfMerchant: '610419',
+										IdOfGateway: 'PAYSTATION',
+										AmountInCents: myAmountInCents,
+										MerchantReference: sRef },
+									function(data){
+										window.location.href = data;
+    							});
+}
+
+// %OUTPUT_VARIABLE["paymentform_code"]%
+</script>

@@ -1,0 +1,60 @@
+description:Blog
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Displayed above the articles feed.
+customContent2:Displayed below the articles feed.
+customContent3:Raw code area.
+customContent4:
+
+defaultName:Blog
+defaultTitle:Blog
+defaultUrl:blog
+
+customConfig-name:eventCategoryId_blog
+customConfig-label:Blog
+customConfig-type:eventCategory
+
+** template start **
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+<div class="articlesContainer">
+	<div class="row blog-row">
+		<h1 class="pageTitle title-h1">%PAGE_TITLE%</h1>
+		<div class="pageCustom1"><div class="pageIntro">%PAGE_CUSTOM_CONTENT_1%</div></div>
+		<div class="pageArticles articlesBlog">%EVENTS_BY_EVENTCATEGORY_FULL_FIELD_ORDERBY["eventCategoryId_blog","DateModified",0]%</div>
+		<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+		<div class="rawCode">%PAGE_CUSTOM_CONTENT_3%</div>
+	</div>
+</div>
+

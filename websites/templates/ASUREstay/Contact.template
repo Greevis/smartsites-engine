@@ -1,0 +1,128 @@
+description:Contact
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Contact
+defaultTitle:Contact ASURE
+defaultUrl:contact
+
+customConfig-name:emailform_email
+customConfig-label:Contact Form email recipient
+customConfig-type:email
+
+customConfig-name:emailform_htmlcode
+customConfig-label:Contact Form HTML code
+customConfig-type:blocktext
+
+customConfig-name:emailform_validationcode
+customConfig-label:Contact Form Javascript validation code
+customConfig-type:blocktext
+
+customConfig-name:emailform_thanksMessage
+customConfig-label:Contact form thanks message
+customConfig-type:simpletext
+
+customConfig-name:emailform_thanksPage
+customConfig-label:Contact form thanks page
+customConfig-type:websitepage
+
+** template start **
+
+<div class="ASUREbg ASUREpageBg">
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="ASUREstay.com - ASURE Accommodation Group New Zealand">
+				<img src="images/logo_asure.png" alt="ASURE" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<h2>ASURE Accommodation</h2>
+			<h3>Your Comfort is ASUREd</h3>
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+			<div class="loyalty">
+				<span class="yellow">Loyalty Program:</span> 
+				Stay at three or more ASURE Accommodation Group properties and receive $100 credit off your 10th stay.
+				The rates on ASURESTAY.com include instant membership to our exclusive ASURE loyalty programme.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+	ASURE Accommodation Group
+</div>
+
+<div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="row pageContainer">
+			<div class="columns eight">
+				<div class="contactMain">
+				<div class="padBox">
+						<h2>ASURE Bookings</h2>
+						<p>Find and book your accommodation online: <a href="search.html" title="Search Now">Search Now</a></p>
+						<p>Call Central Reservations free on <a href="tel:0800278739" title="Free Phone">0800 278 739</a> (within New Zealand) or <a href="tel:+6493205913" title="International Reservations">+64 9 320 5913</a> (international)</p>
+					</div>
+					<div class="padBox">
+						<h2>Contact Information</h2>
+						<p>To contact an individual property please find the specific  <a href="members.html" title="ASURE Members">ASURE accommodation property page.</a></p>
+					</div>
+					<div class="padBox">
+						<h2>Head Office is located at:</h2>
+						<p>Blenheim, New Zealand<br />
+							<b>Email:</b> <a title="Contact ASURE Accommodation" href="mailto:office@asureaccommodation.co.nz">office@asureaccommodation.co.nz</a>
+						</p>
+						<p>Our business trading name is "New Zealand Accommodation Group Limited T/A ASURE Accommodation Group". The name that will appear on your statement when you book online is "ASURE Group".</p>
+					</div>
+					<div class="padBox">
+						<h2>Make an online enquiry, request or cancellation:</h2>
+							<div class="contactForm asure-card-contact">
+								 <!-- contact form -->
+								 %CUSTOM_MAILFORM["emailform_email","emailform_htmlcode","emailform_validationcode","emailform_thanksMessage","emailform_thanksPage","Submit"]%
+							</div>	
+					</div>				
+				</div>
+			</div>
+			<div class="columns four">
+				<div class="box">
+					<h2>Directors</h2>
+						<ul>
+							<li><b>Doug Robinson</b> - Managing Director<br>
+									Head office, Blenheim</li>			
+							<li><b>Dorothy Nolan</b><br>
+									Head Office, Blenheim</li>
+						</ul>
+					<h2>Member Representative</h2>
+						<ul>
+							<li><b>Tony Bower</b><br>
+									ASURE Townsman Motor Lodge, Invercargill</li>
+						</ul>
+				</div>
+				<div class="box">
+					<h2>Directory and Loyalty Programme Partners</h2>	
+						<ul>
+							<li><a href="https://www.budget.co.nz/" target="_blank">Budget Rent A Car</a></li>
+							<li><a href="https://www.interislander.co.nz/" target="_blank">Interislander</a></li>	
+							<li><a href="http://www.kiwirailscenic.co.nz/" target="_blank">KiwiRail Scenic Journeys</a></li>
+						</ul>
+				</div>
+				<div class="box">
+					<a href="images/Asure-Loyalty-Card-Dec2018.pdf" title="Print a Loyalty Card" target="_blank">
+						<img alt="Print a Loyalty Card" src="images/loyaltycard.jpg" />
+					</a>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

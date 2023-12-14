@@ -1,0 +1,145 @@
+description:Individual Property detail
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+defaultName:[Property Template]
+defaultTitle:Accommodation Information
+defaultUrl:property
+
+** template start **
+
+%WEBROOMS_JS_INCLUDE%
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+
+	<div class="booking-engine-exclude" id="propContent">
+		<div class="row property-row">
+			<div class="property-contact LAM">	
+				<div class="property-image">%MAIN_GALLERY_SLIDESHOW%</div>
+				<div class="property-contact-box">
+					<div class="property-contact-details">
+						<h2>%PROPERTY_SERVICE_NAME%</h2>
+						<div class="contact-address">
+							<a href="#map">%PROPERTY_STREETADDRESS% %PROPERTY_SUBURB% %PROPERTY_CITY%</a>
+						</div>
+						%PROPERTY_HOSTS_LABEL%
+						%PROPERTY_FREEPHONE_LABEL%
+						%PROPERTY_TOLLPHONE_LABEL%
+						%RESERVATIONS_REPLYTOEMAIL_LINK_LABEL%
+						%PROPERTY_BOOKONLINEPAGEURL_LINK_LABEL%
+						<a class="search-button" ttile="Book Online" href="?#book">Book Online</a>
+						%RATINGS_BADGE%
+					</div>
+					
+					<div class="property-availability-box">
+					%PROPERTY_AVAILABILITYSUMMARY%
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+			
+		<div class="row">
+			<h1 class="pageTitle">Welcome to %PROPERTY_SERVICE_NAME%</h1>
+			<div class="proppageDesc">%PROPERTY_DESCRIPTION%</div>
+			<div id="roomTypeListings">	
+				%ROOMTYPE_DESCRIPTIONS_ALL%
+			</div>
+			<div class="facilitiesTable">
+				<div class="property-facilities-div">
+					<h2>Property Facilities</h2>
+					%PROPERTY_FACILITIES%
+				</div>
+				<!-- Property features
+				<div class="property-features-div">
+					<h2>Property Features</h2>
+					<div class="asfield">						
+						%PROPERTY_ASFIELDS%
+					</div>
+				</div>
+				-->
+			</div>
+		</div>
+		<a name="map"></a>
+		<div class="property-map">
+			%PROPERTY_MAP%
+		</div>	
+	</div>	
+
+	<div class="booking-engine-outer hide">
+		<div class="row">
+			<a class="booking-back" href="#" onclick="window.location.href=window.location.pathname+'?time='+getQuerystring('time')+'&do=detail#detail';">&lt; Back to Property Details</a>
+			<script>
+			function setBookingDates()
+			{	// passes querystring args to rwr iframe						
+						
+				var bookingFrame = document.getElementById('rwrBookingFrame');
+				var dateQuery = window.location.search;
+				
+				var frameSrc;
+				
+				var myGuestQs;
+				try{
+					myGuestQs = '&gid='+$.cookie('guestId')+'&gh='+$.cookie('guestHash'); // for passthru of group smartsite creds
+				}catch(err){
+					
+				}
+				
+				if(dateQuery.length > 0)
+				{		
+					frameSrc = bookingEngineBaseUrl+'Home.html'+dateQuery+'&sid='+rwrSubId+myGuestQs;
+				}else{
+					frameSrc = bookingEngineBaseUrl+'Home.html?sid='+rwrSubId+myGuestQs;
+				}
+					
+				trackBookingFrame(frameSrc);
+						
+				return true;
+			}
+			</script>
+			
+			%BOOKING_ENGINE%
+		</div>
+	</div>
+
+</div>
+
+<script>
+$('title').text('%SAFEJS_PROPERTY_SERVICE_NAME% - %SAFEJS_SITE_NAME%');
+</script>

@@ -1,0 +1,121 @@
+description:Look after me reception home page
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+customConfig-name:regionWebsitePageId
+customConfig-label:Base page for Regional Listings
+customConfig-type:websitePage
+
+** template start **
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+
+
+<div class="articlesContainer">
+	<div class="row reception-row">
+		<div class="container">
+		<div class="row reception-row">
+			<div class="bg1">
+			
+			<!-- Mobile page -->
+			<div class="mobile-screen">
+					<div class="side1">
+							<img src="images/welcome-button.png" alt="Look After Me - New Zealand's Accommodation">
+					<p class="white">Looking for holiday accommodation in Dunedin? Look After Me provides quality hosted accommodation for valued guests throughout Otago.</p>
+					</div>
+					<div class="side2">
+							<img src="images/vase-half-mobile.png" alt="Look After Me - New Zealand's Accommodation">
+					</div>
+			</div>
+			<!-- end mobile page -->
+			
+				<div class="side-left">
+				<div class="welcome-button">
+					<img class="welcome" src="images/welcome-button.png" alt="Look After Me - New Zealand's Accommodation">
+				</div>
+				<div class="intro"></div>
+				</div>
+				<div class="side-bottom">
+				<p class="white">Looking for holiday accommodation in Dunedin? Look After Me provides quality hosted accommodation for valued guests throughout Otago.</p>
+		    		<img class="ball" src="images/ball.png" alt="Look After Me - New Zealand's Accommodation">
+				</div>
+				<div class="side-right">
+				<div class="vase-half">
+				</div>
+				<div class="flowers">
+		        <img src="images/flowers.png" alt="Look After Me - New Zealand's Accommodation" >
+		      </div>
+				</div>
+			 </div>
+			</div>
+		 </div>
+		</div>	
+	 </div>
+
+<div class="bg2-background">
+	<div class="bg2-hr"></div>
+		<div class="bg2">
+			<div class="bg2-row">
+			<h2 class="pink-h2">Where would you like to stay?</h2>
+			    <div class="headerBookPos">
+			    		<div class="headerBook">
+			    	
+			    		 %GROUP_LOCATION_LOCATION_CONTROLS%
+			    		 %GROUP_LOCATION_DATEGUEST_CONTROLS%
+			    		 <button type="button" class="search-button-1" onclick="clearTimeout(doSearchTimer);doSearchTimer=setTimeout('doSearch()',400);">Search</button>
+				 		  
+			    		</div>
+			    </div>
+      </div>
+  </div>
+</div>
+
+
+<div>
+<!-- %SUBCATEGORY_PAGES_FOR_THIRDPARTYGROUPTYPE[True,True]% --> <!-- params are bRenderPages, bShowSubcategories-->
+<!-- %PROPERTIES_IN_THIRDPARTYGROUPTYPE% -->
+</div>

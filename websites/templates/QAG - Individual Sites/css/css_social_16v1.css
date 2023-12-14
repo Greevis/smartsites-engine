@@ -1,0 +1,29 @@
+
+/***************************************/
+/*          social media icons         */
+/***************************************/
+
+.socialIcons .facebook-link,
+.socialIcons .twitter-link,
+.socialIcons .googleplus-link,
+.socialIcons .tripadvisor-link { 
+	width:20px;  
+	height:20px; 
+	display:inline-block; }
+	
+.socialIcons .facebook-link a,
+.socialIcons .twitter-link a,
+.socialIcons .googleplus-link a,
+.socialIcons .tripadvisor-link a { 
+	width:20px; 
+	height:20px; 
+	background-size:cover !important; 
+	text-decoration:none;
+	display:block; 
+	text-indent:-999px; 
+	overflow:hidden; }
+	
+.socialIcons .facebook-link a { background:url("../images/icon_facebook.png") no-repeat left top; }
+.socialIcons .twitter-link a { background:url("../images/icon_twitter.png") no-repeat left top; }
+.socialIcons .googleplus-link a { background:url("../images/icon_googleplus.png") no-repeat left top; }
+.socialIcons .tripadvisor-link a { background:url("../images/icon_tripadvisor.png") no-repeat left top; }

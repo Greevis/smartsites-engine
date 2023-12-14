@@ -1,0 +1,52 @@
+
+/************** SMARTSITES *************/
+/*         standard form style         */
+/***************************************/
+
+.email-row { 
+	width: 100%; }
+	
+.email-label { 
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	line-height: 27px; }
+
+.email-field { 
+	vertical-align: top;
+	display: inline-block;
+	width: 73%;
+	margin-left: 2%;	}
+
+.email-field input,
+.email-field textarea { 
+	border: 1px solid #ddd;
+  border-top: 1px solid #ccc;
+	border-radius: 0;
+	padding: 5px;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	margin-bottom: 3px;	}
+	
+.email-field input:focus,
+.email-field textarea:focus {
+  border: solid 1px #427fed;
+  box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  outline: none;}
+
+.email-field textarea { 
+	height: 60px;	}
+
+.buttonSend { 
+	margin-top: 10px;	}
+
+.noTxt { 
+	display: none;	}
+
+@media only screen and (max-width: 960px) 
+{
+	.email-label, 
+	.email-field { width:100%; margin:0; }
+	.buttonSend { float:none; }
+}

@@ -1,0 +1,123 @@
+description:BnbLive Home
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Destinations panel code
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome to %PROPERTY_NAME%
+defaultUrl:index
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+customConfig-name:eventCategoryId_events
+customConfig-label:Footer News
+customConfig-type:eventCategory
+
+** template start **
+
+<!-- header.inc is included here -->
+
+<div id="homeBanner">
+  <ul class="cycle-slideshow" data-cycle-slides="> div">
+      <div class="slider" style="background-image:url(images/slider_pic1-min.jpg);"></div>
+      <div class="slider" style="background-image:url(images/slider_pic2-min.jpg);"></div>
+      <div class="slider" style="background-image:url(images/slider_pic3-min.jpg);"></div>
+  </ul>
+  <div class="searchpart">
+	  <div class="container">
+		  <div class="innersearch">
+				<h1><span>Looking for a place to stay in New Zealand ?</span><br />
+					Find a bed &amp; breakfast, hotel, motel, lodge, holiday rental or other accommodation in New Zealand!</h1>
+				  <div class="homeBook">
+					 %GROUP_LOCATION_SEARCH_CONTROLS%
+				  </div>
+			</div> 
+		</div>
+	</div>
+</div>
+
+<section class="destinations">
+	%PAGE_CUSTOM_CONTENT_1%
+</section>
+
+<section class="popular">
+	<div class="container">
+		<h2 class="maintitle">Top Properties</h2>
+	 	<div class="row">   
+			%PROPERTIES_IN_THIRDPARTY_AVAILABILITY_NOTODOS%
+		</div>
+	</div>
+</section>
+
+<section class="howitwork">
+	<div class="container">
+		<h2>How it Works</h2>
+	 	<div class="row">               	
+      <div class="col-sm-4 innerblue">
+        <div class="wit">
+          <div class="logo-icon"><img src="images/logo-icon.png" alt=""></div>
+          <div class="heading">A Community built on Sharing</div>
+          <p>BNBLive.com - "accommodation made easy". The Kiwi owned and operated OTA which helps travellers find a place to stay in New Zealand at a fair price . 
+          Be it a luxury bed & breakfast, hotel , motel, lodge, homestay, holiday home, bach, beach house, chalet, apartment, villa, or just a room for a night- Bnblive.com offers them all.</p>
+        </div>
+      </div>
+	    <div class="col-sm-4 innerblue">
+        <div class="wit">
+          <div class="logo-icon"><img src="images/logo-icon1.png" alt=""></div>
+          <div class="heading">Trusted Services</div>
+          <p>BNBLive.com "accommodation made easy" the Kiwi owned and operated OTA (online travel agency). We guarantee the best value and highest quality accommodation in New Zealand, 
+          be it a luxury bed and breakfast, hotel, motel, luxury lodge, homestay, holiday home, bach, beach house, chalet, apartment. BNBlive.com guarantees you the best value 
+          accommodation in New Zealand. This promise applies as all locations visited by BNBLive to ensure they meet the standards that have been set.</p>
+        </div>
+	    </div>
+	    <div class="col-sm-4 innerblue">
+        <div class="wit">
+          <div class="logo-icon"><img src="images/logo-icon2.png" alt=""></div>
+          <div class="heading">24/7 Customer Support</div>
+          <p>Whether you are travelling or hosting, Bnblive.com is here for you before during or after your booking experience. Most of the questions have been answered . See FAQ for the questions and answers. For further questions contact the Support Centre by visiting www.bnblive.com/contact</p>
+        </div>
+	     </div>
+	  </div>
+  </div>
+</section>
+
+<!--
+%PROPERTIES_IN_THIRDPARTY%
+-->
+
+<!-- footer.inc is included here -->
+
+<script type="text/javascript">
+	$(document).ready( function() {
+    function slideHeight(){
+        $('.cycle-slideshow').css({
+            height: $(window).height()
+        });
+    }
+    slideHeight();
+ 			$(window).resize(function() {
+       	slideHeight();         
+    	});
+	});
+</script>
+
+<!-- ellipsis for properties descritption -->
+<script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
+<script type="text/javascript"> 
+		$(document).ready(function() {
+			$(".property-details .property-description").dotdotdot({
+				ellipsis	: '... ',
+			});
+		});
+</script>
+<!-- end -->

@@ -1,0 +1,29 @@
+description:Events
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Gallery
+defaultTitle:ASURE %PROPERTY_CITY% Events
+defaultUrl:gallery
+defaultDescription: Upcoming events at %PROPERTY_CITY% New Zealand.
+
+** template start **
+
+<section class="main-section">
+	<div class="container">
+		<div class="row">
+		  <div class="col-12">
+		  	<h2 class="w-100 text-center title mb-4">%PAGE_TITLE%</h2>
+		  </div>	  
+		</div>
+	</div>
+</section>

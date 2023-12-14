@@ -1,0 +1,36 @@
+description:Local activites
+customContent1:Custom code
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Attractions
+defaultTitle:Attractions
+defaultUrl:attractions
+
+customConfig-name:eventCategoryId
+customConfig-label:Event category to use
+customConfig-type:eventCategory
+
+** template start **
+
+<!-- header.inc is included here -->
+		
+<div id="pageHeader" class="homeHeader"></div>
+<div id="headerBook">
+    %JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Check Availability","index.html"]%
+</div>
+		
+<section id="pageOuter" class="normalPage">	
+		<h1 class="pageTitle">%PAGE_TITLE%</h1>
+		<div class="customContent1">%PAGE_CUSTOM_CONTENT_1%</div>
+		%EVENTS_IN_EVENTCATEGORY_FULL%
+</section>
+
+<!-- footer.inc is included here -->

@@ -1,0 +1,69 @@
+description:Interactive map search
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Search
+defaultTitle:Search
+defaultUrl:search
+
+customConfig-name:eventCategoryId_events
+customConfig-label:Footer News
+customConfig-type:eventCategory
+
+** template start **
+
+<!-- header.inc is included here -->
+
+<div class="resultsOuter bnblive">
+	<div class="resultsProperties">
+			<div class="resultsFilters">
+				<div class="filterLocation">
+					<div class="filterLeft">
+						<h2>Add a location to your search</h2>
+						<p class="filterInfo">Search for landmarks, properties, streets, and more.</p>
+					</div>
+					<div class="filterRight">%GROUP_LOCATION_LOCATION_CONTROLS%</div>
+				</div>
+				<div class="filterCheckin">
+					<div class="filterLeft">
+						<h2>Update check-in, check-out &amp; guests</h2>
+						<p class="filterInfo">The results will automatically update.</p>
+					</div>
+					<div class="filterRight">%GROUP_LOCATION_DATEGUEST_CONTROLS%</div>
+				</div>
+				<div class="filterAdvanced">
+					<div class="filterLeft">
+						<h2>Advanced search filters</h2>
+						<p class="filterInfo">Refine your search by price, rating, property features and more.</p>
+					</div>
+					<div class="filterExpand">%GROUP_LOCATION_FILTERS%</div>
+				</div>
+			</div>	
+			<div class="resultsListings">
+				%GROUP_LOCATION_RESULTS%
+			</div>
+	</div>
+	<div class="resultsMap">
+		%GROUP_LOCATION_MAP%
+	</div>
+</div>
+
+<script>
+
+searchmapDiv = document.getElementById('searchmapDiv');
+google.maps.event.addDomListener(window, 'load', initializeSearchMap);
+
+loadMapWithTimeout();
+
+</script>
+
+<!-- footer.inc is included here -->

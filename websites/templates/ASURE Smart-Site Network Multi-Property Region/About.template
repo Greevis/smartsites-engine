@@ -1,0 +1,61 @@
+description:HOST information page.
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:About ASURE
+defaultTitle:ASURE Accommodation Group - New Zealand Motels
+defaultUrl:ASURE
+defaultDescription:ASURE is an accommodation group consisting of quality, self-contained motels throughout New Zealand. 
+
+customConfig-name:thirdPartySubCategoryId
+customConfig-label:Sub-category of properties to display
+customConfig-type:thirdPartySubCategory
+
+** template start **
+
+<div class="row">
+	<div class="pageContainer">
+			<h2 class="title">%PAGE_TITLE%</h2>
+				<div class="pad">
+					<!-- keep this PDF link and loyaltycard image up-to-date with ASUREstay.com -->
+					<div class="ASUREloyaltyCard">
+						<a href="http://www.asurestay.com//~downloads/asure-loyaltycard-150331.pdf" target="_blank">
+							<img alt="Print a Loyalty Card" src="http://www.asurestay.com//~images/content/loyaltycard.jpg">
+						</a>
+					</div>
+					<!-- end -->
+					<p><a href="http://www.asurestay.com/" target="_blank">ASURE Accommodation Group</a> consists of quality, self-contained and serviced, 
+						independently owned and operated accommodation properties throughout New Zealand.</p>
+					<p><b>ASURE Loyalty Programme</b>: Stay at three or more ASURE Accommodation Group properties and receive $100 credit off your 10th stay!</p>
+				</div>
+			<h2 class="title">ASURE Properties Nationwide</h2>
+				%PROPERTIES_MAP_IN_THIRDPARTY%
+				<div id="asureListings">%PROPERTIES_IN_THIRDPARTY_AVAILABILITY_ALTERNATE%</div>
+			<h2 class="title">ASURE Accommodation Recommends</h2>
+			<!-- keep this information in-sync with ASUREstay.com -->
+			<div class="pad partners">
+				<a target="_blank" href="http://www.budget.co.nz/asure/default.aspx" title="Budget Rental Cars">
+					<img src="http://www.asurestay.com/~images/template/logo_budget.jpg" alt="Budget Rental Cars" />
+				</a>
+				<a target="_blank" href="https://www.interislander.co.nz/?utm_source=asurestay&amp;utm_medium=banner&amp;utm_campaign=asure_2014" title="Interislander">
+					<img src="http://www.asurestay.com/~images/template/logo_interislander.jpg" alt="Interislander" />
+				</a>
+				<a target="_blank" href="http://www.realjourneys.co.nz/" title="Real Journeys">
+					<img src="http://www.asurestay.com/~images/template/logo_real-journeys.jpg" alt="Real Journeys" />
+				</a>
+				<a target="_blank" href="https://www.thrifty.co.nz/asure.aspx" title="Thrifty">
+					<img src="http://www.asurestay.com/~images/template/logo_thrifty.jpg" alt="Thrifty" />
+				</a>
+			</div>
+			<!-- end -->
+	</div>
+</div>

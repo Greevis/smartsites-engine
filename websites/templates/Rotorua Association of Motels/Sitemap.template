@@ -1,0 +1,41 @@
+description:Page containing site map link list.
+
+customContent1:General summary content for this page.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:false
+
+defaultName:Site Map
+defaultTitle:Site Map
+defaultUrl:sitemap
+
+** template start **
+
+<div class="pageBanner" id="propPage">
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="Stay Rotorua - Rotorua Accommodation Directory">
+				<img src="images/logo_stayrotorua2.png" alt="Rotorua Motels" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="propContent">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+	    %PAGE_CUSTOM_CONTENT_1%
+	    %SITEMAP%
+	</div>
+</div>

@@ -1,0 +1,62 @@
+description:Interactive map search
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Search
+defaultTitle:Search
+defaultUrl:search
+
+
+** template start **
+
+<div class="resultsOuter">
+
+	<div class="resultsProperties">
+	<h3 class="text-primary p-3"><a class="text-primary" href="%SITE_CUSTOM_CONTENT_3%">NZR Staff Welfare Trust</a></h3>
+
+			<div class="resultsFilters">
+				<div class="filterLocation">
+					<div class="filterLeft">
+						<h2>Add a location to your search</h2>
+						<p class="filterInfo">Search for landmarks, properties, streets, and more.</p>
+					</div>
+					<div class="filterRight">%GROUP_LOCATION_LOCATION_CONTROLS%</div>
+				</div>
+				<div class="filterCheckin">
+					<div class="filterLeft">
+						<h2>Update check-in, check-out &amp; people</h2>
+						<p class="filterInfo">The results will automatically update.</p>
+					</div>
+					<div class="filterRight">%GROUP_LOCATION_DATEGUEST_CONTROLS%</div>
+				</div>
+				<div class="filterAdvanced">
+					%GROUP_LOCATION_FILTERS%
+				</div>
+			  <div class="resultsListings">
+					%GROUP_LOCATION_RESULTS%
+			  </div>
+
+	</div>
+	
+	<div class="resultsMap">
+		%GROUP_LOCATION_MAP%
+	</div>
+</div>
+
+<script>
+
+searchmapDiv = document.getElementById('searchmapDiv');
+google.maps.event.addDomListener(window, 'load', initializeSearchMap);
+
+loadMapWithTimeout();
+
+</script>

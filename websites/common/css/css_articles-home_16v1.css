@@ -1,0 +1,119 @@
+
+/************** SMARTSITES *************/
+/*             home articles           */
+/***************************************/
+
+/* hide */
+.homeArticles h2.pageTitle,
+.homeArticles .fromCap,
+.homeArticles .desc-text-div,
+.homeArticles .desc-avail h4,
+.homeArticles .desc-avail-table,
+.homeArticles .event-venue,
+.homeArticles .event-daterange,
+.homeArticles .event-teaser { display:none; }
+
+/* common */		
+.homeArticles { background:#fff; box-shadow:0 1px 5px rgba(0,0,0,0.2); margin:25px 0; width:100%; overflow:hidden; position:relative; }
+.homeContent .homeArticles ul.event-list-inner,
+.homeContent .homeArticles li.event-inner { margin:0; width:100%; }
+.homeArticles .slide0, 
+.homeArticles .event-list-outer { width:44%; overflow:hidden; display:inline-block; position:relative; }
+.homeArticles .propNext, .homeArticles .propPrev { display:none; }
+
+/* roomtypes */
+.homeArticles .rwrRoomtype { width:100%; padding:0; margin:0; border:none; }
+.homeContent .homeArticles .rwrRoomtype .desc-images { width:100%; position:absolute; top:0; left:0; right:initial; }
+.homeArticles .rwrRoomtype .desc-images a { display:none; }
+.homeArticles .rwrRoomtype .desc-images a.first { display:block; height:auto; max-height:none; }
+.homeArticles .rwrRoomtype .desc-images a.first img { width:100%; object-fit:cover; }
+.homeArticles .rwrRoomtype .desc-images a:hover { opacity:1; cursor:default; }
+
+/* articles */
+.homeArticles .event-image { width:100%; position:absolute; top:0; left:0; background-color:#eee; background-size:cover; background-position:center center; }
+
+/* titles */
+.homeArticles .rwrRoomtype h2,
+.homeArticles .event-name { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; z-index:999; max-width:none;
+	position:absolute; bottom:0; left:0; background:rgba(0,0,0,0.6); font-size:15px; font-weight:400; width:100%; right:0;
+	color:#fff; padding:20px 0; text-indent:30px; text-shadow:1px 1px 1px rgba(0,0,0,0.5); }
+.homeContent .homeArticles .event-name a { color:#fff; pointer-events:none; cursor:default; }
+
+/* links */
+.homeContent .homeArticles a.book-roomtype,
+.homeContent .homeArticles a.event-link { height:14px; width:14px; border-radius:14px; position:absolute; bottom:22px; left:20px; overflow:hidden; text-indent:-999px; z-index:999; padding:0; border:none; display:none; }
+.homeArticles a.book-roomtype:before,
+.homeArticles a.event-link:before { content:'\25BA'; color:#fff; font-size:8px; top:0; left:0; position:absolute; text-indent:0; text-align:center; height:14px; width:14px; line-height:14px; }
+
+/* custom content */
+.homeArticles .customContent { width:56%; display:block; float:right; box-sizing:border-box; }
+.homeArticles .customContent p { max-height:115px; overflow:hidden; margin-top:5px }
+.homeArticles .customContent .btn { min-width:200px; }
+
+/* height */
+.homeArticles, 
+.homeContent .homeArticles ul.event-list-inner,
+.homeContent .homeArticles li.event-inner,
+.homeArticles .slide0, 
+.homeArticles .event-list-outer,
+.homeArticles .rwrRoomtype,
+.homeContent .homeArticles .rwrRoomtype .desc-images,
+.homeArticles .rwrRoomtype .desc-images a.first,
+.homeArticles .rwrRoomtype .desc-images a.first img,
+.homeArticles .event-image,
+.homeArticles .customContent { height:290px; }
+
+/* reviews */
+#propertyReviews,
+#propertyReviews ul.event-list-inner,
+#propertyReviews ul.event-list-inner li { height:170px;; }
+#propertyReviews { width:auto; }
+#propertyReviews .event-list-outer { width:52%; height:auto; box-sizing:border-box; float:right; }
+#propertyReviews .event-image { width:50px; height:50px; border-radius:25px; top:0; left:0; }
+#propertyReviews .event-name, 
+#propertyReviews .event-venue { margin-left:60px; }
+#propertyReviews .event-name { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; z-index:999; max-width:none;
+	position:static; background:none; font-size:inherit; font-size:130%; font-weight:600; width:100%; margin-top:5px;
+	color:inherit; padding:0; text-indent:0; text-shadow:none; }
+#propertyReviews .event-name a { color:inherit; }
+#propertyReviews .event-venue { display:block; color:#999; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+#propertyReviews .event-teaser { display:block; margin:10px 0; max-height:60px; overflow:hidden; }
+#propertyReviews .event-link { height:auto; width:auto; border-radius:0; position:static; text-indent:0; overflow:initial; display:inline-block;
+	border-radius:2px; border-bottom:2px solid rgba(0,0,0,0.25); box-shadow:1px 1px 3px rgba(0,0,0,0.25); padding:0 16px; min-width:200px; }
+#propertyReviews .propNext, 
+#propertyReviews .propPrev { right:0; color:#1c94c6; left:initial; }
+#propertyReviews .propPrev { right:15px; }
+.homeReviewBadges { height:170px; width:430px; display:inline-block;
+	background:url(http://www.welman.co.nz/smartsites/logo_tripadvisor-reviews.png); background-size:contain; background-position:left center; background-repeat:no-repeat; }
+
+@media only screen and (max-width: 960px) 
+{
+.homeArticles { margin:0; }
+.homeContent .homeArticles .desc-images { margin:0; }
+
+/* height */
+.homeArticles, 
+.homeContent .homeArticles ul.event-list-inner,
+.homeContent .homeArticles li.event-inner,
+.homeArticles .slide0, 
+.homeArticles .event-list-outer,
+.homeArticles .rwrRoomtype,
+.homeContent .homeArticles .rwrRoomtype .desc-images,
+.homeArticles .rwrRoomtype .desc-images a.first,
+.homeArticles .rwrRoomtype .desc-images a.first img,
+.homeArticles .event-image,
+.homeArticles .customContent { height:200px; }	
+
+/*other*/
+.homeArticles { height:auto; margin-bottom:1.5em; }
+.homeArticles .slide0, .homeArticles .event-list-outer { width:100%; display:block; }
+.homeArticles .customContent { width:100%; height:auto; float:none; }
+.homeArticles .customContent .pad { padding:1.5em }
+#propertyReviews { padding:1.5em; }
+#propertyReviews { height:auto; }
+.homeArticles .customContent .btn,
+#propertyReviews .event-link { width:auto; display:block; }
+.homeReviewBadges { width:100%; height:150px; display:block; }
+#propertyReviews .event-list-outer { width:100%; float:none; }
+
+}

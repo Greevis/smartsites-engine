@@ -1,0 +1,68 @@
+description:HOST information page.
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:About ASURE
+defaultTitle:ASURE Accommodation Group - New Zealand Motels
+defaultUrl:ASURE
+defaultDescription:ASURE is an accommodation group consisting of quality, self-contained motels throughout New Zealand. 
+
+** template start **
+<section class="main-section bg-light">
+	<div class="container">
+		<div class="row">
+			<h1 class="w-100 mb-4 text-center title sr-scroll2">%PAGE_TITLE%</h1>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		  <div class="row">
+					<div class="col-12">				
+								<div class="row">
+								
+								  <div class="col-md-8">
+										<p>%PROPERTY_NAME% are the %PROPERTY_CITY% members of the nationwide 
+											<a href="https://www.asurestay.com/" target="_blank">ASURE Accommodation Group</a> 
+											which consists of quality, self-contained and serviced, independently owned and operated accommodation properties throughout New Zealand.</p>
+										<p><b>ASURE Loyalty Programme</b>: Stay at three or more ASURE Accommodation Group properties and receive $100 credit off your 10th stay!</p>
+									</div>
+								
+								  <div class="col-md-4">
+										<!-- keep this PDF link and loyaltycard image up-to-date with ASUREstay.com -->
+										<div class="ASUREloyaltyCard">
+											<a href="https://www.asurestay.com/assets/cards/cf9c533ef5/ASURE-Loyalty-Card-Oct-2019.pdf" target="_blank">
+												<img alt="Print a Loyalty Card" src="https://www.asurestay.com/assets/cards/4dfcacac32/asureloyalty.jpg">
+											</a>
+										</div>
+										<!-- end -->
+									</div>
+									
+								</div>
+								
+							<h2 class="w-100 text-center title mb-4">ASURE Properties Nationwide</h2>
+								<div class="col-12 py-3 shadow mb-4">
+									%PROPERTIES_MAP_IN_PROPERTY_THIRDPARTY%
+								</div>
+								
+								<div class="col-12 mb-4">
+									<div id="asureListings">
+										%PROPERTIES_IN_PROPERTY_THIRDPARTY_AVAILABILITY_ALTERNATE%
+									</div>
+								</div>
+							
+					</div>
+				</div>
+	</div>
+</section>
+

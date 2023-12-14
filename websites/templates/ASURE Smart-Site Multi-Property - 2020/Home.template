@@ -1,0 +1,47 @@
+description:Home Page
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:ASURE Motel Accommodation New Zealand
+defaultUrl:index
+
+customConfig-name:thirdPartySubCategoryId
+customConfig-label:Sub-category of properties to display
+customConfig-type:thirdPartySubCategory
+
+** template start **
+
+ <section class="bg-light">
+	    <div class="container">
+		    <div class="row">
+			    <div class="bookingBox bg-primary text-white">
+						<h4>Check Our Live Availability, Rates and Book Online</h4>
+						%JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Check Availability / Book Online","index.html"]%
+					</div>
+		    </div>
+	    </div>
+    </section>
+
+<section>
+	<div class="container" id="homeListings">
+		<div class="row">
+			<div class="all-properties-grouped-outer">
+				%PROPERTIES_IN_THIRDPARTY_SUBCATEGORY_AVAILABILITY_ALTERNATE%
+			</div>
+		</div>
+	</div>
+</section>
+
+<div id="footerMap">
+	%PROPERTIES_MAP_IN_SUBCATEGORY%
+</div>

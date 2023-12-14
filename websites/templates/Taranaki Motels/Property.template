@@ -1,0 +1,104 @@
+description:Individual Property Detail
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:[Property Template]
+defaultTitle:Accommodation Information
+defaultUrl:property
+
+
+** template start **
+
+%WEBROOMS_JS_INCLUDE%
+
+<div id="headerContainer">
+	<div class="row">
+			<div class="ppgContact">
+					<a href="index.html" title="Taranaki Motels New Plymouth"><h2>Taranaki Motels</h2></a>
+					<p>New Plymouth Accommodation New Zealand</p>
+			</div>
+			<div class="webrooms-datepicker">
+			    <a title="Check In:" href="%BOOKING_PAGE_URL%">Check Availability</a>
+			</div>
+	</div>
+</div>
+
+<div class="headerSpace"></div>
+
+<div class="booking-engine-exclude">
+			
+<h1 class="pageTitle">About %PROPERTY_SERVICE_NAME%</h1>			
+	
+	<div class="row">
+		<div class="property-contact">
+			
+			<div class="property-image">%MAIN_GALLERY_SLIDESHOW%</div>
+				
+			<div class="property-contact-details">
+			
+				<h2>%PROPERTY_SERVICE_NAME%</h2>
+				<div class="contact-address">%PROPERTY_STREETADDRESS% %PROPERTY_SUBURB% %PROPERTY_CITY% %PROPERTY_COUNTRY%</div>
+			
+				%PROPERTY_HOSTS_LABEL%
+				%PROPERTY_FREEPHONE_LABEL%
+				%PROPERTY_TOLLPHONE_LABEL%
+				%RESERVATIONS_REPLYTOEMAIL_LINK_LABEL%
+				%PROPERTY_HOMEPAGEURL_LINK_LABEL%
+				<div class="contact-row"><span>Availability and Rates:</span> <a href="?do=book" class="book-link">View and Book Online</a></div>
+				%FACEBOOK_PAGELINK% %GOOGLEPLUS_PAGELINK% %TWITTER_PAGELINK%
+			</div>
+			
+		</div>
+	</div>
+	
+	<div class="row">
+		<div id="pageContentTop">	
+				<div class="property-description">
+					%PROPERTY_DESCRIPTION%
+				</div>
+		</div>	
+	</div>
+	
+	<div class="row">
+		<div id="roomTypeListings">	
+			%ROOMTYPE_DESCRIPTIONS_ALL%
+		</div>
+	</div>
+	
+	<div class="property-map">
+		%PROPERTY_MAP%
+	</div>
+	
+</div>				
+			
+		
+		
+		
+			
+<div class="booking-engine-outer hide">
+
+<h1 class="pageTitle">Book Online at %PROPERTY_SERVICE_NAME%</h1>
+
+	<div class="row">
+		<a class="booking-back" href="#" onclick="window.location.href=window.location.pathname+'?time='+getQuerystring('time')+'&do=detail#detail';">&lt; Back to Property Details</a>
+		<div class="bookingBox">
+			%BOOKING_ENGINE%
+		</div>
+	</div>
+	
+</div>
+			
+<script>
+
+$('title').text('%PROPERTY_SERVICE_NAME% - %SITE_NAME%');
+
+</script>

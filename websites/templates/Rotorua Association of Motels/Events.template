@@ -1,0 +1,44 @@
+description:Rotorua events
+customContent1:Custom content area
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Events
+defaultTitle:Events
+defaultUrl:events
+
+customConfig-name:eventCategoryId
+customConfig-label:Event category to use
+customConfig-type:eventCategory
+
+** template start **
+
+<div class="pageBanner" id="propPage">
+	<div class="row">
+		<div class="headerLogo">
+			<a href="index.html" title="Stay Rotorua - Rotorua Accommodation Directory">
+				<img src="images/logo_stayrotorua2.png" alt="Rotorua Motels" />
+			</a>
+		</div>
+		<div class="headerBookPos">
+			<div class="headerBook">
+				%GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="booking-engine-exclude" id="propContent">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1>
+		<div class="customContent1">%PAGE_CUSTOM_CONTENT_1%</div>
+		%EVENTS_IN_EVENTCATEGORY_FULL%
+	</div>
+</div>				

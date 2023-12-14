@@ -1,0 +1,28 @@
+description:Talk about what the home page has on it and why it is fabulous.
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+** template start **
+
+	<div id="homeSlideshow">
+			<div style="text-align:center;">
+				<img src="images/logo_asure.png" title="ASURE Accommodation" alt="ASURE Accommodation" />
+			</div>
+  </div>
+  
+  <div class="row homePage">
+  	<h1 class="pageTitle">ASURE Accommodation</h1>
+  </div>

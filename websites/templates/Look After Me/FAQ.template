@@ -1,0 +1,350 @@
+description:FAQ Page
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Displayed above the articles feed.
+customContent2:Displayed below the articles feed.
+customContent3:Raw code area.
+customContent4:
+
+defaultName:FAQ Page
+defaultTitle: FAQ Page
+defaultUrl:faq-page
+
+customConfig-name:eventCategoryId_FAQ
+customConfig-label:FAQ
+customConfig-type:eventCategory
+
+** template start **
+
+<div class="LAMbg LAMpageBg">
+	<div class="">
+		<div class="headerLogo">
+			<a href="index.html" title="Look After Me - New Zealand's Premium Homestay Network">
+				<img src="images/LAM-logo.png" alt="Look After Me" />
+			</a>
+			<div class="full-nav">
+		 <ul>
+	  	<li><a href="index.html">Home</a></li>
+	  	<li><a href="search.html">Search</a></li>
+	  	<li><a href="hosting.html">Hosting</a></li>
+	  	<li><a href="guest-dashboard.html">My Bookings</a></li>
+	  	<!-- <li><a href="vouchers.html">Gift Vouchers</a></li> -->
+	  	<li><a href="blog.html">Blog</a></li>
+	  	<li><a href="press-room.html">Press Room</a></li>
+			<li><a href="contact.html">Contact</a></li>	
+			<li><a href="about.html">About</a></li>
+	   </ul>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div class="headerBar">
+		Look After Me
+	</div>
+
+
+<div class="articlesContainer">
+	<div class="row FAQ-row">
+	<h1 class="pageTitle title-h1">%PAGE_TITLE%</h1>
+	
+	<!-- FQA Page
+	<div class="FAQ-intro">
+	<h1>What New Hosts Ask Us:  Questions & Answers</h1>
+	</div>  -->
+	
+	<section>
+	<div class="FAQ-left">
+		<ul class="FAQ-ul">
+		<li class="tablinks" onclick="openTab(event, 'id-1')" id="defaultOpen" >WHAT'S INVOLVED IN HOSTING?</li>
+		
+		<li class="tablinks" onclick="openTab(event, 'id-2')"  >WHAT STANDARDS DO I NEED TO MEET?</li>
+		
+		<li class="tablinks" onclick="openTab(event, 'id-3')"  >WHAT SORT OF GUESTS CAN I EXPECT?</li>
+		
+		<li class="tablinks" onclick="openTab(event, 'id-4')"  >DO I HAVE TO MEET GUESTS PERSONALLY?</li>
+		
+		<li class="tablinks" onclick="openTab(event, 'id-5')"  >WHAT HAPPENS WHEN I GO AWAY?</li>
+		
+		<li class="tablinks" onclick="openTab(event, 'id-6')"  >WHAT DO OTHER HOSTS SAY?</li>
+		
+		<li class="tablinks" onclick="openTab(event, 'id-7')"  >WHAT IF I'M NOT VERY GOOD WITH THE COMPUTER?</li>
+		
+		<li class="tablinks" onclick="openTab(event, 'id-8')"  >WHAT'S IT GOING TO COST ME?</li>
+		
+		<li class="tablinks" onclick="openTab(event, 'id-9')"  >DO I HAVE TO SIGN UP JUST TO HOST FOR A BIT?</li>
+		
+		<li class="tablinks" onclick="openTab(event, 'id-10')"  >WHAT'S SO SPECIAL ABOUT LOOK AFTER ME?</li>
+		
+		<li><a href="about.html" title="Look After Me" >ABOUT LOOK AFTER ME</a></li>
+		</ul>
+	</div>
+
+	
+	
+	<div class="fullside-right">
+		<div class="FAQright" id="id-1">
+			<p>Like most things - it's a combination of a little bit of knowledge, a little bit of practice and quite a bit of common sense. We support you through a three-stage process to make sure you're ready - especially if you're new to hosting. Here's what we advise you on: </p>
+			<h2>Step 1: Setting up your place </h2>
+			<ul>
+			<li>Your guest room(s): decor, bedding, furnishings, heating, lighting and fittings </li>
+			<li>Guest services</li>
+			<li>Presentation and photography</li>
+			<li>Signage and entrance</li>
+			</ul>
+			<h2>Step 2: Getting ready for people </h2>
+			<ul>
+			<li>Responding to guest enquiries </li>
+			<li>Breakfasts and other meals </li>
+			<li>The bathroom </li>
+			<li>Public/private areas: guest lounges, kitchens</li>
+			<li>Trial run </li>
+			<li>Pricing and payments </li>
+			</ul>
+			<h2>Setting up the processes </h2>
+			<ul>
+			<li>Technology and support </li>
+			<li>Tax obligations </li>
+			<li>Insurance </li>
+			<li>Council regulations </li>
+			<li>Cancellation policy </li>
+			<li>Safety and security </li>
+			<li>Cultural considerations </li>
+			<li>Transport and alcohol - what's legal? </li>
+			<li>Accessibility and visibility issues </li>
+			<li>Ideas for promoting your property</li>
+			</ul>
+		</div>
+		
+		<div class="FAQright" id="id-2">
+		<p>Great question and all of our hosts commit to offering a certain standard of accommodation. We have guidelines to check if your property matches or exceeds our minimum requirements.</p>
+					<table class="table table-bordered table-light table-responsive">
+			  <thead>
+			    <tr>
+			      <th scope="col"></th>
+			      <th scope="col" style="color:#1F95A0;">Our minimum standards</th>
+			      <th scope="col" style="color:red;">Things we do not accept</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td class="td-1">Room / house</td>
+			      <td>Separate guest room(s) - pleasant and uncluttered. We accept whole houses provided hosts can 'meet and greet' and provide some guest services.</td>
+			      <td>Student flats, rented properties or tents. Living spaces (like lounges, kitchens, laundries converted to shared sleeping space). Some sleepouts (depends on quality). Your kids room as first options.</td>
+			    </tr>
+			    <tr>
+			      <td class="td-1">Bed</td>
+			      <td>Quality bed and mattress that is off floor. Can be single, double, queen, king or king single etc. Ideally less than 10 years old.</td>
+			      <td>Air mattresses, couches or squabs on the floor. We may accept pull-out sofas as 'second/ third room' options but not as first options.</td>
+			    </tr>
+			    <tr>
+			      
+			      <td class="td-1">Bedding and linen</td>
+			      <td>Fresh, clean sheets bedding and towels. Attractive/ pleasant coverings and extra pillow/ blanket.</td>
+			      <td>'Loved', pilled or ill-fitting, crumpled, thread-bare or holey sheets, coverings or towels. No sleeping bags.</td>
+			    </tr>
+			    <tr>
+			      
+			      <td class="td-1">Lighting and heating</td>
+			      <td>Ideally a window that opens/ closes with curtains/blinds for night. Overhead lighting and bedside lighting on at least one side of the bed. Ideally some form of heating.</td>
+			      <td>Rooms with no natural light or ventilation. Dim or poor lighting. Cold, south-facing rooms without adequate heating or furnishings. Evidence of damp or mildew</td>
+			    </tr>
+			    <tr>
+			      
+			      <td class="td-1">Space, storage and security</td>
+			      <td>Ideally a cupboard, luggage stand or space for guest suitcase and personal belongings</td>
+			      <td>No options for guests to put their belongings</td>
+			    </tr>
+			    <tr>
+			      
+			      <td class="td-1">Bathroom</td>
+			      <td>Ideally a guest bathroom (could be the main bathroom) for exclusive guest use. Or could be a shared bathroom - very clean with host's personal items minimised/stored to reduce clutter.</td>
+			      <td>Family bathrooms, (sorry for the over - generalisation kids). Student flat bathrooms. Bathrooms below our minimum hygiene or space requirements.</td>
+			    </tr>
+			    <tr>
+			      
+			      <td class="td-1">Signage</td>
+			      <td>Clear letterbox/house numbering, good access to front door/entranceway. Option to use your personalised magnetic letterbox sign or plastic sign.</td>
+			      <td>Property difficult for guests to find or poor/difficult access (overgrown, little maintenance).</td>
+			    </tr>
+			    <tr>
+			      
+			      <td class="td-1">Occupancy</td>
+			      <td>One booking (family/couple) per guest room.</td>
+			      <td>Accommodating guests from different bookings in the same room.</td>
+			    </tr>
+			    <tr>
+			      
+			      <td class="td-1">Other</td>
+			      <td>Compendium/guest information, Rubbish bin, fresh water and glass.</td>
+			      <td>No evidence or interest in 'looking after' guests and thinking about what they might need.</td>
+			    </tr>
+			    <tr>
+			      
+			      <td class="td-1">Optional extras</td>
+			      <td>Not required but rooms could have Wi-Fi, mirror, TV, music system, books, guest treat (chocolate or baking, flowers)</td>
+			      <td>Only in it for the money, no concern for guest or long-term perception of Dunedin.</td>
+			    </tr>
+			  </tbody>
+			</table>
+			<p>Fussy aren't we?</p>
+      <p>Years of experience have taught us that not all guest rooms are created equal. It's much easier for us to attract guests to your room, if our minimum standards are upheld.</p>
+      <p>Once you're set up, you'll probably enjoy it and might be willing to host guests for other big Dunedin events like graduations and parents coming to settle their students in.</p>
+		  <h2>Other Expectations </h2>
+		  <p>In addition to having minimum room standards, we ask all our hosts to: </p>
+		  <ul>
+		  <li>Accurately represent your property. Be clear and honest about amenities and what you offer. </li>
+		  <li>Keep your calendar availability up-to-date.</li>
+		  <li>Respond promptly to messages & reservation requests. </li>
+		  <li>Coordinate check-in time in advance of the actual date.</li>
+		  <li>Honour your commitment to reservations. Your guests depend on you and you are an important part of their travel plans. </li>
+		  </ul>
+		  <p>Our standards reinforce New Zealand's reputation and commitment to world-class hospitality. Even if you decide not to host with us - if you or someone you know travels, you'll know how committed we are to offering pleasant, affordable accommodation all around New Zealand. </p>
+		</div>
+	
+	<div class="FAQright" id="id-3">
+		<img class="float-right" src="images/cup-tea.jpg" alt="Look After Me - New Zealand's Accommodation" />
+		<p>Most of our guests are New Zealanders who have embraced the 'sharing economy' and enjoy meeting up with like-minded kiwis. Many are mature couples, women travelling together or with their friend/sister/ daughter(s). Others are Mums and Dads escaping to Dunedin for Easter. We also look after the merchandisers, security and other personnel associated with big events. These groups include professional businessmen. </p>
+		<p><span class="greenH">Events:</span> we are working with Promoters of large events (like Frontier Touring for Ed Sheeran) as well as local organisations (like Dunedin isite, Events and Venues and Dunedin City Council). </p>
+		<p>Elsewhere we partner with other major events around New Zealand to help provide quality accommodation, where it is most needed - like in New Plymouth for Womad, Napier for ArtDeco and Hamilton for Fieldays.</p>
+		<p><span class="greenH">Recruitment companies:</span> we work with companies relocating people for new jobs, mostly in Christchurch but we are looking to establish this for Dunedin in 2018. </p>
+		<p><span class="greenH">Education providers:</span> like Otago Polytech and University of Otago who are interested in providing information for parents of students visiting or for special occasions (like first years settling in or graduations). </p>
+		<p>We give you guidelines on how to check out your guests before they arrive. Trust underpins every aspect of our business and without it, we wouldn't have been able to host over 9000 guests. Your guests are often bringing with them passports, cash or electronic equipment, so they are also placing a lot of trust in you too. We mainly appeal to mature female guests travelling by themselves, so they tend to be the most trustworthy. </p>
+	</div>
+	
+	<div class="FAQright" id="id-4">
+		<img class="float-right" src="images/meeting.jpg" alt="Look after Me - Meeting People" />
+		<p>We prefer you to meet your guests personally because that is part of the 'look after me' experience.</p>
+		<p>If you can't arrange to meet your guests, we suggest that you arrange for someone who knows your property well, to show them through the guest areas, cover security, facilities etc.  </p>
+		<p>We also recommend that you provide them with your contact details for any questions throughout their stay. It's important your guests feel 'looked after' and welcomed when they first arrive. </p>
+		<p>For tech-savvy hosts, we recommend using either the GuestFolder App or the 'Coral' app which provide templates for:</p>
+		<ul>
+		<li><span class="greenH">Welcome and WiFi</span> - Welcome your guests and give the WiFi credentials</li>
+		<li><span class="greenH">Rooms</span> - Provide guests with key information for each of your rooms </li>
+		<li><span class="greenH">Amenities and tech</span> - Information on using devices and appliances. </li>
+		<li><span class="greenH">Local recommendations</span> - Showcase local restaurants, attractions and other important information.</li>
+		</ul>
+	</div>
+	
+	<div class="FAQright" id="id-5">
+		<p>Every guest room of every property has its own calendar. You can use this to block out dates so you don't get booking enquiries for times you can't accept guests or have family staying.</p>
+	</div>
+	
+	<div class="FAQright" id="id-6">  
+		  <p>We've helped nearly 600 people host over 9000 guest nights since 2011. Different hosts sign up for different reasons some  for the money, some for the company and others just because they love it.</p>
+	    <p>Watch the video to hear about what Look After Me hosts say about hosting:</p>
+	    <div><iframe width="auto" height="315" src="https://www.youtube.com/embed/ABVM5lmF_M0" allowfullscreen></iframe></div>
+	    <p>Introduction to Hosting with Look After Me - NZ's Online Guesthouse </p>
+	    <div class="review">
+	    <p>Here's what others say about being part of the Look After Me hosting family: </p>
+	    <p>"We've got a five bedroom house and it's amazing so many people are travelling to Dunedin for Ed Sheeran - it makes sense to help out. We are so excited not one, not two, but THREE concerts are going to be held at our fabulous stadium! It's great to be a part of the buzz (we've even got tickets ourselves!)" <br><i>- Tracey and family, Fairfield, Dunedin</i> </p>
+		  <p>"We're staying here for Easter next year but have rented out our guest room to a lovely couple from Wellington. They're totally stoked!" <br><i>-Phil and Jules, Maia, Dunedin<br></i> </p>
+		  <p>"It's nice to be appreciated for something we're doing anyway... we love our home and we're thrilled to be able to share it." <br><i>- Rosie & Craig, Auckland</i></p>
+		  <p>"It's a way of offering something we love. We hope our guests feel the same way." <br><i>- Amanda and John, Rotorua</i> </p>
+		  <p>"I became a Look After Me host because I like meeting people. It's a way of passing on old-fashioned hospitality and extends our international family." <br><i>- Alison and Tom, Rotorua</i> </p>
+		  <p>"The hardest bit was accepting money from people. It's not in my nature. But I offer good value for money and better service than what's already on offer, and it seems guests are happy to pay for it."<br> <i> - Susan, Taupo</i> </p>
+		  <p>"I was worried about safety but all our guests have been women or couples over forty. They've got more to lose than we have. They turn up on our doorstep with passports, money, their whole world in their back pocket. It's a matter of trust." <br><i>- Carol, New Plymouth</i></p>
+		  <p>For me, the advantage of Look After Me over AirBnb is the option to donate to charity. It has been my dream to contribute to the Neurological Foundation of New Zealand, to honour my mother who had Parkinsonism. <br><i>- Ria, Napier CBD</i></p>
+		  </div>
+		</div> 
+	  
+	  <div class="FAQright" id="id-7">
+		  <p>You're not alone - we have a whole range of hosts with varying degrees of computer literacy.</p>
+		  <p>If you need help to create the profile we have a service where we can do that for you, for an additional $100. </p>
+		  <p>The important thing is that once your profile is set up you can respond to an email and feel confident enough to communicate with your guests about arrangements ahead of them arriving. </p>
+		 </div>
+		  
+		 <div class="FAQright" id="id-8">
+		  <p>There are two costs you need to be aware of: </p>
+		  <p>1. A one-off <span class="greenH">Induction and activation fee</span> for all new hosts ($89 or $189</p>
+		  <p>2. On-going <span class="greenH">commission</span> from all guest bookings (10%)</p>
+		  <img src="images/revenue-flow-diagram.png" alt="Look After Me - New Zealand" />
+		  <p>The induction and activation fee is used to: </p>
+		  <ul>
+		  <li>personally check your property against our standards</li>
+		  <li>make sure you are well set up for hosting</li>
+		  <li>provide you with resources and templates</li>
+		  <li>give you access to our New Zealand based support team.</li>
+		  </ul>
+		  <p>All of our hosts need to create a property profile on our website to book guests. You can choose to 'Do it yourself' (DIY for $89) or have it 'Done for you' (DFY for $189).</p>
+		  <img src="images/Induction-Fees.png" alt="New Zealand's Accommodation" />
+		  <p><span class="greenH">A commission:</span> We only get paid if we book guests into your rooms. When guests book they are charged a 10% non-refundable deposit to secure the booking. Guests then pay you the remaining 90% directly. Our commission of 10% is well within tourism industry standards of 9% - 30%.</p>
+		 </div>
+	   
+	  <div class="FAQright" id="id-9">
+	     <p>If you live in Dunedin and want to offer accommodation just for one or two nights (like for Roger Waters or Ed Sheeran), we ask you to consider being available for other dates over the summer (like Masters Games in February 2018 or for university graduations in March or May 2018). </p>
+	     <p>You need to register and pay the $89 Activation and Induction Fee as we still need to pay our staff to check you are real, your place is decent and prices are fair. </p>
+	     <p>Sorry but we cannot lower our standards to help you make a 'quick buck'.</p>
+	     <p>We've got 100's of people on our waiting list and have guaranteed all rooms will be clean and meet our minimum expectations. </p>
+	     <p>Having you on our website also makes it much easier for guests to see your availability and book in real-time directly with you - this is more efficienet and accurate especially in the days leading up to events, which can be very busy. </p>
+	     <p>With 120,000 tickets sold for Ed Sheeran, we are still unsure how many still need accommodation. Given it is also Easter and close to graduation ceremonies, the Dunedin i-site is continually referring guests to the Look After Me website. If you are not on the website, you are unlikely to get a booking.</p>
+	     <p>Our $89 or $189 Activation Fee is modest compared to the revenue you are likely to earn on renting your rooms or house for summer events. You can stipulate a minimum two night stay. We can also hide the profile over the winter and re-activate you every summer for no extra charge.</p>
+	  </div>
+	  
+	  <div class="FAQright" id="id-10">
+		  <p>Look After Me hosts follow a set of common principles and values to ensure successful, enjoyable hosting experiences. Here's what makes us special:</p>
+		  <ul>
+		  <li>Most of the hosts on our network (98%) are women, many of them are over 50 years old. We value their attention to home maintenance, laundry, cleanliness and preparing guest rooms to provide a quality accommodation experience. </li>
+		  <li>All our room/house prices are checked and moderated for what the market deems fair and reasonable, without undermining the important work these women do to uphold minimum standards. </li>
+		  <li>We know there are other sites listing very cheap ($15) or over-priced ($600) rooms. Look After Me is right in the middle. We believe ordinary working kiwi families should be able to book real places with real people at real prices. </li>
+		  <li>Finally, we are owned and operated in New Zealand, from headquarters in Dunedin. All of our staff know New Zealand well, speak English as a first language and are ready to support you in hosting guests.</li>
+		  </ul>
+		  <img src="images/special-us.png" alt="Look After Me - New Zealand's Accommodation" />
+	  </div>
+	</div>
+	</section>
+	
+	
+	<div class="FAQ-btn">
+		<div class="FAQ-buttons">
+		<h3>Take the first step</h3>
+		<div class="sign-up">
+		<a class="btn" href="https://secure.web-rooms.co.nz/AddProperty.asp?tpgt=91&h=1251b98d580244316d98c3506c4cdfdd" target="_blank" title="Sign up with Look After Me">Sign up</a>
+		</div>
+		
+		<!--
+		<h3>Want to think about it some more?</h3>
+		<div class="free-guide">
+		<a class="btn" href="images/Hosting-Booklet-front-cover.jpg" title="Download our Free Guide">Download our free guide</a>
+		</div>
+		-->
+		
+		<h3>Make online enquiry about our hosting</h3>
+		<div class="free-guide">
+		<a class="btn" href="host-enquiry.html" title="No obligation enquiry">No obligation enquiry</a>
+		</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	</div>
+	
+</div>
+
+
+<!--- function for FAQ tabs --->
+<script>
+  function openTab(evt, idName) {
+    var i, FAQright, tablinks;
+    FAQright = document.getElementsByClassName("FAQright");
+    for (i = 0; i < FAQright.length; i++) {
+        FAQright[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(idName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>

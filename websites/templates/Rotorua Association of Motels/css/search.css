@@ -1,0 +1,344 @@
+
+/****************************** Search Fields ******************************/
+
+/* Common */
+#utility-div { display:none; }
+.searchBox-outer, #searchBox, #check-in-out, #q-guests, .search-button { display:inline-block; height:auto; font-size:14px; font-family:'Open Sans', sans-serif; text-align:left; width:auto; line-height:40px; height:40px;
+	background:#fff; border:none; margin:0; color:#999; cursor:pointer; vertical-align:top; outline:none; overflow:hidden !important; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+/* Search */
+#resultsBox { display:none; position:absolute; z-index:10; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.3); line-height:initial; color:#333; max-height:480px; overflow-y:scroll; text-indent:0; }
+#searchBox { cursor:text !important; background-image:url(../images/icon_map.png); background-position:7px center; background-repeat:no-repeat; background-color:#fff; color:#333; border:none; width:100%; text-indent:35px; }
+.searchBox-outer { background:none; margin-right:1%; }
+ul.location-results { margin:0; text-indent:0; }
+ul.location-results li.search-result { padding:8px; border-bottom:1px solid #eee; font-size:13px; list-style:none; margin:0; }
+.key-selected, .mouse-selected { background-color:lightyellow; cursor:hover; }	
+.result-icon { width:20px; overflow:hidden; font-size:9px; display:inline-block; margin-right:5px; color:#fff; height:20px; line-height:20px; vertical-align:top; text-indent:-999px; 
+	background-size:contain; background-position:center center;	background-repeat:no-repeat; }
+.result-icon { background-image:url(../images/icon_map.png); opacity:0.2; }
+.webrooms-entity { background-image:url(../images/icon_book.png); opacity:1; }
+.result-text { display:inline-block; vertical-align:top; }
+.result-text div { display:inline-block; }
+.primary-term, .secondary-term { line-height:20px; margin-left:4px; }
+.result-text .last-term { display:none; }
+.primary-term { font-weight:700; }
+
+/* Datepicker */
+.date-picker-wrapper { z-index:9999 !important; }
+#check-in-out { background-image:url(../images/icon_calendar.png); background-position:10px center; background-size:auto 20px; background-repeat:no-repeat; background-color:#fff; padding:0; 
+	background-size:16px; 19px; background-position:10px center; padding:0; text-indent:35px; }
+.dp-date { line-height:40px; }
+
+/* Guests */
+#q-guests { background-image:url(../images/icon_guests.png); background-position:10px center; background-repeat:no-repeat; padding:0; color:#333; margin:0 1%; text-indent:35px; }
+
+/* Button */
+.search-button { font-weight:800; font-size:22px; display:inline-block; font-family:'Open Sans', sans-serif; text-transform:uppercase; border:none; cursor:pointer; margin:0; text-indent:0;
+	color:#fff; text-decoration:none; text-align:center; border-radius:0; background:#46b751; border-bottom:2px solid rgba(0,0,0,0.2); transition:background 150ms ease-in-out; text-shadow:1px 1px 1px rgba(0,0,0,0.2); }
+.search-button:hover { background:#72c91c; }
+.headerBook .search-button { font-size:14px; line-height:40px; height:42px; }
+
+/* Widths */}
+.homeBook #check-in-out { width:50%; }
+.homeBook #q-guests { width:18%; }
+.homeBook .search-button { width:30%; }
+
+/* Home */
+.homeBook .searchBox-outer, 
+.homeBook #searchBox, 
+.homeBook #check-in-out, 
+.homeBook #q-guests, 
+.homeBook .search-button,
+.homeBook .dp-date { line-height:60px; height:60px; }
+.homeBook #check-in-out { text-indent:40px; background-position:15px center; }
+.homeBook #q-guests { text-indent:40px; background-position:15px center; }
+
+
+/****************************** Search Fields ******************************/
+
+/* date picker */
+.drp_top-bar { height:60px; }
+.dp-dateouter,.dp-dayname,.dp-date,.dp-monthyear,.dp-month,.dp-year,.separator-day,.dp-separator { display:inline-block; line-height:12px; color:#333; text-indent:0; }
+.dp-date { margin:0 5px; font-size:32px; line-height:40px; }
+.dp-month,.dp-year { display:block; text-transform:uppercase; font-size:12px; }
+.dp-separator { margin:0 10px; color:#aaa; }
+
+
+/****************************** Page Layout ******************************/
+
+.resultsOuter { vertical-align:top; position:absolute; top:0; left:0; right:0; bottom:0; height:100%; }
+.resultsProperties { width:55%; position:absolute; top:60px; right:0; }
+#mapLoading { position:absolute; top:20px; left:50px; width:150px; height:150px; background:rgba(255,255,255,0.6); text-align:center; z-index:100; font-size:20px; font-weight:300; border-radius:75px; line-height:150px;
+	  -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.resultsMap { width:45%; position:fixed; top:60px; bottom:0; left:0; box-shadow:0 0 5px rgba(0,0,0,0.2); }
+#searchmapDiv { width:100%; height:100% }
+
+
+/****************************** Advanced Search ******************************/
+
+/* Title */
+.resultsFilters { background:#eee; padding:20px; border-bottom:1px solid #ddd; }
+.adv-search-toggle { color:#fff; display:block; background:#444; text-align:center; border:none; border-bottom:2px solid rgba(0,0,0,0.4); width:auto; padding:0 30px;
+	height:30px; line-height:32px; font-weight:700; text-transform:uppercase; transition:background 150ms ease-in-out; text-shadow:1px 1px 1px rgba(0,0,0,0.2); }
+.adv-search-toggle:hover { background:#1585da; cursor:pointer; }
+.hide-adv { float:right; }
+h2.adv-search { padding-bottom:10px; }
+
+/* Advanced Search */
+#adv-search-outer { font-size:13px; }
+.adv-search-control-outer { padding:0 0 10px 0; margin:0; min-height:30px; clear:both; }
+.adv-search-control-outer h3 { font-weight:600; font-size:14px; height:30px; border:1px solid #ddd; margin:0 0 10px 0; line-height:30px; padding:0 10px; background:rgba(255,255,255,0.5); }
+.pricerange-slider-outer { padding:10px; }
+.accommodationType label { display:inline-block; width:20%; }
+#low-label,
+#low-starlabel { float:left; padding:10px 0; font-weight:700; font-size:14px; }
+#high-label,
+#high-starlabel { float:right; padding:10px 0; font-weight:700; font-size:14px; }
+.ui-widget-header { background:#46b751 !important; }
+.ASField-outer { display:inline-block; width:33%; vertical-align:top; }
+.ASCategory { font-weight:600; font-size:14px; height:30px; border:1px solid #ddd; margin:1px 0; line-height:30px; padding:0 10px; background:rgba(255,255,255,0.5); position:relative; }
+.ASCategory:hover { border:1px solid #bbb; }
+.as-category-showhide { position:absolute; top:0; left:0; right:0; height:32px; width:100%; border:none; background:none; outline:none; cursor:pointer; text-align:right; color:#369dec; }
+.ASSearchField-label { height:20px; line-height:20px; }
+.ASCategoryFeatures { padding:10px 0; }
+.asSearchFeatureCheckButton { margin:0 5px; padding:0; width:20px; height:20px; }
+.ASInput { width:40px; margin:0 4px; text-align:right; }
+
+
+/****************************** Result Listings ******************************/
+
+/* filters */
+.resultsFilters h2 { font-size:14px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.resultsFilters p { margin:0; font-size:12px; color:#999; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.filterLocation { border-bottom:1px solid #ddd; padding-bottom:10px; }
+.filterCheckin { border-bottom:1px solid #ddd; padding-bottom:10px; padding-top:10px; }
+.filterLeft { width:43%; display:inline-block; vertical-align:top; }
+.filterRight { width:55%; display:inline-block; float:right; vertical-align:top; }
+.filterExpand .adv-search-toggle { width:55%; height:40px; line-height:40px; top:10px; right:0; position:absolute; }
+.filterRight .searchBox-outer,
+.filterRight #check-in-out { width:65%; }
+.filterRight .search-button { width:33%; float:right; font-size:16px; }
+.filterRight #q-guests { width:33%; margin-right:0; float:right; }
+.filterAdvanced { padding-top:10px; position:relative; }
+.filterExpand .adv-search { display:none; }
+.filterExpand #adv-search-outer { font-size:12px; margin-top:20px; }
+.filterRight .searchBox-outer,
+.filterRight .search-button,
+.filterRight #check-in-out,
+.filterRight #q-guests,
+.filterExpand .adv-search-toggle { box-shadow:1px 1px 1px rgba(0,0,0,0.1); margin-top:-3px; }
+
+/* results list */
+h2.results-head { padding:20px 15px; border-bottom:1px solid #ddd; line-height:30px; margin:0; }
+h2.results-head span { font-weight:600; }
+.results-outer { margin:0; }
+.resultsListings { padding:20px; padding-top:0; }
+.resultsListings li { list-style:none; font-size:12px; overflow:hidden; display:block; border-bottom:1px solid #ddd; padding:15px; margin:0; }
+.result-outer { overflow:hidden; position:relative; }
+.result-outer .result-image { height:85px; background-size:cover; background-position:center center; overflow:hidden; text-indent:-999px; float:left; background-color:#eee; }
+.result-outer .no-image { background-image:url(../images/background_no-image.jpg); }
+.result-outer h3 { font-weight:600; font-size:16px; color:#333; height:25px; line-height:25px; }
+.result-outer .result-contact { position:absolute; top:27px; }
+.result-outer .result-address,
+.result-outer .result-phone { font-size:13px; line-height:13px; color:#999; display:inline-block; vertical-align:top; background-size:contain; background-position:left center; text-indent:14px; background-repeat:no-repeat; }
+.result-outer .result-address { background-image:url(../images/icon_map.png); }
+.result-outer .result-phone { background-image:url(../images/icon_phone.png); text-indent:12px; }
+.result-outer .result-phone { margin-left:10px; }
+.result-outer .result-description { display:none; }
+.result-outer .property-stars { display:inline-block; position:absolute; top:0; right:0; overflow:hidden; text-indent:-900px; height:16px; width:150px; }
+.result-outer a.more-detail { color:#fff; display:inline-block; background:#369dec; border-bottom:2px solid rgba(0,0,0,0.2); text-align:center; position:absolute; right:0; bottom:0; 
+	height:30px; line-height:32px; font-weight:700; text-transform:uppercase; transition:background 150ms ease-in-out; text-shadow:1px 1px 1px rgba(0,0,0,0.2); }
+.result-outer a.more-detail:hover { background:#1585da; }
+
+/* results availability */
+.result-outer .availability-status { position:absolute; height:30px; line-height:30px; bottom:0; border:1px solid #ddd; text-indent:10px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.yes-availability { background:#caf291; border:1px solid #a9ea4d; }
+.yes-availability a { color:#555; display:block; width:100%; position:absolute; top:0; left:0; z-index:2; text-indent:5px; }
+.yes-availability .book-now { float:left; text-transform:uppercase; font-weight:700; color:#46b751; }
+.yes-availability span { font-weight:600; }
+.minstay { overflow:hidden; position:absolute; top:0; right:10px; width:auto; height:30px; color:red; font-style:italic; z-index:1; }
+.enquire-only { background:#cde7fe; border:1px solid #9bcffe; }
+.no-availability { background:#ddd; border:1px solid #ccc; color:#666; }
+
+/* non results */
+.non-outer { padding:0; position:relative; }
+.non-button-hide,
+.non-button-show { position:absolute; right:15px; top:20px; color:#fff; display:block; background:#46b751; text-align:center; border:none; border-bottom:2px solid rgba(0,0,0,0.2); width:150px;
+	height:30px; line-height:32px; font-weight:700; text-transform:uppercase; transition:background 150ms ease-in-out; text-shadow:1px 1px 1px rgba(0,0,0,0.2); cursor:pointer; }
+.non-button-hide { display:none; }
+.non-results { display:none; background:#eee; }
+
+/* results highlights */
+.hover-result { background:lightyellow; }
+.highlight-result { background:lightyellow; }
+.highlight-result a.more-detail { background:#46b751; }
+.highlight-result a.more-detail:hover { background:#72c91c; }
+.non-results .hover-result { background:#eee; }
+.result-outer .yes-availability:hover { border:1px solid #46b751; }
+
+/* results common / widths */
+.result-outer h3,
+.result-outer .result-contact,
+.result-outer .as-description { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.result-outer h3,
+.result-outer .availability-status { width:56%; }
+.result-outer .result-contact { width:76%; left:22%; }
+.result-outer .result-image { width:20%; margin-right:2%; }
+.result-outer .availability-status { left:22%; }
+.result-outer a.more-detail { width:20%; }
+
+/* results ratings */
+.ratingtype-norating { background:url(../images/stars-norating.png) top right no-repeat; }
+.ratingtype-qualmark .stars-3 { background:url(../images/stars-qualmark-3.png) top right no-repeat; }
+.ratingtype-qualmark .stars-3_5 { background:url(../images/stars-qualmark-3_5.png) top right no-repeat; }
+.ratingtype-qualmark .stars-4 { background:url(../images/stars-qualmark-4.png) top right no-repeat; }
+.ratingtype-qualmark .stars-4_5 { background:url(../images/stars-qualmark-4_5.png) top right no-repeat; }
+.ratingtype-qualmark .stars-5 { background:url(../images/stars-qualmark-5.png) top right no-repeat; }	
+.ratingtype-asure .stars-3 { background:url(../images/stars-asure-3.png) top right no-repeat; }
+.ratingtype-asure .stars-3_5 { background:url(../images/stars-asure-3_5.png) top right no-repeat; }
+.ratingtype-asure .stars-4 { background:url(../images/stars-asure-4.png) top right no-repeat; }	
+.ratingtype-asure .stars-4_5 { background:url(../images/stars-asure-4_5.png) top right no-repeat; }
+.ratingtype-asure .stars-5 { background:url(../images/stars-asure-5.png) top right no-repeat; }	
+.ratingtype-selfrated .stars-3 { background:url(../images/stars-selfrated-3.png) top right no-repeat; }
+.ratingtype-selfrated .stars-3_5 { background:url(../images/stars-selfrated-3_5.png) top right no-repeat; }
+.ratingtype-selfrated .stars-4 { background:url(../images/stars-selfrated-4.png) top right no-repeat; }
+.ratingtype-selfrated .stars-4_5 { background:url(../images/stars-selfrated-4_5.png) top right no-repeat; }
+.ratingtype-selfrated .stars-5 { background:url(../images/stars-selfrated-5.png) top right no-repeat; }
+
+
+/****************************** Map Markers ******************************/
+
+.gmap-label-outer { padding:10px; }
+.gmap-label-outer h3 { font-weight:700; border-bottom:1px solid #ddd; margin-bottom:7px; padding-bottom:5px; }
+.gmap-address,
+.gmap-phone { background-size:auto 12px; background-position:left 1px; text-indent:16px; background-repeat:no-repeat; line-height:18px; font-size:12px; color:#666; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.gmap-address { background-image:url(../images/icon_map.png); }
+.gmap-phone { background-image:url(../images/icon_phone.png); background-position:1px 1px; }
+.gmap-label-outer .availability-status { position:relative; padding:5px 10px; margin:5px 0; font-size:12px; }
+.gmap-label-outer .yes-availability a { position:static; }
+.gmap-label-outer .yes-availability .book-now { margin-right:5px; }
+.gmap-more-detail { text-decoration:underline; }
+.gmap-label-outer .minstay { position:static; height:auto; }
+
+
+
+
+/*=======================================================*/	
+/*=================== MOBILE STYLING ====================*/
+/*=======================================================*/
+
+@media only screen and (max-width:1750px) 
+{
+.minstay { top:-10px; right:-10px; width:0; height:0; border-left:32px solid transparent; border-top:32px solid red; }
+}
+
+@media only screen and (max-width:1100px) 
+{
+.result-outer .property-stars { display:none; }
+}
+
+@media only screen and (max-width:800px) 
+{
+
+/* Page Layout */
+.resultsOuter { position:static; height:auto; }
+.resultsProperties { width:auto; position:static; }
+#mapLoading { top:60px; left:0; border-radius:0; right:0; bottom:0; width:100%; height:100%; background:#fff; }
+.resultsMap { width:auto; position:static; height:350px; }
+#searchmapDiv { width:100%; height:100% }
+.headerBook .searchBox-outer { display:none; }
+
+/* Advanced Search */
+.resultsFilters { padding:1em; }
+#adv-search-outer { font-size:100%; }
+.adv-search-control-outer { min-height:0; }
+.adv-search-control-outer h3,
+.ASCategory { font-size:100%; height:auto; line-height:initial; padding:5px 10px; }
+.ASField-outer { display:block; width:auto; vertical-align:top; }
+.ASSearchField-label { height:10px; line-height:10px; }
+.ASCategoryFeatures { padding:10px 0; }
+.asSearchFeatureCheckButton { margin:0 5px; padding:0; width:10px; height:10px; }
+.ASInput { width:40px; margin:0 4px; text-align:right; }
+.accommodationType label { display:block; width:auto; }
+.as-category-showhide { height:auto; top:7px; font-size:90%; right:10px; } 
+
+/* home */
+.homeBook { width:80%; margin:auto; top:170px; }
+.homeBook #check-in-out,
+.homeBook #q-guests { width:auto; height:40px; font-size:100%; background-size:auto 14px; background-position:10px center; line-height:40px; text-indent:28px; }
+.homeBook .searchBox-outer { height:40px; line-height:40px; }
+.homeBook .dp-date { height:40px; line-height:40px; }
+#homeSlideshow .homeBook #check-in-out { width:70%; float:left; }
+#homeSlideshow .homeBook #q-guests { width:28%; float:right; }
+#homeSlideshow .homeBook .search-button { width:100%; margin-top:10px; }
+.dp-date { line-height:40px; }
+
+/* Map Markers */
+.gmap-label-outer { padding:5px; }
+.gmap-label-outer h3 { margin-bottom:0; padding-bottom:0; max-width:200px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.gmap-address,
+.gmap-phone,
+.gmap-address,
+.gmap-phone,
+.gmap-label-outer .availability-status,
+.gmap-more-detail,
+.gmap-label-outer .minstay { display:none; }
+
+/* results */
+h2.results-head { height:auto; padding:1em; font-size:105%; font-weight:400; line-height:initial; text-align:center; }
+.resultsListings { padding:0; }
+.resultsListings li { overflow:visible; padding:2em 1em; }
+
+}
+
+@media only screen and (max-width:480px) 
+{
+#propPage .headerBook { width:100%; }
+#propPage .headerBook #check-in-out,
+#propPage .headerBook #q-guests { width:40px; padding:0; text-indent:-999px; overflow:hidden; background-position:center center; }
+#propPage .headerBook .search-button { padding:0 10px; width:auto; }
+
+/* results */
+.result-outer .result-image { height:80px; margin-bottom:5px; width:30%; }
+.result-outer h3 { font-size:120%; width:auto; }
+.result-outer .result-address,
+.result-outer .result-phone { display:block; line-height:initial; }
+.result-outer .result-phone { text-indent:14px; }
+.result-outer .result-phone { margin-left:0; }
+.result-outer .result-contact,
+.result-outer a.more-detail,
+.result-outer .availability-status,
+.yes-availability a { position:static; width:auto; }
+.result-outer .result-address { background-size:auto 12px; background-position:left center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.result-outer .result-phone { background-size:auto 12px; background-position:3px center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.result-outer .availability-status { clear:both; margin:0 0 5px 0; height:auto; line-height:initial; text-align:center; padding:5px; text-indent:0; }
+.result-outer a.more-detail { display:block; }
+.result-outer .as-description a { white-space:initial; overflow:initial; text-overflow:initial; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.yes-availability .book-now { float:none; margin-right:5px; }
+
+.resultsFilters { padding-bottom:0; }
+.filterLeft,
+.filterRight { width:auto; display:block; float:none; }
+.filterExpand .adv-search-toggle { width:100%; height:34px; line-height:30px; position:static; margin-bottom:1em; }
+.resultsFilters h2 { font-size:13px; display:none; }
+.resultsFilters p { margin-bottom:5px; display:none; }
+.filterRight .searchBox-outer, .filterRight .search-button, .filterRight #check-in-out, .filterRight #q-guests, .filterExpand .adv-search-toggle { margin-top:0; }
+.resultsFilters .searchBox-outer,
+.resultsFilters #searchBox,
+.resultsFilters #check-in-out,
+.resultsFilters .dp-date,
+.resultsFilters #q-guests,
+.resultsFilters .search-button { height:34px; line-height:34px; font-size:12px; }
+.filterExpand #adv-search-outer { margin-top:0; }
+.dp-month { display:inline-block; margin:0 5px 0 0; }
+.dp-year { display:inline-block; }
+.filterLocation { padding-bottom:5px; }
+.filterCheckin { padding:5px 0; }
+.filterAdvanced { padding-top:5px; }
+
+.non-button-hide, .non-button-show { position:static; margin:1em auto; }
+
+.minstay { position:static; height:auto; width:auto; border:none; }
+
+}
+

@@ -1,0 +1,344 @@
+﻿/* default font and row size */
+html, body {
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:400;
+	color:#444;
+}
+
+/* defaults */
+.bodyStyle { background-size:cover; background-position:center center; background-repeat:no-repeat; background-attachment:fixed; transition:background-image 0.5s; }
+#pageOuter { max-width:1200px; margin:auto; padding:5%; background:#fff; box-shadow:0 5px 30px rgba(0,0,0,0.3); box-sizing:border-box; }
+a,
+.homeEvents a.event-link:hover { color:#118AD7; }
+p { margin:1em 0; }
+hr { height:0; border:none; border-top:#eee solid 1px; margin:1.5em 0; }
+.preload { display:none; }
+h1, h2 { font-family:'Poiret One', sans-serif; font-weight:400; }
+h1 { font-size:300%; text-align:center; }
+h2 { font-size:200%; }
+h3 { font-size:125%; }
+ul, ol { margin:1em 0; }
+ul li, ol li { margin:0 0 0 30px; }
+
+/* header */
+#pageHeader { background:url(../images/header-napier.png) center center no-repeat; height:150px; margin:30px 0; }
+
+/* home slideshow */
+.stayLogo { position:absolute; top:200px; left:0; right:0; z-index:999; }
+#homeSlideshow { height:675px; overflow:hidden; background:url(../images/icon_loading.gif) no-repeat center center #eee; position:relative; }
+#homeSlideshow .cycle-slideshow { height:675px; width:100%; margin:0; }
+.cycle-slideshow li { margin:0; width:100%; height:100%; }
+.slide { background-size:cover; background-position:right top; height:675px; width:100%; position:relative; }
+.posRelative { position:absolute; z-index:9999; }
+.slideCaption { position:absolute; top:465px; right:0; color:#fff; padding:70px 45px; width:450px; text-align:right; font-size:13px; font-style:italic; }
+.slideCaption h3 { font-size:26px; font-style:normal; font-weight:200; }
+.slideCaption h3 a { color:#fff; }
+.slideCaption h3 a:hover { opacity:0.5; }
+.slideCaption p { margin:0; }
+.homeSlideshowPrev,
+.homeSlideshowNext { z-index:1000; position:absolute; line-height:100%; top:250px; border:none; background:none; padding:20px; font-size:20px; font-weight:200; font-family:'Open Sans', sans-serif; color:#fff; 
+	opacity:0.5; background:rgba(0,0,0,0.4); outline:none; }
+.homeSlideshowPrev { left:0; }
+.homeSlideshowNext { right:0; }
+.homeSlideshowPrev:hover,
+.homeSlideshowNext:hover { opacity:1; cursor:pointer; }
+
+/* footer */
+.footerCopy { padding:50px; text-align:center; color:#fff; font-size:90%; opacity:0.5; }
+.footerCopy a { color:inherit; }
+
+/* side nav */
+.menuBtn { position:fixed; top:30px; left:55px; z-index:9998; }
+.menuBtn span { background:#222; color:#fff; padding:10px 15px; font-size:30px; cursor:pointer; line-height:100%; display:inline-block; }
+.menuBtn span:hover { cursor:pointer; background:#111; }
+.sidenav { height:100%; width:0; position:fixed; z-index:9999; top:0; left:0; background:rgba(0,0,0,0.95); overflow-x:hidden; transition:0.5s; padding-top:50px; }
+.navInner { padding:0 30px; color:#fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.navInner h3 { color:#aac2cc; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:5px; }
+.navInner ul { margin:0 0 1em 0; }
+.sidenav .navInner li { list-style:none; margin:0; padding:0; border-bottom:1px solid rgba(255,255,255,0.1); }
+.sidenav .navInner a { padding:5px; text-decoration:none; font-size:15px; color:#fff; display:block; transition:0.3s; }
+.sidenav .navInner a:hover, .offcanvas a:focus{ background:rgba(255,255,255,0.1); color:#ccc; }
+.sidenav .closebtn { position:absolute; top:5px; right:20px; font-size:30px; color:#ccc; }
+.sidenav .closebtn:hover { color:#fff; }
+
+/* property page - contact */
+.outerContact { padding:0; margin:30px 0; border:1px solid #ddd; position:relative; height:350px; line-height:150%; overflow:hidden; box-shadow:0 1px 5px rgba(0,0,0,0.1); }
+.outerContact h2 { font-family:'Open Sans', sans-serif; font-size:150%; font-weight:400; height:24px; }
+.outerContact .property-contact-box { width:40%; }
+.outerContact .property-contact-details { padding:40px; overflow:hidden; }
+.outerContact .property-contact-details a { text-decoration:none; }
+.outerContact span { font-weight:600; display:inline-block; clear:left; }
+.outerContact a { color:inherit; text-decoration:none; }
+.outerContact a:hover { color:inherit; }
+.outerContact .contact-address { margin:10px 0;  background-image:url("../images/icon_map.png"); background-repeat:no-repeat; background-position:left top; background-size:auto 17px; padding-left:20px; line-height:20px; }
+.outerContact .property-image { float:right; position:absolute; top:0; right:0; width:60%; height:100%; background:#ddd; background-size:cover; background-position:center top; }
+.outerContact .contact-row { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.contactDatepicker { padding:10px; margin-top:10px; border-radius:5px; font-size:90%; }
+.contactDatepicker .datepicker-label, 
+.contactDatepicker .datepicker-button { display:block; margin:0; width:100%; }
+.contactDatepicker .datepicker-input { width:200px; }
+.outerContact h2,
+.outerContact .contact-address { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+/* property page - slideshow */
+.outerContact .cycle-slideshow,
+.outerContact .cycle-slideshow li { width:100%; height:100%; margin:0; padding:0; }
+.cycle-slide .gallery-image { width:100%; height:100%; background-repeat:no-repeat; background-size:cover; background-position:center center; }
+.cycle-slide .gallery-caption { display:none; }
+.outerContact .property-image .propPrev,
+.outerContact .property-image .propNext { position:absolute; z-index:1000; line-height:100%; top:24px; border:none; background:none; padding:0; font-size:18px; font-weight:400; font-family:'Open Sans', sans-serif; color:#fff; opacity:0.7; outline:none; }
+.outerContact .property-image .propPrev { right:40px; }
+.outerContact .property-image .propNext { right:25px; }
+.outerContact .property-image .propPrev:hover,
+.outerContact .property-image .propNext:hover { opacity:1; cursor:pointer; }
+
+/* property page - other boxes */
+.outerAbout { font-size:125%; font-weight:300; padding:25px 40px; }
+.outerFacilities { margin:60px 0 30px 0; padding:40px; border:1px solid #ddd; box-shadow:0 1px 5px rgba(0,0,0,0.1); }
+.outerMap { background:#eee; box-shadow:0 1px 5px rgba(0,0,0,0.1); }
+
+/* property page - roomtypes */
+.outerRoomtypes h2.roomtype-category { font-size:250%; text-align:center; margin:40px 0 -50px; padding:20px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); }
+.outerRoomtypes .rwrRoomtype { padding:50px 40px 0; margin:50px 0 0; }
+.outerRoomtypes .rwrRoomtype .desc-images { top:50px; }
+.outerRoomtypes .rwrRoomtype .desc-cap { font-size:125%; }
+.outerRoomtypes .rwrRoomtype ul.desc-features-outer { display:none; }
+.outerRoomtypes .rwrRoomtype a.book-roomtype { padding:10px; border-radius:3px; border-bottom:2px solid rgba(0,0,0,0.2); }
+.outerRoomtypes .rwrRoomtype .book-sub { opacity:0.5; }
+.outerRoomtypes .rwrRoomtype .popup-desc:after { clear:both; content:''; display:block; }
+.outerRoomtypes .rwrRoomtype.no-images-outer h2, 
+.outerRoomtypes .rwrRoomtype.no-images-outer .fromCap,
+.outerRoomtypes .rwrRoomtype.no-images-outer .popup-desc { max-width:none; }
+
+/* map search */
+.resultsOuter .resultsMap,
+.resultsOuter .resultsProperties { top:0; }
+.resultsOuter,
+.resultsListings { background:#fff; }
+#pageHeader.searchHeader { margin:0; background-size:auto 80%; }
+.resultsFilters h2 { font-family:'Open Sans', sans-serif; }
+.resultsFilters .adv-search-toggle { text-shadow:none; border-bottom: 2px solid rgba(0,0,0,0.1); }
+.resultsFilters .adv-search-toggle:hover,
+.resultsListings .result-outer a.more-detail:hover { opacity:0.9; }
+#adv-search-outer input[type=radio],
+#adv-search-outer input[type=checkbox] { margin:3px 3px 0px 5px; }
+#adv-search-outer .as-category-showhide { padding:1px 6px; }
+#adv-search-outer .asSearchFeatureCheckButton { border:1px solid #ccc; background:#fff; margin:3px 3px 0px 5px;  }
+
+/* home booking */
+#pageHeader.homeHeader { margin:50px 0 0; }
+h1.homeTitle { font-size:150%; color:#fff; opacity:0.5; padding:0 0 10px; text-transform:uppercase; letter-spacing:3px; }
+#headerBook { max-width:600px; margin:auto; padding-bottom:50px; }
+#headerBook .datepicker-checkin { border:none; vertical-align:top; background:rgba(255,255,255,0.85); transition:background 0.5s; }
+#headerBook .datepicker-checkin:hover { background:rgba(255,255,255,0.95); }
+#headerBook .datepicker-label:before { top:9px; left:9px; }
+#headerBook .datepicker-label, 
+#headerBook .datepicker-input, 
+#headerBook .datepicker-button { height:50px; line-height:50px; box-sizing:border-box; }
+#headerBook .datepicker-button { border:none; }
+#headerBook .datepicker-button:hover { opacity:1; }
+#headerBook .datepicker-input { color:inherit; }
+webrooms-datepicker-custom .datepicker-label:before,
+.webrooms-datepicker .datepicker-label:before { background: url(../images/icon_calendar.png) center center no-repeat; }
+
+/* grid tabs */
+.tabHeader { padding:0 70px; }
+a.tabLink { padding:30px 70px; width:50%; display:inline-block; box-sizing:border-box; float:left; background:#fff; font-size:150%; border-radius:10px 0 0 0; pointer-events:none; }
+a.tabLink span { font-weight:600; text-transform:uppercase; }
+a.tabLink.girdTab { background: #f2f2f2;  border-radius:10px 0 0 0; box-shadow:inset 0 -5px 10px rgba(0,0,0,0.1); transition:background 0.5s; }
+a.tabLink.mapLink { background:#aac2cc; color:#fff; border-radius:0 10px 0 0; box-shadow:inset 0 -5px 10px rgba(0,0,0,0.1); transition:background 0.5s; pointer-events:auto; }
+a.tabLink.mapLink:hover { background:#8fafbb; }
+
+/* grid */
+#pageOuter.homeGrid { max-width:85%; padding:0; background:none; }
+#homeListings { padding:70px; background:#fff; }
+#homeListings .subcat-156 { display:none; }
+#homeListings .property-outer { background:#e5edf0; min-height:60px; border-top:1px solid #fff; }
+#homeListings .property-details { width:100%; height:auto; padding:0; text-align:left; position:relative; }
+#homeListings .property-name a { text-decoration:underline; font-size:14px; font-weight:400; }
+#homeListings .property-address,
+#homeListings .property-phone,
+#homeListings .property-description,
+#homeListings .view-property { display:none; }
+#homeListings .desc-avail-table { padding:0; margin:0; top:0; right:0; position:absolute; overflow:visible; }
+#homeListings .desc-avail-table table { width:100%; }
+#homeListings .desc-avail-table thead { display:none; }
+#homeListings .desc-avail-table table td { padding:0; border:1px solid #e8f0f4; border-top:none; border-bottom:none; width:85px; height:60px; line-height:12px; vertical-align:middle; }
+#homeListings .desc-avail-table table td.no-avail { background:#ddd; }
+#homeListings .desc-avail-table table td.yes-avail span { display:block; color:#999; font-style:italic; }
+#homeListings .propertyindex-0,
+#homeListings .propertyindex-9,
+#homeListings .propertyindex-18 { margin-top:30px; margin-bottom:0; }
+#homeListings .propertyindex-0 thead,
+#homeListings .propertyindex-9 thead,
+#homeListings .propertyindex-18 thead { display:table-cell; position:absolute; top:-30px; left:0; width:100%; }
+#homeListings .desc-avail-table thead tr { width:100%; display:block; }
+#homeListings .desc-avail-table table th { padding:0; line-height:30px; color:#fff; border:none; background:none; width:14.28%; display:inline-block; }
+#homeListings .property-list-outer { background:#003781; padding-top:1px; }
+#homeListings .property-image { float:left; width:40px; height:40px; display:block; margin:10px; background-color:#fff; background-size:cover; background-position:center center; }
+#homeListings .property-name { margin-top:0; padding-top:10px; }
+#homeListings .property-stars { height:16px; margin:5px 0 0; }
+#homeListings .property-stars div { height:16px; background-position:top left; }
+#homeListings .property-name { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+/* widths */
+#homeListings .property-details { width:calc(100% - 60px); float:right; }			
+#homeListings .desc-avail-table { width:70%; }
+#homeListings .property-name,
+#homeListings .property-stars { width:30%; box-sizing:border-box; }
+
+/* gradient */
+#homeListings .desc-avail-table table .yes-avail,
+.outerRoomtypes .rwrRoomtype .desc-avail table .yes-avail { color:#333;
+	background: #d4f7a5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d4f7a5 1%, #b2ea78 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#d4f7a5), color-stop(100%,#b2ea78)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d4f7a5 1%,#b2ea78 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d4f7a5 1%,#b2ea78 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d4f7a5 1%,#b2ea78 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d4f7a5 1%,#b2ea78 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4f7a5', endColorstr='#b2ea78',GradientType=0 ); /* IE6-9 */ }
+#homeListings .desc-avail-table table .yes-avail:hover,
+.outerRoomtypes .rwrRoomtype .desc-avail table .yes-avail:hover { cursor:pointer; background:#b2ea78; }
+
+/* events */
+.homeEvents { background:#f7f7f7; padding:30px; margin:30px 0;  }
+.homeEvents .event-teasers { position:relative; }
+.homeEvents h2 a { color:inherit; }
+.homeEvents .event-list-inner { height:80px; overflow:hidden; }
+.homeEvents .event-details { margin-left:160px; min-height:80px; }
+.homeEvents .event-name { font-weight:600; font-size:120%; }
+.homeEvents .event-venue { background:url(../images/icon_map.png) no-repeat; background-position:0 2px; background-size:10px auto; padding-left:15px; margin-top:2px; }
+.homeEvents .event-daterange { background:url(../images/icon_calendar.png) no-repeat 0 center; padding-left:18px; background-size:12px; margin-bottom:2px; }
+.homeEvents .event-teaser { display:none; }
+.homeEvents .event-image { width:140px; height:80px; float:left; margin-right:10px; background-size:cover; box-shadow:0 1px 5px rgba(0,0,0,0.2); }
+.homeEvents .propPrev-events,
+.homeEvents .propNext-events { background:none; padding:10px; color:#ccc; position:absolute; top:0; right:0; cursor:pointer; }
+.homeEvents .propPrev-events { right:25px; }
+.homeEvents ul.event-list-inner { margin:1em 0; }
+.homeEvents ul.event-list-inner li { margin:0; }
+
+/* color settings */
+h1, h2, h3,
+a.tabLink,
+.resultsFilters .adv-search-toggle,
+.event-complete .event-list-inner .event-name,
+.homeEvents .event-name a { color:#003781; }
+.bodyStyle,
+#pageHeader.searchHeader,
+.outerRoomtypes a.book-roomtype,
+.resultsFilters .adv-search-toggle,
+.resultsFilters .adv-search-toggle:hover,
+.resultsListings .result-outer a.more-detail,
+.resultsListings .result-outer a.more-detail:hover { background-color:#003781; }
+.outerContact span,
+.outerRoomtypes .rwrRoomtype .desc-cap,
+.outerRoomtypes .rwrRoomtype .desc-avail-table table th,
+.event-complete .event-list-inner .event-venue,
+.homeEvents .event-venue,
+.homeEvents .event-daterange { color:#aac2cc; }
+.resultsFilters .adv-search-toggle,
+.resultsFilters .adv-search-toggle:hover { background:#aac2cc; }
+#ui-datepicker-div .ui-widget-header { background:#aac2cc !important; }
+.contactDatepicker,
+.outerRoomtypes h2.roomtype-category,
+.outerRoomtypes .desc-avail-table table th,
+.resultsOuter .resultsFilters { background-color:#e5edf0; }
+#headerBook .datepicker-button,
+.contactDatepicker .datepicker-button,
+.resultsFilters .search-button { background:#65b319; }
+
+
+
+/*=======================================================*/	
+/*=================== MOBILE STYLING ====================*/
+/*=======================================================*/
+
+@media only screen and (max-width:1250px) 
+{
+	#pageOuter,
+	#pageOuter.homeGrid { max-width:95%; }
+	#homeListings { padding:1.5em; }
+	a.tabLink { padding:1em 1.5em; font-size:120%; }
+}
+
+@media only screen and (max-width:800px) 
+{
+	.bodyStyle { font-size:85%; }
+	.menuBtn { top:0; left:0; }
+	#pageOuter { max-width:none; }
+	#pageHeader { height:50px; margin:0; position:fixed; top:0; left:0; right:0; z-index:999; box-shadow:0 5px 10px rgba(0,0,0,0.2); }
+	#pageHeader, #pageHeader.searchHeader { background-size:contain; }
+	#headerBook { display:none; }
+	#pageHeader.homeHeader { margin:0; }
+	#pageOuter { margin-top:50px; padding:2em 1.5em; }
+	h1 { font-size:225%; }
+	
+	/* property page */
+	.outerContact { height:auto; margin:1.5em 0; }
+	.outerContact .property-image { float:none; position:static; width:100%; height:250px; }
+	.outerContact .property-contact-box { width:100%; }
+	.outerContact .property-contact-details { padding:1.5em; }
+	.outerAbout { padding:1em 0; font-size:110%; }
+	.outerRoomtypes h2.roomtype-category { margin:1em 0; padding:1em; font-size:200%; }
+	.outerRoomtypes .rwrRoomtype { margin:1.5em 0 0; padding:1.5em 0 0; }
+	.outerRoomtypes .rwrRoomtype .desc-images a.first { height:200px; }
+	.outerFacilities { margin:1.5em 0; padding:1.5em; }
+	.footerCopy { padding:1.5em; opacity:1; }
+	
+	/* map search */
+	#resultDiv .result-outer .result-image { height:150px; }
+	#resultDiv .result-outer .result-address { display:block; }
+	#resultDiv .result-outer .result-phone,
+	#resultDiv .result-outer .result-description { display:none; }
+	#resultDiv .result-outer .result-image,
+	#resultDiv .result-outer h3,
+	#resultDiv .result-outer .result-contact,
+	#resultDiv .result-outer .availability-status,
+	#resultDiv .result-outer a.more-detail { width:auto; margin:0 auto; float:none; position:static; display:block; }
+	#resultDiv .result-outer h3,
+	#resultDiv .result-outer .availability-status { margin-top:1em; }
+	#resultDiv .result-outer a.more-detail { margin-top:5px; }
+	
+	/* home */
+	.stayLogo {top:100px;}
+	#headerBook.homeBook { display:block; top:150px; width:100%; padding:1.5em; box-sizing:border-box; }
+	#headerBook .webrooms-datepicker-custom .datepicker-checkin,
+	#headerBook .webrooms-datepicker-custom .datepicker-button { width:100%; display:block; border-radius:5px; margin:2px 0; }
+	#headerBook .datepicker-label, #headerBook .datepicker-input, #headerBook .datepicker-button { line-height:40px; height:40px; }
+	#headerBook .datepicker-label:before { top:5px; }
+	#pageOuter.homeGrid { max-width:none; margin:0; background:#fff; padding:1.5em; }
+	a.tabLink { display:none; width:100%; padding:0.75em 1.5em; font-size:120%; margin-bottom:1em; }
+	a.tabLink.mapLink { display:block; border-radius:5px; }
+	#homeListings { padding:0; }
+	#homeListings .property-list-outer { padding:0; }
+	#homeListings .property-name, 
+	#homeListings .property-stars { width:100%; }
+	#homeListings .property-details { width:calc(100% - 130px); padding-right:70px; }
+	#homeListings .property-name a { font-size:95%; }
+	#homeListings .desc-avail-table { width:60px; position:absolute; overflow:hidden; }
+	#homeListings .desc-avail-table table { width:425px; }
+	#homeListings .propertyindex-0 thead, #homeListings .propertyindex-9 thead, #homeListings .propertyindex-18 thead { display:none; }
+	#homeListings .propertyindex-0, #homeListings .propertyindex-9, #homeListings .propertyindex-18 { margin:0; }
+	#homeListings .desc-avail-table table td { width:60px; }
+	.homeEvents { margin:1.5em 0; }
+	.homeEvents .event-list-inner { height:auto; }
+	.homeEvents .propPrev-events { display:none; }
+	
+	/* color settings */
+	#pageHeader { background-color:#003781; }
+	.footerCopy { background:#aac2cc; }
+	
+	/* home */
+	.stayLogo img { max-height:110px; }
+	.homeSlideshowPrev, .homeSlideshowNext { display:none; }
+	.homeBook { top:100px; }
+	#homeSlideshow,
+	#homeSlideshow .cycle-slideshow,
+	.slide { height:400px; }
+	.slide { background-position:center top; }
+	.slideCaption { display:none; }
+}

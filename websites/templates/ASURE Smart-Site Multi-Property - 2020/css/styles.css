@@ -1,0 +1,292 @@
+
+html, body {
+		margin:0;
+		padding:0;
+		font-family:'Source Sans Pro', 'sans-serif';
+		font-size:16px;
+		color:#444;
+		background:#eee;
+		font-weight:400;
+}
+
+div#preload { display: none; }
+.pageBackground a { color:#15c; text-decoration:none; }
+.pageBackground a:hover { color:#118AD7;}
+.pageBackground b { font-weight:700; }
+.mobile { display:none; }
+.clear { clear:both; }
+
+/* header */
+#headerBlock { padding:35px 0; background:#fff; height:128px; }
+.ASURElogo { float:left; margin:0 40px 0 60px; width:200px; }
+.propertyInfo h3 { color:#1d4284; margin-top:20px; }
+.propertyInfo { float:left; font-size:20px; line-height:26px; font-weight:300; color:#444; }
+.propertyInfo h3 { font-size:23px; font-weight:900; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.propertyInfo h4 { font-weight:700; color:#999; font-style:italic; }
+.propertyInfo a { text-decoration:none; }
+.nzmade { position:absolute; top:20px; right:60px; }
+
+/* ratings */
+#headerBlock .row { position:relative; }
+#headerBlock .ratingBadge { position:absolute; top:0; right:0; }
+.property-stars div { float:right; margin:0 60px 0 40px; margin-top:20px; box-shadow:0 1px 2px rgba(0,0,0,0.15); width:81px; height:100px; background-size:100%; background-position:top left; background-repeat:no-repeat; }
+.ratingtype-asure .stars-3_5 { background-image:url(../images/rating_asure35.jpg); }
+.ratingtype-asure .stars-4 { background-image:url(../images/rating_asure40.jpg); }
+.ratingtype-asure .stars-4_5 { background-image:url(../images/rating_asure45.jpg); }
+.ratingtype-qualmark .stars-3_5 { background-image:url(../images/rating_qualmark35.jpg); }
+.ratingtype-qualmark .stars-4 { background-image:url(../images/rating_qualmark40.jpg); }
+.ratingtype-qualmark .stars-4_5 { background-image:url(../images/rating_qualmark45.jpg); }
+#asureListings .property-stars { display:none; }
+
+/* book online - page */
+.bookingBox { width:100%; height:auto; float:none; text-align:center; padding:2rem 4rem; box-shadow:0 3px 10px rgba(0,0,0,0.25); }
+.bookingBox h4 { padding:0; }
+			
+/* page */
+.pageBackground { background-image:url(../images/background_swirl.jpg); background-position:center -175px; background-repeat:no-repeat; }
+.pageContainer { padding:40px 0 60px 0; }
+hr { height:0; border:none; border-bottom:1px solid #ccc; margin:20px 0; }
+.box { background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.2); padding:40px; margin-bottom:20px; }
+.pad { padding:20px; padding-top:0; }
+.pageContainer h2.title { font-size:24px;	font-weight:900; color:#1d4284; border-bottom:1px solid #ccc; padding-bottom:5px; margin-bottom:30px; text-align:center; clear:both; }
+.pageContainer h2 { font-weight:700; font-size:115%; }
+.pageContainer h3 { font-weight:600; }
+.pageContainer p { margin:10px 0; }
+.pageContainer ul { list-style:disc; margin:5px 0 5px 20px; }
+.pageContainer ul li { margin-bottom:5px; }
+.book { background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.2); padding:30px; }
+.partners { text-align:center; }
+.partners a { text-align:center; }
+.properties-map-outer	{ height:800px; border:10px solid #fff; box-shadow:0 1px 5px rgba(0,0,0,0.2); margin-bottom:20px; }
+.properties-map-outer img { max-width:none; }
+.mapDiv .properties-map-outer { height:400px; margin-bottom:0; }
+.ASUREloyaltyCard { float:right; margin-left:30px; width:230px; }
+.ASUREloyaltyCard img { display:block; box-shadow:0 1px 5px rgba(0,0,0,0.2); }
+			
+/* site map */
+.sitemap-list li { margin-bottom:5px; }
+.sitemap-list a { font-weight:600; }
+.sitemap-title { margin-left:5px; }
+.sitemap-caption { color:#999; }
+			
+/* footer */
+#footerNav { background:#1e4284; position:relative; }
+#footerNav .nav { background:#1f1c1d; width:860px; margin:auto; margin-top:0px; z-index:1000; position:absolute; top:-30px; margin-left:auto; margin-right:auto; left:0; right:0; }
+#footerBlock { background:#1e4284; font-size:16px; color:#fff; padding-top:60px; }
+#footerBlock h4 { color:#ffd400; font-size:20px; font-weight:900; line-height:24px; }
+#footerBlock .blue { color:#6c95de; }
+#footerBlock .propertyInfo { color:#fff; font-size:16px; line-height:24px; font-weight:400; }
+#footerBlock .propertyInfo a { color:#fff; }
+#footerBlock .propertyInfo div { display:block; }
+#footerBlock .propertyInfo,
+#footerBlock .footerApp { padding:0 10px; }
+#footerBlock .footerLoyalty { padding:0 20px; }
+.footerLoyalty { line-height:18px; }
+.footerLoyalty h3 { line-height:24px; }
+.footerLoyalty .btn { background:#ffd400; font-size:18px; text-transform:uppercase; color:#000; padding:10px 22px; border-radius:8px; font-weight:900; text-decoration:none; margin-right:5px; float:left; margin-top:20px; }
+.footerLoyalty .loyaltyCard { float:right; width:110px; margin-top:10px; }
+.footerApp .btn { background:#000; border-radius:8px; display:block; margin-top:5px; }
+.footerApp .btn img { display:block; margin:auto; }
+#footerBlock .btn { box-shadow:0 1px 5px rgba(0,0,0,0.3); }
+#footerBlock .btn:hover { box-shadow:0 1px 6px rgba(0,0,0,0.5); cursor:pointer; }
+.footerCards { color:#6c95de; font-size:12px; text-align:center; margin:30px 0 0 0; }
+.footerLinks { font-size:20px; text-align:center; color:#fff; padding:30px 0 50px; }
+.footerLinks .dash { color:#6c95de; padding:0 10px; }
+.footerLinks a { font-weight:900; color:#ffd400; text-decoration:none; }
+#footerCopy { background:#1f1f1f; padding:15px; color:#585858; font-size:14px; text-align:center; }
+#footerCopy a { color:#585858; text-decoration:none; }
+#footerCopy a:hover { color:#888; }
+.footerBadges { text-align:right; }
+#footerMap .properties-map-outer { border:none; margin:0; height:400px; box-shadow:0 0 20px rgba(0,0,0,0.2); }
+.gm-style-iw a { display:none; }
+
+.all-properties-grouped-outer {width:100%;}
+
+
+/* property list */
+#asureListings .property-list-outer .property-description,
+#asureListings .view-property,
+#asureListings .desc-avail-table { display:none; }		
+#asureListings { margin-bottom:30px; font-size:14px; }
+#asureListings .property-outer { padding:15px 20px; background:#fff; margin:5px; text-align:left; box-shadow:0 1px 3px rgba(0,0,0,0.2);
+	width:430px; display:inline-block; }
+#asureListings .property-image { height:54px; width:100px; background-size:cover; float:left; margin-right:10px; }
+#asureListings .property-name { font-weight:600; }
+#asureListings .property-address,
+#asureListings .property-phone { background-repeat:no-repeat; background-position:left center; background-size:14px; padding-left:20px; margin-left:110px; }
+#asureListings .property-address { background-image:url(../images/icon_map.png); }
+#asureListings .property-phone { background-image:url(../images/icon_phone.png); }
+
+
+
+/* HOME new */
+#homeListings .property-outer { padding:40px; position:relative; background:#fff; margin:0 0 20px 0; box-shadow:0 1px 10px rgba(0,0,0,0.2); }
+#homeListings .property-image { width:100%; height:350px; background-size:cover; background-position:center; margin-bottom:30px;  box-shadow: 0px 5px 10px rgba(0,0,0,0.4); }
+#homeListings .ellipsis { overflow:hidden; }
+#homeListings .property-stars { position:absolute; top:420px; left:40px; box-shadow:0 1px 3px rgba(0,0,0,0.4); }
+#homeListings .property-stars div { margin:0; }
+#homeListings .property-details { font-size:20px; line-height:26px; font-weight:300; color:#444; }
+#homeListings .property-details .property-name { padding-top:10px; padding-left:100px; }
+#homeListings .property-details .property-name a { font-size:23px; font-weight:800; color:#1d4284; }
+#homeListings .property-details .property-address { background:url(../images/icon_map.png) 100px center no-repeat; padding-left:25px; }
+#homeListings .property-details .property-phone { background:url(../images/icon_phone.png) 100px center no-repeat; padding-left:25px; display:block; }
+#homeListings .property-details .property-description { font-size:16px; font-weight:400; color:#555; line-height:20px; margin:30px 0 10px 0; padding:20px; border-top:1px solid #ddd; border-bottom:1px solid #ddd; }
+#homeListings .property-details .property-address,
+#homeListings .property-details .property-phone { padding-left:125px; }
+#homeListings .view-property { position:absolute; top:437px; right:40px; background:#1d4284; display:block; color:#ffd400; 
+	font-size:18px; text-transform:uppercase; padding:10px 22px; border-radius:8px; font-weight:900; text-decoration:none; box-shadow:0 1px 5px rgba(0,0,0,0.3); }
+#homeListings .view-property:hover { box-shadow:0 1px 6px rgba(0,0,0,0.5); cursor:pointer; }
+.readmore { padding-left:4px; }
+
+		/*avilability*/
+			.desc-avail-table { overflow:auto; font-family:Arial, Helvetica, sans-serif; padding:10px 0; text-align:center; }
+			.desc-avail-table table { margin:0 auto; font-size:10px; border-collapse:collapse; clear:both; width:100%; }
+			.desc-avail-table table th { font-weight:normal !important; color:#ffd400; background:#1E4284; border:1px solid #fff; padding:3px 0; }	
+			.desc-avail-table table td { padding:8px 0; border:1px solid #fff; }
+		/*gradient*/
+			.desc-avail-table table .yes-avail { color:#333;
+				background: #d4f7a5; /* Old browsers */
+				background: -moz-linear-gradient(top,  #d4f7a5 1%, #b2ea78 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#d4f7a5), color-stop(100%,#b2ea78)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #d4f7a5 1%,#b2ea78 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #d4f7a5 1%,#b2ea78 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #d4f7a5 1%,#b2ea78 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  #d4f7a5 1%,#b2ea78 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4f7a5', endColorstr='#b2ea78',GradientType=0 ); /* IE6-9 */ }
+			.desc-avail-table table .yes-avail:hover { cursor:pointer; background:#b2ea78; }
+			.desc-avail-table table .no-avail { color:#bbb;
+				background: #f1f1f1; /* Old browsers */
+				background: -moz-linear-gradient(top,  #f1f1f1 1%, #e5e5e5 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#f1f1f1), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top,  #f1f1f1 1%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top,  #f1f1f1 1%,#e5e5e5 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top,  #f1f1f1 1%,#e5e5e5 100%); /* IE10+ */
+				background: linear-gradient(to bottom,  #f1f1f1 1%,#e5e5e5 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */ }
+
+
+
+
+
+
+
+
+
+
+/*==================== MOBILE STARTS ====================*/
+
+
+			@media only screen and (max-width: 960px) 
+				{  
+					.bookingBox {  padding:1rem; }
+          .bookingBox h4 { font-size:1.2rem; }
+
+					.mobile { display:block; margin:auto; }
+					.remove { display:none !important; }
+					
+	/* header */
+	#headerNav { background:url(../images/logo_asure.png) no-repeat scroll 10px center / 50px auto #1e4284 !important; box-shadow:0 1px 5px rgba(0,0,0,0.3); }
+	#headerNav .mobile { font-size:100%; line-height:50px; max-width:50%; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#fff; position:absolute; top:0; left:70px; }	
+	#headerBlock { padding:0; text-align:center; position:relative; height:auto; }
+	#headerBook .bookingBox { float:none; padding:1em 2em; border:none; border-radius:0; width:auto; background:#ffd400; box-shadow:0 1px 2px rgba(0,0,0,0.1); }
+	#headerBook .webrooms-datepicker { height:auto; width:auto; }
+	#headerBook .datepicker-label { color:#333; font-size:95%; }
+	#headerBook .datepicker-input { margin:0.5em; margin-top:0; }
+	#headerBook .datepicker-button { background:#222; border:none; box-shadow:none; border-radius:0; width:100%; padding:0.75em 1em; font-weight:400; position:static; font-size:95%; color:#fff; }
+	#headerBook .datepicker-button:hover { background:#111; }
+	.nzmade { display:none; }
+	
+	/* home header */
+	#headerBlock { background:#1e4284; }
+	#headerBlock .ASURElogo { margin:2em auto 1em auto; float:none; }
+	#headerBlock .propertyInfo { float:none; font-size:110%; line-height:120%; color:#fff; padding:0 1em; }
+	#headerBlock .propertyInfo h3 { font-size:100%; margin:0; color:#ffd400; }
+#headerBlock .propertyInfo br { display:none; }
+#headerBlock .propertyInfo p { font-size:90%; }
+#headerBook { background:#1e4284; padding:2em; padding-top:1em; margin-bottom:1em; }	
+#headerBook .bookingBox h4 { color:#111; font-size:110%; }	
+#homeListings { margin:0; }
+#homeListings .property-image { width:100%; margin:0; height:200px; margin:0; margin-bottom:1em; }
+#homeListings .property-outer { padding:1em; margin:0 0.5em; margin-bottom:1em; }
+#homeListings .property-stars { top:110px; right:1em; }
+#homeListings .property-details .property-name { padding:0; margin:0; line-height:100%; }
+#homeListings .property-details .property-name a { font-size:90%; }
+#homeListings .property-details .property-address, #homeListings .property-details .property-phone { padding-left:25px; font-size:90%; background-position:left top; line-height:100%; margin:0.3em; }
+#homeListings .property-details .property-description { margin:1em 0; }
+#homeListings .view-property { position:static; display:block; padding:0.5em 0; text-align:Center; }	
+	#homeListings .ellipsis { height:100px; }
+.desc-avail-table table { line-height:120%; }
+
+	
+	/* page */
+	.pageBackground { background:#eee; }
+	.pageContainer,
+	.homeContainer { padding:2em 1em; font-size:90%; margin:0; }
+	.pad { padding:0 0 1em 0; }
+	.box { padding:1em; }
+	.book { margin:-1em; margin-top:1em; padding:0.5em; }
+	.contactCard, .fLeft, .fRight { float:none; width:auto; margin-bottom:1em; height:auto; min-height:0; }		
+	.fRight { margin-bottom:2em; }			
+	.email-outer { float:none; height:auto; margin:1em 0; padding:1em; width:auto; }
+	.email-label, .email-field { width:95%; }
+	.pageContainer h2.title { font-size:130%; margin:0 0 1em 0; padding:0 0 0.5em 0; line-height:105%; }
+	.pageContainer .pageFacilities li { width:100%; display:block; }
+	.pageContainer .pageFacilities ul { margin:1.5em; }
+	.ASUREloyaltyCard { width:auto; float:none; margin:0; display:none; }
+	.ASUREloyaltyCard img { margin:0 auto; }
+	.properties-map-outer,
+	.mapDiv .properties-map-outer { height:300px; box-shadow:0 1px 3px rgba(0,0,0,0.2); }
+	#asureListings { font-size:90%; }
+	#asureListings .property-outer { width:auto; display:block; padding:1em; }
+	#asureListings .property-image { display:none; }
+	#asureListings .property-address, 
+	#asureListings .property-phone { margin:0; }
+	.partners img { height:30px; margin:0.75em auto; display:block; }
+	.photoGallery { margin:0; }
+	.photoGallery a { width:95%; height:auto; margin:0 auto; border:none; box-shadow:none; }
+	.photoGallery a img { width:100%; height:auto; max-height:none; max-width:100%; width:auto; }
+	
+	/* roomtypes */
+	.pageRTDP .rwrRoomtype { padding:1em; }
+	.row .pageRTDP h2.roomtype-category { font-size:120%; padding:0.5em 1em; margin:0.5em 0; }
+	.row .pageRTDP .rwrRoomtype h2 { font-size:110%; margin:0 0 0.5em 0; line-height:110%; }
+	.pageRTDP .rwrRoomtype .desc-description-outer { padding:0; }
+	.pageRTDP .book-roomtype,
+	.buttonSend { background:url(../images/ASURE_bookingbutton.png) no-repeat scroll 7px center, linear-gradient(to bottom, #2c2c2c, #0e0e0e) repeat scroll 0 0 rgba(0, 0, 0, 0); padding:0.5em 1em 0.5em 1.75em; }
+	.pageRTDP .book-roomtype:hover,
+	.buttonSend:hover { background:url(../images/ASURE_bookingbutton.png) no-repeat 7px center #0e0e0e; color:#fff; }
+	.pageRTDP .book-title { font-size:90%; }
+	.pageRTDP .book-sub { font-size:70%; }	
+	.pageRTDP .rwrRoomtype .desc-images a.first { display:block; height:auto; padding:0; margin:0; margin-bottom:5px; }
+	.pageRTDP .rwrRoomtype .desc-images a.first img { display:block; }
+	
+	/* footer */
+	#footerBlock { padding:2em 1.5em; font-size:95%; }
+	#footerBlock h4 { font-size:120%; line-height:150%; text-align:center; }
+	#footerBlock .propertyInfo { font-size:inherit; line-height:110%; float:none; }
+	#footerBlock .propertyInfo,
+	#footerBlock .footerApp { padding:0; }
+	#footerBlock .footerApp { margin-top:1em; }
+	#footerBlock .footerCards	{ margin-top:0.75em; }
+	#footerCopy { line-height:120%; font-size:80%; padding:1.5em 1em; }		
+	#footerMap .properties-map-outer { height:300px; }	
+	
+#footerBlock .footerLoyalty { padding:0; line-height:100%; }	
+.footerLoyalty .btn { float:none; margin:0.5em 0 1.5em 0; padding:0.5em 0; display:block; text-align:center; }	
+.footerLoyalty .loyaltyCard { display:none; }
+.footerLinks { display:none; }
+
+
+
+				}
+
+
+			@media only screen and (max-width: 640px) 
+				{
+					/* roomtypes mobile*/
+					.row .pageRTDP .rwrRoomtype h2,
+					.pageRTDP .rwrRoomtype .fromCap,
+					.pageRTDP .rwrRoomtype .desc-images { width:100%; }
+					.pageRTDP .rwrRoomtype .desc-images { margin:1em 0; float:none; }
+					.pageRTDP .rwrRoomtype .desc-images a { display:none; }
+				}

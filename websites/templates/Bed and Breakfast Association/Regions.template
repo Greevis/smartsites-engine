@@ -1,0 +1,44 @@
+description:Region Listing Page
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Regions
+defaultTitle:Regions
+defaultUrl:regions
+
+customConfig-name:regionWebsitePageId
+customConfig-label:Base page for Regional Listings
+customConfig-type:websitePage
+
+** template start **
+
+<div id="topBar">
+		<a class="topbarLogo" href="index.html" title="Bed and Breakfast Association NEW ZEALAND">
+			<img src="images/logo-white-bnb.png">
+		</a>
+		%GROUP_GUEST_LOGIN%
+</div>
+
+<div class="row fixmargin">
+	<div id="pageContentTop" class="basicPage">
+		<h1 class="pageTitle">Bed &amp; Breakfast Association NEW ZEALAND</h1> 
+		<div class="pagePad">
+	    %PAGE_CUSTOM_CONTENT_1%
+	    
+			<div class="row">
+			%SUBCATEGORY_PAGES_FOR_THIRDPARTYGROUPTYPE[True,True]% <!-- params are bRenderPages, bShowSubcategories-->
+			</div>
+	    
+	    %PAGE_CUSTOM_CONTENT_2%
+	  </div>
+	</div>
+</div>

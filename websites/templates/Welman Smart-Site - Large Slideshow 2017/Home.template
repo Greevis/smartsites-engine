@@ -1,0 +1,80 @@
+description:Home
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:Intro code
+customContent2:First box code
+customContent3:Second box code
+customContent4:Third box code
+
+defaultName:Home
+defaultTitle:Welcome to %PROPERTY_NAME% Accommodation
+defaultUrl:index
+
+customConfig-name:eventCategoryId_attractions
+customConfig-label:Local Attractions slideshow
+customConfig-type:eventCategory
+
+customConfig-name:eventCategoryId
+customConfig-label:Other Articles slideshow
+customConfig-type:eventCategory
+
+customConfig-name:eventCategoryId_reviews
+customConfig-label:Reviews slideshow
+customConfig-type:eventCategory
+
+
+** template start **
+
+<div id="homeSlideshow">
+	<div class="slideshowGallery">
+		%MAIN_GALLERY_SLIDESHOW%
+	</div>
+</div>
+
+<div class="content row">
+<section id="pageOuter" class="homeContent">
+		
+	<div class="pageIntro">
+		<h1 class="pageTitle font">%PAGE_TITLE%</h1>
+		<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+	</div>
+		
+		<!-- webrooms room types -->
+		<div class="homeArticles"> 
+			<div class="slide0">
+				%ROOMTYPE_DESCRIPTIONS_CATEGORIES[False,False]%
+			</div>
+			<div class="customContent">
+				<div class="homeDesc">%PAGE_CUSTOM_CONTENT_2%</div>
+			</div>	
+		</div>
+		
+		<!-- articles attractions -->
+		<div class="homeArticles slide1"> 
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_attractions","Attractions.template","eventCategoryId_attractions"]%
+			<div class="customContent">
+				<div class="homeDesc">%PAGE_CUSTOM_CONTENT_3%</div>
+			</div>
+		</div>		
+			
+		<!-- articles other -->	
+		<div class="homeArticles slide2"> 
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId","Events.template","eventCategoryId_events"]%
+			<div class="customContent">
+				<div class="homeDesc">%PAGE_CUSTOM_CONTENT_4%</div>
+			</div>
+		</div>
+		
+		<!-- articles reviews -->
+		<div class="homeArticles slide3" id="propertyReviews">
+			<div class="homeReviewBadges"></div>
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_reviews","Reviews.template","eventCategoryId_reviews"]%
+		</div>
+		
+	</section>
+</div>

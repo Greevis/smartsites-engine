@@ -1,0 +1,45 @@
+		
+		
+		
+		#navBar .nav ul li { display:inline; }
+		#footerNav .nav1L ul li { display:inline; }
+		#pageBorder { background:#ddd; }
+		#bookingBar .rwr_button { width:320px; border:none; }
+		.rwr_table td { vertical-align:middle; }
+		#pageContent .cmsGallery li { display:inline; }
+		.email-outer { height:auto; }
+		.rwrRoomtype .desc-photos-thumbs UL.desc-photos-outer LI { display:inline; }
+		#bookingBar .rwr_button { background:#000000 !important; filter:none; }
+		.newsImage { width:340px; height:200px; }
+		
+		
+		
+		
+		.navBar { height:55px; }
+		.nav-collapse { margin-left:50px; overflow:visible !important; }
+		.nav-collapse ul li { display:block; float:left; }
+		.nav1L { display:none; }
+		#pageContainer .hbL .newsTicker .newsLinks,
+		#pageContainer .hbLwr .rwrRoomtype H2  { background:#000; }
+		.datepicker-button { width:300px; }
+		.datepicker-button:hover { background:#48b400; }
+		.cmsGallery li { display:inline; }
+		.email-outer { height:auto; }
+		#pageContainer .desc-photos-thumbs li.photo { display:none; }
+		#pageContainer .desc-photos-thumbs li.first { display:block; margin:0; }
+		#pageContainer .rwrRoomtype ul { list-style:disc; }
+		#pageContainer .desc-photos-thumbs ul { list-style:none; }
+		#pageContainer .rwrRoomtype ul.desc-features-outer { overflow:visible; }
+		#pageContainer .rwrRoomtype ul.desc-features-outer li { float:none; width:auto; }
+		#pageContainer .rwrRoomtype .fromCap,
+		#pageContainer .rwrRoomtype .desc-from,
+		#pageContainer .rwrRoomtype .desc-from .from,
+		#pageContainer .rwrRoomtype .desc-cap { display:inline; }
+		#bookingBox H4 { font-size:24px; }
+		#ui-datepicker-div .ui-datepicker-calendar { background:url(/~images/template/iconBook.png) no-repeat 15px center #0e0e0e; }
+		
+		
+		
+		
+		
+		

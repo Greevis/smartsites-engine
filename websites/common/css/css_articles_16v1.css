@@ -1,0 +1,59 @@
+
+/************** SMARTSITES *************/
+/*               articles              */
+/***************************************/
+
+.event-complete .event-details { max-width:55%; }
+.event-complete .event-image { width:40%; }
+.event-complete li.event-inner { padding:30px 0 0 0; margin:30px 0 0 0; border-top:1px solid #ddd; min-height:220px; position:relative; list-style:none; }
+.event-complete .event-image { height:220px; }
+
+/* events */	
+.event-complete .pageTitle { display:none; }
+.event-complete ul.event-list-inner { margin:0; }
+.event-complete .event-image { float:right; overflow:hidden; box-shadow:0px 1px 1px rgba(0,0,0,0.2); background:#ddd; background-position:center center; background-size:cover; }
+.event-complete .event-details { width:500px; display:inline-block; }
+.event-complete .event-name { font-size:120%; font-weight:700; text-align:left; }
+.event-complete .event-venue { color:#999; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.event-complete .event-daterange { color:#999; }
+.event-complete .event-description { font-size:inherit; color:inherit; margin:10px 0; }
+.event-complete .event-description ul li { list-style:disc; margin:0; }
+.event-complete .event-links { margin-top:10px; }
+.event-complete .event-links a { background: url(../images/icon_xlink.png) no-repeat left center; display:block; text-indent:20px; height:20px; }
+.event-complete .event-youtube { background: url(../images/icon_youtube.png) no-repeat left center; display:block; background-size:14px 14px; padding-left:20px; height:20px; } 
+.event-complete .event-facebook { background: url(../images/icon_facebook.png) no-repeat left center; display:block; background-size:14px 14px; padding-left:20px; height:20px; }
+
+/* events */
+.articlesEvents .event-venue,
+.articlesAttractions .event-venue { background:url(../images/icon_eventMap.png) no-repeat; background-position:4px top; padding-left:20px; line-height:24px; margin-top:5px; }
+.articlesEvents .event-daterange { background:url(../images/icon_eventCalendar.png) no-repeat left top; padding-left:20px; line-height:24px; }
+
+/* reviews */
+.articlesReviews li.event-inner { min-height:0; padding:0 0 30px 0; margin:0 0 30px 0; border:none; border-bottom:1px solid #ddd; }
+.articlesReviews .event-details { width:auto; float:none; }
+.articlesReviews .event-image { width:50px; height:50px; border-radius:25px; margin:0 10px 10px 0; float:left; }
+.articlesReviews .event-details,
+.articlesReviews .event-name, 
+.articlesReviews .event-venue, 
+.articlesReviews .event-daterange, 
+.articlesReviews .event-description, 
+.articlesReviews .event-links { max-width:none; }
+.articlesReviews .event-daterange { display:none; }
+.articlesReviews .event-name, 
+.articlesReviews .event-venue { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; border:none; }
+.articlesReviews .event-description { clear:both; }
+
+
+@media only screen and (max-width: 960px) 
+{
+
+.event-complete .event-details { width:auto; max-width:none; float:none; display:block; }
+.event-complete li.event-inner { padding:2em 0 0 0; margin:2em 0 0 0; min-height:0; }
+.event-complete .event-image { margin:0 auto 1em auto; width:100%; float:none; }
+.articlesReviews li.event-inner {  padding:0 0 2em 0; margin:0 0 2em 0; }
+.articlesReviews .event-image { width:50px; float:none; }
+.articlesReviews .event-name, 
+.articlesReviews .event-venue { text-align:center; }
+.event-complete .event-links a { display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+}

@@ -1,0 +1,28 @@
+description:Page containing site map link list.
+
+customContent1:General summary content for this page.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:false
+
+defaultName:Site Map
+defaultTitle:Site Map
+defaultUrl:sitemap
+
+** template start **
+
+<div class="pageContainer">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pagePad">
+	    %PAGE_CUSTOM_CONTENT_1%
+	    %SITEMAP%
+	  </div>
+	</div>
+</div>

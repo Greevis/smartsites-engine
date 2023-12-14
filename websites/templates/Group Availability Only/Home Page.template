@@ -1,0 +1,35 @@
+description:Availability display and map
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Introduction text
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+
+** template start **
+
+
+			
+		<div id="headerBook">				
+	     %JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Search Availability","index.html"]%
+	  </div>
+  
+	  <div id="homeListings">
+			<div class="row">
+				<div class="all-properties-grouped-outer">
+					%PROPERTIES_IN_THIRDPARTY_AVAILABILITY%
+				</div>
+			</div>
+		</div>
+		
+  

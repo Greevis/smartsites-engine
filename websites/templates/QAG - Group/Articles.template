@@ -1,0 +1,57 @@
+description:Articles page
+
+customContent1:Intro code
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customConfig-name:eventCategoryId
+customConfig-label:Event category to use
+customConfig-type:eventCategory
+
+** template start **
+
+<body class="bodyStyle articlesContent">
+
+<!-- homepage datepicker header -->
+<header id="headerBlock">
+	<div class="row">		
+			<a class="headerLogo" href="index.html" title="Queenstown Accommodation">
+				<span class="queenstown">Queenstown</span>
+				<span class="accommodation">Accommodation</span>
+			</a>
+			<div class="webrooms-datepicker">
+			    %JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Check Availability","index.html"]%
+			</div>
+	</div>
+</header>
+<div id="banner"></div>
+<!-- end -->
+
+<div class="content">
+	<section id="pageOuter" class="pageContent">
+		
+		<div class="pageIntroOuter">
+			<div class="row">
+				<div class="pageIntroInner">
+					<h1 class="pageTitle font">%PAGE_TITLE%</h1>
+					<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div id="eventListings">%EVENTS_IN_EVENTCATEGORY_FULL%</div>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_2%</div>
+		</div>
+	
+	</section>
+</div>
+
+%PROPERTIES_MAP_IN_THIRDPARTY%

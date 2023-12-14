@@ -1,0 +1,118 @@
+description:Individual Property detail
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+defaultName:[Property Template]
+defaultTitle:Accommodation Information
+defaultUrl:property
+
+** template start **
+
+%WEBROOMS_JS_INCLUDE%
+
+<section class="bg-primary mt-6">
+	<div class="container">
+
+		<div id="propPage">
+			<div class="row">
+				<div class="headerLogo">
+					
+				</div>
+				<div class="headerBookPos mx-auto">
+					<div class="headerBook">
+						%GROUP_LOCATION_SEARCH_CONTROLS%
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<div class="booking-engine-exclude" id="propContent">
+  <section>
+	  <div class="container">
+	
+			<div class="row">
+				<div id="pageContentTop">
+						<h1 class="pageTitle">Stay at %PROPERTY_SERVICE_NAME% - Rotorua Accommodation</h1>
+				</div>	
+			</div>	
+	
+			<div class="row property-contact">	
+					<div class="col-md-6 p-0 property-image">%MAIN_GALLERY_SLIDESHOW%</div>
+					<div class="col-md-6 property-contact-box">
+						<div class="property-contact-details">
+							<h2>%PROPERTY_SERVICE_NAME%</h2>
+							<div class="contact-address">
+								<a href="#map">%PROPERTY_STREETADDRESS% %PROPERTY_SUBURB% %PROPERTY_CITY% %PROPERTY_COUNTRY%</a>
+							</div>
+							%PROPERTY_HOSTS_LABEL%
+							%PROPERTY_FREEPHONE_LABEL%
+							%PROPERTY_TOLLPHONE_LABEL%
+							%RESERVATIONS_REPLYTOEMAIL_LINK_LABEL%
+							%FACEBOOK_PAGELINK% %GOOGLEPLUS_PAGELINK% %TWITTER_PAGELINK%
+							
+							<br>
+							<a class="btn btn-primary text-white" href="?#book">Book Now</a>
+						</div>
+					</div>
+			</div>
+			<div class="row">
+				<div id="roomTypeListings">	
+					%ROOMTYPE_DESCRIPTIONS_ALL%
+				</div>
+			</div>	
+			<div class="row" id="propDesc">
+				<div class="columns six">
+					<div class="property-description">
+					<h2>About %PROPERTY_SERVICE_NAME%</h2><hr />
+					<div class="proppageDesc">%PROPERTY_DESCRIPTION%</div>
+					</div>
+				</div>
+				<div class="columns six">
+					<div class="property-facilities-div">
+					<h2>Motel Facilities</h2><hr />
+						<div class="proppageDesc">
+						%PROPERTY_ASFIELDS%
+						%PROPERTY_FACILITIES%</div>
+					</div>
+				</div>
+			</div>		
+			
+			<!--
+			<div class="row">
+				<a name="map"></a>
+				<div class="property-map">
+					%PROPERTY_MAP%
+				</div>			
+			</div>
+			-->
+			
+	  </div>
+  </section>
+</div>
+			
+<section>	
+	<div class="container">
+		<div class="booking-engine-outer hide">
+			<div class="row">
+				<a class="booking-back" href="#" onclick="window.location.href=window.location.pathname+'?time='+getQuerystring('time')+'&do=detail#detail';">&lt; Back to Property Details</a>
+				%BOOKING_ENGINE%
+			</div>
+		</div>
+	</div>
+</section>
+			
+<script>
+$('title').text('%SAFEJS_PROPERTY_SERVICE_NAME% - %SAFEJS_SITE_NAME%');
+</script>

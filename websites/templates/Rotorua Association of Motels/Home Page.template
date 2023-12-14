@@ -1,0 +1,110 @@
+description:Talk about what the home page has on it and why it is fabulous.
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+customConfig-name:eventCategoryId_events
+customConfig-label:Local Events
+customConfig-type:eventCategory
+
+** template start **
+
+	<div id="homeSlideshow">
+    <button class="homeSlideshowPrev">&lt;</button>
+    <button class="homeSlideshowNext">&gt;</button>	
+
+		<div class="row posRelative">
+			<div class="stayLogo">
+				<img src="images/logo_stayrotorua.png" title="Stay Rotorua - Motel Accommodation in Rotorua NZ" alt="Rotorua Motels" />
+			</div>
+			<div class="homeBook">
+				 %GROUP_LOCATION_SEARCH_CONTROLS%
+			</div>
+		</div>
+		
+		<div class="cycle-slideshow" 
+		    		data-cycle-prev=".homeSlideshowPrev" 
+		    		data-cycle-next=".homeSlideshowNext" 
+		    		data-cycle-fx="fadeout" 
+		    		data-cycle-timeout="6000" 
+		    		data-cycle-speed="1000" 
+		    		data-cycle-slides="> div">
+			<div class="slide" style="background-image:url(images/header01.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="search.html" title="Rotorua Accommodation">Quality Rotorua Accommodation</a></h3>
+	    		<p>Rotorua is a great place to come and stay with the whole family. We have Rotorua’s largest selection of motels amongst all the attractions.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/header02.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="rotorua.html" title="Rotorua Accommodation">Mountain Biking Mecca!</a></h3>
+	    		<p>While staying in Rotorua come and explore over 100km's of New Zealand's best mountain bike trail network.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/header03.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="rotorua.html" title="Rotorua Accommodation">The Heart of Maori Culture</a></h3>
+	    		<p>Experience the personality of our Maori culture and traditions.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/header04.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="rotorua.html" title="Rotorua Accommodation">Hot Pools and Relaxation</a></h3>
+	    		<p>Rotorua is famous for its geothermal activity. Enjoy a soak in a one of our steaming mineral pools.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/header05.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="rotorua.html" title="Rotorua Accommodation">Experience Dining with a Difference</a></h3>
+	    		<p>Indulge in New Zealand cuisine at one of our many restaurants.</p>
+	  		</div>
+			</div>
+			<div class="slide" style="background-image:url(images/header06.jpg);">
+	  		<div class="slideCaption">
+	    		<h3><a href="rotorua.html" title="Rotorua Accommodation">Fun, Thrills and Excitement!</a></h3>
+	    		<p>Come and experience our range of fun activities for all the family!</p>
+	  		</div>
+			</div>
+		</div>
+		
+  </div>
+  
+  <div class="row homePage">
+  	<h1 class="pageTitle">Search for Motel Accommodation in Rotorua with Live Availability and Book Online</h1>
+  	<div id="homeBoxes">
+	  	<div class="homeBox homeBox1">
+	  		<h2>Start by Searching</h2>
+	  		<p>Search for accommodation in Rotorua using the date picker above. We’ll return available motels in our network. From there you can filter your results.</p>
+	  		<a href="search.html" title="">Search for accommodation in Rotorua</a>
+	  	</div>
+	  	<div class="homeBox homeBox2">
+	  		<h2>Book Direct and Save</h2>
+	  		<p>Our association represents a number of self- contained motels and apartments within the Rotorua district offering a wide range of accommodation options.</p>
+	  		<a href="members.html" title="">See a full list of RAM members</a>
+	  	</div>
+	  	<div class="homeBox homeBox3">
+	  		<h2>Experience Rotorua</h2>
+	  		<p>Rotorua is a bustling hub of activity, with a raft of epic attractions and experiences to suit any and all appetites. Rotorua has the experience for you!</p>
+	  		<a href="rotorua.html" title="">View our recommended attractions</a>
+	  	</div>
+  	</div>
+  </div>
+
+	<div class="row">
+		<hr class="remove" />
+		<div class="homeEvents">
+			%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_events","Events.template","eventCategoryId"]%
+		</div>
+	</div>

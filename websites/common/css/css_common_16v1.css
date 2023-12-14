@@ -1,0 +1,90 @@
+
+/************** SMARTSITES *************/
+/*          commonly used css          */
+/***************************************/
+
+/* common */
+a { color:#1a8fbb; text-decoration:none; }
+a:hover { opacity:0.9; }
+p { margin:1em 0; }
+b, strong { font-weight:bold; }
+h1 { font-size:26px; font-weight:400; padding:10px 30px; text-align:center; }
+h2 { font-size:20px; font-weight:400; }
+h3 { font-size:15px; font-weight:600; }
+hr { height:0; border:none; border-top:#eee solid 1px; margin:0; }
+ul { margin:1em 0; }
+ul li { margin:0 0 0 1.5em; vertical-align:top; }
+.clear { clear:both; }
+.mobile { display:none; !important; }
+.note { padding:20px; background:#FFFACD; font-style:italic; }
+.xlink { background:url(/images/icon_external.png) center left no-repeat; padding-left:16px; }
+
+/* facilities */
+.pageFacilities ul { margin:30px; }
+.pageFacilities li { background:url("../images/background_booking.png") no-repeat left 3px; background-size:14px; list-style:none; padding-left:20px; margin-bottom:5px; width:45%; display:inline-block; margin-left:20px; }
+.property-facilities .left,
+.property-facilities .right { float:none; }
+
+/* contact page */
+.fLeft { float:left; width:49%; }
+.fRight { clear:right; float:right; width:49%; }	
+.contactCard .contact-row span { font-weight:600; }
+.contactCard { background:#f7f7f7; padding:30px; margin-bottom:30px; min-height:250px; }
+.contactCard h2 { margin-bottom:10px; }
+.contactAdress { margin-bottom:10px; }
+h1.pageTitle { clear:both; }
+.mapDiv { margin:10px 0; box-shadow: 0 2px 2px rgba(0,0,0,0.25); clear:both; }
+.mapDiv img { max-width:none; }
+.mapDiv iframe { display:block; }
+.video { border:10px solid #fff; box-shadow:0 1px 3px rgba(0,0,0,0.2); clear:both; margin:auto; text-align:center; background:#111; }
+.video iframe {	max-width:100% !important; }
+#property-map { height:450px; }
+
+/* page */
+.pageContainer { padding:30px 0 60px 0; }
+hr { height:0; border:none; border-bottom:1px solid #ccc; margin:20px 0; }
+.box { background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.2); padding:40px; margin-bottom:20px; }
+.pad { padding:20px; padding-top:0; }			
+.pageCustom1 h1 { margin-top:30px; }
+.revDiv { float:left; width:690px; }
+.widget { float:right; width:240px; margin-bottom:30px; }
+#CDSWIDCOE { margin:0 auto 10px auto !important; }
+.pageContainer h1,
+.homeContainer h1 { font-size:160%;	font-weight:400; border-bottom:1px solid #ddd; padding:10px 0; margin-bottom:30px; text-align:center; }
+.pageContainer h2 { font-weight:600; font-size:120%; }
+.pageContainer h3 { font-weight:600; }
+.pageCustom2 { clear:both; }
+
+/* gallery */
+.photoGallery { text-align:center; }
+.photoGallery a { box-shadow:0 1px 3px rgba(0,0,0,0.2); display:inline-block; width:150px; height:100px; overflow:hidden; margin:5px; }
+.photoGallery a img { min-width:150px; min-height:100px; max-width:200px;  }
+.main-gallery-subtitle { font-style:italic; font-size:90%; margin-top:10px; color:#999; }
+
+/* sitemap */
+.sitemap-list { padding:0 30px; }
+.sitemap-list .sitemap-title { display:block; font-size:12px; }
+.sitemap-list li { margin-bottom:10px; }
+.sitemap-list .sitemap-caption { font-size:12px; max-height:33px; line-height:15px; overflow:hidden; width:920px; }
+
+
+@media only screen and (max-width: 960px) 
+{
+html, body { font-size:100%; }
+.mobile { display:block; margin:auto; }
+.remove { display:none !important; }
+.pageContainer { padding:1.5em; font-size:90%; margin:0; }
+.pageContainer p { margin:0.5em 0; }
+.pad { padding:0 0.5em 1em 0.5em; }
+.box { padding:1.5em; }
+.pageContainer h1 { font-size:125%; margin-bottom:1em; margin-top:0; padding-top:0; }
+.contactCard, .fLeft, .fRight { float:none; width:auto; margin-bottom:1em; height:auto; min-height:0; }					
+.revDiv { float:none; width:auto; }
+.widget { float:none; margin:auto; }
+.pageFacilities li { width:auto; display:block; margin-left:0; }
+.pageFacilities ul { margin:1.5em; }
+.book { padding:0; margin:0; background:#fff; border:none; box-shadow:none; }
+.photoGallery a { width:100%; height:auto; border:none; margin:0.5em 0; }
+.photoGallery a img { min-width:0; max-width:none; min-height:0; height:auto; width:100%; display:block; }
+.propertyEmail a { overflow-wrap:break-word; word-wrap:break-word; word-break:break-word; word-break:break-all; }
+}

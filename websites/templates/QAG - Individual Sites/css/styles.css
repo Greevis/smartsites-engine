@@ -1,0 +1,90 @@
+
+html, body {
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:400;
+	color:#444;
+}
+
+.hide { display:none; }
+
+/* top bar */
+#topBar { background:#fff; height:40px; z-index:10; }
+#topBar .propertyTitle { float:left; font-size:14px; line-height:40px; background:url('../images/logo_qag2.png') no-repeat left center; background-size:30px auto; padding-left:35px; }
+#topBar .propertyContact { float:right; line-height:40px; }
+#topBar .icoLocation { margin-right:10px; }
+
+/* header block */
+#headerBlock { padding:20px 0; box-shadow:0 5px 10px rgba(0,0,0,0.1); z-index:999; position:absolute; top:40px; left:0; right:0; height:100px; }
+.headerLogo { display:inline-block; width:30%; float:left; }
+.headerLogo a { display:block; margin:10px 0; }
+.headerBook { display:inline-block; width:70%; float:right; margin-top:20px; }
+.headerNavbar { display:inline-block; width:70%; float:right; }
+.headerNavbar ul.nav { text-align:left; }
+#headerBlock .headerNavbar ul.nav li { float:left; padding:15px 0; }
+.headerNavbar ul.nav li.first a { padding-left:0; }
+body .topMargin { margin-top:140px; }
+
+/* header footer common */
+.icoLocation,
+.icoPhone,
+.icoEmail { padding-left:20px; display:inline-block; }
+.icoLocation { background:url('../images/icon_map.png') no-repeat center left; }
+.icoPhone { background:url('../images/icon_phone.png') no-repeat center left; }
+.icoEmail { background:url('../images/icon_email.png') no-repeat center left; }
+.icoEmail a { color:inherit; }
+.propertyContact div { display:inline; }
+
+/* footer */
+#footerContent { padding:50px 0; background:#fff; font-size:15px; }
+#footerContent .propertyTitle { font-size:20px; }
+#footerContent .footerLogo { display:inline-block; float:left; }
+#footerContent .propertyContact { width:auto; display:inline-block; }
+#footerContent .icoLocation,
+#footerContent .icoPhone,
+#footerContent .icoEmail { display:block; font-size:16px; line-height:26px; }
+#footerContent .footerBadges { text-align:right; width:auto; display:inline-block; float:right; }
+#footerContent .footerBadges img { margin:0 2px; }
+#footerContent .footerBadges { display:block; background:url('../images/logo_qag2.png') no-repeat left center; background-size:contain; height:150px; width:225px; margin-top:-20px; }
+#footerContent .socialIcons { display:block; margin-top:10px; }	
+#footerCopy { background:#eee; padding:15px; color:#999; font-size:12px; text-align:center; }
+#footerCopy a { color:#999; text-decoration:none; }
+#footerCopy a:hover { color:#666; } 
+
+
+/*==================== MOBILE STARTS ====================*/
+
+@media only screen and (max-width: 960px) 
+{
+	
+#topBar,
+.headerLogo,
+.headerBook { display:none; }
+#headerBlock { height:auto; padding:0; }
+body .topMargin { margin-top:50px; }
+
+.pageContainer .articlesAttractions .event-venue { line-height:initial; white-space:initial; }
+
+#headerBlock { padding:0; height:50px; position:fixed; top:0; }
+#headerBlock .headerNavbar ul.nav li { padding:0; }
+
+.headerNavbar { display:block; width:auto; float:none; }
+.headerNavbar ul.nav { text-align:center; }
+#footerContent { padding:2em 1.5em; font-size:100%; line-height:110%; text-align:left; border-top:1px solid #ddd; box-shadow:0 1px 15px rgba(0,0,0,0.2); }
+#footerBlock .propertyInfo h3 { font-size:150%; }
+#footerBlock .propertyInfo { padding:0; font-size:100%; display:block; }
+#footerBlock .propertyInfo .dash { display:none; }
+#footerContent .footerBadges { display:block; float:none; text-align:center; display:none; }
+#footerCopy { line-height:120%; font-size:80%; padding:1em; }
+#footerContent .footerBadges { text-align:center; margin-top:1em; }
+#footerContent .footerBadges img { height:50px; }
+#footerContent .icoLocation, #footerContent .icoPhone, #footerContent .icoEmail { font-size:inherit; line-height:150%; }
+#footerContent .footerLogo { float:none; display:block; }
+#footerContent .footerBadges img { height:auto; padding-top:0.5em; }
+#footerContent .propertyTitle { font-size:120%; margin-bottom:1em; }
+
+#homeBoxes .rwrRoomtype { min-width:0; }
+
+}

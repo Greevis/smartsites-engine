@@ -1,0 +1,57 @@
+description:BnbLive Home
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome to %PROPERTY_NAME%
+defaultUrl:index
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+** template start **
+
+<!-- header.inc is included here -->
+
+
+
+<!--
+%PROPERTIES_IN_THIRDPARTY%
+-->
+
+<!-- footer.inc is included here -->
+
+<script type="text/javascript">
+	$(document).ready( function() {
+    function slideHeight(){
+        $('.cycle-slideshow').css({
+            height: $(window).height()
+        });
+    }
+    slideHeight();
+ 			$(window).resize(function() {
+       	slideHeight();         
+    	});
+	});
+</script>
+
+<!-- ellipsis for properties descritption -->
+<script type="text/javascript" src="js/jquery.dotdotdot.min.js"></script>
+<script type="text/javascript"> 
+		$(document).ready(function() {
+			$(".property-details .property-description").dotdotdot({
+				ellipsis	: '... ',
+			});
+		});
+</script>
+<!-- end -->

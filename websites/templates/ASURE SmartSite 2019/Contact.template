@@ -1,0 +1,72 @@
+description:Contact information, enquiry form and map
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Contact
+defaultTitle:Contact ASURE %PROPERTY_CITY% Accommodation
+defaultUrl:contact
+defaultDescription:Contact the property ASURE %PROPERTY_CITY% for further information.
+
+** template start **
+<section class="main-section bg-light">
+	<div class="container">
+		<div class="row">
+			<h1 class="w-100 mb-4 text-center title sr-scroll2">%PAGE_TITLE%</h1>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<script>
+			var google_conversion_label_thanks = 'rOz-CNjix1wQrfKRxgM'; // asure adwords tracking, required for contact form
+			var google_conversion_label_contact = 'none'; 
+			</script>
+			
+			<div class="col-md-6 mb-4">
+				<div class="">		
+				   <h5 class="text-primary font-weight-bold">Make an Online Enquiry</h5>
+						%PROPERTY_CONTACTFORM["Your Name:","Your Email:","Message:","Send Enquiry",0]%
+				</div>
+			</div>
+			
+			<div class="col-md-6 mb-4">
+				<div class="px-3">
+				   <h5 class="text-primary font-weight-bold">Contact ASURE %PROPERTY_CITY% Motel</h5>
+				      
+				      %PROPERTY_HOSTS_LABEL%
+							%PROPERTY_FREEPHONE_LABEL%
+							%PROPERTY_TOLLPHONE_LABEL%
+              %RESERVATIONS_REPLYTOEMAIL_LINK_LABEL%
+              <div class="contact-row">
+              <span>Address:</span> %PROPERTY_STREETADDRESS%<br>
+							%PROPERTY_CITY% %PROPERTY_POSTCODE%<br>
+							%PROPERTY_REGION%<br>
+							%PROPERTY_COUNTRY%
+							</div>
+							
+						 <div class="socialIcons">%FACEBOOK_PAGELINK% %TWITTER_PAGELINK% %GOOGLEPLUS_PAGELINK%</div>
+				  </div>
+				</div>
+			</div>
+			
+			
+			<div class="col-md-12">
+				<div class="mapDiv">
+					%PROPERTY_MAP%
+				</div>
+			</div>
+		  
+		</div>
+	</div>
+</section>

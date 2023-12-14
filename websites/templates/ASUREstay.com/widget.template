@@ -1,0 +1,54 @@
+description:Embeddable Booking Widget
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Booking Widget
+defaultTitle:Booking Widget
+defaultUrl:widget
+
+** template start **
+
+<script>
+	
+	var dpDate = new Date();
+	dpDate.setDate(dpDate.getDate());
+	
+	$( document ).ready(function() {
+   
+   $('#dp').datepicker({ 'dateFormat': 'd MM yy'	,
+												'minDate': 0,
+												'maxDate': 365} );																					
+		
+   $('#dp').datepicker( 'setDate', dpDate);
+   
+	});	
+
+</script>
+
+<div id="bookingWidget">
+	<div id="bookingWidget-inner">	
+		
+		<div class="head-outer">	
+			<a href="http://www.ASUREstay.com" title="ASURE Accommodation Group" target="_blank">		
+				<img src="images/logo_asure_widget.png"/>
+			</a>
+			<!-- <div class="tagline">Call 0800 278 739 (free within NZ)</div> -->
+			<!-- <div class="sub-tagline">or +64 9 320 5913 (int'l) 24/7</div> -->
+		</div>
+		
+		<div class="widget-control-outer">		
+			<div class="checkin-label">Check in:</div>
+			%GROUP_CATEGORIES_CHECKINDATE_CONTROLS%
+		</div>
+		
+	</div>
+</div>

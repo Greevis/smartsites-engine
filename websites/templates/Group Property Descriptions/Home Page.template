@@ -1,0 +1,24 @@
+description:Property gallery, description and features
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Property Data
+defaultUrl:index
+
+
+** template start **
+
+
+			
+%PROPERTIES_IN_THIRDPARTY_DESCRIPTION_XML%
+				

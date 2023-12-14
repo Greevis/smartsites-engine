@@ -1,0 +1,72 @@
+description:Talk about what the home page has on it and why it is fabulous.
+
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Home page slide show
+customContent2:Title suffix for regional groups
+customContent3:Introduction text
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+customConfig-name:eventCategoryId
+customConfig-label:Event category for what's on slider
+customConfig-type:eventCategory
+
+** template start **
+		
+		
+<div id="homeBanner">
+	<div id="homeSlideshow">
+        <button class="homeSlideshowPrev">&lt;</button>
+        <button class="homeSlideshowNext">&gt;</button>
+	    	<div class="cycle-slideshow" 
+	    		data-cycle-prev=".homeSlideshowPrev" 
+	    		data-cycle-next=".homeSlideshowNext" 
+	    		data-cycle-fx="fadeout" 
+	    		data-cycle-timeout="7000" 
+	    		data-cycle-speed="1000" 
+	    		data-cycle-loader="wait" 
+	    		data-cycle-slides="> div">
+	        	
+	           %PAGE_CUSTOM_CONTENT_1%
+				</div>
+      	<div id="headerBook">
+        	<h3 class="bookTitle">%SITE_CUSTOM_CONTENT_2%</h4> 
+            %JQUERY_DATE_PICKER_PAGECHOOSER%      
+         </div>
+    </div>
+</div>
+		
+		
+<div class="row">
+	<div id="pageContentTop">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+	    %PAGE_CUSTOM_CONTENT_3%
+	</div>
+</div>
+		
+
+<div class="row">
+	<div id="homeListings">
+		<div class="all-properties-grouped-outer">
+			%PROPERTIES_IN_THIRDPARTY_BY_SUBCATEGORY%		
+			%EVENTS_IN_EVENTCATEGORY_TEASERS%
+		</div>
+	</div>
+</div>
+
+
+%PROPERTIES_MAP_IN_THIRDPARTY%

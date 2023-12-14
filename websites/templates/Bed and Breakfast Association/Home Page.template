@@ -1,0 +1,218 @@
+description:Talk about what the home page has on it and why it is fabulous.
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Intro text.
+customContent2:Quality Assessed text.
+customContent3: Awards Programme text.
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+customConfig-name:regionWebsitePageId
+customConfig-label:Base page for Regional Listings
+customConfig-type:websitePage
+
+customConfig-name:eventCategoryId_reviews
+customConfig-label:Read our guest reviews
+customConfig-type:eventCategory
+
+** template start **
+
+<div id="topBar">
+		<a class="topbarLogo" href="index.html" title="Bed and Breakfast Association NEW ZEALAND">
+			<img src="images/logo-white-bnb.png">
+		</a>
+		%GROUP_GUEST_LOGIN%
+</div>
+
+<div class="fixmargin" id="homePage">
+
+	<div id="homeSlideshow">
+    <button class="homeSlideshowPrev">&lt;</button>
+    <button class="homeSlideshowNext">&gt;</button>	
+
+		<div class="row posRelative">
+			<div class="bnbLogo">
+				<img src="images/logo_bandb.png" title="" alt="" />
+			</div>
+			<div class="headerTag">quality assessed hosted accommodation</div>
+			<div class="homeBook">
+				<div class="webrooms-datepicker">
+				    %GROUP_LOCATION_SEARCH_CONTROLS%
+				</div>
+			</div>
+		</div>
+		
+		<div class="cycle-slideshow" 
+		    		data-cycle-prev=".homeSlideshowPrev" 
+		    		data-cycle-next=".homeSlideshowNext" 
+		    		data-cycle-fx="fadeout" 
+		    		data-cycle-timeout="6000" 
+		    		data-cycle-speed="1000" 
+		    		data-cycle-slides="> div">
+			<div class="slide" style="background-image:url(images/header01.jpg);">
+	  		<div class="slideCaption"><a href="websters-on-wanaka-lodge-wanaka.html" title="View Profile">Websters on Wanaka Lodge</a></div>
+			</div>
+			<div class="slide" style="background-image:url(images/header160817.jpg);">
+	  		<div class="slideCaption"><a href="whakaipo-lodge-taupo.html" title="View Profile">Whakaipo Lodge Taupo</a></div>
+			</div>
+		</div>
+		
+  </div>
+  
+  <div class="bgWhite">
+	  <div class="row">
+	  	<div class="padBlock">
+		  	<h1 class="pageTitle">%PAGE_TITLE%</h1>
+		  	<div class="pageCustom1">
+		  		%PAGE_CUSTOM_CONTENT_1%
+		  		<a class="appBanner" href="http://guestfolder.com/253262-3154" target="_blank" title="Download the Bed and Breakfast NZ Mobile App">
+		  			<img src="images/banner-mobile.jpg" alt="Mobile App" />
+		  		</a>
+		  		
+		  		<div class="reviews-cycle">
+		  		 %EVENTS_BY_EVENTCATEGORY_FULL["eventCategoryId_reviews"]%
+		  		</div>
+		  		
+		  		<div class="bgGrey social-icons">
+		  		  <a href="https://www.facebook.com/BedAndBreakfastAssociationNewZealand" target="_blank"><img class="facebook" src="images/facebook.png" alt="Facebook" /> Like us on facebook</a> 
+		  		  <a href="https://www.instagram.com/bedandbreakfastnz/" target="_blank"><img class="insta" src="images/instagram.png" alt="Instagram" /> Follow us on Instagram</a>
+		  		</div>
+		  		
+		  	</div>	  	
+				<div class="homeRegions">
+					%SUBCATEGORY_PAGES_FOR_THIRDPARTYGROUPTYPE[True,True]% <!-- params are bRenderPages, bShowSubcategories-->
+					<div class="clear"></div>
+				</div>
+	  	</div>
+	  </div>
+  </div>
+  
+  <div class="bgGrey">
+	  <div class="row">
+	  	<div class="padBlock">
+	  		<h2 class="titleSearch">Search for Bed and Breakfast Accommodation in New Zealand</h2>
+
+<div class="homeMap">
+       	
+	<div class="mapLinksNI">       
+		<h3 class="maptext">North Island</h3>
+		<a class="maplink01 maptext" href="northland--bay-of-islands.html">Northland</a>
+		<a class="maplink02 maptext" href="auckland.html">Auckland</a>
+		<a class="maplink03 maptext" href="coromandel.html">Coromandel - Thames</a>
+		<a class="maplink04 maptext" href="waikato--king-country.html">Waikato - King Country</a>
+		<a class="maplink05 maptext" href="western-bay-of-plenty.html">Tauranga</a>		
+		<a class="maplink06 maptext" href="eastern-bay-of-plenty.html">Whakatane - Ohope</a>
+		<a class="maplink07 maptext" href="rotorua.html">Rotorua</a>
+		<a class="maplink08 maptext" href="central-plateau.html">Taupo</a>
+		<a class="maplink09 maptext" href="taranaki.html">Taranaki</a>	
+		<a class="maplink10 maptext" href="east-coast--hawkes-bay.html">Hawke's Bay</a>
+		<a class="maplink11 maptext" href="manawatu--whanganui.html">Manawatu</a>
+		<a class="maplink12 maptext" href="kapiti-coast--horowhenua.html">Kapiti Coast</a>
+		<a class="maplink13 maptext" href="wairarapa.html">Wairarapa</a>
+		<a class="maplink14 maptext" href="wellington.html">Wellington</a>
+		
+		<a class="maparea mapArea01" id="maplink01" title="Northland" href="northland--bay-of-islands.html">Northland</a>
+		<a class="maparea mapArea02" id="maplink02" title="Auckland" href="auckland.html">Auckland</a>
+		<a class="maparea mapArea03" id="maplink03" title="Coromandel - Thames" href="coromandel.html">Coromandel - Thames</a>
+		<a class="maparea mapArea04" id="maplink04" title="Waikato" href="waikato--king-country.html">Waikato</a>
+		<a class="maparea mapArea05" id="maplink05" title="Tauranga" href="western-bay-of-plenty.html">Tauranga</a>
+		<a class="maparea mapArea06" id="maplink06" title="Whakatane - Ohope" href="eastern-bay-of-plenty.html">Whakatane - Ohope</a>
+		<a class="maparea mapArea07" id="maplink07" title="Rotorua" href="rotorua.html">Rotorua</a>
+		<a class="maparea mapArea08" id="maplink08" title="Taupo" href="central-plateau.html">Taupo</a>
+		<a class="maparea mapArea09" id="maplink09" title="Taranaki" href="taranaki.html">Taranaki</a>
+		<a class="maparea mapArea10" id="maplink10" title="Hawke's Bay" href="east-coast--hawkes-bay.html">Hawke's Bay</a>
+		<a class="maparea mapArea11" id="maplink11" title="Manawatu" href="manawatu--whanganui.html">Manawatu</a>
+		<a class="maparea mapArea12" id="maplink12" title="Kapiti Coast" href="kapiti-coast--horowhenua.html">Kapiti Coast</a>
+		<a class="maparea mapArea13" id="maplink13" title="Wairarapa" href="wairarapa.html">Wairarapa</a>
+		<a class="maparea mapArea14" id="maplink14" title="Wellington" href="wellington.html">Wellington</a>
+		<div class="homeMapHover"></div>
+		<div class="homeMapBG"></div>
+	</div>
+	         
+	<div class="mapLinksSI">
+		<h3 class="maptext">South Island</h3>
+		<a class="maplink15 maptext" href="nelson--tasman.html">Nelson</a>
+		<a class="maplink16 maptext" href="marlborough.html">Marlborough</a>
+		<a class="maplink17 maptext" href="kaikoura.html">Kaikoura</a>
+		<a class="maplink18 maptext" href="west-coast.html">West Coast</a>
+		<a class="maplink19 maptext" href="north-canterbury.html">North Canterbury</a>
+		<a class="maplink20 maptext" href="christchurch.html">Christchurch</a>
+		<a class="maplink27 maptext" href="mid-canterbury.html">Mid Canterbury</a>
+		<a class="maplink21 maptext" href="south-canterbury.html">South Canterbury</a>
+		<a class="maplink22 maptext" href="southern-lakes.html">Wanaka - Queenstown</a>
+		<a class="maplink23 maptext" href="north-otago.html">Oamaru</a>
+		<a class="maplink25 maptext" href="dunedin.html">Dunedin</a>
+		<a class="maplink24 maptext" href="fiordland.html">Fiordland</a> 
+		<a class="maplink26 maptext" href="southland--stewart-island.html">Southland</a>
+		<a class="maplinkNZ maptext" href="search.html">View All Properties</a>
+		
+		<a class="maparea mapArea15" id="maplink15" title="Nelson" href="nelson--tasman.html">Nelson</a>
+		<a class="maparea mapArea16" id="maplink16" title="Marlborough" href="marlborough.html">Marlborough</a>
+		<a class="maparea mapArea17" id="maplink17" title="Kaikoura" href="kaikoura.html">Kaikoura</a>
+		<a class="maparea mapArea18" id="maplink18" title="West Coast" href="west-coast.html">West Coast</a>
+		<a class="maparea mapArea19" id="maplink19" title="North Canterbury" href="north-canterbury.html">North Canterbury</a>
+		<a class="maparea mapArea20" id="maplink20" title="Christchurch" href="christchurch.html">Christchurch</a>
+		<a class="maparea mapArea27" id="maplink27" title="Mid Canterbury" href="mid-canterbury.html">Mid Canterbury</a>
+		<a class="maparea mapArea21" id="maplink21" title="South Canterbury" href="south-canterbury.html">South Canterbury</a>
+		<a class="maparea mapArea22" id="maplink22" title="Wanaka - Queenstown" href="southern-lakes.html">Wanaka - Queenstown</a>
+		<a class="maparea mapArea23" id="maplink23" title="Oamaru" href="north-otago.html">Oamaru</a>
+		<a class="maparea mapArea25" id="maplink25" title="Dunedin" href="dunedin.html">Dunedin</a>
+		<a class="maparea mapArea24" id="maplink24" title="Fiordland - Southland" href="fiordland.html">Fiordland</a>
+		<a class="maparea mapArea26" id="maplink26" title="Southland" href="southland--stewart-island.html">Southland</a>
+		<div class="homeMapHoverSI"></div>
+	</div>
+         
+</div>
+
+<div class="preloadMap">
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.maparea').hover(function(){
+			$('.'+this.id).addClass('highlight');
+		},
+		function(){
+			$('.'+this.id).removeClass('highlight');
+		});
+	});
+	</script>
+</div>
+
+	  	</div>
+	  </div>
+  </div>
+
+  <div class="bgWhite">
+	  <div class="row">
+	  	<div class="padBlock">
+				%PAGE_CUSTOM_CONTENT_3%
+	  	</div>
+	  </div>
+  </div>
+  
+  <div class="bgGrey">
+	  <div class="row">
+	  	<div class="padBlock">
+		  	<h2 class="titleQuality">Quality Assessed Hosted Bed and Breakfast Accommodation in New Zealand</h2>
+		  	<img class="qualityImg" src="images/logo_bandba.png" title="Bed &amp; Breakfast Association NEW ZEALAND" alt="Bed &amp; Breakfast Association NEW ZEALAND" />
+		  	<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+	  	</div>
+	  </div>
+	</div>
+
+</div>
+
+<div>
+<!-- %PROPERTIES_IN_THIRDPARTYGROUPTYPE% -->
+</div>

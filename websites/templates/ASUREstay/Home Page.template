@@ -1,0 +1,167 @@
+description:Talk about what the home page has on it and why it is fabulous.
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+customConfig-name:eventCategoryId_cycle
+customConfig-label:Cycle Trails
+customConfig-type:eventCategory
+
+customConfig-name:eventCategoryId_golf
+customConfig-label:Golf Courses
+customConfig-type:eventCategory
+
+customConfig-name:eventCategoryId_hobbiton
+customConfig-label:Lord of the Rings Tours
+customConfig-type:eventCategory
+
+** template start **
+  
+ 	<div id="homeSlideshow">
+    <button class="homeSlideshowPrev">&lt;</button>
+    <button class="homeSlideshowNext">&gt;</button>	
+		<div class="row posRelative">
+			<div class="asureLogo">
+				<img src="images/logo_asure-home.png" title="ASURE Accommodation" alt="ASURE Accommodation" />
+			</div>
+			<div class="homeBook">
+				 %GROUP_LOCATION_SEARCH_CONTROLS%
+				 <h2 class="phone">Book online above or call ASURE Central Reservations on <a href="tel:0800278739" title="Free Phone">0800 278 739</a> / <a href="tel:+6493205913" title="International Reservations">+64 9 320 5913</a></h2>
+			</div>
+		</div>	
+		<div class="cycle-slideshow" 
+		    		data-cycle-prev=".homeSlideshowPrev" 
+		    		data-cycle-next=".homeSlideshowNext" 
+		    		data-cycle-fx="fadeout" 
+		    		data-cycle-timeout="6000" 
+		    		data-cycle-speed="1000" 
+		    		data-cycle-slides="> div">
+			<div class="slide" style="background-image:url(images/header02.jpg);">
+	  		<div class="slideCaption"><a href="asure-aspiring-court-motel-haast.html" title="Stay at ASURE Aspiring Court Motel Haast">Lake Matheson, near the Fox Glacier in South Westland</a></div>
+			</div>
+			<div class="slide" style="background-image:url(images/header03.jpg);">
+	  		<div class="slideCaption"><a href="asure-gateway-apartments-queenstown.html" title="Stay at ASURE Gateway Apartments Queenstown">Queenstown's iconic vintage steamship TSS Earnslaw - Real Journeys</a></div>
+			</div>
+			<div class="slide" style="background-image:url(images/header06.jpg);">
+	  		<div class="slideCaption"><a href="asure-avenue-motel-alexandra.html" title="Stay at ASURE Avenue Motel Alexandra">Autumn Central Otago, South Island New Zealand</a></div>
+			</div>	
+			<div class="slide" style="background-image:url(images/header01.jpg);">
+	  		<div class="slideCaption"><a href="asure-avenue-motel-alexandra.html" title="Stay at ASURE Avenue Motel Alexandra">Scenic Central Otago landscape at Galloway, just outside of Alexandra</a></div>
+			</div>	
+		</div>
+  </div>
+  
+	<div class="headerBar">
+		ASURE Accommodation Group
+	</div>
+  
+  <div class="row homePage">
+  	<h1 class="pageTitle">ASURE Accommodation - New Zealand Accommodation Group</h1>
+  	<div class="xmax-banner">
+  	<a href="vouchers.html">
+  	 <img src="images/xmax-banner.jpg" alt="ASURE Accommodation Christmas Promotion">
+  	 <h2>Click here to find out more</h2>
+  	 </a>
+  	</div>
+  </div>
+  
+<div class="row boxes">
+	<div class="columns three">
+		<img src="images/homeicon_search.png" alt="Search for Motels in New Zealand" class="homeicon" />
+		<h2>NZ Accommodation</h2>
+		<p>The ASURE Accommodation group consists of over 40 properties nationwide. Choose from our quality, affordable, motels, apartments, motor inns, and motor lodges throughout NZ.</p>
+		<a class="btn" href="members.html" title="ASURE Accommodation New Zealand Properties">ASURE Properties</a>
+	</div>
+	<div class="columns three">
+		<img src="images/homeicon_tick.png" alt="Quality Motel Accommodation in New Zealand" class="homeicon" />
+		<h2>Quality Assessed</h2>
+		<p>The ASURE quality assessment framework ensures all properties are of an excellent standard with annual robust quality assessments to confirm ASURE eligibility.</p>
+		<a class="btn" href="about.html" title="About ASURE Accommodation Group">About ASURE</a>
+	</div>
+	<div class="columns three">
+		<img src="images/homeicon_star.png" alt="New Zealand Accommodation Deals" class="homeicon" />
+		<h2>Loyalty Programme</h2>
+		<p>ASURE has developed its own Loyalty Programme to reward our guests - stay at three or more ASURE Accommodation Group properties and receive $100 off your 10th stay.</p>
+		<a class="btn" href="promotions.html" title="ASURE Accommodation New Zealand Promotions">ASURE Promotions</a>
+	</div>
+	<div class="columns three">
+		<img src="images/homeicon_phone.png" alt="Accommodation Mobile App NZ" class="homeicon" />
+		<h2>Download Our App</h2>
+		<p>Make bookings or organise your reservations on the go with our new, improved mobile app. Available on the Apple Store for iPhone/iPad and Google Play for Android.</p>
+		<a class="btn" href="mobile.html" title="ASURE Accommodation New Zealand Mobile App">ASURE Mobile App</a>
+	</div>
+</div>
+
+<div class="row homePage">
+  <div class="freephone"><p class="pageIntro">Due to popular demand, ASURE Accommodation is pleased to announce our central reservations freephone number.</p>
+  <h2>Call ASURE Central Reservations on <a href="tel:0800278739" title="Free Phone">0800 278 739</a> / <a href="tel:+6493205913" title="International Reservations">+64 9 320 5913</a> to secure your booking.</h2>
+  </div>
+</div>
+
+<div class="row card-banner">
+  <div class="card-info">
+	  <h2>ASURECARD</h2>
+	  <p>Apply Here for your FREE 10% ASURE discount card. ASURE has developed a 10% loyalty discount card which is available to all guests simply by completing a form to receive our ASURECARD.</p>
+	  <a class="sm-btn btn" title="ASURECARD" href="https://www.asurestay.com/asure-card.html">Apply for ASURECARD</a>
+  </div>
+  <div class="card-img">
+  	<img src="images/CardFront.png" alt="Get 10% OFF with ASURE card">
+  </div>
+</div>
+
+<div class="blueBG">
+	<div class="row">
+		<h2>Stay with ASURE and explore the many attractions New Zealand offers</h2>
+		<div class="row">
+			<div class="columns three cycle">
+				%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_cycle","Cycle.template","eventCategoryId_cycle"]%
+				<a href="cycle-trails.html" title="New Zealand Cycle Trails" class="btn">New Zealand Cycle Trails</a>
+			</div>
+			<div class="columns three golf">
+				%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_golf","Golf.template","eventCategoryId_golf"]%
+				<a href="golf-courses.html" title="New Zealand Golf Courses" class="btn">New Zealand Golf Courses</a>
+			</div>
+			<div class="columns three hobbiton">
+				%EVENTS_BY_EVENTCATEGORY_TEASERS_TEMPLATE_CONFIGNAME["eventCategoryId_hobbiton","Hobbiton.template","eventCategoryId_hobbiton"]%
+				<a href="hobbiton.html" title="Lord of the Rings Tours" class="btn">Lord of the Rings Tours</a>
+			</div>
+			<div class="columns three voucher">
+				<div class="event-teasers">
+					<div class="asureVoucher"></div>
+				</div>
+				<a href="vouchers.html" title="ASURE Gift Vouchers" class="btn">ASURE Gift Vouchers</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row partners">
+	<div class="partnersInner">
+		<h2 class="pageTitle">ASURE Accommodation Group Recommends</h2>
+			<a target="_blank" href="http://www.budget.co.nz/asure" title="Budget Rental Cars">
+				<img src="images/logo_budget.jpg" alt="Budget Rental Cars" />
+			</a>
+			<a target="_blank" href="https://www.interislander.co.nz/?utm_source=asurestay&amp;utm_medium=banner&amp;utm_campaign=asure_2014" title="Interislander">
+				<img src="images/logo_interislander.jpg" alt="Interislander" />
+			</a>
+			<a target="_blank" href="http://www.kiwirailscenic.co.nz/" title="KiwiRail">
+				<img src="images/logo_kiwi-rail.jpg" alt="KiwiRail" />
+			</a><br/>
+			<a target="_blank" href="airnz.html" title="Air New Zealand">
+				<img src="images/logo_air-nz.jpg" alt="Air New Zealand" />
+			</a>
+			
+	</div>
+</div>

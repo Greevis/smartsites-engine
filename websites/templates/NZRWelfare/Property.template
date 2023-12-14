@@ -1,0 +1,70 @@
+description:Individual Property detail
+
+allowMultiple:false
+allowCreate:false
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+defaultName:[Property Template]
+defaultTitle:Welcome to %PROPERTY_NAME% Accommodation
+defaultUrl:property
+
+
+** template start **
+
+<div class="container" id="propContent">
+
+<div class="">
+
+	<!--<h1 class="pageTitle">Welcome to %PROPERTY_SERVICE_NAME%</h1>-->
+	
+	<section class="p-0">
+		<div class="contanier">
+			<div class="row p-2">
+			 <div class="col-12 outerContact">
+			  <div class="property-image">
+			  
+			  <div class="all-images">
+				  %MAIN_GALLERY_LIGHTBOX%
+			  </div>
+			  
+			  </div>
+			  </div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="outerFacilities p-2">
+		<h3>Facilities</h3>
+			%PROPERTY_FACILITIES%
+	</div>
+	
+	<div class="proppageDesc p-2">
+		%PROPERTY_DESCRIPTION%
+	</div>
+	
+	<div class="booking-engine" id="book">
+		%BOOKING_ENGINE%
+	</div>
+	
+	<div class="outerMap property-map" id="map">
+	  <p class="mb-3">Address: <a href="#map">%PROPERTY_STREETADDRESS% %PROPERTY_SUBURB% %PROPERTY_CITY% %PROPERTY_COUNTRY%</a></p>
+		%PROPERTY_MAP%
+	</div>
+
+</div>	
+		
+
+</div>
+			
+<script>
+$('title').text('%PROPERTY_SERVICE_NAME% - %SITE_NAME%');
+</script>
+
+<!-- footer.inc is included here -->

@@ -1,0 +1,39 @@
+
+/***************************************/
+/*            responsive nav           */
+/***************************************/
+
+
+ul.nav { text-align:center; padding:0; margin:0; }
+ul.nav li { margin:0; display:inline-block; padding:22px 0; }
+ul.nav li a { color:#fff; text-decoration:none; display:block; padding:0 15px; text-shadow:1px 1px 0 rgba(0,0,0,0.1); border-right:rgba(255,255,255,0.2) 1px solid; }
+ul.nav li.last a { border-right:none; }
+ul.nav li a:hover { opacity:0.75; }
+
+.headerNavbar { text-align:center; }					
+.headerNavbar ul.nav { text-align:center; padding:0; margin:0; }
+.headerNavbar ul.nav li { margin:0; display:inline-block; padding:20px 0; }
+.headerNavbar ul.nav li a { color:#fff; text-decoration:none; display:block; padding:0 15px; border-right:rgba(0,0,0,0.2) 1px solid; }
+.headerNavbar ul.nav li.last a { border-right:none; }
+
+.nav-toggle { position:absolute; top:10px; right:10px; text-decoration:none; text-indent:-999px; overflow:hidden; width:30px; height:30px; background:#111; }
+a.nav-toggle:before { color:#fff; font-size:20px; position:absolute; content:"\2261"; text-indent:0; text-align:center; line-height:30px; width:100%; top:0; left:0; }
+a.nav-toggle.active::before { font-size:20px; line-height:25px; content:"x"; }
+a.nav-toggle:hover { color:#ffffc2; }
+.js .nav-collapse { clip:rect(0 0 0 0); max-height:0; position:absolute; display:block; overflow:hidden; zoom:1; }
+#headerBlock .nav-collapse-0.opened { max-height:inherit !important; height:auto; }
+
+@media screen and (min-width:960px) 
+{
+  .js .nav-collapse.closed { max-height:none; }
+  .nav-toggle { display:none; }
+}
+
+@media screen and (max-width:960px) 
+{
+	.headerNavbar { top:0; left:0; width:100%; position:fixed; height:50px; z-index:9999; box-shadow:0 0 5px rgba(0,0,0,0.5); }
+	.headerNavbar .mobile { line-height:50px; color:#fff; }
+	.headerNavbar .nav-collapse { padding:0; background:#111; top:0; }
+	.headerNavbar .nav-collapse ul li { border:none; border-bottom:1px solid #222; display:block; width:100%; padding:0;}
+  .headerNavbar .nav-collapse ul li a { display:block; width:100%; color:#fff; font-size:100%; padding:0.75em 0; }
+}

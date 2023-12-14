@@ -1,0 +1,151 @@
+
+html, body {
+margin:0;
+padding:0;
+font-family:'Source Sans Pro', 'sans-serif';
+font-size:16px;
+font-weight:400;
+color:#444;
+background:url(/~images/template/background.jpg) top center repeat-x #fafafa;
+}
+
+div#preload { display: none; }
+body a { color:#15c; }
+body a:hover { color:#118AD7;}
+body b { font-weight:bold; }
+.mobile { display:none; }
+.clear { clear:both; }
+
+/* nav */
+.headerRel { position:relative; }
+#headerNav { box-shadow:0 1px 3px rgba(0,0,0,0.4); width:100%; }
+.row ul.nav { text-align:center; padding:0; margin:0; }
+.row ul.nav li { margin:0; display:inline-block; padding:22px 0; }
+.row ul.nav li a { color:#fff; text-decoration:none; display:block; padding:0 15px; text-shadow:1px 1px 0 rgba(0,0,0,0.1); font-size:115%; border-right:rgba(255,255,255,0.2) 1px solid; }
+.row ul.nav li a:hover { color:#eee; text-shadow:1px 1px 0 rgba(0,0,0,0.4); }
+.row ul.nav li.last a { border-right:none; }
+
+/* header */
+#headerBlock { padding:30px 0; background:#fff; }
+#headerBlock .row { position:relative; }
+.propertyInfo { font-size:18px; font-weight:300; margin-top:5px; }
+.propertyInfo h3 { font-size:30px; font-weight:400; line-height:30px; margin-bottom:5px; font-family:'Oswald', sans-serif; text-transform:uppercase; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.propertyInfo a { text-decoration:none; }
+.propertyInfo div { display:inline; }
+.propertyInfo .icoLocation { background:url(../images/icon_map1.png) center left no-repeat; padding-left:20px; }
+.propertyInfo .icoPhone { background:url(../images/icon_phone1.png) center left no-repeat; padding-left:20px; display:block; }
+#headerBlock .propertySuburb { display:none; }
+.headerIcons { position:absolute; right:0; top:0; }
+
+/* book online */
+.bookingBox { padding:25px 0; text-align:center; box-shadow:inset 0 3px 6px rgba(0,0,0,0.25); }
+.bookText { display:inline-block; color:#75dcfc; vertical-align: middle; font-size:24px; margin-right:10px; font-weight:300; }
+.webrooms-datepicker { position:relative; display:inline-block; vertical-align: middle; }
+.bookingBox .datepicker-label,
+.bookingBox .datepicker-input,
+.bookingBox .datepicker-button,
+.bookingBox .datepicker-label:before { line-height:45px; height:45px; }
+.bookingBox .datepicker-button { font-family:'Source Sans Pro', sans-serif; color:#fff; display:inline-block; border-radius:4px; border:none; cursor:pointer;
+		text-transform:uppercase; font-size:18px; font-weight:800; padding-right:40px; position:relative; margin-left:10px; }
+.datepicker-button:hover { opacity:0.8; }
+.datepicker-button:before { content:''; background:url(../images/background_booking.png) no-repeat center center; background-size:16px; width:16px; height:16px; position:absolute; top:0; height:45px; right:15px; }
+#ui-datepicker-div { z-index:9999 !important; font-size:100%; }
+				
+/* slideshow */
+#slideshow { position:relative; width:100%; margin:auto; margin-top:34px; box-shadow:0 3px 8px rgba(0,0,0,0.3); position:relative; }
+#slideshow .slideshowGallery { background:#fff; height:400px; margin:0; }
+#slideshow .slideshowGallery ul { height:400px; overflow:hidden; width:100%; }
+#slideshow .slideshowGallery li { background:none; border:none; box-shadow:none; display:block; height:400px; margin:0; overflow:hidden; text-align:center; vertical-align:middle; width:100%; }
+#slideshow .slideshowGallery .gallery-caption { display:none; }
+#slideshow .slideshowGallery li .gallery-image { background-position:center center; background-repeat:no-repeat; background-size:cover; height:400px; width:100%; }
+#slideshow .propPrev, 
+#slideshow .propNext { background:none; border:none; color:#ddd; font-family:'Source Sans Pro', 'sans-serif'; font-size:50px; font-weight:200; line-height:100%; padding:0; position:absolute; top:170px; outline:none; }
+#slideshow .propPrev { left:-40px; }
+#slideshow .propNext { right:-40px; }
+#slideshow .propPrev:hover, 
+#slideshow .propNext:hover { cursor: pointer; color:#aaa; }
+
+/* booking */
+#bookingBox { z-index:1000; position:absolute; bottom:30px; left:40px; padding:25px; width:830px; height:50px; border-radius:8px; }
+#bookingBox h4 { font-family:'Oswald', sans-serif; color:rgba(255,255,255,0.25); font-weight:700; font-size:26px; text-transform:uppercase; width:320px; float:left; line-height:26px; }
+#bookingPickers { float:right; }
+#bookingPickers .datepicker-label { color:#fff; }
+
+/* facilities */
+.pageContainer .pageFacilities ul { margin:30px; text-align:center; }
+.pageContainer .pageFacilities li { background:url("../images/background_booking.png") no-repeat left 3px; background-size:14px; list-style:none; padding-left:20px; margin-bottom:5px; width:45%; display:inline-block; text-align:left; }
+.property-facilities .left,
+.property-facilities .right { float:none; }
+
+/* footer */
+#footerContent { padding:50px 0; color:#fff; }
+#footerCopy { background:rgba(0,0,0,0.2); padding:15px; color:rgba(255,255,255,0.3); font-size:14px; text-align:center; }
+#footerCopy a { color:rgba(255,255,255,0.3); text-decoration:none; }
+#footerCopy a:hover { color:rgba(255,255,255,0.75); }
+#footerContent .propertyInfo { width:auto; display:inline-block; }
+#footerContent .propertyInfo a,
+#footerContent .propertyInfo h3 a { color:#fff; }
+#footerContent .footerBadges { }
+#footerContent .footerBadges img { }
+#footerContent .socialIcons { display:block; }
+#footerBlock .row { position:relative; }
+#footerContent .footerBadges { position:absolute; right:0; top:10px; }
+#footerContent .footerBadges img { display:inline-block; margin-left:10px; }
+#footerBlock .propertySuburb { display:none; }
+
+/* changes */
+.event-complete li.event-inner { overflow:auto; }
+
+/*==================== MOBILE STARTS ====================*/
+
+
+@media only screen and (max-width: 960px) 
+	{
+		.bodyStyle { margin-top:50px; }
+		#headerTop { display:none; }		
+		#headerBlock { padding:2em 1.5em; text-align:center; position:relative; height:auto; }
+		#headerBlock .icoLocation,
+		#headerBlock .icoPhone { background:none; font-size:100%; padding:0; display:inline; }
+		.bookingBox { float:none; padding:0 !important; border:none; border-radius:0; width:100%; position:static; height:auto; display:none; }
+
+		.bookText,
+		.headerIcons { display:none; }
+		#headerBlock { display:none; }
+		#headerBlock .propertyInfo { display:block; position:static; padding:0 1em; width:auto; font-size:100%; }
+		#headerBlock .propertyInfo h3.font { overflow:visible; white-space:normal; text-overflow:clip; font-size:200%; margin:0; }
+		
+		#slideshow { margin:0; box-shadow:0 1px 5px rgba(0,0,0,0.5); width:100%; }
+		#slideshow .slideshowGallery,
+		#slideshow .slideshowGallery ul,
+		#slideshow .slideshowGallery li,
+		#slideshow .slideshowGallery li .gallery-image { width:100%; height:200px; }
+		#bookingBox,
+		#slideshow .propPrev, 
+		#slideshow .propNext { display:none; }
+		
+		.pageContainer { padding:1em; font-size:90%; margin:0; }
+		.pageContainer h1 { font-size:130%; margin-bottom:1em; margin-top:0; }
+		.pageContainer .pageFacilities li { width:auto !important; display:block; }
+		.pageContainer .pageFacilities ul { margin:1.5em; }
+
+		#footerContent { padding:1.5em; font-size:100%; line-height:110%; text-align:center; }
+		#footerBlock .propertyInfo h3 { font-size:120% !important; }
+		#footerBlock .propertyInfo { padding:0; font-size:100%; display:block; }
+		#footerBlock .propertyInfo .dash { display:none; }
+		#footerContent .footerBadges { display:block; float:none; text-align:center; }
+		#footerCopy { line-height:120%; font-size:80%; padding:0.75em 1em; }
+		#footerContent .footerBadges { text-align:center; margin-top:1em; position:static; }
+		#footerContent .footerBadges img { height:50px; }
+		
+		#propertyReviews .event-image { top:1.5em; left:2em; }
+	}
+	
+@media only screen and (max-width: 1100px) 	{			
+	
+/* slideshow */
+#slideshow,
+#slideshow .slideshowGallery,
+#slideshow .slideshowGallery ul,
+#slideshow .slideshowGallery li .gallery-image { width:100%; }
+#slideshow .propPrev, #slideshow .propNext { display:none; }
+}

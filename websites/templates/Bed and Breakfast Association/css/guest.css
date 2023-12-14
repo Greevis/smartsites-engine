@@ -1,0 +1,120 @@
+/* member nav */
+#group-login-box { position:fixed; top:0; right:0; z-index:9999; padding:14px 15px; background:#006781; color:#fff; box-sizing:border-box; font-size:12px; }
+#group-login-box a { color:inherit; }
+#login-trigger { background:url(../images/icon-profile-y.png) left center no-repeat; background-size:auto 80%; padding-left:25px; display:inline-block;
+	color:#fff; height:22px; line-height:22px; cursor:pointer; }
+#login-trigger:hover { cursor:pointer; }
+#login-trigger > span { float:right; margin-left:5px; }
+#group-login-box .login-outer { min-width:250px; padding:30px; }
+.email-outer input,
+.password-outer input { border:none; background:#fff; border-radius:2px; margin:2px 0; width:100%;
+	color:#666; font-size:14px; font-family:'Open Sans', sans-serif; line-height:30px; height:30px; outline:none; text-indent:8px; }
+.button-outer > input { display:block; border:none; text-align:center; padding:8px 0; border-bottom:2px solid rgba(0,0,0,0.2); font-family:inherit; font-weight:400; background:#333; color:#fff;
+	width:100%; cursor:pointer; margin-top:2px; font-weight:600; text-transform:uppercase; }
+.button-outer > input:hover { opacity:0.9; }
+ul.login-tools { margin:1em 0 0; }
+.login-tools li { font-size:12px; opacity:1; line-height:20px; margin:0 0 0 20px; }
+.login-tools li:hover { opacity:0.8; }
+.login-tools label { font-size:12px; vertical-align:middle; display:block; cursor:pointer; margin:0; margin-right:4px; }
+.login-tools .keepsignedin input[type="checkbox"] { margin:0 4px 0 0; }
+.login-tools .forgotpassword a { background:url(../images/icon_lock.png) left center no-repeat; background-size:auto; padding-left:17px; }
+.login-tools .signup a { background:url(../images/icon_plus.png) left center no-repeat; background-size:auto; padding-left:17px; }
+#logoutbutton { font-size:12px; color:#fff; float:right; display:inline-block; margin-left:10px; opacity:0.7; }
+#logoutbutton:hover { cursor:pointer; opacity:1; }
+#login-content { display:none; }
+.login-welcome, #logoutbutton { line-height:20px; }
+
+/* profile */
+#group-guest-dashboard .guest-profile-outer { background:#f5f5f5; margin-top:20px; padding:30px; }
+#group-guest-dashboard .guest-booking-list-outer { padding:30px 0 0 30px; }
+#group-guest-dashboard .guest-booking-list-outer h2 { margin-bottom:10px; }
+#group-guest-dashboard h2 { margin-top:0; }
+.booking-tabs > a { background:#eee; box-sizing:border-box; text-align:center; display:inline-block; border:1px solid #ddd; padding:5px 0; cursor:pointer; color:#999; width:50%; } 
+.booking-tabs a.tab-booking-selected { background:#fff; border-bottom:none; } 
+.booking-tabs > a:hover { color:#666; background:#f5f5f5; }
+.rtd-tab-selected { background:#fff; border-bottom:none; }
+.rtd-tab-selected:hover { background:#fff; color:#999; }
+
+.guest-profile-outer .profile-row {}	
+.guest-profile-outer .profile-row .profile-label { font-weight:600; display:block; margin-top:5px; }
+.guest-profile-outer .profile-row .profile-value { display:block; background:#fff; padding:0 5px; line-height:30px; min-height:30px; box-sizing:border-box; border-bottom:1px solid #ddd; }
+.guest-profile-outer .btn { display:block; margin-top:10px; width:100%; cursor:pointer; background:#1a84c1; color:#fff; padding:8px 25px }
+#group-guest-dashboard .login-outer { background:#1a84c1; color:#fff; padding:30px; margin-top:10px; }	
+#group-guest-dashboard .login-outer a { color:#fff; }
+#group-guest-dashboard .login-outer .button-outer > input { background:#333; }
+#profileform { padding:30px; border:1px solid #eee; margin-top:10px; }
+.profile-label { color:#1a84c1; font-weight:600; margin-top:10px; }
+.profile-value textarea,
+.profile-value input,
+.profile-value select { border:1px solid #ccc; padding:5px; display:inline-block; margin:5px 5px 0 0; font-family:inherit; vertical-align:top; }
+.save-row .btn { padding:8px 25px; font-weight:600; text-transform:uppercase; margin-top:10px; cursor:pointer; background:#1a84c1; color:#fff; }
+
+ul.guest-booking-list { border:1px solid #ddd; border-top:none; padding:30px; margin:-1px 0 0 0; }
+.guest-booking-listitem { list-style:none; margin:0; border-bottom:1px solid #ddd; padding:10px 15px; }
+.guest-booking-listitem:hover { background:#f5f5f5; }
+.booking-label { font-weight:700; color:#1a84c1; }
+.booking-check-in-date { font-weight:600; }
+.booking-value { font-weight:600; display:inline-block; }
+.booking-details-link { display:inline-block; margin:0 5px; }
+.booking-status { display:inline-block; font-weight:600; }
+.status-Confirmed { color:#46b751; float:right; }
+
+.booking-details-outer .item-row { padding:10px; background:#f5f5f5; border-bottom:1px solid #fff; }
+.bkg-titlebar { font-weight:600; font-size:16px; padding:10px 0; }
+.bkg-titlebar,
+.booking-details-outer .item-row > div { display:inline-block; width:auto; margin-right:0.5em; }
+.item-label { color:#999; }
+.item-value { color:#111; }
+.booking-details-outer,
+.booking-details-outer .terms { padding:30px; margin-top:20px; border:1px solid #eee; }
+.cardreceipts { padding:30px; margin-top:20px; font-family:"Courier New", Courier, monospace; background:#eee; color:#111; }
+.booking-details-outer .totals { background:#FFFFE5; padding:20px 10px; text-align:right; }
+.booking-details-outer .totals .item-row { border:none; padding:0; background:none; }
+.booking-details-outer .item-label-normal { display:inline-block; width:auto; margin-right:0.5em; color:#000; font-weight:normal; text-align:right; }
+.booking-details-outer .infobox.conversion { font-size:10px; font-style:italic; color:#999; }
+.booking-details-outer .totals .item-label { color:#000; font-weight:bold; text-align:right; }
+.item-totalcol { float:right; text-align:right;	color:#4CC552; font-weight:700; }
+
+.guest-profile-outer #profileform { margin:0; background:none; border:none; padding:0; }
+.guest-profile-outer #profileform input, 
+.guest-profile-outer #profileform textarea,
+.guest-profile-outer #profileform select { width:100%; box-sizing:border-box; margin:5px 0; }
+.guest-profile-outer h2 { margin:0; }
+
+
+
+@media only screen and (max-width:800px) 
+{
+
+  #login-trigger { font-size:0; padding:0 10px; background-position:Center center; }
+  #group-login-box { z-index:9997; text-align:right; padding:9px; }
+  #group-guest-dashboard .guest-booking-list-outer { padding:0; margin-top:1em; }
+  #group-guest-dashboard .guest-profile-outer { margin-top:0; }
+  #group-guest-dashboard .guest-profile-outer,
+  ul.guest-booking-list { padding:1.5em; }
+  .guest-booking-listitem { padding:1em 0; }
+  .status-Confirmed { float:none; }
+  .booking-details-link  { display:block; border:none; text-align:center; border-bottom:2px solid rgba(0,0,0,0.2); 
+  	font-family:inherit; background:#1a84c1; color:#ffd400; width:100%;
+  	padding:8px 0; font-weight:600; text-transform:uppercase; margin:10px 0; cursor:pointer; }
+  .booking-details-outer, .booking-details-outer .terms { padding:0; border:none; margin:0; }
+  .property-map { margin:1em 0 0 0; }
+  .ASUREbg .property-facilities-div,
+  .ASUREbg .property-features-div { display:block; padding:0; }
+  .facilitiesTable .ASCategory,
+  .features-div .ASCategory { padding:0; }
+  .features-div .ASField-outer { display:inline-block; }
+  .facilitiesTable .ASCategoryFeatures { padding:0; }
+  .rwrRoomtype ul.desc-features-outer { margin:1em 0 0 0; padding:1em; }
+#group-login-box ul.login-tools { text-align:left; }
+.termsScroll { margin-top:1em; }
+
+.profile-value textarea,
+.profile-value input,
+.profile-value select { width:100%; box-sizing:border-box; }
+
+#group-guest-dashboard .login-outer { margin:1em 0; }
+
+}
+
+

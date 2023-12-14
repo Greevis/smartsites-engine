@@ -1,0 +1,33 @@
+description:Page containing site map link list.
+
+customContent1:General summary content for this page.
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:false
+allowEditUrl:false
+allowEditStatus:false
+
+defaultName:Site Map
+defaultTitle:Site Map
+defaultUrl:sitemap
+
+** template start **
+
+<!-- header.inc is included here -->
+		
+<div id="pageHeader" class="homeHeader"></div>
+<div id="headerBook">
+    %JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Check Availability","index.html"]%
+</div>
+		
+<section id="pageOuter" class="normalPage">	
+		<h1 class="pageTitle">%PAGE_TITLE%</h1>
+	    %PAGE_CUSTOM_CONTENT_1%
+	    %SITEMAP%
+</section>
+
+<!-- footer.inc is included here -->

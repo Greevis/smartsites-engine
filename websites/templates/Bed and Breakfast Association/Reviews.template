@@ -1,0 +1,44 @@
+description:Reviews page
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:ReviewsPage
+defaultTitle:Guest Reviews
+defaultUrl:reviews
+
+customConfig-name:eventCategoryId
+customConfig-label:All Reviews List
+customConfig-type:eventCategory
+
+** template start **
+
+<div id="topBar">
+		<a class="topbarLogo" href="index.html" title="Bed and Breakfast Association NEW ZEALAND">
+			<img src="images/logo-white-bnb.png">
+		</a>
+		%GROUP_GUEST_LOGIN%
+</div>
+
+<div class="row fixmargin">
+	<div id="pageContentTop" class="basicPage">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		<div class="pagePad">
+	    %PAGE_CUSTOM_CONTENT_1%
+	    
+	    <div class="pageArticles articlesEvents">%EVENTS_BY_EVENTCATEGORY_FULL["eventCategoryId_events","eventCategoryId"]%</div>
+	    
+	    %PAGE_CUSTOM_CONTENT_2%
+	  </div>
+	</div>
+</div>
+
+%PROPERTIES_MAP_IN_THIRDPARTY%

@@ -1,0 +1,46 @@
+/************** SMARTSITES *************/
+/*        room type descrptions        */
+/***************************************/
+
+.rwrRoomtype h2,
+.rwrRoomtype .fromCap,
+.rwrRoomtype .popup-desc { max-width:55%; }
+.rwrRoomtype .desc-images { width:40%; }
+.rwrRoomtype { padding:30px 0 0 0; margin:30px 0 0 0; border-top:1px solid #ddd; min-height:260px; position:relative; }
+.rwrRoomtype .desc-images a.first { height:220px; }
+
+.pageRTDP h2.roomtype-category { margin-top:20px; margin-bottom:-20px; font-size:150%; }
+.pageRTDP .rwrRoomtype h2.roomtype-category h2 { color:inherit; font-size:inherit; margin:0; }
+.rwrRoomtype .desc-from { display:none; }
+.rwrRoomtype .desc-cap { color:#999; }
+.rwrRoomtype .desc-images { overflow:hidden; position:absolute; right:0; top:30px; margin:0; }
+.rwrRoomtype .desc-images a { display:inline-block; width:50px; height:35px; overflow:hidden; margin:1px; margin-top:5px; text-align:center; }
+.rwrRoomtype .desc-images a img { height:35px; width:100%; border:none; display:inline-block; }	
+.rwrRoomtype .desc-images a.first { width:100%; display:block; margin:auto; box-shadow:0 1px 2px rgba(0, 0, 0, 0.3); }	
+.rwrRoomtype .desc-images a.first img { width:100%; height:auto; margin:auto; display:block; }
+.rwrRoomtype .desc-images a:hover { cursor:url('/~images/template/magnify.cur'), -moz-zoom-in; }
+.rwrRoomtype .desc-caption { display:none; }
+.rwrRoomtype .desc-description-outer { margin:10px 0; }
+.rwrRoomtype .desc-avail { margin:10px 0; }
+.rwrRoomtype .desc-avail h4 { display:none; }
+.rwrRoomtype .desc-avail table { margin:0 auto 10px auto; width:100%; font-size:10px; border-collapse:collapse; clear:both; text-align:center; }
+.rwrRoomtype .desc-avail table th { font-weight:normal !important; color:#bbb; }	
+.rwrRoomtype .desc-avail table td { padding:10px 0; border:1px solid #fff; }
+.rwrRoomtype .desc-avail table .yes-avail { color:#333;	background: #d4f7a5; }
+.rwrRoomtype .desc-avail table .yes-avail:hover { cursor:pointer; background:#b2ea78; } 
+.rwrRoomtype .desc-avail table .no-avail { color:#bbb; background:#f1f1f1; }
+.rwrRoomtype .book-roomtype { text-align:left; display:block; }
+.rwrRoomtype .book-title { color:#fff; font-size; font-size:100%; font-weight:700; }
+.rwrRoomtype .book-sub { color:#fff; font-size; font-size:90%; font-weight:400; margin-left:5px; }
+
+
+@media only screen and (max-width: 960px)
+{	
+	.rwrRoomtype h2,
+	.rwrRoomtype .fromCap,
+	.rwrRoomtype .popup-desc,
+	.rwrRoomtype .desc-images { width:100%; max-width:none; display:block; float:none; }
+	.rwrRoomtype { padding:2em 0 0 0; margin:2em 0 0 0; min-height:0; }
+	.rwrRoomtype .desc-images { position:static; margin:1em 0; }
+	.rwrRoomtype .desc-images a.first { height:auto; }
+}

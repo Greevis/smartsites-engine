@@ -1,0 +1,47 @@
+description:Individual apartment pages.
+
+customContent1:
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Property
+defaultTitle:Apartment Accommodation
+defaultUrl:property
+
+** template start **
+
+%WEBROOMS_JS_INCLUDE%
+
+<div class="propertyWide">
+	<div id="propNav">
+		%INCLUDE_FILE["template-nav.inc"]%	
+	</div>
+	<div class="property-image" style="background-image:url(%FIRST_IMAGE_MAIN_GALLERY%);"></div>
+</div>
+
+<div id="propertyPage" class="pageBody footerPad">
+	<div class="row">
+			<div class="property-gallery">%MAIN_GALLERY_LIGHTBOX%</div>
+			<h1 class="property-title pageTitle">%PROPERTY_SERVICE_NAME%</h1>
+			<div class="row" id="property-info">
+				<div class="columns six">
+						<div class="property-description">%PROPERTY_DESCRIPTION%</div>
+				</div>
+				<div class="columns six">
+						<div class="property-facilities">%PROPERTY_FACILITIES%</div>
+				</div>
+			</div>
+			<div class="property-book">%BOOKING_ENGINE%</div>
+	</div>
+</div>
+
+<script>
+$('title').text('%PROPERTY_SERVICE_NAME% - %SITE_NAME%');
+</script>

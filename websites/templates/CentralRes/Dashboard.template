@@ -1,0 +1,44 @@
+description:Dashboard
+
+customContent1:Enter your content
+customContent2:Raw code area
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Page
+defaultTitle:Page
+defaultUrl:page
+
+customConfig-name:eventCategoryId_events
+customConfig-label:Footer News
+customConfig-type:eventCategory
+
+** template start **
+
+<!-- header.inc is included here -->
+
+<section class="detailssearch" id="proppageSearch">
+	<div class="container">
+		%GROUP_LOCATION_SEARCH_CONTROLS%
+	</div>
+</section>
+
+<section class="popular_part">
+   <div class="container">
+      <div class="cms">
+            
+				<h1 class="pageTitle">%PAGE_TITLE%</h1>
+				%PAGE_CUSTOM_CONTENT_1%
+				%GROUP_GUEST_DASHBOARD%
+			  %PAGE_CUSTOM_CONTENT_2%
+			</div>
+	</div>
+</section>
+
+<!-- footer.inc is included here -->

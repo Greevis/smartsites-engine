@@ -1,0 +1,32 @@
+description:Blank page
+
+customContent1:Custom code
+customContent2:
+customContent3:
+customContent4:
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Page
+defaultTitle:Page
+defaultUrl:page
+
+** template start **
+
+<!-- header.inc is included here -->
+		
+<div id="pageHeader" class="homeHeader"></div>
+<div id="headerBook">
+    %JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Check Availability","index.html"]%
+</div>
+		
+<section id="pageOuter" class="normalPage">	
+		<h1 class="pageTitle">%PAGE_TITLE%</h1>
+		%PAGE_CUSTOM_CONTENT_1%
+</section>
+
+<!-- footer.inc is included here -->

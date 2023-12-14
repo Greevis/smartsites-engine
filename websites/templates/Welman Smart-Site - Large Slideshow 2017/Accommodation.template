@@ -1,0 +1,37 @@
+description:Details all the available accommodation options, with full room type descriptions.
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:false
+allowEditStatus:true
+
+customContent1:Intro code
+customContent2:Area for code below the room types
+customContent3:
+customContent4:
+
+defaultName:Accommodation
+defaultTitle:%PROPERTY_CITY% Motel Accommodation
+defaultUrl:accommodation
+
+** template start **
+
+<div class="content row">
+	<section id="pageOuter" class="pageContent">
+
+		<div class="pageIntro">
+			<h1 class="pageTitle font">%PAGE_TITLE%</h1>
+			<div class="pageCustom1">%PAGE_CUSTOM_CONTENT_1%</div>
+		</div>			
+
+		<div class="pageRTDP">%ROOMTYPE_DESCRIPTIONS_ALL%</div>
+		<hr/>
+		<div class="pageFacilities box">
+			<h2>Facilities at %PROPERTY_NAME%</h2>
+			%PROPERTY_FACILITIES%
+		</div>
+		<div class="pageCustom2">%PAGE_CUSTOM_CONTENT_2%</div>
+	
+	</section>
+</div>

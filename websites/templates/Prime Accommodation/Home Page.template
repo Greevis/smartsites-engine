@@ -1,0 +1,82 @@
+description:Prime Accommodation Homepage Template
+
+allowMultiple:true
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+customContent1:Homepage Slideshow
+customContent2:Introduction
+customContent3:
+customContent4:
+
+defaultName:Home
+defaultTitle:Welcome
+defaultUrl:index
+
+customConfig-name:thirdPartySubCategoryId
+customConfig-label:Sub-category of properties to display
+customConfig-type:thirdPartySubCategory
+
+customConfig-name:baseWebsitePageId
+customConfig-label:Base page for Property Detail
+customConfig-type:websitePage
+
+customConfig-name:eventCategoryId
+customConfig-label:Event category for what's on slider
+customConfig-type:eventCategory
+
+** template start **
+
+<div id="headerContainer">
+	<div class="row">
+			<div class="ppgLogo">
+					<a href="index.html" title="Prime Accommodation Wellington">
+							<img src="images/logo.png" title="Prime Accommodation Wellington" alt="Wellington Accommodation" border="0" />
+					</a>
+			</div>
+			<div class="ppgContact">
+					<a href="index.html" title="Prime Accommodation Wellington"><h2>Prime Accommodation</h2></a>
+					<p>Wellington Accommodation New Zealand</p>
+			</div>
+			<div class="webrooms-datepicker">
+			    %JQUERY_DATE_PICKER_CUSTOM_PAGE["Check In Date:","Check Availability","index.html"]%
+			</div>
+	</div>
+</div>
+
+<div class="headerSpace"></div>
+
+<div id="homeOuter">
+	<div id="homeSlideshow">
+     <button class="homeSlideshowPrev">&lt;</button>
+     <button class="homeSlideshowNext">&gt;</button>
+	    	<div class="cycle-slideshow" 
+	    		data-cycle-prev=".homeSlideshowPrev" 
+	    		data-cycle-next=".homeSlideshowNext" 
+	    		data-cycle-fx="fadeout" 
+	    		data-cycle-timeout="7000" 
+	    		data-cycle-speed="1000" 
+	    		data-cycle-loader="wait" 
+	    		data-cycle-slides="> div">
+	           %PAGE_CUSTOM_CONTENT_1%
+				</div>
+  </div>
+</div>
+
+<div id="homeListings">
+	<div class="row">
+		<h1 class="pageTitle">%PAGE_TITLE%</h1> 
+		%PAGE_CUSTOM_CONTENT_2%
+		<div class="all-properties-grouped-outer">
+			%PROPERTIES_IN_SUBCATEGORY%
+		</div>
+	</div>
+</div>
+
+%PROPERTIES_MAP_IN_THIRDPARTY%
+
+<!--
+%PROPERTIES_IN_THIRDPARTY_BY_SUBCATEGORY%
+-->

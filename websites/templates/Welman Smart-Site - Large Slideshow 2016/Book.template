@@ -1,0 +1,34 @@
+description:The booking page, with Webrooms on it.
+
+customContent1:Displayed above the booking engine.
+customContent2:Displayed below the booking engine.
+customContent3:
+customContent4:
+
+allowMultiple:false
+allowCreate:true
+allowDelete:true
+allowEditUrl:true
+allowEditStatus:true
+
+defaultName:Book Online
+defaultTitle:Check Our Rates and Live Availability - Book Direct and Save!
+defaultUrl:reservations
+
+** template start **
+<div class="row">
+	<div class="twelve columns pageContainer">
+			<h1 class="pageTitle">%PAGE_TITLE%</h1>
+				<div class="pageCustom1">
+					%PAGE_CUSTOM_CONTENT_1%
+				</div>
+				<div class="book">
+					%BOOKING_ENGINE%
+				</div>
+				<div class="pageCustom1">
+					%PAGE_CUSTOM_CONTENT_2%
+				</div>
+	</div>
+</div>
+
+	
